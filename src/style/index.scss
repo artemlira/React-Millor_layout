@@ -1,0 +1,37 @@
+@use 'variables.scss' as v;
+@use 'mixins.scss' as m;
+@use 'functions.scss' as f;
+@import-normalize;
+@import '../fonts/Gilroy/fonts.scss';
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: f.rem(25);
+}
+
+.container {
+  max-width: v.$maxWidthContainer + 30px;
+  padding: 0 f.rem(15);
+  margin: 0 auto;
+}

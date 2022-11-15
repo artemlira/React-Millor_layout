@@ -1,0 +1,60 @@
+@use 'variables.scss' as v;
+@use 'mixins.scss' as m;
+@use 'functions.scss' as f;
+
+.header {
+
+  // .header__nav
+
+  &__nav {}
+
+  // .header__icons
+
+  &__icons {
+    display: flex;
+    gap: f.vw(53);
+  }
+
+  // .header__icon
+
+  &__icon {}
+}
+
+.heder {
+
+  // .heder__container
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: f.rem(22) 0;
+  }
+}
+
+
+
+.logo {
+  width: f.rem(260);
+  height: f.rem(116);
+}
+
+.nav {
+
+  // .nav__list
+
+  &__list {
+    display: flex;
+    gap: f.vw(100);
+  }
+
+  // .nav__item
+
+  &__item {
+    a {
+      line-height: 100%;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}

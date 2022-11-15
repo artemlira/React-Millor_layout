@@ -28,10 +28,15 @@ body {
   font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: f.rem(25);
+  background-image: url('../images/bg-color.svg');
+  background-repeat: no-repeat;
+  background-position: right f.vw(-340) top;
+  background-size: f.vw(1366) f.vw(1690);
 }
 
 .container {
   max-width: v.$maxWidthContainer + 30px;
   padding: 0 f.rem(15);
   margin: 0 auto;
+  border: 1px solid black;
 }

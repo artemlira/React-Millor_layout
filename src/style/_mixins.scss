@@ -22,17 +22,17 @@
 //Медиазапросы
 //пример пользования  @include m.notebook {gap: rem(50px);}
 
-@mixin notebook {
-  @media screen and (max-width:1260px) {
+@mixin laptop {
+  @media screen and (max-width:1349px) {
     @content;
   }
 }
 
-@mixin netbook {
-  @media screen and (max-width:992px) {
-    @content;
-  }
-}
+// @mixin netbook {
+//   @media screen and (max-width:992px) {
+//     @content;
+//   }
+// }
 
 @mixin tablet {
   @media screen and (max-width:768px) {

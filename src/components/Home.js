@@ -6,7 +6,6 @@ import Slider from './Slider';
 export default function Home() {
   return (
     <>
-      {/* <HeaderHome /> */}
       <Slider />
       <Catalog />
     </>

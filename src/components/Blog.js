@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../style/blog.scss';
 // import Header from './Header';
 
 export default function Blog() {

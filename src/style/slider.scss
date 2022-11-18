@@ -60,14 +60,9 @@
   // .slider__img
   &__img {
     position: absolute;
-    // position: relative;
     top: f.rem(30);
-    // top: f.vw(30);
-    // right: f.rem(200);
     right: f.vw(200);
-    // width: f.rem(666);
     width: f.vw(666);
-    // height: f.rem(494);
     height: f.vw(494);
     border-radius: 50%;
     background-color: rgba(57, 57, 57, 0.15);

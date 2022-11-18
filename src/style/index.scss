@@ -34,6 +34,17 @@ body {
   background-size: f.vw(1366) f.vw(1690);
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
 .container {
   max-width: v.$maxWidthContainer + 30px;
   padding: 0 f.rem(15);

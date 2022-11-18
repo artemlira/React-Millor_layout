@@ -15,7 +15,8 @@ export default function HeaderHome() {
         <nav className="header__nav">
           <ul className="nav__list">
             <li className="nav__item">
-              <Link to="/catalog">Каталог товаров</Link>
+              <a href="/#catalog">Каталог товаров</a>
+              {/* <Link to="/">Каталог товаров</Link> */}
             </li>
             <li className="nav__item">
               <Link to="/blog">Блог</Link>
@@ -27,7 +28,7 @@ export default function HeaderHome() {
         </nav>
         <div className="header__icons">
           <div className="header__icon">
-            <Link to="/search"> <img src={icons[0]} alt="search icon" /></Link>
+            <Link to='/'> <img src={icons[0]} alt="search icon" /></Link>
           </div>
           <div className="header__icon">
             <Link to="/basket"><img src={icons[1]} alt="basket icon" /></Link>

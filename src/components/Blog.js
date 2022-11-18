@@ -1,7 +1,12 @@
 import React from 'react'
+// import Header from './Header';
 
 export default function Blog() {
   return (
-    <div>Blog</div>
+    <>
+      {/* <Header /> */}
+      <div>Blog</div>
+    </>
+
   )
 }

@@ -1,7 +1,12 @@
 import React from 'react'
+// import Header from './Header';
 
 export default function Basket() {
   return (
-    <div>Basket</div>
+    <>
+      {/* <Header /> */}
+      <div>Basket</div>
+    </>
+
   )
 }

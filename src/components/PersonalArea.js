@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+// import Header from './Header';
 
 export default function PersonalArea() {
   return (
-    <div>PersonalArea</div>
+    <>
+      {/* <Header /> */}
+      <div>PersonalArea</div>
+    </>
+
   )
 }

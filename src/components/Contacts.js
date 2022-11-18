@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+// import Header from './Header';
 
 export default function Contacts() {
   return (
-    <div>Contacts</div>
+    <>
+      {/* <Header /> */}
+      <div>Contacts</div>
+    </>
+
   )
 }

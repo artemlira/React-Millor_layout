@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './catalogItem.module.scss';
+import './catalogItem.scss';
 
 export default function CatalogItem({ image, text, textButton, link }) {
   return (

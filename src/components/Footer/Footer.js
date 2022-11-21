@@ -1,18 +1,17 @@
 import React from 'react';
 import logo from '../../images/logo.svg';
 import { Link } from 'react-router-dom';
-import styles from './footer.module.scss';
+import './footer.scss';
 
 export default function Footer() {
-  console.log(styles);
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
+    <footer className='footer'>
+      <div className='footer__container container'>
         <div className="logo">
           <Link to="/"> <img src={logo} alt="logo Millor" /></Link>
         </div>
         <nav className="footer__nav">
-          <ul className={styles.nav__list}>
+          <ul className='footer__nav__list'>
             <li className="footer__nav__item">
               <a href="/#catalog">Каталог товаров</a>
               {/* <Link to="/">Каталог товаров</Link> */}

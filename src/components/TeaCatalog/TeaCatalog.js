@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './teaCatalog.module.scss';
+import './teaCatalog.scss';
 
 export default function TeaCatalog() {
   return (

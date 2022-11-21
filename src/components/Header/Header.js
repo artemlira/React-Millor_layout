@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import styles from './header.module.scss';
+import './header.scss';
 import logo from '../../images/logo.svg';
 import { icons } from '../ImagesDB';
 // import Search from './Search';

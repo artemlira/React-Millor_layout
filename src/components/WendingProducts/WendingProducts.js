@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './wendingProducts.module.scss';
+import './wendingProducts.scss';
 
 export default function WendingProducts() {
   return (

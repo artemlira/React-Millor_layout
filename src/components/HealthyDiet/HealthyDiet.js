@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './healthyDiet.module.scss';
+import './healthyDiet.scss';
 
 export default function HealthyDiet() {
   return (

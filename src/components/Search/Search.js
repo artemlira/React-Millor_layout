@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.svg';
 import { icons } from '../ImagesDB';
-import styles from './search.module.scss';
+import './search.scss';
 
 
 export default function Search() {

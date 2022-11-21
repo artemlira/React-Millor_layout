@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './basket.module.scss';
+import './basket.scss';
 // import Header from './Header';
 
 export default function Basket() {

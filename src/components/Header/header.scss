@@ -3,21 +3,24 @@
 @use '../../style/functions' as f;
 
 .header {
+  height: f.rem(113);
+  // border: 1px solid;
 
   // .header__nav
-
   // &__nav {}
 
   // .header__icons
-
   &__icons {
     display: flex;
-    gap: f.vw(53);
+    gap: f.vw(40);
+    padding-inline: f.rem(10);
   }
 
   // .header__icon
-
-  // &__icon {}
+  &__icon {
+    width: f.rem(22);
+    height: f.rem(22);
+  }
 }
 
 .heder {
@@ -28,24 +31,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: f.rem(22) f.rem(15);
+    padding-top: f.rem(20);
+    padding-bottom: f.rem(13);
   }
 }
 
 
 
 .logo {
-  width: f.rem(260);
-  height: f.rem(116);
+  width: f.rem(179);
+  height: f.rem(80);
 }
 
 .nav {
 
   // .nav__list
-
   &__list {
     display: flex;
-    gap: f.vw(100);
+    gap: f.vw(60);
   }
 
   // .nav__item

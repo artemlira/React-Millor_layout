@@ -6,7 +6,7 @@
   min-height: f.rem(153);
 
   // .footer__container
-  .container {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@
   // .footer__nav
   // &__nav {}
 
-  .nav__list {
+  &__nav__list {
     display: flex;
     gap: f.rem(100);
 

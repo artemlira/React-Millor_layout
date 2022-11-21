@@ -1,13 +1,13 @@
 import React from 'react';
-import '../style/slider.scss';
-import coffee from '../images/slider/espresso.svg';
+import styles from './slider.module.scss';
+import coffee from '../../images/slider/coffee.png';
 
 export default function Slider() {
   return (
-    <section className="slider">
-      <div className="slider__container container">
-        <div className="slider__about">
-          <h2 className="slider__title">Свежеобжаренный кофе</h2>
+    <section className={styles}>
+      <div className={styles.container}>
+        <div className={styles.about}>
+          <h2 className={styles.title}>Свежеобжаренный кофе</h2>
           <p className="slider__text">Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
           <p className="slider__text">Мы обжариваем кофе <span>каждые выходные.</span></p>
           <button className="slider__btn">Посмотреть каталог</button>
@@ -16,6 +16,6 @@ export default function Slider() {
           <img src={coffee} alt="espresso" />
         </div>
       </div>
-    </section>
+    </section >
   )
 }

@@ -1,12 +1,12 @@
-@use 'variables.scss' as v;
-@use 'mixins.scss' as m;
-@use 'functions.scss' as f;
+@use '../../style/variables' as v;
+@use '../../style/mixins' as m;
+@use '../../style/functions' as f;
 
 .slider {
   min-height: f.rem(777);
 
   // .slider__container
-  &__container {
+  .container {
     position: relative;
     // display: flex;
   }
@@ -15,10 +15,10 @@
   // &__about {}
 
   // .slider__title
-  &__title {
+  .title {
     font-weight: 900;
-    font-size: 80px;
-    line-height: 100px;
+    font-size: f.rem(56);
+    line-height: f.pr(56, 69.89);
 
     &:not(:last-child) {
       margin-bottom: f.rem(60);
@@ -81,7 +81,7 @@
       content: '';
       width: f.vw(756);
       height: f.vw(522);
-      background-image: url('../images/slider/background-slider.svg');
+      // background-image: url('../images/slider/background-slider.svg');
       background-position: center;
       background-size: cover;
       transform: rotate(350deg);

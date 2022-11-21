@@ -1,12 +1,12 @@
 import React from 'react';
-import '../style/blog.scss';
+import styles from './contacts.module.scss';
 // import Header from './Header';
 
-export default function Blog() {
+export default function Contacts() {
   return (
     <>
       {/* <Header /> */}
-      <div>Blog</div>
+      <div>Contacts</div>
     </>
 
   )

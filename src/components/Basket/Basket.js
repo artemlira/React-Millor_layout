@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './basket.module.scss';
 // import Header from './Header';
 
-export default function PersonalArea() {
+export default function Basket() {
   return (
     <>
       {/* <Header /> */}
-      <div>PersonalArea</div>
+      <div>Basket</div>
     </>
 
   )

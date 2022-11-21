@@ -1,12 +1,12 @@
-@use 'variables.scss' as v;
-@use 'mixins.scss' as m;
-@use 'functions.scss' as f;
+@use '../../style/variables' as v;
+@use '../../style/mixins' as m;
+@use '../../style/functions' as f;
 
 .footer {
   min-height: f.rem(153);
 
   // .footer__container
-  &__container {
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@
   // .footer__nav
   // &__nav {}
 
-  &__nav__list {
+  .nav__list {
     display: flex;
     gap: f.rem(100);
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import CatalogItem from './CatalogItem';
-import { catalog } from './ImagesDB';
-import '../style/catalog.scss';
+import CatalogItem from '../CatalogItem/CatalogItem';
+import { catalog } from '../ImagesDB';
+import styles from './catalog.module.scss';
 
 export default function Catalog() {
 

@@ -1,12 +1,16 @@
 import React from 'react';
-import './coffeeCatalog.scss';
-// import HeaderHome from './HeaderHome';
+import styles from './CoffeeCatalog.module.scss';
+
 
 export default function CoffeeCatalog() {
   return (
-    <>
-      <div className='container'>Coffee Catalog</div>
-    </>
-
-  )
+    <section className={styles.coffeeCatalog}>
+      <div className="container">
+        CoffeeCatalog Component
+      </div>
+    </section>
+  );
 }
+
+
+

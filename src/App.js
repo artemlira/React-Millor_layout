@@ -1,15 +1,10 @@
-// import Header from './components/Header';
 import { Routes, Route } from 'react-router-dom';
-// import Catalog from './components/Catalog';
 import Blog from './components/Blog/Blog';
 import Contacts from './components/Contacts/Contacts';
 import Basket from './components/Basket/Basket';
 import PersonalArea from './components/PersonalArea/PersonalArea';
-// import HeaderHome from './components/HeaderHome';
-// import Slider from './components/Slider';
 import Home from './components/Home';
 import CoffeeCatalog from './components/CoffeeCatalog/CoffeeCatalog';
-// import Search from './components/Search';
 import TeaCatalog from './components/TeaCatalog/TeaCatalog';
 import Layout from './components/Layout';
 import WendingProducts from './components/WendingProducts/WendingProducts';

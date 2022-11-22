@@ -1,13 +1,16 @@
 import React from 'react';
-import './basket.scss';
-// import Header from './Header';
+import styles from './Basket.module.scss';
+
 
 export default function Basket() {
   return (
-    <>
-      {/* <Header /> */}
-      <div>Basket</div>
-    </>
-
-  )
+    <section className={styles.basket}>
+      <div className="container">
+        Basket Component
+      </div>
+    </section>
+  );
 }
+
+
+

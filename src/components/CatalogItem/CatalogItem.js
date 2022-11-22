@@ -1,13 +1,14 @@
 import React from 'react';
+import styles from './CatalogItem.module.scss';
 import { Link } from 'react-router-dom';
-import './catalogItem.scss';
+
 
 export default function CatalogItem({ image, text, textButton, link }) {
   return (
-    <div className='catalog__item'>
-      <img className='item__image' src={image} alt="" />
-      <p className='item__text'>{text}</p>
-      <button className='item__btn'><Link to={link}>{textButton}</Link></button>
+    <div className={styles.item}>
+      <img className={styles.image} src={image} alt="" />
+      <p className={styles.text}>{text}</p>
+      <button className={styles.btn}><Link to={link}>{textButton}</Link></button>
     </div>
-  )
+  );
 }

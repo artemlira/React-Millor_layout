@@ -1,12 +1,11 @@
 import React from 'react'
 import Catalog from './Catalog/Catalog';
-// import HeaderHome from './HeaderHome';
-import CatalogSlider from './CatalogSlider/CatalogSlider';
+import Slider from './Slider/Slider';
 
 export default function Home() {
   return (
     <>
-      <CatalogSlider />
+      <Slider />
       <Catalog />
     </>
   )

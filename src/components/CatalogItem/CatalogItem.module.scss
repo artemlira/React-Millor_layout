@@ -1,0 +1,68 @@
+@use '../../style/variables.scss' as v;
+@use '../../style/mixins.scss' as m;
+@use '../../style/functions.scss' as f;
+
+.item {
+  width: f.rem(280);
+  min-height: f.rem(381);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+  background: #FFFFFF;
+  border-radius: f.rem(20);
+
+  &:hover {
+    .btn {
+      opacity: 1;
+    }
+
+    .image {
+      transform: scale(1.3);
+    }
+
+    .text {
+      margin-bottom: f.rem(50);
+    }
+  }
+}
+
+.image {
+  margin-top: f.rem(60);
+  flex: 1 1 auto;
+  max-width: 60%;
+  transform-origin: center bottom;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.text {
+  margin-bottom: f.rem(20);
+  transition-property: margin-bottom;
+  transition-duration: 0.5s;
+}
+
+.btn {
+  opacity: 0;
+  width: f.rem(329);
+  height: f.rem(60);
+  background-color: v.$yellow;
+  border-radius: f.rem(5);
+  margin-bottom: f.rem(65);
+  transition-property: opacity, background-color;
+  transition-duration: 0.5s;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: f.rem(25);
+    line-height: 120%;
+    padding: f.rem(15) f.rem(120);
+  }
+
+  &:hover {
+    background-color: #E2A300;
+  }
+
+}

@@ -1,13 +1,16 @@
 import React from 'react';
-import './blog.scss';
-// import Header from './Header';
+import styles from './Blog.module.scss';
+
 
 export default function Blog() {
   return (
-    <>
-      {/* <Header /> */}
-      <div>Blog</div>
-    </>
-
-  )
+    <section className={styles.blog}>
+      <div className="container">
+        Blog Component
+      </div>
+    </section>
+  );
 }
+
+
+

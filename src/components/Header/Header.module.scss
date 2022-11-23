@@ -1,0 +1,62 @@
+@use '../../style/variables.scss' as v;
+@use '../../style/mixins.scss' as m;
+@use '../../style/functions.scss' as f;
+
+.header {
+  height: f.rem(113);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: f.rem(20);
+  padding-bottom: f.rem(13);
+}
+
+// .nav {}
+
+.navList {
+  display: flex;
+  gap: f.vw(60);
+}
+
+.navItem {
+  a {
+    position: relative;
+    line-height: 100%;
+    color: #000;
+    text-decoration: none;
+  }
+
+  a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #F9B300;
+  }
+
+  a:hover:before {
+    width: 100%;
+  }
+
+
+
+
+
+
+}
+
+.icons {
+  display: flex;
+  gap: f.vw(40);
+  padding-inline: f.rem(10);
+}
+
+.icon {
+  width: f.rem(22);
+  height: f.rem(22);
+}

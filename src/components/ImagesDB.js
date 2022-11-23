@@ -30,3 +30,16 @@ export const catalog = [
     link: 'healthy_diet',
   },
 ]
+
+export const discountItemPics = [
+  '../images/Discount Goods/01.png',
+  '../images/Discount Goods/coffee.png',
+  '../images/Discount Goods/Group 76.png'
+]
+
+export const advantagesPics = [
+  '../images/advantages/01.png',
+  '../images/advantages/icon1.svg',
+  '../images/advantages/icon2.svg',
+  '../images/advantages/icon3.svg',
+]

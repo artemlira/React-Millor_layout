@@ -3,7 +3,7 @@ import Blog from './components/Blog/Blog';
 import Contacts from './components/Contacts/Contacts';
 import Basket from './components/Basket/Basket';
 import PersonalArea from './components/PersonalArea/PersonalArea';
-import Home from './components/Home';
+import Home from './pages/Home';
 import CoffeeCatalog from './components/CoffeeCatalog/CoffeeCatalog';
 import TeaCatalog from './components/TeaCatalog/TeaCatalog';
 import Layout from './components/Layout';

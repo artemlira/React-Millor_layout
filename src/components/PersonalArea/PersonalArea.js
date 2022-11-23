@@ -1,12 +1,16 @@
 import React from 'react';
-import './personalArea.scss';
-// import Header from './Header';
+import styles from './PersonalArea.module.scss';
+
 
 export default function PersonalArea() {
   return (
-    <>
-      <div>PersonalArea</div>
-    </>
-
-  )
+    <section className={styles.personalArea}>
+      <div className="container">
+        PersonalArea Component
+      </div>
+    </section>
+  );
 }
+
+
+

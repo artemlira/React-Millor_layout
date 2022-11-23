@@ -12,11 +12,14 @@ export default function Slider() {
   const settings = {
     autoplay: true,
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 4000,
+    swipe: true,
+    // fade: true,
   };
 
   return (

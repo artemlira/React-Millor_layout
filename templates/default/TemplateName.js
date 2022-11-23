@@ -6,7 +6,9 @@ export default function TemplateName() {
   return (
     <section className={styles.templateName}>
       <div className="container">
-        TemplateName Component
+        <div className={styles.container}>
+          TemplateName Component
+        </div>
       </div>
     </section>
   );

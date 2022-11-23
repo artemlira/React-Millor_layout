@@ -2,4 +2,32 @@
 @use '../../style/mixins.scss' as m;
 @use '../../style/functions.scss' as f;
 
-.discountItem {}
+.discountItem {
+  width: f.rem(280);
+  min-height: f.rem(461);
+  box-shadow: 0px 0px 20px rgba(201, 201, 201, 0.25);
+  background: #FFFFFF;
+  border-radius: f.rem(14);
+  border: 0.708508px solid #E4E4E4;
+}
+
+.container {
+  padding: 0 f.rem(25);
+}
+
+.form {
+  display: flex;
+  justify-content: end;
+}
+
+.select {
+  width: 93px;
+  height: 23px;
+  background-color: #FFF7E1;
+  border: 0.708508px solid #F9B300;
+  border-radius: f.rem(4);
+  font-size: f.rem(12);
+  line-height: f.pr(12, 14);
+  margin-top: f.rem(14);
+  text-align: center;
+}

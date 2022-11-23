@@ -1,0 +1,48 @@
+@use '../../style/variables.scss' as v;
+@use '../../style/mixins.scss' as m;
+@use '../../style/functions.scss' as f;
+
+.footer {
+  min-height: f.rem(153);
+  border: 1px solid;
+  padding-top: f.rem(30);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// .nav {}
+
+.navList {
+  display: flex;
+  gap: f.rem(100);
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: f.rem(18);
+    line-height: f.pr(18, 29);
+  }
+
+  a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #F9B300;
+  }
+
+  a:hover:before {
+    width: 100%;
+  }
+
+}
+
+// .navItem {}

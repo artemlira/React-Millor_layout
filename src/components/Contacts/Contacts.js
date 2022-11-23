@@ -1,12 +1,16 @@
 import React from 'react';
-import './contacts.scss';
-// import Header from './Header';
+import styles from './Contacts.module.scss';
+
 
 export default function Contacts() {
   return (
-    <>
-      <div>Contacts</div>
-    </>
-
-  )
+    <section className={styles.contacts}>
+      <div className="container">
+        Contacts Component
+      </div>
+    </section>
+  );
 }
+
+
+

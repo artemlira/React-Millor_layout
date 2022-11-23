@@ -3,9 +3,21 @@ import { Link } from 'react-router-dom';
 import DiscountItem from '../DiscountItem/DiscountItem';
 import styles from './DiscountGoods.module.scss';
 import bg from '../../images/Discount Goods/bg.png';
-
+import SlickSlider from 'react-slick';
+import './Slider.scss';
 
 export default function DiscountGoods() {
+
+  const settings = {
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    swipe: true,
+  };
+
   return (
     <section className={styles.discountGoods}>
       <div className="container">
@@ -17,13 +29,21 @@ export default function DiscountGoods() {
           <p className={styles.text}>Наша компания предлагает покупать товар со скидкой не только в дни распродаж
             или в течение действия ограниченных предложений, но и пользоваться скидками постоянно!</p>
         </div>
-        <div className={styles.items}>
-          <DiscountItem />
-          <DiscountItem />
-          <DiscountItem />
-          <DiscountItem />
+        <div className={styles.wrapperItems}>
+          <div className={styles.items}>
+            <SlickSlider {...settings}>
+              <DiscountItem />
+              <DiscountItem />
+              <DiscountItem />
+              <DiscountItem />
+              <DiscountItem />
+              <DiscountItem />
+            </SlickSlider>
+          </div>
         </div>
-        <Link className={styles.link} to="#">Смотреть все</Link>
+        <div className={styles.wrapperLink}>
+          <Link className={styles.link} to="#">Смотреть все</Link>
+        </div>
       </div>
     </section>
   );

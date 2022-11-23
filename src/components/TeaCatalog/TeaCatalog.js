@@ -1,8 +1,16 @@
 import React from 'react';
-import './teaCatalog.scss';
+import styles from './TeaCatalog.module.scss';
+
 
 export default function TeaCatalog() {
   return (
-    <div>TeaCatalog</div>
-  )
+    <section className={styles.teaCatalog}>
+      <div className="container">
+        TeaCatalog Component
+      </div>
+    </section>
+  );
 }
+
+
+

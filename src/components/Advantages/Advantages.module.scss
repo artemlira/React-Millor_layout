@@ -2,6 +2,9 @@
 @use '../../style/mixins.scss' as m;
 @use '../../style/functions.scss' as f;
 
-.templateName {}
+.advantages {
+  background: url('../../images/advantages/bg.png');
+  min-height: f.rem(621);
+}
 
 .container {}

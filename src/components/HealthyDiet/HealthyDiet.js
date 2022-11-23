@@ -1,8 +1,16 @@
 import React from 'react';
-import './healthyDiet.scss';
+import styles from './HealthyDiet.module.scss';
+
 
 export default function HealthyDiet() {
   return (
-    <div>HealthyDiet</div>
-  )
+    <section className={styles.healthyDiet}>
+      <div className="container">
+        HealthyDiet Component
+      </div>
+    </section>
+  );
 }
+
+
+

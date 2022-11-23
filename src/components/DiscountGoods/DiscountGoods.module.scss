@@ -4,17 +4,17 @@
 
 
 .discountGoods {
-  // position: relative;
+  min-height: f.rem(756);
 }
 
 .wrapper_img {
-  width: f.rem(477);
   height: f.rem(477);
   position: absolute;
   top: f.rem(-140);
   left: f.rem(-64);
+  display: flex;
+  justify-content: right;
 }
-
 
 
 .title {
@@ -26,7 +26,9 @@
   text-align: end;
 }
 
-.wrapperText {
+.wrapperText,
+.wrapperItems,
+.wrapperLink {
   display: flex;
   justify-content: right;
 }
@@ -37,8 +39,19 @@
   line-height: f.pr(18, 23.4);
 }
 
-.items {}
+.wrapperItems {
+  margin-top: f.rem(54);
+  margin-bottom: f.rem(40);
+}
+
+.items {
+  width: f.rem(871);
+  margin-right: f.rem(89);
+}
 
 .link {
-  text-align: right;
+  margin-right: f.rem(93);
+  font-size: f.rem(14);
+  color: #000000;
+  line-height: f.pr(14, 16.48);
 }

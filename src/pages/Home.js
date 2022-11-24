@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutWork from '../components/AboutWork/AboutWork';
 import Catalog from '../components/Catalog/Catalog';
 import DiscountGoods from '../components/DiscountGoods/DiscountGoods';
 import Slider from '../components/Slider/Slider';
@@ -11,6 +12,7 @@ export default function Home() {
       <Catalog />
       <DiscountGoods />
       <Advantages />
+      <AboutWork />
     </>
   )
 }

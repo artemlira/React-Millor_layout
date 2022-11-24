@@ -4,6 +4,7 @@ import Catalog from '../components/Catalog/Catalog';
 import DiscountGoods from '../components/DiscountGoods/DiscountGoods';
 import Slider from '../components/Slider/Slider';
 import Advantages from './../components/Advantages/Advantages';
+import News from './../components/News/News';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <DiscountGoods />
       <Advantages />
       <AboutWork />
+      <News />
     </>
   )
 }

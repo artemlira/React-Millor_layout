@@ -4,6 +4,13 @@
 
 .header {
   height: f.rem(113);
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0px 3.54254px 14.1702px rgba(157, 157, 157, 0.25);
 }
 
 .container {
@@ -13,8 +20,6 @@
   padding-top: f.rem(20);
   padding-bottom: f.rem(13);
 }
-
-// .nav {}
 
 .navList {
   display: flex;
@@ -42,12 +47,6 @@
   a:hover:before {
     width: 100%;
   }
-
-
-
-
-
-
 }
 
 .icons {
@@ -59,4 +58,8 @@
 .icon {
   width: f.rem(22);
   height: f.rem(22);
+
+  img {
+    height: 100%;
+  }
 }

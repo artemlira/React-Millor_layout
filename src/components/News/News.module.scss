@@ -2,6 +2,12 @@
 @use '../../style/mixins.scss' as m;
 @use '../../style/functions.scss' as f;
 
-.news {}
+.news {
+  min-height: f.rem(715);
+  border: 1px solid red;
+}
 
-.container {}
+.container {
+  margin-top: f.rem(135);
+  border: 1px solid;
+}

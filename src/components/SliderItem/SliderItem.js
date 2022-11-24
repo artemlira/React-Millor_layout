@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './SliderItem.module.scss';
 import coffee from '../../images/slider/coffee.png';
-import { Link } from 'react-router-dom';
 
 
 export default function SliderItem() {

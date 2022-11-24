@@ -7,12 +7,14 @@ export default function Advantages() {
   return (
     <section className={styles.advantages}>
       <div className="container">
+        <div className={styles.title}>
+          <h4 >Почему стоит работать именно с нами?</h4>
+        </div>
         <div className={styles.container}>
           <div className={styles.img}>
             <img src={advantagesPics[0]} alt="" />
           </div>
           <div className={styles.about}>
-            <h4 className={styles.title}>Почему стоит работать именно с нами?</h4>
 
             <div className={styles.advantage}>
               <div className={styles.advantageImg}>

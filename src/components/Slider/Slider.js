@@ -19,7 +19,6 @@ export default function Slider() {
     slidesToScroll: 1,
     autoplaySpeed: 4000,
     swipe: true,
-    // fade: true,
   };
 
   return (

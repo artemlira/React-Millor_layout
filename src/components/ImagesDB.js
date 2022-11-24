@@ -34,7 +34,10 @@ export const catalog = [
 export const discountItemPics = [
   '../images/Discount Goods/01.png',
   '../images/Discount Goods/coffee.png',
-  '../images/Discount Goods/Group 76.png'
+  '../images/Discount Goods/dots.png',
+  '../images/Discount Goods/stars.png',
+  '../images/Discount Goods/procent.svg',
+
 ]
 
 export const advantagesPics = [

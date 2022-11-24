@@ -30,7 +30,15 @@ body {
   font-weight: 500;
   font-size: f.rem(18);
   background: url('../images/bg1.png') top right no-repeat,
-    url('../images/bg2.png') top f.rem(800) left no-repeat;
+    url('../images/bg2.png') top f.rem(800) left no-repeat,
+    url('../images/bg3.png') top f.rem(1925) left no-repeat,
+    url('../images/bg4.png') top f.rem(2200) left no-repeat,
+    url('../images/bg5.jpg') top 2400px left no-repeat,
+    url('../images/bg5.png') top 3455px left no-repeat,
+    url('../images/bg6.png') top f.rem(3649) left no-repeat,
+    url('../images/bg7.png') top f.rem(4252) left no-repeat,
+    url('../images/bg8.png') top f.rem(5074) left no-repeat;
+  // min-height: f.rem(5523);
 }
 
 #root {

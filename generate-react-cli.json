@@ -6,8 +6,8 @@
   "component": {
     "default": {
       "customTemplates": {
-        "component": "templates/default/TemplateName.js",
-        "style": "templates/default/TemplateName.module.scss"
+        "component": "templates/TemplateName.js",
+        "style": "templates/TemplateName.module.scss"
       },
       "path": "src/components",
       "withStyle": true,

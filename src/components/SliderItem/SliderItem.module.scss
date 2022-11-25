@@ -32,9 +32,10 @@
 }
 
 .btn {
+  position: relative;
   max-width: f.rem(283);
   width: f.vw(283);
-
+  z-index: 10;
   height: f.rem(56);
   background-color: v.$yellow;
   border-radius: f.rem(5);

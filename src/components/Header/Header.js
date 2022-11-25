@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import { icons } from '../ImagesDB';
 
@@ -15,14 +15,13 @@ export default function Header() {
           <nav className={styles.nav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <a href="/#catalog">Каталог товаров</a>
-                {/* <Link to="/">Каталог товаров</Link> */}
+                <NavLink to="/catalog">Каталог товаров</NavLink>
               </li>
               <li className={styles.navItem}>
-                <Link to="/blog">Блог</Link>
+                <NavLink to="/blog">Блог</NavLink>
               </li>
               <li className={styles.navItem}>
-                <Link to="/contacts">Контакты</Link>
+                <NavLink to="/contacts">Контакты</NavLink>
               </li>
             </ul>
           </nav>

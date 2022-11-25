@@ -1,14 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
-import Blog from './components/Blog/Blog';
-import Contacts from './components/Contacts/Contacts';
-import Basket from './components/Basket/Basket';
-import PersonalArea from './components/PersonalArea/PersonalArea';
+import Blog from './pages/Blog';
+import Contacts from './pages/Contacts';
+import Basket from './pages/Basket';
+import PersonalArea from './pages/PersonalArea';
 import Home from './pages/Home';
-import CoffeeCatalog from './components/CoffeeCatalog/CoffeeCatalog';
-import TeaCatalog from './components/TeaCatalog/TeaCatalog';
+import CoffeeCatalog from './pages/CoffeeCatalog';
+import TeaCatalog from './pages/TeaCatalog';
 import Layout from './components/Layout';
-import WendingProducts from './components/WendingProducts/WendingProducts';
-import HealthyDiet from './components/HealthyDiet/HealthyDiet';
+import WendingProducts from './pages/WendingProducts';
+import HealthyDiet from './pages/HealthyDiet';
+import CatalogPage from './pages/CatalogPage';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path='catalog' element={<CatalogPage />} />
           <Route path='coffee_catalog' element={<CoffeeCatalog />} />
           <Route path='tea_catalog' element={<TeaCatalog />} />
           <Route path='wending_products' element={<WendingProducts />} />

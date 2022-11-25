@@ -21,13 +21,13 @@ export const catalog = [
     img: '../images/catalog/03.svg',
     text: 'Продукция для вендинга',
     btn: 'Купить',
-    link: 'wending_products',
+    link: '/wending_products',
   },
   {
     img: '../images/catalog/04.svg',
     text: 'Здоровое питание',
     btn: 'Купить',
-    link: 'healthy_diet',
+    link: '/healthy_diet',
   },
 ]
 

@@ -33,7 +33,7 @@ body {
     url('../images/bg2.png') top f.rem(800) left no-repeat,
     url('../images/bg3.png') top f.rem(2025) left no-repeat,
     url('../images/bg4.png') top f.rem(2300) left no-repeat,
-    url('../images/bg6.png') top f.rem(3549) left no-repeat,
+    url('../images/bg6.png') top f.rem(3579) left no-repeat,
     url('../images/bg7.png') top f.rem(3760) left no-repeat,
     url('../images/bg8.png') top f.rem(5074) left no-repeat;
   padding-top: f.rem(113);
@@ -59,4 +59,10 @@ body {
 .logo {
   width: f.rem(179);
   height: f.rem(80);
+}
+
+.active {
+  text-decoration: underline #F9B300 !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 10px !important;
 }

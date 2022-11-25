@@ -15,8 +15,7 @@ export default function Footer() {
           <nav className={styles.nav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <a href="/#catalog">Каталог товаров</a>
-                {/* <Link to="/">Каталог товаров</Link> */}
+                <Link to="/catalog">Каталог товаров</Link>
               </li>
               <li className={styles.navItem}>
                 <Link to="/blog">Блог</Link>

@@ -31,8 +31,8 @@ body {
   font-size: f.rem(18);
   background: url('../images/bg1.png') top right no-repeat,
     url('../images/bg2.png') top f.rem(800) left no-repeat,
-    url('../images/bg3.png') top f.rem(2040) left no-repeat,
-    url('../images/bg4.png') top f.rem(3690) left no-repeat;
+    url('../images/bg3.png') top f.rem(2040) left/contain no-repeat,
+    url('../images/bg4.png') top f.rem(3690) left/contain no-repeat;
 }
 
 #root {

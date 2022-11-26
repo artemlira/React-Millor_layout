@@ -6,6 +6,7 @@ import Slider from '../components/Slider/Slider';
 import Advantages from './../components/Advantages/Advantages';
 import News from './../components/News/News';
 import SocialNetworks from './../components/SocialNetworks/SocialNetworks';
+import Subscription from './../components/Subscription/Subscription';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutWork />
       <News />
       <SocialNetworks />
+      <Subscription />
     </>
   )
 }

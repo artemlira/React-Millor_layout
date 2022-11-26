@@ -4,18 +4,18 @@
 // Адаптивный шрифт ================================================================
 // пример использования @include m.font(53, 20);  53 - размер по макету, 20- размер который подходит под минимальное разрешение
 
-@mixin font($pcSize, $mobSize) {
-  $addSize: $pcSize - $mobSize;
-  $addMobSize: $addSize +$addSize * 0.0000007;
+// @mixin font($pcSize, $mobSize) {
+//   $addSize: $pcSize - $mobSize;
+//   $addMobSize: $addSize +$addSize * 0.0000007;
 
-  @media (max-width: 767px) {
-    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{v.$maxWidth}));
-  }
+//   @media (max-width: 767px) {
+//     font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{v.$maxWidth}));
+//   }
 
-  @media (min-width: 767px) {
-    font-size: calc(#{$mobSize + px} + #{$addMobSize} * (100vw / #{v.$maxWidth}));
-  }
-}
+//   @media (min-width: 767px) {
+//     font-size: calc(#{$mobSize + px} + #{$addMobSize} * (100vw / #{v.$maxWidth}));
+//   }
+// }
 
 
 //=====================================================================================

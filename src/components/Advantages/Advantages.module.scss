@@ -3,7 +3,7 @@
 @use '../../style/functions.scss' as f;
 
 .advantages {
-  min-height: f.rem(621);
+  min-height: f.rem(611);
 }
 
 .container {
@@ -18,7 +18,6 @@
   width: f.vw(534);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .title {

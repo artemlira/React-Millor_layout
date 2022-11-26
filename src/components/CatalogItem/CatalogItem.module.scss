@@ -32,15 +32,13 @@
 }
 
 .image {
-  width: f.rem(200);
-  height: f.rem(200);
-  // margin-top: f.rem(60);
+  max-width: f.rem(200);
+  max-height: f.rem(200);
+  margin-bottom: f.rem(40);
   flex: 1 1 auto;
-  max-width: 60%;
   transform-origin: center bottom;
   transition-property: transform;
   transition-duration: 0.5s;
-  display: block;
 }
 
 .text {

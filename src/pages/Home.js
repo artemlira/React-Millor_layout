@@ -5,6 +5,7 @@ import DiscountGoods from '../components/DiscountGoods/DiscountGoods';
 import Slider from '../components/Slider/Slider';
 import Advantages from './../components/Advantages/Advantages';
 import News from './../components/News/News';
+import SocialNetworks from './../components/SocialNetworks/SocialNetworks';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Advantages />
       <AboutWork />
       <News />
+      <SocialNetworks />
     </>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../images/logo.svg';
+import logo from '../../images/logo.png';
 import { icons } from '../ImagesDB';
 
 export default function Header() {

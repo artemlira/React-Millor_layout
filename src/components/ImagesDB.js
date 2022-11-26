@@ -6,25 +6,25 @@ export const icons = [
 
 export const catalog = [
   {
-    img: '../images/catalog/01.svg',
+    img: '../images/catalog/01.png',
     text: 'Свежеобжаренный кофе',
     btn: 'Купить',
     link: '/coffee_catalog',
   },
   {
-    img: '../images/catalog/02.svg',
+    img: '../images/catalog/02.png',
     text: 'Чай и кофейные напитки',
     btn: 'Купить',
     link: '/tea_catalog',
   },
   {
-    img: '../images/catalog/03.svg',
+    img: '../images/catalog/03.png',
     text: 'Продукция для вендинга',
     btn: 'Купить',
     link: '/wending_products',
   },
   {
-    img: '../images/catalog/04.svg',
+    img: '../images/catalog/04.png',
     text: 'Здоровое питание',
     btn: 'Купить',
     link: '/healthy_diet',
@@ -45,4 +45,10 @@ export const advantagesPics = [
   '../images/advantages/icon1.svg',
   '../images/advantages/icon2.svg',
   '../images/advantages/icon3.svg',
+]
+
+export const socialNetwork = [
+  '../images/socialNetworks/icon01.png',
+  '../images/socialNetworks/iphones.png',
+  '../images/socialNetworks/next.png',
 ]

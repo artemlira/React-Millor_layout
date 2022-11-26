@@ -16,10 +16,9 @@ export default function Slider() {
     infinite: true,
     speed: 2000,
     slidesToShow: 1,
-    // slidesToScroll: 1,
+    slidesToScroll: 1,
     autoplaySpeed: 4000,
     swipe: true,
-    focusOnSelect: true,
   };
 
   return (

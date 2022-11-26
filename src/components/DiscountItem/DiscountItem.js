@@ -10,7 +10,7 @@ export default function DiscountItem() {
       <div className={styles.container}>
         <form action="/" className={styles.form}>
           <select name="target" className={styles.select}>
-            <option selected>250 г.</option>
+            <option>250 г.</option>
             <option>1000 г.</option>
           </select>
         </form>

@@ -4,10 +4,10 @@
 
 .aboutWork {
   min-height: f.rem(746);
-  background: url('../../images/bg5v1.png') left bottom no-repeat;
 }
 
 .container {
+  margin-top: f.rem(109);
   color: #fff;
   max-width: f.rem(882);
 }
@@ -33,7 +33,7 @@
   width: f.rem(283);
   height: f.rem(56);
   background-color: v.$yellow;
-  margin-top: f.rem(70);
+  margin-top: f.rem(38);
   border-radius: f.rem(5);
 
   &:hover {

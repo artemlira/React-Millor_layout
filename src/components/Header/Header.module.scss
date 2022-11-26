@@ -54,5 +54,25 @@
 
   img {
     height: 100%;
+    cursor: pointer;
+  }
+}
+
+.activeSearch {
+  max-width: f.rem(850);
+  width: f.vw(850);
+  height: f.rem(42);
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(157, 157, 157, 0.25);
+  border-radius: 30px;
+  color: #C4C4C4;
+  font-weight: 500;
+  line-height: 130%;
+  font-size: f.rem(16);
+  padding-left: f.rem(72);
+  background: url('../../images/header/search-active.png') 30px no-repeat;
+
+  &:focus {
+    outline: none;
   }
 }

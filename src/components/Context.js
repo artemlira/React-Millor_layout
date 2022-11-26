@@ -1,12 +1,14 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 
 
 export const MillorContext = createContext();
 
 const Context = (props) => {
+  const [openSearch, setOpenSearch] = useState(false);
 
 
   const value = {
+    openSearch, setOpenSearch,
 
   };
 

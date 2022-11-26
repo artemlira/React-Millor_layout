@@ -39,6 +39,10 @@
   line-height: 130%;
   font-size: f.rem(18);
   padding-left: f.rem(40);
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .btn {
@@ -51,6 +55,13 @@
   font-size: f.rem(18);
   line-height: f.pr(18, 21.76);
   transform: translateX(-179px);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #E2A300;
+  }
 }
 
 .active {

@@ -12,7 +12,10 @@ import HealthyDiet from './pages/HealthyDiet';
 import CatalogPage from './pages/CatalogPage';
 
 
+
 function App() {
+  
+
   return (
     <>
       <Routes>

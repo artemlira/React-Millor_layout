@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './Header.module.scss';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/logo.png';
 import { icons } from '../ImagesDB';
+import { MillorContext } from './../Context';
 
 export default function Header() {
+  const data = useContext(MillorContext);
+
+
   return (
     <section className={styles.header}>
       <div className="container">
@@ -12,7 +16,8 @@ export default function Header() {
           <div className="logo">
             <Link to="/"> <img src={logo} alt="logo Millor" /></Link>
           </div>
-          <nav className={styles.nav}>
+
+          {!data.openSearch && <nav className={styles.nav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
                 <NavLink to="/catalog">Каталог товаров</NavLink>
@@ -24,11 +29,20 @@ export default function Header() {
                 <NavLink to="/contacts">Контакты</NavLink>
               </li>
             </ul>
-          </nav>
+          </nav>}
+
+          {data.openSearch && <input className={styles.activeSearch} type="text" placeholder='Поиск по товарам' />}
+
           <div className={styles.icons}>
-            <div className={styles.icon}>
-              <Link to='/'> <img src={icons[0]} alt="search icon" /></Link>
-            </div>
+
+            {!data.openSearch && <div className={styles.icon}>
+              <img
+                src={icons[0]}
+                alt="search icon"
+                onClick={() => data.setOpenSearch(true)}
+              />
+            </div>}
+
             <div className={styles.icon}>
               <Link to="/basket"><img src={icons[1]} alt="basket icon" /></Link>
             </div>

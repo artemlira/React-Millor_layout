@@ -2,24 +2,36 @@ import React from 'react';
 import styles from './DiscountItem.module.scss';
 import './discountItem.scss';
 import { discountItemPics } from '../ImagesDB';
-// import { Link } from 'react-router-dom';
 
-export default function DiscountItem() {
+
+export default function DiscountItem({ sale }) {
   return (
     <section className={styles.discountItem}>
       <div className={styles.container}>
-        <form action="/" className={styles.form}>
+        <form action="/" className={sale ? styles.form : styles.formNoSale}>
+          {!sale &&
+            <div className={styles.noDiscount}>
+            <p>Популярное</p>
+            <p>Новый урожай</p>
+          </div>}
+
           <select name="target" className={styles.select}>
             <option>250 г.</option>
             <option>1000 г.</option>
           </select>
+
+
         </form>
-        <div className={styles.discount}>
-          <p>Скидки</p>
-          <div className={styles.wrapperDiscountImg}>
-            <img className={styles.discountImg} src={discountItemPics[4]} alt="icon percent" />
+
+        {sale &&
+          <div className={styles.discount}>
+            <p>Скидки</p>
+            <div className={styles.wrapperDiscountImg}>
+              <img className={styles.discountImg} src={discountItemPics[4]} alt="icon percent" />
+            </div>
           </div>
-        </div>
+        }
+
         <div className={styles.wrapper} >
           <div className={styles.img}>
             <img src={discountItemPics[0]} alt="coffee" />

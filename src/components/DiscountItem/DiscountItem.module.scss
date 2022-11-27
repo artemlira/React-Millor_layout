@@ -21,6 +21,11 @@
   justify-content: flex-end;
 }
 
+.formNoSale {
+  display: flex;
+  justify-content: space-between;
+}
+
 .select {
   width: 93px;
   height: 23px;
@@ -34,11 +39,25 @@
 }
 
 .discount {
-
   color: #F9B300;
   font-size: f.rem(12);
   line-height: f.pr(12, 14.51);
   margin-bottom: f.rem(14);
+}
+
+.noDiscount {
+  color: #F9B300;
+  font-size: f.rem(12);
+  line-height: f.pr(12, 14.51);
+  margin-top: f.rem(14);
+
+  p:not(:last-child) {
+    margin-bottom: f.rem(6);
+  }
+
+  p:last-child {
+    margin-bottom: f.rem(14);
+  }
 }
 
 .wrapperDiscountImg {
@@ -47,15 +66,12 @@
   position: absolute;
   top: -34px;
   left: 15px;
-  z-index: 10;
   display: flex;
 }
 
 .discountImg {
-
   max-width: 150%;
   max-height: 150%;
-
 }
 
 .wrapper {
@@ -69,8 +85,6 @@
   max-width: f.rem(120);
   height: f.rem(218);
 }
-
-// .about {}
 
 .stars {
   margin-top: f.rem(10);
@@ -106,8 +120,6 @@
 .descriptionImg:not(:last-child) {
   margin-bottom: f.rem(12);
 }
-
-// .wrapperText {}
 
 .title {
   font-size: f.rem(18);

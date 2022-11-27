@@ -62,3 +62,10 @@ body {
   text-decoration-thickness: 2px !important;
   text-underline-offset: 10px !important;
 }
+
+.coffeeCatalog {
+  background: url('../images/Catalog Coffee/bg1.png') 0 0/100% no-repeat,
+    url('../images/Catalog Coffee/bg2.png') 0px 795px/contain no-repeat, #fff;
+
+  overflow: hidden;
+}

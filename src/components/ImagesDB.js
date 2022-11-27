@@ -1,3 +1,13 @@
+import { ReactComponent as Icon1 } from '../images/Catalog Coffee/icon01.svg';
+import { ReactComponent as Icon2 } from '../images/Catalog Coffee/icon02.svg';
+import { ReactComponent as Icon3 } from '../images/Catalog Coffee/icon03.svg';
+import { ReactComponent as Icon4 } from '../images/Catalog Coffee/icon04.svg';
+import { ReactComponent as Icon5 } from '../images/Catalog Coffee/icon05.svg';
+import { ReactComponent as Icon6 } from '../images/Catalog Coffee/icon06.svg';
+import { ReactComponent as Icon7 } from '../images/Catalog Coffee/icon07.svg';
+import { ReactComponent as Icon8 } from '../images/Catalog Coffee/icon08.svg';
+
+
 export const icons = [
   '../images/header/01.svg',
   '../images/header/02.svg',
@@ -51,4 +61,47 @@ export const socialNetwork = [
   '../images/socialNetworks/icon01.png',
   '../images/socialNetworks/iphones.png',
   '../images/socialNetworks/next.png',
+]
+
+export const productRangeIcons = [
+  {
+    img: <Icon1 />,
+    text: 'Турка'
+  },
+  {
+    img: <Icon2 />,
+    text: 'Френч-пресс'
+  },
+  {
+    img: <Icon3 />,
+    text: 'Мока'
+  },
+  {
+    img: <Icon4 />,
+    text: 'Эспрессо'
+  },
+  {
+    img: <Icon5 />,
+    text: 'Воронка'
+  },
+  {
+    img: <Icon6 />,
+    text: 'Аэропресс'
+  },
+  {
+    img: <Icon7 />,
+    text: 'Чашка'
+  },
+  {
+    img: <Icon8 />,
+    text: 'Автомат'
+  }
+]
+
+export const productRangePic = [
+  '../images/Catalog Coffee/coffee5.png',
+  '../images/Catalog Coffee/coffee4.png',
+  '../images/Catalog Coffee/coffee3.png',
+  '../images/Catalog Coffee/coffee2.png',
+  '../images/Catalog Coffee/coffee1.png',
 ]

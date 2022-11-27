@@ -28,11 +28,11 @@
   }
 }
 
-// @mixin netbook {
-//   @media screen and (max-width:992px) {
-//     @content;
-//   }
-// }
+@mixin netbook {
+  @media screen and (max-width:992px) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media screen and (max-width:768px) {

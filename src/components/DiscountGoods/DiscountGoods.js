@@ -32,12 +32,12 @@ export default function DiscountGoods() {
         <div className={styles.wrapperItems}>
           <div className={styles.items}>
             <SlickSlider {...settings}>
-              <DiscountItem />
-              <DiscountItem />
-              <DiscountItem />
-              <DiscountItem />
-              <DiscountItem />
-              <DiscountItem />
+              <DiscountItem sale={true} />
+              <DiscountItem sale={true} />
+              <DiscountItem sale={true} />
+              <DiscountItem sale={true} />
+              <DiscountItem sale={true} />
+              <DiscountItem sale={true} />
             </SlickSlider>
           </div>
         </div>

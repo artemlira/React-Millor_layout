@@ -4,6 +4,8 @@ import { productRangeIcons, productRangePic } from './../ImagesDB';
 import RangeItem from './RangeItem';
 import cupCoffee from '../../images/Catalog Coffee/Cup_of_coffee.png';
 import RangeIcon from './RangeIcon';
+import { geography, acid, methodProcessing, special, typeCoffee } from '../TextsDB.js';
+// import { ReactComponent as Img } from '../../images/Catalog Coffee/Cup_of_coffee.svg';
 
 
 export default function ProductRange() {
@@ -32,17 +34,76 @@ export default function ProductRange() {
                       img={item}
                       styles={styles} />
                   )}
-                  
+
                 </ul>
               </form>
             </div>
-            <div className={styles.rangeAbout}></div>
+            <div className={styles.rangeAbout}>
+              <div>
+                <h6 className={styles.aboutTitle}>География</h6>
+                <form name='about'>
+                  <ul>
+                    {geography.map(item =>
+                      <RangeItem
+                        key={Math.random() * 100}
+                        text={item}
+                        styles={styles} />)}
+                  </ul>
+                </form>
+              </div>
+              <div>
+                <h6 className={styles.aboutTitle}>Кислинка</h6>
+                <form name='about'>
+                  <ul>
+                    {acid.map(item =>
+                      <RangeItem
+                        key={Math.random() * 100}
+                        text={item}
+                        styles={styles} />)}
+                  </ul>
+                </form>
+                <h6 className={styles.aboutTitle}>Способ обработки</h6>
+                <form name='about'>
+                  <ul>
+                    {methodProcessing.map(item =>
+                      <RangeItem
+                        key={Math.random() * 100}
+                        text={item}
+                        styles={styles} />)}
+                  </ul>
+                </form>
+              </div>
+              <div>
+                <h6 className={styles.aboutTitle}>Особые</h6>
+                <form name='about'>
+                  <ul>
+                    {special.map(item =>
+                      <RangeItem
+                        key={Math.random() * 100}
+                        text={item}
+                        styles={styles} />)}
+                  </ul>
+                </form>
+              </div>
+              <div>
+                <h6 className={styles.aboutTitle}>Вид кофе</h6>
+                <form name='about'>
+                  <ul>
+                    {typeCoffee.map(item =>
+                      <RangeItem
+                        key={Math.random() * 100}
+                        text={item}
+                        styles={styles} />)}
+                  </ul>
+                </form>
+              </div>
+            </div>
           </div>
           <div className={styles.icons}>
             <ul className={styles.items}>
 
               {productRangeIcons.map(item =>
-                <RangeIcon key={Math.random()*100} img={item.img} text={item.text} styles={styles} />
+                <RangeIcon key={Math.random() * 100} img={item.img} text={item.text} styles={styles} />
               )}
 
             </ul>

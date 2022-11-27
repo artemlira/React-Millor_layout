@@ -6,6 +6,13 @@ import image from '../../images/Subscription/img01.png';
 export default function Subscription() {
   const [subscription, setSubscription] = useState(false);
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    setTimeout(() => {
+      setSubscription(false);
+    }, 1500);
+  }
+
   return (
     <section className={styles.subscription}>
       <div className="container">
@@ -18,7 +25,11 @@ export default function Subscription() {
               ?
               <button button
                 className={styles.btn}
-                onClick={() => { setSubscription(!subscription) }}
+
+                onClick={(e) => {
+                  setSubscription(!subscription);
+                  handleSubmit(e);
+                }}
               >Подписаться</button>
               :
               <button className={styles.active}>Спасибо за подписку!</button>

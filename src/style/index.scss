@@ -73,3 +73,9 @@ body {
 .catalog {
   background: url('../images/Catalog Coffee/bg1.png') 0 0/100% no-repeat, #fff;
 }
+
+.teaCatalog {
+  background: url('../images/TeaCatalog/bg1.png') 0 0/100% no-repeat,
+    url('../images/Catalog Coffee/bg2.png') 0px 795px/contain no-repeat, #fff;
+  overflow: hidden;
+}

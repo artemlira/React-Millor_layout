@@ -1,0 +1,73 @@
+@use '../../../style/variables.scss' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+.item {
+  position: relative;
+}
+
+.title {
+  margin-top: f.rem(65);
+  font-weight: 900;
+  font-size: f.vw(56);
+  line-height: f.pr(56, 69.89);
+
+  &:not(:last-child) {
+    margin-bottom: f.rem(41);
+  }
+}
+
+.text {
+  max-width: f.rem(466);
+  width: f.vw(466);
+  line-height: 130%;
+
+  span {
+    font-weight: bold;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: f.rem(45);
+  }
+}
+
+.btn {
+  position: relative;
+  max-width: f.rem(283);
+  width: f.vw(283);
+  z-index: 10;
+  height: f.rem(56);
+  background-color: v.$yellow;
+  border-radius: f.rem(5);
+  margin-top: f.rem(58);
+  margin-bottom: f.rem(167);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gilroy';
+    color: #FFFFFF;
+    font-size: f.vw(21);
+    line-height: f.pr(21, 25);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #E2A300;
+  }
+}
+
+.img {
+  position: absolute;
+  top: -78px;
+  right: 60px;
+  max-width: f.rem(637);
+  width: f.vw(637);
+  max-height: f.rem(549);
+}

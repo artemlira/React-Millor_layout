@@ -1,7 +1,7 @@
 import React from 'react';
-import ProductRange from './../components/ProductRange/ProductRange';
 import Subscription from './../components/Subscription/Subscription';
-import Production from './../components/Production/Production';
+import Production from './../components/Page_CoffeeCatalog/Production/Production';
+import ProductRange from './../components/Page_CoffeeCatalog/ProductRange/ProductRange';
 
 
 

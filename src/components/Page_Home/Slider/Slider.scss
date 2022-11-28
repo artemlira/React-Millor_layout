@@ -1,0 +1,17 @@
+@use '../../../style/variables.scss' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+
+.slick-dots {
+  top: 0;
+  display: flex !important;
+  justify-content: right;
+  bottom: inherit;
+
+  & li button:before {
+    font-size: f.rem(14);
+    color: #fff;
+    opacity: 1;
+  }
+}

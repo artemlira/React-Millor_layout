@@ -1,0 +1,62 @@
+@use '../../../style/variables.scss' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+.advantages {
+  min-height: f.rem(611);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: f.rem(60);
+  padding-right: f.rem(89);
+}
+
+.img {
+  max-width: f.rem(534);
+  width: f.vw(534);
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+
+  h4 {
+    width: f.rem(414);
+    font-weight: 900;
+    font-size: f.rem(35);
+    line-height: f.pr(35, 44);
+    color: #000000;
+    margin: f.rem(59) f.rem(167) f.rem(57) f.rem(0);
+  }
+}
+
+.advantage {
+  display: grid;
+  grid-template-columns: f.rem(60) auto;
+  column-gap: f.rem(30);
+
+  &:not(:last-child) {
+    margin-bottom: f.rem(40);
+  }
+}
+
+.advantageImg {
+  width: f.rem(60);
+}
+
+.advantageTitle {
+  font-size: f.rem(21);
+  line-height: f.pr(21, 25);
+  font-weight: 700;
+  margin-bottom: f.rem(15);
+}
+
+.advantageText {
+  font-size: f.rem(18);
+  line-height: 130%;
+}

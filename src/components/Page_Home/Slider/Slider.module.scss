@@ -1,0 +1,9 @@
+@use '../../../style/variables.scss' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+.slider {
+  margin-top: f.rem(21);
+  min-height: f.rem(549);
+  position: relative;
+}

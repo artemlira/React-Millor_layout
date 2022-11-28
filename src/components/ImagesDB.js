@@ -105,3 +105,38 @@ export const productRangePic = [
   '../images/Catalog Coffee/coffee2.png',
   '../images/Catalog Coffee/coffee1.png',
 ]
+
+export const teaRange = [
+  {
+    img: '../images/TeaCatalog/01.png',
+    text: 'Черный чай'
+  },
+  {
+    img: '../images/TeaCatalog/02.png',
+    text: 'Зеленый чай'
+  },
+  {
+    img: '../images/TeaCatalog/03.png',
+    text: 'Молочный улунг'
+  },
+  {
+    img: '',
+    text: false
+  },
+  {
+    img: '../images/TeaCatalog/04.png',
+    text: 'Травяной чай'
+  },
+  {
+    img: '../images/TeaCatalog/05.png',
+    text: 'Матча'
+  },
+  {
+    img: '../images/TeaCatalog/06.png',
+    text: 'Пуэр'
+  },
+  {
+    img: '../images/TeaCatalog/07.png',
+    text: 'Кофейные напитки'
+  },
+]

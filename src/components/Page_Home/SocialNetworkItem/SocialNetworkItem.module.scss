@@ -1,0 +1,16 @@
+@use '../../../style/variables.scss' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+
+.item {
+  width: f.rem(280);
+  height: f.rem(270);
+  background: #E9E9E9;
+  border-radius: 8px;
+
+  img {
+    max-width: 90%;
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,188 @@
+@use '../../../style/variables' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+.discountItem {
+  width: f.rem(280);
+  height: f.rem(461);
+  box-shadow: 0px 0px 20px rgba(201, 201, 201, 0.25);
+  background: #FFFFFF;
+  border-radius: f.rem(14);
+  border: 0.708508px solid #E4E4E4;
+}
+
+.container {
+  padding: 0 f.rem(25);
+  position: relative;
+}
+
+.form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formNoSale {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select {
+  width: 93px;
+  height: 23px;
+  background-color: #FFF7E1;
+  border: 0.708508px solid #F9B300;
+  border-radius: f.rem(4);
+  font-size: f.rem(12);
+  line-height: f.pr(12, 14);
+  margin-top: f.rem(14);
+  text-align: center;
+}
+
+.discount {
+  color: #F9B300;
+  font-size: f.rem(12);
+  line-height: f.pr(12, 14.51);
+  margin-bottom: f.rem(14);
+}
+
+.noDiscount {
+  color: #F9B300;
+  font-size: f.rem(12);
+  line-height: f.pr(12, 14.51);
+  margin-top: f.rem(14);
+
+  p:not(:last-child) {
+    margin-bottom: f.rem(6);
+  }
+
+  p:last-child {
+    margin-bottom: f.rem(14);
+  }
+}
+
+.wrapperDiscountImg {
+  width: f.rem(65);
+  height: f.rem(65);
+  position: absolute;
+  top: -34px;
+  left: 15px;
+  display: flex;
+}
+
+.discountImg {
+  max-width: 150%;
+  max-height: 150%;
+}
+
+.wrapper {
+  height: f.rem(215);
+  margin-bottom: f.rem(25);
+  display: flex;
+  gap: f.rem(18);
+}
+
+.img {
+  max-width: f.rem(120);
+  height: f.rem(218);
+}
+
+.stars {
+  margin-top: f.rem(10);
+}
+
+.reviews {
+  font-weight: 700;
+  color: #222222;
+  font-size: f.rem(14);
+  line-height: f.pr(14, 17);
+  margin-top: f.rem(6);
+  margin-bottom: f.rem(20);
+
+  span {
+    color: #5B5B5B;
+    font-size: f.rem(10);
+    line-height: f.pr(10, 12);
+  }
+}
+
+.coffeeBeans {
+  margin-bottom: f.rem(25);
+}
+
+.description {
+  font-size: f.rem(12);
+  font-weight: 500;
+  line-height: f.pr(12, 14.12);
+  color: #222222;
+  margin-bottom: f.rem(6);
+}
+
+.descriptionImg:not(:last-child) {
+  margin-bottom: f.rem(12);
+}
+
+.title {
+  font-size: f.rem(18);
+  font-weight: 900;
+  line-height: f.pr(18, 22.46);
+  color: #222222;
+  margin-bottom: f.rem(8);
+}
+
+.text {
+  width: f.rem(183);
+  font-size: f.rem(12);
+  font-weight: 500;
+  line-height: f.pr(12, 14.12);
+  color: #222222;
+  margin-bottom: f.rem(20);
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: f.rem(37);
+}
+
+.priceText {
+  position: relative;
+
+  p {
+    font-weight: 900;
+    font-size: f.rem(24);
+    line-height: f.pr(24, 30);
+    text-align: center;
+    color: #222222;
+  }
+
+  &::after {
+    position: absolute;
+    top: -19px;
+    left: 0px;
+    content: '350 ₽';
+    text-align: center;
+    text-decoration-line: line-through;
+    line-height: f.pr(18, 21);
+    color: #C6C6C6;
+  }
+}
+
+.btn {
+  width: f.rem(125);
+  height: f.rem(33);
+  background-color: v.$yellow;
+  border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  color: #fff;
+  font-size: f.rem(12);
+  line-height: f.pr(12, 14.51);
+  text-align: center;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: #E2A300;
+  }
+}

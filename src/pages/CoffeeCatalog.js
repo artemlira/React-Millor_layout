@@ -9,7 +9,7 @@ export default function CoffeeCatalog() {
   return (
     <div className='coffeeCatalog'>
       <ProductRange />
-      <Production arr={discountItemCoffee} />
+      <Production arr={discountItemCoffee} key={Math.random() * 100} />
       <Subscription />
     </div>
   );

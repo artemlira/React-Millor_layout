@@ -140,3 +140,38 @@ export const teaRange = [
     text: 'Кофейные напитки'
   },
 ]
+
+export const wendingRange = [
+  {
+    img: '../images/Wending Products/01.png',
+    text: 'Гранулированный кофе'
+  },
+  {
+    img: '../images/Wending Products/01.png',
+    text: 'Гранулированный цикорий'
+  },
+  {
+    img: '../images/Wending Products/01.png',
+    text: 'Зерновой кофе'
+  },
+  {
+    img: '',
+    text: false
+  },
+  {
+    img: '../images/Wending Products/01.png',
+    text: 'Гранулированный какао'
+  },
+  {
+    img: '../images/Wending Products/01.png',
+    text: 'Гранулированные кофейные напитки'
+  },
+  {
+    img: '../images/Wending Products/01.png',
+    text: 'Кофе порошкообразный'
+  },
+  {
+    img: '../images/Wending Products/01.png',
+    text: 'Сухое молоко гранулированное'
+  },
+]

@@ -1,6 +1,7 @@
 
 import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
 import TeaItem from './Page_TeaCatalog/TeaItem/TeaItem';
+import WendingProductsItem from './Page_WendingProducts/WendingProductsItem/WendingProductsItem';
 
 export const geography = [
   'Африка',
@@ -70,4 +71,19 @@ export const itemsTea = [
   <TeaItem />,
   <TeaItem />,
   <TeaItem sale={true} />,
+]
+
+export const itemsWendingProducts = [
+  <WendingProductsItem />,
+  <WendingProductsItem />,
+  <WendingProductsItem />,
+  <WendingProductsItem />,
+  <WendingProductsItem />,
+  <WendingProductsItem />,
+  <WendingProductsItem />,
+  <WendingProductsItem />,
+  <WendingProductsItem />,
+  <WendingProductsItem />,
+  <WendingProductsItem />,
+  <WendingProductsItem />,
 ]

@@ -1,0 +1,105 @@
+@use '../../../style/variables.scss' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+.wendingProductsItem {
+  width: f.rem(280);
+  height: f.rem(461);
+  box-shadow: 0px 0px 20px rgba(201, 201, 201, 0.25);
+  background: #FFFFFF;
+  border-radius: f.rem(14);
+  border: 0.708508px solid #E4E4E4;
+}
+
+.container {
+  height: 100%;
+  padding: f.rem(20) f.rem(25) f.rem(30) f.rem(25);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.reviews {
+  font-weight: 700;
+  color: #222222;
+  font-size: f.rem(14);
+  line-height: f.pr(14, 17);
+  margin-top: f.rem(12);
+  margin-bottom: f.rem(32);
+
+  span {
+    color: #5B5B5B;
+    font-size: f.rem(10);
+    line-height: f.pr(10, 12);
+  }
+}
+
+.select {
+  width: 93px;
+  height: 23px;
+  background-color: #FFF7E1;
+  border: 0.708508px solid #F9B300;
+  border-radius: f.rem(4);
+  font-size: f.rem(12);
+  line-height: f.pr(12, 14);
+  text-align: center;
+}
+
+.img {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+
+  &.sale::before {
+    position: absolute;
+    content: url('../../../images/Discount Goods/procent.png');
+    right: 12px;
+    top: 35px;
+  }
+}
+
+.title {
+  font-size: f.rem(18);
+  font-weight: 900;
+  line-height: f.pr(18, 22.46);
+  color: #222222;
+  margin-bottom: f.rem(20);
+  margin-top: f.rem(40);
+}
+
+.text {
+  width: f.rem(183);
+  font-size: f.rem(12);
+  font-weight: 500;
+  line-height: f.pr(12, 14.12);
+  color: #222222;
+  margin-bottom: f.rem(25);
+}
+
+.btn {
+  width: 100%;
+  height: f.rem(34);
+  background-color: v.$yellow;
+  border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  color: #fff;
+  font-size: f.rem(12);
+  line-height: f.pr(12, 14.51);
+  text-align: center;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: #E2A300;
+  }
+}

@@ -1,4 +1,6 @@
 
+import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
+import TeaItem from './Page_TeaCatalog/TeaItem/TeaItem';
 
 export const geography = [
   'Африка',
@@ -37,4 +39,35 @@ export const typeCoffee = [
   'Робуста',
   'Смесь арабик',
   'Смесь арабика/робуста',
+]
+
+export const discountItemCoffee = [
+
+  <DiscountItem />,
+  <DiscountItem />,
+  <DiscountItem sale={true} />,
+  <DiscountItem />,
+  <DiscountItem />,
+  <DiscountItem />,
+  <DiscountItem />,
+  <DiscountItem />,
+  <DiscountItem />,
+  <DiscountItem />,
+  <DiscountItem />,
+  <DiscountItem />,
+]
+
+export const itemsTea = [
+  <TeaItem />,
+  <TeaItem />,
+  <TeaItem />,
+  <TeaItem sale={true} />,
+  <TeaItem />,
+  <TeaItem />,
+  <TeaItem />,
+  <TeaItem sale={true} />,
+  <TeaItem />,
+  <TeaItem />,
+  <TeaItem />,
+  <TeaItem sale={true} />,
 ]

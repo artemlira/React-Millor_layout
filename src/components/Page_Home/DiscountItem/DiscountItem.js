@@ -30,7 +30,7 @@ export default function DiscountItem({ sale }) {
               <img className={styles.discountImg} src={discountItemPics[4]} alt="icon percent" />
             </div>
           </div>
-        }
+        } 
 
         <div className={styles.wrapper} >
           <div className={styles.img}>

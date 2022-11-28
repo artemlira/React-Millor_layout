@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Production.module.scss';
-import DiscountItem from '../Page_Home/DiscountItem/DiscountItem';
 
 
-export default function Production() {
+export default function Production({ arr }) {
 
   const [openSorting, setOpenSorting] = useState(false);
 
@@ -25,18 +24,9 @@ export default function Production() {
           </select>
         </form>}
         <div className={styles.container}>
-          <DiscountItem />
-          <DiscountItem />
-          <DiscountItem sale={true} />
-          <DiscountItem />
-          <DiscountItem />
-          <DiscountItem />
-          <DiscountItem />
-          <DiscountItem />
-          <DiscountItem />
-          <DiscountItem />
-          <DiscountItem />
-          <DiscountItem />
+          {arr.map(item =>
+            item
+          )}
         </div>
         <button className={styles.btn}>Показать еще</button>
       </div>

@@ -1,4 +1,5 @@
 
+import HealthyDietItem from './Page_HealthyDiet/HealthyDietItem/HealthyDietItem';
 import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
 import TeaItem from './Page_TeaCatalog/TeaItem/TeaItem';
 import WendingProductsItem from './Page_WendingProducts/WendingProductsItem/WendingProductsItem';
@@ -89,12 +90,16 @@ export const itemsWendingProducts = [
 ]
 
 export const itemsHealthyDiet = [
-  'itemsHealthyDiet',
-  'itemsHealthyDiet',
-  'itemsHealthyDiet',
-  'itemsHealthyDiet',
-  'itemsHealthyDiet',
-  'itemsHealthyDiet',
-  'itemsHealthyDiet',
-  'itemsHealthyDiet',
+  <HealthyDietItem />,
+  <HealthyDietItem />,
+  <HealthyDietItem />,
+  <HealthyDietItem sale={true} />,
+  <HealthyDietItem />,
+  <HealthyDietItem />,
+  <HealthyDietItem />,
+  <HealthyDietItem sale={true} />,
+  <HealthyDietItem />,
+  <HealthyDietItem />,
+  <HealthyDietItem />,
+  <HealthyDietItem sale={true} />,
 ]

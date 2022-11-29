@@ -1,14 +1,16 @@
 import React from 'react';
-import styles from './TeaItem.module.scss';
+import styles from './HealthyDietItem.module.scss';
 import { discountItemPics } from '../../ImagesDB';
-import tea from '../../../images/TeaCatalog/01.png';
+import food from '../../../images/HealthyDiet/01.png'
 
 
-export default function TeaItem({ sale }) {
+
+export default function HealthyDietItem({ sale }) {
   return (
-    <section className={styles.teaItem}>
+    <section className={styles.healthyDietItem}>
       <div className={styles.container}>
         <form action="/" className={styles.form}>
+
           <div className={styles.rating}>
             <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
             <p className={styles.reviews}>4.0<span>(32 отзыва)</span></p>
@@ -19,11 +21,14 @@ export default function TeaItem({ sale }) {
             <option>150 г.</option>
             <option>165 г.</option>
             <option>200 г.</option>
+            <option>500 г.</option>
+            <option>1000 г.</option>
           </select>
 
         </form>
+
         <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
-          <img src={tea} alt="Tea packaging" />
+          <img src={food} alt="Packaging of barley powder" />
         </div>
 
         <div className={styles.wrapperText}>

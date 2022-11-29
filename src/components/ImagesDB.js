@@ -175,3 +175,30 @@ export const wendingRange = [
     text: 'Сухое молоко гранулированное'
   },
 ]
+
+export const foodRange = [
+  {
+    img: '../images/HealthyDiet/01.png',
+    text: 'Цикорий и корень цикория'
+  },
+  {
+    img: '../images/HealthyDiet/01.png',
+    text: 'Ячменные напитки'
+  },
+  {
+    img: '',
+    text: false
+  },
+  {
+    img: '../images/HealthyDiet/01.png',
+    text: 'Напитки для здоровья'
+  },
+  {
+    img: '../images/HealthyDiet/01.png',
+    text: 'Протеиновые смеси'
+  },
+  {
+    img: '../images/HealthyDiet/01.png',
+    text: 'Толокняные каши'
+  },
+]

@@ -87,3 +87,14 @@ export const itemsWendingProducts = [
   <WendingProductsItem />,
   <WendingProductsItem />,
 ]
+
+export const itemsHealthyDiet = [
+  'itemsHealthyDiet',
+  'itemsHealthyDiet',
+  'itemsHealthyDiet',
+  'itemsHealthyDiet',
+  'itemsHealthyDiet',
+  'itemsHealthyDiet',
+  'itemsHealthyDiet',
+  'itemsHealthyDiet',
+]

@@ -3,6 +3,7 @@ import styles from './TeaRange.module.scss';
 import tea from '../../../images/TeaCatalog/green-tea.png';
 import { teaRange } from '../../ImagesDB.js';
 import TeaRangeItem from './TeaRangeItem';
+import { Link } from 'react-router-dom';
 
 
 export default function TeaRange() {
@@ -15,8 +16,8 @@ export default function TeaRange() {
             <img src={tea} alt="green tea" />
           </div>
           <ul className={styles.navigation}>
-            <li className={styles.navigationItem}>Главная</li>
-            <li className={styles.navigationItem}>Каталог товаров</li>
+            <li className={styles.navigationItem}><Link to='/'>Главная</Link></li>
+            <li className={styles.navigationItem}><Link to='/catalog'>Каталог товаров</Link></li>
             <li className={styles.navigationItem}>Чай и кофейные напитки</li>
           </ul>
           <h4 className={styles.title}>Чай и кофейные напитки</h4>

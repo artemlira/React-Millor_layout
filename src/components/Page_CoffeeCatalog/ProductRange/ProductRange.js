@@ -5,7 +5,8 @@ import RangeItem from './RangeItem';
 import cupCoffee from '../../../images/Catalog Coffee/Cup_of_coffee.png';
 import RangeIcon from './RangeIcon';
 import { geography, acid, methodProcessing, special, typeCoffee } from '../../TextsDB.js';
-// import { ReactComponent as Img } from '../../images/Catalog Coffee/Cup_of_coffee.svg';
+import { Link } from 'react-router-dom';
+
 
 
 export default function ProductRange() {
@@ -17,8 +18,8 @@ export default function ProductRange() {
             <img src={cupCoffee} alt="cup of coffee" />
           </div>
           <ul className={styles.navigation}>
-            <li className={styles.navigationItem}>Главная</li>
-            <li className={styles.navigationItem}>Каталог товаров</li>
+            <li className={styles.navigationItem}><Link to='/'>Главная</Link></li>
+            <li className={styles.navigationItem}><Link to='/catalog'>Каталог товаров</Link></li>
             <li className={styles.navigationItem}>Свежеобжаренный кофе</li>
           </ul>
           <h4 className={styles.title}>Свежеобжаренный кофе</h4>

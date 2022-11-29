@@ -16,8 +16,8 @@
   height: f.rem(600);
   top: f.rem(-60);
   right: f.rem(-84);
-  z-index: 1;
-  border: 1px solid;
+  // z-index: 1;
+
 
   img {
     max-height: 100%;
@@ -40,6 +40,13 @@
   font-size: f.rem(12);
   line-height: f.pr(12, 14.12);
   position: relative;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: f.rem(12);
+    line-height: f.pr(12, 14.12);
+  }
 
   &:not(:first-child)::before {
     position: absolute;

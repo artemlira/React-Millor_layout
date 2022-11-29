@@ -3,6 +3,7 @@ import styles from './WendingRange.module.scss';
 import img from '../../../images/Wending Products/image.png';
 import { wendingRange } from '../../ImagesDB.js';
 import TeaRangeItem from './../../Page_TeaCatalog/TeaRange/TeaRangeItem';
+import { Link } from 'react-router-dom';
 
 
 export default function WendingRange() {
@@ -16,8 +17,8 @@ export default function WendingRange() {
           </div>
 
           <ul className={styles.navigation}>
-            <li className={styles.navigationItem}>Главная</li>
-            <li className={styles.navigationItem}>Каталог товаров</li>
+            <li className={styles.navigationItem}><Link to='/'>Главная</Link></li>
+            <li className={styles.navigationItem}><Link to='/catalog'>Каталог товаров</Link></li>
             <li className={styles.navigationItem}>Продукция для вендинга</li>
           </ul>
 

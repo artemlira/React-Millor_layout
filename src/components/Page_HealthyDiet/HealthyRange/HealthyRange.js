@@ -3,6 +3,7 @@ import styles from './HealthyRange.module.scss';
 import img from '../../../images/HealthyDiet/image.png';
 import { foodRange } from '../../ImagesDB.js';
 import TeaRangeItem from './../../Page_TeaCatalog/TeaRange/TeaRangeItem';
+import { Link } from 'react-router-dom';
 
 
 export default function HealthyRange() {
@@ -16,8 +17,8 @@ export default function HealthyRange() {
           </div>
 
           <ul className={styles.navigation}>
-            <li className={styles.navigationItem}>Главная</li>
-            <li className={styles.navigationItem}>Каталог товаров</li>
+            <li className={styles.navigationItem}><Link to='/'>Главная</Link></li>
+            <li className={styles.navigationItem}><Link to='catalog'>Каталог товаров</Link></li>
             <li className={styles.navigationItem}>Здоровое питание</li>
           </ul>
 

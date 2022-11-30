@@ -14,7 +14,7 @@ export default function Subscription() {
   }
 
   return (
-    <section className={styles.subscription}>
+    <section id='pushes' className={styles.subscription}>
       <div className="container">
         <div className={styles.container}>
           <h5 className={styles.title}>Подписка на новости и рассылку</h5>
@@ -23,9 +23,8 @@ export default function Subscription() {
             {!subscription && <input type="text" className={styles.input} placeholder='Ваш email' />}
             {!subscription
               ?
-              <button button
+              <button 
                 className={styles.btn}
-
                 onClick={(e) => {
                   setSubscription(!subscription);
                   handleSubmit(e);
@@ -35,7 +34,7 @@ export default function Subscription() {
               <button className={styles.active}>Спасибо за подписку!</button>
             }
           </form>
-          <p className={styles.signature}>Нажимая на кнопку “Подписаться”, вы принимаете правила <a href="/">пользовательского соглашения</a></p>
+          <p id='french-press' className={styles.signature}>Нажимая на кнопку “Подписаться”, вы принимаете правила <a href="/">пользовательского соглашения</a></p>
           <img className={styles.img} src={image} alt="coffee" />
         </div>
       </div>

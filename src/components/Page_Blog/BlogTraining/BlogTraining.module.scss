@@ -1,0 +1,43 @@
+@use '../../../style/variables.scss' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+.blogTraining {
+  padding-block: f.rem(40);
+}
+
+.title {
+  font-weight: 900;
+  font-size: f.rem(28);
+  line-height: f.pr(28, 34.94);
+  margin-bottom: f.rem(40);
+}
+
+.item {
+  p:not(:last-child) {
+    margin-bottom: f.rem(35);
+  }
+}
+
+.text {
+  max-width: f.rem(978);
+  color: #222222;
+  line-height: f.pr(18, 23.4);
+  font-size: f.rem(18);
+}
+
+
+.ItemTitle {
+  font-weight: 700;
+  font-size: f.rem(22);
+  line-height: f.pr(22, 26.6);
+  margin-block: f.rem(40);
+}
+
+.img {
+  width: 100%;
+  height: f.rem(389);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: f.rem(50);
+}

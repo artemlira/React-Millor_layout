@@ -17,6 +17,11 @@ ul {
   list-style: none;
 }
 
+a {
+  color: initial;
+  // text-decoration: none;
+}
+
 img,
 svg {
   vertical-align: top;
@@ -31,8 +36,8 @@ body {
   font-size: f.rem(18);
   background: url('../images/bg1.png') top right no-repeat,
     url('../images/bg2.png') top f.rem(800) left no-repeat,
-    url('../images/bg3.png') top f.rem(2040) left/contain no-repeat,
-    url('../images/bg4.png') top f.rem(3690) left/contain no-repeat;
+    url('../images/bg3.png') 50% f.rem(2040) no-repeat,
+    url('../images/bg4.png') 50% f.rem(3690)/auto no-repeat;
 }
 
 #root {
@@ -57,11 +62,18 @@ body {
   height: f.rem(80);
 }
 
-.active {
+.active-header {
   text-decoration: underline v.$yellow !important;
   text-decoration-thickness: 2px !important;
   text-underline-offset: 10px !important;
 }
+
+.active-BlogHeader {
+  background: #FFF7E1 !important;
+  border: 0.705321px solid #F9B300 !important;
+  border-radius: 4px !important;
+}
+
 
 .coffeeCatalog {
   background: url('../images/Catalog Coffee/bg1.png') 0 0/100% no-repeat,

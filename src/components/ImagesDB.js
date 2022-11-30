@@ -19,25 +19,25 @@ export const catalog = [
     img: '../images/catalog/01.png',
     text: 'Свежеобжаренный кофе',
     btn: 'Купить',
-    link: '/coffee_catalog',
+    link: 'coffee_catalog',
   },
   {
     img: '../images/catalog/02.png',
     text: 'Чай и кофейные напитки',
     btn: 'Купить',
-    link: '/tea_catalog',
+    link: 'tea_catalog',
   },
   {
     img: '../images/catalog/03.png',
     text: 'Продукция для вендинга',
     btn: 'Купить',
-    link: '/wending_products',
+    link: 'wending_products',
   },
   {
     img: '../images/catalog/04.png',
     text: 'Здоровое питание',
     btn: 'Купить',
-    link: '/healthy_diet',
+    link: 'healthy_diet',
   },
 ]
 
@@ -66,19 +66,23 @@ export const socialNetwork = [
 export const productRangeIcons = [
   {
     img: <Icon1 />,
-    text: 'Турка'
+    text: 'Турка',
+    id: 'pushes'
   },
   {
     img: <Icon2 />,
-    text: 'Френч-пресс'
+    text: 'Френч-пресс',
+    id: '#french-press'
   },
   {
     img: <Icon3 />,
-    text: 'Мока'
+    text: 'Мока',
+    id: '#mocha'
   },
   {
     img: <Icon4 />,
-    text: 'Эспрессо'
+    text: 'Эспрессо',
+    id: '#espresso'
   },
   {
     img: <Icon5 />,

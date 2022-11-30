@@ -5,8 +5,12 @@ import logo from '../../images/logo.png';
 import { icons } from '../ImagesDB';
 import { MillorContext } from './../Context';
 
+
+
 export default function Header() {
   const data = useContext(MillorContext);
+  const setActive = ({ isActive }) => isActive ? 'active-header' : '';
+
 
 
   return (
@@ -20,13 +24,13 @@ export default function Header() {
           {!data.openSearch && <nav className={styles.nav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <NavLink to="/catalog">Каталог товаров</NavLink>
+                <NavLink to="/catalog" className={setActive} >Каталог товаров</NavLink>
               </li>
               <li className={styles.navItem}>
-                <NavLink to="/blog">Блог</NavLink>
+                <NavLink to="/blog" className={setActive}>Блог</NavLink>
               </li>
               <li className={styles.navItem}>
-                <NavLink to="/contacts">Контакты</NavLink>
+                <NavLink to="/contacts" className={setActive}>Контакты</NavLink>
               </li>
             </ul>
           </nav>}

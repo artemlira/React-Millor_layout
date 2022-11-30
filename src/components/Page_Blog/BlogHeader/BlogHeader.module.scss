@@ -4,7 +4,6 @@
 
 .blogHeader {
   padding-block: f.rem(30);
-  border: 1px solid;
 }
 
 .navigationLinks {
@@ -58,17 +57,21 @@
   border: 0.709034px solid #C9C9C9;
   border-radius: 4px;
 
+
   &:hover {
     background: #FFF7E1;
     border: 0.705321px solid #F9B300;
   }
-}
 
-.itemLink {
-  text-decoration: none;
-  color: v.$yellow;
-  font-size: f.rem(18);
-  font-weight: 600;
-  line-height: f.pr(18, 21.47);
-
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: v.$yellow;
+    font-size: f.rem(18);
+    font-weight: 600;
+    line-height: f.pr(18, 21.47);
+  }
 }

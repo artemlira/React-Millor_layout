@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Production.module.scss';
 
 
-export default function Production({ arr }) {
+export default function Production({ arr, link }) {
 
   const [openSorting, setOpenSorting] = useState(false);
 
@@ -25,10 +26,14 @@ export default function Production({ arr }) {
         </form>}
         <div className={styles.container}>
           {arr.map(item =>
-            item
+            
+            <div key={Math.random() * 100}>
+              {item}
+            </div>
+
           )}
         </div>
-        <button className={styles.btn}>Показать еще</button>
+        <Link to={link}>  <button className={styles.btn}>Показать еще</button></Link>
       </div>
     </section>
   );

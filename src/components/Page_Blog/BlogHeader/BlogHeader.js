@@ -5,6 +5,9 @@ import { Link, NavLink } from 'react-router-dom';
 
 
 export default function BlogHeader() {
+
+  const setActive = ({ isActive }) => isActive ? 'active-BlogHeader' : '';
+
   return (
     <section className={styles.blogHeader}>
       <div className="container">
@@ -15,9 +18,9 @@ export default function BlogHeader() {
               <li className={styles.navigationLink}>Блог</li>
             </ul>
             <div className={styles.navigationItems}>
-              <button className={styles.navigationItem}><NavLink className={styles.itemLink} to="/">Обучение</NavLink></button>
-              <button className={styles.navigationItem}><NavLink className={styles.itemLink} to="/">Новости</NavLink></button>
-              <button className={styles.navigationItem}><NavLink className={styles.itemLink} to="/">Частые вопросы</NavLink></button>
+              <button className={styles.navigationItem}><NavLink className={setActive} to='training'>Обучение</NavLink></button>
+              <button className={styles.navigationItem}><NavLink className={setActive} to="news">Новости</NavLink></button>
+              <button className={styles.navigationItem}><NavLink className={setActive} to="questions">Частые вопросы</NavLink></button>
             </div>
           </div>
         </div>

@@ -2,6 +2,98 @@
 @use '../../../style/mixins.scss' as m;
 @use '../../../style/functions.scss' as f;
 
-.blogQuestions {}
+.blogQuestions {
+  min-height: f.rem(744);
+  border-top: 1px solid #B3B3B3;
+}
 
-.container {}
+.container {
+  margin-top: f.rem(70);
+}
+
+.title {
+  font-weight: 900;
+  font-size: f.rem(28);
+  line-height: f.pr(28, 34.94);
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: f.rem(55);
+}
+
+.img {
+  max-width: f.rem(688);
+  width: f.vw(688);
+  max-height: f.rem(546);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -55%);
+}
+
+.questions {
+  z-index: 1;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(20);
+}
+
+.questionsItem {
+  width: f.rem(680);
+  min-height: f.rem(77);
+  background: #FFFFFF;
+  box-shadow: 0px 0px 21.271px rgba(149, 149, 149, 0.25);
+  border-radius: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+
+
+  details {
+    position: relative;
+  }
+}
+
+details>summary {
+  list-style: none;
+}
+
+summary:before {
+  content: "+";
+  font-size: 40px;
+  position: relative;
+  right: -620px;
+  top: 7px;
+}
+
+datalist[open] summary {
+  padding-left: f.rem(30);
+}
+
+details[open] summary:before {
+  content: "-";
+}
+
+.questionsTitle {
+  font-weight: 600;
+  font-size: f.rem(18);
+  line-height: f.pr(18, 23.4);
+  padding-block: f.rem(28);
+  padding-left: f.rem(10);
+}
+
+.questionsText {
+  color: #222222;
+  font-weight: 500;
+  font-size: f.rem(14);
+  line-height: f.pr(14, 18.2);
+  padding: f.rem(0) f.rem(84) f.rem(40) f.rem(30);
+  text-align: start;
+}

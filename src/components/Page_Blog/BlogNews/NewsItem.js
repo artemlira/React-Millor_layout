@@ -11,7 +11,7 @@ export default function NewsItem({ img, title, text, author, link, styles }) {
   return (
     <div className={styles.item}>
       <div className={styles.itemImg}>
-        <img src={img} alt="Image on the topic News" />
+        <img src={img} alt="News" />
       </div>
       <div className={styles.about}>
         <header>

@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './BlogRange.module.scss';
 import { productRangeIcons } from '../../ImagesDB';
 import RangeIcon from './../../Page_CoffeeCatalog/ProductRange/RangeIcon';
-import { NavLink, useParams } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 export default function BlogRange() {
 
-  const { id } = useParams();
+  // const { id } = useParams();
 
 
   return (

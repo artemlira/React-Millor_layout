@@ -15,7 +15,7 @@ import Coffee from './pages/Coffee';
 import Tea from './pages/Tea';
 import HealthyEating from './pages/HealthyEating';
 import Wending from './pages/Wending';
-import useScrollToSection from './hooks/useScrollToSection';
+// import useScrollToSection from './hooks/useScrollToSection';
 
 
 

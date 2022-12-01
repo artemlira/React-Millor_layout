@@ -1,15 +1,14 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from './BlogQuestions.module.scss';
-import { MillorContext } from './../../Context';
 import img from '../../../images/Blog/cup_coffee.png';
 import { itemQuestion } from './../../TextsDB';
 import QuestionItem from './QuestionItem';
 
 
 export default function BlogQuestions() {
-  const data = useContext(MillorContext);
+ 
   return (
-    <section className={styles.blogQuestions} ref={data.scrollTo}>
+    <section id='questions' className={styles.blogQuestions}>
       <div className="container">
         <div className={styles.container}>
           <h5 className={styles.title}>Частые вопросы:</h5>
@@ -26,7 +25,6 @@ export default function BlogQuestions() {
                     text={item.text}
                   />
                 )}
-
               </ul>
             </div>
           </div>

@@ -96,7 +96,11 @@ body {
 }
 
 .blog {
-  background: url('../images/Blog/bg1.png') 0px 1000px/100% auto no-repeat, #fff;
+  background: url('../images/Blog/bg1.png') 0 4160px/100% no-repeat, #fff;
+}
+
+.contacts {
+  background: url('../images/Contacts/bg1.png') no-repeat, #fff;
 }
 
 // .wendingProducts {

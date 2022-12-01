@@ -1,22 +1,19 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from './BlogNews.module.scss';
 import NewsItem from './NewsItem';
-import { MillorContext } from './../../Context';
 import { itemsBlogNews, itemsBlogNewsNav } from './../../TextsDB';
 import NewsNavItem from './NewsNavItem';
 
 
 export default function BlogNews() {
 
-  const data = useContext(MillorContext);
-
   function handleSubmit(e) {
     e.preventDefault();
   }
 
   return (
-    <section className={styles.blogNews} ref={data.scrollTo}>
-      <div id='news' className="container">
+    <section id='news' className={styles.blogNews}>
+      <div className="container">
         <div className={styles.container}>
           <header className={styles.header}>
             <div className={styles.title}>

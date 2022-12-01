@@ -8,6 +8,7 @@ import { ReactComponent as Icon7 } from '../images/Catalog Coffee/icon07.svg';
 import { ReactComponent as Icon8 } from '../images/Catalog Coffee/icon08.svg';
 
 
+
 export const icons = [
   '../images/header/01.svg',
   '../images/header/02.svg',

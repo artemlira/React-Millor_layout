@@ -1,13 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from './BlogHeader.module.scss';
-import { Link, NavLink } from 'react-router-dom';
-import { MillorContext } from './../../Context';
+import { Link } from 'react-router-dom';
+
 
 
 
 export default function BlogHeader() {
-  const data = useContext(MillorContext);
-  const setActive = ({ isActive }) => isActive ? 'active-BlogHeader' : '';
 
   return (
     <section className={styles.blogHeader}>
@@ -19,12 +17,9 @@ export default function BlogHeader() {
               <li className={styles.navigationLink}>Блог</li>
             </ul>
             <div className={styles.navigationItems}>
-              <button className={styles.navigationItem}><NavLink
-                onClick={data.scrollToHandler()}
-                className={setActive}
-                to='#training'>Обучение</NavLink></button>
-              <button className={styles.navigationItem}><NavLink onClick={data.scrollToHandler()} className={setActive} to="#news">Новости</NavLink></button>
-              <button className={styles.navigationItem}><NavLink className={setActive} to="#questions">Частые вопросы</NavLink></button>
+              <button className={styles.navigationItem}><a href='#training'>Обучение</a></button>
+              <button className={styles.navigationItem}><a href="#news">Новости</a></button>
+              <button className={styles.navigationItem}><a href="#questions">Частые вопросы</a></button>
             </div>
           </div>
         </div>

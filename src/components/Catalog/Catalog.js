@@ -17,9 +17,7 @@ export default function Catalog() {
               image={item.img}
               text={item.text}
               textButton={item.btn}
-              link={item.link}
-            />
-          )}
+              link={item.link} />)}
         </div>
       </div>
     </section>

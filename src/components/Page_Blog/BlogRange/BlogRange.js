@@ -9,7 +9,6 @@ export default function BlogRange() {
 
   const { id } = useParams();
 
-  console.log(id);
 
   return (
     <section className={styles.blogRange}>

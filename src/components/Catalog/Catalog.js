@@ -4,9 +4,10 @@ import CatalogItem from '../CatalogItem/CatalogItem';
 import { catalog } from '../ImagesDB';
 
 
+
 export default function Catalog() {
   return (
-    <section id='catalog' className={styles.catalog}>
+    <section className={styles.catalog}>
       <div className="container">
         <h3 className={styles.title}>Каталоги нашей продукции</h3>
         <div className={styles.items}>

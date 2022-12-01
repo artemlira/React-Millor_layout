@@ -2,9 +2,11 @@ import React from 'react';
 import styles from './Footer.module.scss';
 import logo from '../../images/logo.png';
 import { Link } from 'react-router-dom';
+// import { MillorContext } from './../Context';
 
 
 export default function Footer() {
+  // const data = useContext(MillorContext);
   return (
     <section className={styles.footer}>
       <div className='container'>
@@ -15,7 +17,10 @@ export default function Footer() {
           <nav className={styles.nav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <Link to="/catalog">Каталог товаров</Link>
+                <Link
+                  // onClick={data.scrollToHandler()}
+                  to="/catalog"
+                >Каталог товаров</Link>
               </li>
               <li className={styles.navItem}>
                 <Link to="/blog">Блог</Link>

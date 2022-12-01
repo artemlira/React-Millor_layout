@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+
 import Blog from './pages/Blog';
 import Contacts from './pages/Contacts';
 import Basket from './pages/Basket';
@@ -14,11 +15,13 @@ import Coffee from './pages/Coffee';
 import Tea from './pages/Tea';
 import HealthyEating from './pages/HealthyEating';
 import Wending from './pages/Wending';
+import useScrollToSection from './hooks/useScrollToSection';
 
 
 
 function App() {
-
+// const data = useContext()
+  // const [scrollTo, scrollToHandler] = useScrollToSection();
 
   return (
     <>

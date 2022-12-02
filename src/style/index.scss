@@ -68,11 +68,13 @@ body {
   text-underline-offset: 10px !important;
 }
 
-.active-BlogHeader {
+.active-contacts {
   background: #FFF7E1 !important;
   border: 0.705321px solid #F9B300 !important;
   border-radius: 4px !important;
 }
+
+// .active-contacts {}
 
 
 .coffeeCatalog {
@@ -100,7 +102,7 @@ body {
 }
 
 .contacts {
-  background: url('../images/Contacts/bg1.png') no-repeat, #fff;
+  background: url('../images/Contacts/bg1.png')0 500px/100% no-repeat, #fff;
 }
 
 // .wendingProducts {

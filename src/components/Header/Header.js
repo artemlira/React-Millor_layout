@@ -32,7 +32,8 @@ export default function Header() {
                 <NavLink to="/blog" className={setActive}>Блог</NavLink>
               </li>
               <li className={styles.navItem}>
-                <NavLink to="/contacts" className={setActive}>Контакты</NavLink>
+                {data.location.pathname !== '/shops' && <NavLink to='/contacts' className={setActive}>Контакты</NavLink>}
+                {data.location.pathname === '/shops' && <NavLink to='/shops' className={setActive}>Контакты</NavLink>}
               </li>
             </ul>
           </nav>}

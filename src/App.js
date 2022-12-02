@@ -20,7 +20,7 @@ import Wending from './pages/Wending';
 
 
 function App() {
-// const data = useContext()
+  // const data = useContext()
   // const [scrollTo, scrollToHandler] = useScrollToSection();
 
   return (
@@ -47,8 +47,9 @@ function App() {
             </Route>
           </Route>
           <Route path='blog' element={<Blog />} />
-          {/* <Route path='blog/:id' element={<Blog />} /> */}
+          <Route path='blog/:id' element={<Blog />} />
           <Route path='contacts' element={<Contacts />} />
+          <Route path='shops' element={<Contacts />} />
           <Route path='basket' element={<Basket />} />
           <Route path='personal_area' element={<PersonalArea />} />
         </Route>

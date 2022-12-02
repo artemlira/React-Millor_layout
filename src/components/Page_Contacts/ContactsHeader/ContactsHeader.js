@@ -1,9 +1,13 @@
 import React from 'react';
 import styles from './ContactsHeader.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
 
 
 export default function ContactsHeader() {
+  const setActive = ({ isActive }) => isActive ? 'active-contacts' : '';
+
+
   return (
     <section className={styles.contactsHeader}>
       <div className="container">
@@ -14,8 +18,8 @@ export default function ContactsHeader() {
               <li className={styles.navigationLink}>Контакты</li>
             </ul>
             <div className={styles.navigationItems}>
-              <button className={styles.navigationItem}><a href='/'>Контакты</a></button>
-              <button className={styles.navigationItem}><a href="/">Наши магазины</a></button>
+              <button className={styles.navigationItem}><NavLink className={setActive} to='/contacts'>Контакты</NavLink></button>
+              <button className={styles.navigationItem}><NavLink className={setActive} to="/shops">Наши магазины</NavLink></button>
             </div>
           </div>
         </div>

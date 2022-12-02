@@ -1,0 +1,72 @@
+@use '../../../style/variables.scss' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+.contactsMain {
+
+  padding-block: f.rem(35) f.rem(150);
+}
+
+.container {
+  min-height: f.rem(372);
+  display: grid;
+  grid-template-columns: 0.59fr 1fr;
+  gap: f.rem(40);
+}
+
+.aboutContacts {
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(50);
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(8);
+  }
+}
+
+.aboutShops {
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(25);
+}
+
+
+h6,
+.titleLegalAddress,
+.shopsCity {
+  font-weight: 900;
+  font-size: f.rem(22);
+  line-height: f.pr(22, 27.46);
+}
+
+a,
+p,
+.shopsAddress {
+  text-decoration: none;
+  color: #222222;
+  font-size: f.rem(14);
+  line-height: f.pr(14, 18.2);
+}
+
+.titleLegalAddress,
+.titleWarehouse,
+.shopsCity {
+  margin-bottom: f.rem(20);
+}
+
+.img {
+  border: 1px solid #000;
+  background: url('../../../images/Contacts/map.png') center no-repeat;
+  background-size: cover;
+}
+
+.shopsItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.shopsCity {}
+
+.shopsAddress {}

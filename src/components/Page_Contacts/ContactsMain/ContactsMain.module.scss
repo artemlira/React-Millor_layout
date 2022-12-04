@@ -33,16 +33,19 @@
 }
 
 
-h6,
+.titleContacts,
 .titleLegalAddress,
+.titleWarehouse,
 .shopsCity {
   font-weight: 900;
   font-size: f.rem(22);
   line-height: f.pr(22, 27.46);
 }
 
-a,
-p,
+.contactsPhone,
+.contactsMail,
+.legalAddressText,
+.warehouseText,
 .shopsAddress {
   text-decoration: none;
   color: #222222;
@@ -66,7 +69,3 @@ p,
   display: flex;
   flex-direction: column;
 }
-
-.shopsCity {}
-
-.shopsAddress {}

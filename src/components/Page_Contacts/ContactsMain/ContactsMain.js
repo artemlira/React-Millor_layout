@@ -16,17 +16,17 @@ export default function ContactsMain() {
             {data.location.pathname === '/contacts' &&
               <>
                 <div className={styles.contacts}>
-                  <h6 className="titleContacts">Связаться с нами:</h6>
-                  <a href="tel:+74012375343" >+7 (401) 237 53 43</a>
-                  <a href="mailto:Import@kldrefine.com">Import@kldrefine.com</a>
+                  <h6 className={styles.titleContacts}>Связаться с нами:</h6>
+                  <a className={styles.contactsPhone} href="tel:+74012375343" >+7 (401) 237 53 43</a>
+                  <a className={styles.contactsMail} href="mailto:Import@kldrefine.com">Import@kldrefine.com</a>
                 </div>
                 <div className={styles.legalAddress}>
                   <h6 className={styles.titleLegalAddress}>Юридический адрес:</h6>
-                  <p>Российская, Федерация, 238310, Калининградская область, Гурьевский район, поселок Васильково, улица Шатурская, дом 4А</p>
+                  <p className={styles.legalAddressText}>Российская, Федерация, 238310, Калининградская область, Гурьевский район, поселок Васильково, улица Шатурская, дом 4А</p>
                 </div>
                 <div className={styles.warehouse}>
                   <h6 className={styles.titleWarehouse}>Адрес склада:</h6>
-                  <p>Московская область, Балашиха, Западная промзона, Шоссе энтузиастов 1</p>
+                <p className={styles.warehouseText}>Московская область, Балашиха, Западная промзона, Шоссе энтузиастов 1</p>
                 </div>
               </>
             }

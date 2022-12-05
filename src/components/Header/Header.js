@@ -10,6 +10,8 @@ import { MillorContext } from './../Context';
 export default function Header() {
   const data = useContext(MillorContext);
   const setActive = ({ isActive }) => isActive ? 'active-header' : '';
+  const setActiveNav = ({ isActive }) => isActive ? 'active-nav' : '';
+
 
 
 
@@ -42,19 +44,13 @@ export default function Header() {
 
           <div className={styles.icons}>
 
-            {!data.openSearch && <div className={styles.icon}>
-              <img
-                src={icons[0]}
-                alt="search icon"
-                onClick={() => data.setOpenSearch(true)}
-              />
-            </div>}
+            {!data.openSearch && <div className={styles.icon} onClick={() => data.setOpenSearch(true)}>{icons[0]}</div>}
 
             <div className={styles.icon}>
-              <Link to="/basket"><img src={icons[1]} alt="basket icon" /></Link>
+              <NavLink className={setActiveNav} to="/basket">{icons[1]}</NavLink>
             </div>
             <div className={styles.icon}>
-              <Link to="/personal_area"><img src={icons[2]} alt="personal Area icon" /></Link>
+              <NavLink className={setActiveNav} to="/personal_area">{icons[2]}</NavLink>
             </div>
           </div>
         </div>

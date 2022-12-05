@@ -6,13 +6,16 @@ import { ReactComponent as Icon5 } from '../images/Catalog Coffee/icon05.svg';
 import { ReactComponent as Icon6 } from '../images/Catalog Coffee/icon06.svg';
 import { ReactComponent as Icon7 } from '../images/Catalog Coffee/icon07.svg';
 import { ReactComponent as Icon8 } from '../images/Catalog Coffee/icon08.svg';
+import { ReactComponent as HeaderIcon1 } from '../images/header/01.svg';
+import { ReactComponent as HeaderIcon2 } from '../images/header/02.svg';
+import { ReactComponent as HeaderIcon3 } from '../images/header/03.svg';
 
 
 
 export const icons = [
-  '../images/header/01.svg',
-  '../images/header/02.svg',
-  '../images/header/03.svg',
+  <HeaderIcon1 />,
+  <HeaderIcon2 />,
+  <HeaderIcon3 />,
 ]
 
 export const catalog = [

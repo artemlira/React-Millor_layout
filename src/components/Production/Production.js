@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import styles from './Production.module.scss';
 
 
-export default function Production({ arr, link }) {
+export default function Production({ arr }) {
 
   const [openSorting, setOpenSorting] = useState(false);
 
   return (
-   
-      <section className={styles.production}>
 
-        <div className="container">
-          <div className={styles.link}>
-            <a onClick={() => setOpenSorting(true)}
-              href='#sorting'>Сортировка</a>
-          </div>
+    <section className={styles.production}>
 
-          {openSorting && <form action="/" className={styles.form}>
+      <div className="container">
+        <div className={styles.link}>
+          <a onClick={() => setOpenSorting(true)}
+            href='#sorting'>Сортировка</a>
+        </div>
 
-            <select name="target" className={styles.select}>
-              <option id='sorting'>По возрастанию цены</option>
-              <option>По убыванию цены</option>
-              <option>По рейтингу</option>
-              <option>По кислотности</option>
-            </select>
+        {openSorting && <form action="/" className={styles.form}>
+
+          <select name="target" className={styles.select}>
+            <option id='sorting'>По возрастанию цены</option>
+            <option>По убыванию цены</option>
+            <option>По рейтингу</option>
+            <option>По кислотности</option>
+          </select>
         </form>}
-        <Link to={link}>
+        {/* <Link to={link}> */}
           <div className={styles.container}>
             {arr.map(item =>
 
@@ -36,13 +36,13 @@ export default function Production({ arr, link }) {
 
             )}
           </div>
-        </Link >
+        {/* </Link > */}
 
-          <button className={styles.btn}>Показать еще</button>
-        </div>
+        <button className={styles.btn}>Показать еще</button>
+      </div>
 
-      </section>
-   
+    </section>
+
   );
 }
 

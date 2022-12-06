@@ -4,6 +4,11 @@ import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
 import TeaItem from './Page_TeaCatalog/TeaItem/TeaItem';
 import WendingProductsItem from './Page_WendingProducts/WendingProductsItem/WendingProductsItem';
 
+
+export const allProducts = [
+
+]
+
 export const geography = [
   'Африка',
   'Йемен',

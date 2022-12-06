@@ -195,3 +195,17 @@
     background-color: #E2A300;
   }
 }
+
+.btn.activeBasket {
+  cursor: progress;
+  // width: f.rem(125);
+  // height: f.rem(33);
+  // background-color: v.$yellow;
+  // border-radius: 4px;
+  // transition-property: background-color;
+  // transition-duration: 0.5s;
+  // color: #fff;
+  // font-size: f.rem(12);
+  // line-height: f.pr(12, 14.51);
+  // text-align: center;
+}

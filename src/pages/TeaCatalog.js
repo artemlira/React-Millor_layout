@@ -17,7 +17,7 @@ export default function TeaCatalog() {
           ?
           <div className="teaCatalog">
             <TeaRange />
-            <Production arr={itemsTea} key={Math.random() * 100} link='tea' />
+            <Production arr={itemsTea} key={Math.random() * 100}  />
             <Subscription />
           </div>
           :

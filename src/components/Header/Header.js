@@ -8,7 +8,7 @@ import { MillorContext } from './../Context';
 
 
 export default function Header() {
-  const data = useContext(MillorContext);
+  const { openSearch, setOpenSearch, location, products } = useContext(MillorContext);
   const setActive = ({ isActive }) => isActive ? 'active-header' : '';
   const setActiveNav = ({ isActive }) => isActive ? 'active-nav' : '';
 
@@ -23,7 +23,7 @@ export default function Header() {
             <Link to="/"> <img src={logo} alt="logo Millor" /></Link>
           </div>
 
-          {!data.openSearch && <nav className={styles.nav}>
+          {!openSearch && <nav className={styles.nav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
                 <NavLink
@@ -34,20 +34,21 @@ export default function Header() {
                 <NavLink to="/blog" className={setActive}>Блог</NavLink>
               </li>
               <li className={styles.navItem}>
-                {data.location.pathname !== '/shops' && <NavLink to='/contacts' className={setActive}>Контакты</NavLink>}
-                {data.location.pathname === '/shops' && <NavLink to='/shops' className={setActive}>Контакты</NavLink>}
+                {location.pathname !== '/shops' && <NavLink to='/contacts' className={setActive}>Контакты</NavLink>}
+                {location.pathname === '/shops' && <NavLink to='/shops' className={setActive}>Контакты</NavLink>}
               </li>
             </ul>
           </nav>}
 
-          {data.openSearch && <input className={styles.activeSearch} type="text" placeholder='Поиск по товарам' />}
+          {openSearch && <input className={styles.activeSearch} type="text" placeholder='Поиск по товарам' />}
 
           <div className={styles.icons}>
 
-            {!data.openSearch && <div className={styles.icon} onClick={() => data.setOpenSearch(true)}>{icons[0]}</div>}
+            {!openSearch && <div className={styles.icon} onClick={() => setOpenSearch(true)}>{icons[0]}</div>}
 
             <div className={styles.icon}>
               <NavLink className={setActiveNav} to="/basket">{icons[1]}</NavLink>
+              {products.length > 0 && <span className={styles.iconActive}>{products.length}</span>}
             </div>
             <div className={styles.icon}>
               <NavLink className={setActiveNav} to="/personal_area">{icons[2]}</NavLink>
@@ -55,6 +56,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }

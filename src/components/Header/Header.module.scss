@@ -48,10 +48,28 @@
   padding-inline: f.rem(10);
 }
 
-.icon {
+.icon,
+.iconActive {
   width: f.rem(22);
   height: f.rem(22);
   cursor: pointer;
+  position: relative;
+}
+
+.iconActive {
+  width: f.rem(22);
+  height: f.rem(22);
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  background: #F9B300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: f.rem(12.76);
+  line-height: f.pr(12.76, 15.43);
 }
 
 .activeSearch {

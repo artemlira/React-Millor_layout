@@ -2,6 +2,142 @@
 @use '../../../style/mixins.scss' as m;
 @use '../../../style/functions.scss' as f;
 
-.basketProducts {}
+// .basketProducts {}
 
-.container {}
+.container {
+  padding: f.rem(80) f.rem(100) f.rem(60);
+  background: #FFFFFF;
+  border: 0.708508px solid #E4E4E4;
+  box-shadow: 0px 0px 35.4254px rgba(163, 163, 163, 0.25);
+  border-radius: 14px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: f.rem(45);
+}
+
+.title {
+  font-weight: 900;
+  font-size: f.rem(28);
+  line-height: f.pr(28, 34.94);
+  color: #222222;
+}
+
+.btn {
+  width: f.rem(106);
+  height: f.rem(32);
+  background: #FFF7E1;
+  border: 0.708508px solid v.$yellow;
+  border-radius: 3.54254px;
+  color: v.$yellow;
+  font-weight: 600;
+  font-size: f.rem(14);
+  line-height: f.pr(14, 17);
+  cursor: pointer;
+
+}
+
+.products {
+  width: 100%;
+}
+
+.productsTitleList {
+  display: grid;
+  grid-template-columns: 0.38fr 1fr 0.21fr 0.4fr 0.32fr 0.32fr;
+  gap: f.rem(50);
+  margin-bottom: f.rem(15);
+}
+
+.productsTitle {
+  text-align: start;
+  font-weight: 500;
+  font-size: f.rem(14);
+  line-height: f.pr(14, 17);
+  color: #222222;
+}
+
+.productsItem {
+  width: 100%;
+  min-height: f.rem(122);
+  background: #FCFCFC;
+  border: 0.708508px solid #F0F0F0;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 0.38fr 1fr 0.21fr 0.4fr 0.32fr 0.32fr;
+  gap: f.rem(50);
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: f.rem(20);
+  }
+}
+
+.delete {
+  text-align: center;
+  cursor: pointer;
+}
+
+.itemProduct {
+  display: grid;
+  grid-template-columns: 0.26fr 1fr;
+  gap: f.rem(20);
+  align-items: center;
+}
+
+.itemTitle {
+  font-weight: 700;
+  font-size: f.rem(18);
+  line-height: f.pr(18, 21.76);
+  color: #222222;
+  margin-bottom: f.rem(7);
+}
+
+.itemText {
+  font-size: f.rem(12);
+  line-height: f.pr(12, 14.12);
+  color: #222222;
+
+  &:not(:last-child) {
+    margin-bottom: f.rem(8);
+  }
+}
+
+.itemAmount {
+  width: 100%;
+  height: 35px;
+  background: #F6F6F6;
+  border: 0.708508px solid #D6D6D6;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+  color: #222222;
+  font-weight: 600;
+  font-size: f.rem(14);
+  line-height: f.pr(14, 16.7);
+
+  button {
+    height: 100%;
+    color: #000;
+    font-weight: 500;
+    font-size: f.rem(18);
+    line-height: f.pr(18, 21.19);
+    background: #F6F6F6;
+    cursor: pointer;
+
+    &:hover {
+      background: #cccccc;
+    }
+  }
+}
+
+.itemPrice,
+.itemDiscount,
+.itemTotal {
+  font-size: f.rem(18);
+  line-height: f.pr(18, 21.19);
+  color: #222222;
+}

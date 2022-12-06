@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './HealthyDietItem.module.scss';
 import { discountItemPics } from '../../ImagesDB';
 import food from '../../../images/HealthyDiet/01.png'
-
+import { MillorContext } from './../../Context';
 
 
 export default function HealthyDietItem({ sale }) {
+  const { pic, title, text, price, pack, addProduct } = useContext(MillorContext);
   return (
     <section className={styles.healthyDietItem}>
       <div className={styles.container}>
@@ -16,7 +17,7 @@ export default function HealthyDietItem({ sale }) {
             <p className={styles.reviews}>4.0<span>(32 отзыва)</span></p>
           </div>
 
-          <select name="target" className={styles.select}>
+          <select name="target" className={styles.select} ref={pack}>
             <option>100 г.</option>
             <option>150 г.</option>
             <option>165 г.</option>
@@ -28,20 +29,20 @@ export default function HealthyDietItem({ sale }) {
         </form>
 
         <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
-          <img src={food} alt="Packaging of barley powder" />
+          <img ref={pic} src={food} alt="Packaging of barley powder" />
         </div>
 
         <div className={styles.wrapperText}>
-          <h4 className={styles.title}>Наименование товара</h4>
-          <p className={styles.text}>Черный чай</p>
+          <h4 ref={title} className={styles.title}>Наименование товара</h4>
+          <p ref={text} className={styles.text}>Черный чай</p>
         </div>
 
         <div className={styles.price}>
           <div className={sale ? `${styles.priceText} ${styles.sale}` : styles.priceText}>
-            <p>250 ₽</p>
+            <p ref={price}>250 ₽</p>
           </div>
           <div >
-            <button className={styles.btn}>В корзину</button>
+            <button className={styles.btn} onClick={(e) => addProduct(e)}>В корзину</button>
           </div>
         </div>
 

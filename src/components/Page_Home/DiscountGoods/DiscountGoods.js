@@ -5,6 +5,9 @@ import bg from '../../../images/Discount Goods/bg.png';
 import SlickSlider from 'react-slick';
 import './Slider.scss';
 import DiscountItem from '../DiscountItem/DiscountItem';
+// import TeaItem from './../../Page_TeaCatalog/TeaItem/TeaItem';
+// import HealthyDietItem from './../../Page_HealthyDiet/HealthyDietItem/HealthyDietItem';
+// import WendingProductsItem from './../../Page_WendingProducts/WendingProductsItem/WendingProductsItem';
 
 
 export default function DiscountGoods() {
@@ -37,8 +40,10 @@ export default function DiscountGoods() {
               <DiscountItem sale={true} />
               <DiscountItem sale={true} />
               <DiscountItem sale={true} />
-              <DiscountItem sale={true} />
-              <DiscountItem sale={true} />
+              {/* <TeaItem sale={true} /> */}
+              {/* <HealthyDietItem sale={true} /> */}
+              {/* <DiscountItem sale={true} />
+              <DiscountItem sale={true} /> */}
             </SlickSlider>
           </div>
         </div>

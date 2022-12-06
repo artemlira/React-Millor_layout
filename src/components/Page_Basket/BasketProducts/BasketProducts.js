@@ -1,13 +1,44 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './BasketProducts.module.scss';
+import { MillorContext } from './../../Context';
+import BasketProductsItem from './BasketProductsItem';
 
 
 export default function BasketProducts() {
+  const { transformationWord, products, setProducts } = useContext(MillorContext);
+
+
+
   return (
     <section className={styles.basketProducts}>
       <div className="container">
         <div className={styles.container}>
-          BasketProducts Component
+          <div className={styles.header}>
+            <h6 className={styles.title}>{transformationWord(products.length, ['товар', 'товара', 'товаров'])} в корзине</h6>
+            {products.length > 1 && <button className={styles.btn} onClick={() => setProducts([])}>Удалить все</button>}
+          </div>
+          <div className={styles.products}>
+            <ul className={styles.productsTitleList}>
+              <li className={styles.productsTitle}>Удалить товар</li>
+              <li className={styles.productsTitle}>Наименование товара</li>
+              <li className={styles.productsTitle}>Цена</li>
+              <li className={styles.productsTitle}>Количество</li>
+              <li className={styles.productsTitle}>Скидка (10%)</li>
+              <li className={styles.productsTitle}>Итого</li>
+            </ul>
+            {products.map(item =>
+              <BasketProductsItem
+                key={Math.random() * 10}
+                item={item}
+                styles={styles}
+                img={item.img}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+                pack={item.pack}
+              />
+            )}
+          </div>
         </div>
       </div>
     </section>

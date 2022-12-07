@@ -4,16 +4,19 @@ import styles from './Production.module.scss';
 
 
 export default function Production({ arr }) {
-
   const [openSorting, setOpenSorting] = useState(false);
-
+  const [showAll, setShowAll] = useState(false);
+  const show = () => {
+    setShowAll(!showAll);
+  }
   return (
 
     <section className={styles.production}>
 
       <div className="container">
         <div className={styles.link}>
-          <a onClick={() => setOpenSorting(true)}
+          <a
+            onClick={() => setOpenSorting(true)}
             href='#sorting'>Сортировка</a>
         </div>
 
@@ -26,19 +29,15 @@ export default function Production({ arr }) {
             <option>По кислотности</option>
           </select>
         </form>}
-        {/* <Link to={link}> */}
-          <div className={styles.container}>
-            {arr.map(item =>
-
-              <div key={Math.random() * 100}>
-                {item}
-              </div>
-
-            )}
-          </div>
-        {/* </Link > */}
-
-        <button className={styles.btn}>Показать еще</button>
+        <div className={styles.container} >
+          {!showAll
+            ?
+            arr.map((item, index) => index < 12 && <div key={Math.random() * 100}>{item}</div>)
+            :
+            arr.map(item => <div key={Math.random() * 100}>{item}</div>)
+          }
+        </div>
+        {arr.length > 12 && <button onClick={() => show()} className={styles.btn}>{!showAll ? 'Показать еще' : 'Скрыть'}</button>}
       </div>
 
     </section>

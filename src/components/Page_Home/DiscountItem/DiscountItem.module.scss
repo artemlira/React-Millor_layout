@@ -83,6 +83,10 @@
   max-height: 150%;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .wrapper {
   height: f.rem(215);
   margin-bottom: f.rem(25);
@@ -165,7 +169,7 @@
     color: #222222;
   }
 
-  &::after {
+  &.sale::after {
     position: absolute;
     top: -19px;
     left: 0px;

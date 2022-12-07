@@ -1,14 +1,24 @@
-import React from 'react';
-import { Outlet, useLocation } from 'react-router';
+import React, { useContext } from 'react';
+import { Outlet } from 'react-router';
 import Catalog from '../components/Catalog/Catalog';
+import Subscription from './../components/Subscription/Subscription';
+import { MillorContext } from './../components/Context';
 
 export default function CatalogPage() {
-
-  const location = useLocation();
+  const { location } = useContext(MillorContext);
 
   return (
-    <div className='catalog'>
-      {location.pathname === "/catalog" ? <Catalog /> : <Outlet />}
-    </div>
+    <>
+      {
+        location.pathname === "/catalog"
+          ?
+          <div className='catalog'>
+            <Catalog />
+            <Subscription />
+          </div>
+          :
+          <Outlet />
+      }
+    </>
   )
 }

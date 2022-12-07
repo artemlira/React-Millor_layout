@@ -1,6 +1,7 @@
 import React, { createContext, useState, useRef, useEffect } from 'react';
 import useScrollToSection from './../hooks/useScrollToSection';
 import { useLocation } from 'react-router-dom';
+import { allProducts } from './TextsDB';
 
 
 
@@ -21,6 +22,13 @@ const Context = (props) => {
   const price = useRef();
   const pack = useRef();
 
+  //получение отдельно продуктов из БД
+  const coffee = allProducts.filter(item => item.product === 'coffee');
+  // const tea = allProducts.filter(item => item.product === 'tea');
+  // const coffee = allProducts.filter(item => item.product === 'coffee');
+  // const coffee = allProducts.filter(item => item.product === 'coffee');
+
+
 
   //склонение слов, в зависимости от числа
   const transformationWord = (number, words) => {
@@ -29,6 +37,7 @@ const Context = (props) => {
       return `${number} ${words[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]]}`;
     }
   }
+
   //добавление продукции в корзину
   function addProduct(e) {
     setProducts([...products, {
@@ -40,6 +49,7 @@ const Context = (props) => {
       pack: pack.current.value,
     }]);
   }
+
   //удаление продукции из корзины
   function removeProduct(item) {
     let elem = products.indexOf(item);
@@ -64,6 +74,18 @@ const Context = (props) => {
     dataLocalStorage && setProducts(dataLocalStorage);
   }, []);
 
+  //функция фильтрации и записи в массив только уникальных значений
+  function fragmentationUniqueValues(arr, str) {
+    const copyArr = arr
+      .map(item => item[str])
+      .join(',')
+      .split(',');
+    return [...new Set(copyArr)];
+  }
+
+
+
+
 
   const value = {
     openSearch, setOpenSearch,
@@ -74,6 +96,9 @@ const Context = (props) => {
     productInBasket, setProductInBasket,
     pic, title, text, price, pack,
     addProduct, removeProduct,
+    coffee,
+    fragmentationUniqueValues,
+    // addUniqueValues,
   };
 
   return (

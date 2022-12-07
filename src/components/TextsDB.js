@@ -6,63 +6,413 @@ import WendingProductsItem from './Page_WendingProducts/WendingProductsItem/Wend
 
 
 export const allProducts = [
+  //coffee
+  {
+    product: 'coffee',                       //продукт
+    cookingMethod: 'Турка',                  //способ приготовления 1
+    methodProcessing: 'Сухая',               //способ обработки 5
+    degreeFrying: 4,                         //степень обжарки 2
+    geography: 'Африка',                     //география 3
+    typeCoffee: 'Робуста',                   //вид кофе 7
+    sale: false,                             //скидки
+    special: ['Популярное', 'Новый урожай'], //особые 6
+    rating: 4,                               //рейтинг
+    acid: 'Низкая',                          //кислинка 4
+    image: '../images/Discount Goods/01.png',//картинка
+    title: 'Colombia Supremo',               //заголовок
+    description: ['Свежеобжаренный кофе',    //описание
+      '- описание товара, вкус, аромат'],
+    price: '250 ₽',                          //цена
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Френч пресс',
+    methodProcessing: 'Мытая',
+    degreeFrying: 5,
+    geography: 'Йемен',
+    typeCoffee: 'Смесь арабик',
+    sale: false,
+    special: ['Ваш выбор'],
+    rating: 5,
+    acid: 'Средняя',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Мока',
+    methodProcessing: 'Прочие',
+    degreeFrying: 3,
+    geography: 'Уганда',
+    typeCoffee: 'Смесь арабика/робуста',
+    sale: true,
+    special: ['Скидки'],
+    rating: 3,
+    acid: 'Высокая',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'espresso',
+    methodProcessing: 'Сухая',
+    degreeFrying: 5,
+    geography: 'Эфиопия',
+    typeCoffee: 'Арабика',
+    sale: false,
+    special: ['Сорт недели'],
+    rating: 4,
+    acid: 'Низкая',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Воронка',
+    methodProcessing: 'Мытая',
+    degreeFrying: 5,
+    geography: 'Азия',
+    typeCoffee: 'Робуста',
+    sale: false,
+    special: ['Микролот'],
+    rating: 4,
+    acid: 'Средняя',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Аэропресс',
+    methodProcessing: 'Прочие',
+    degreeFrying: 5,
+    geography: 'Центр. Америка',
+    typeCoffee: 'Смесь арабик',
+    sale: false,
+    special: ['Новинка'],
+    rating: 4,
+    acid: 'Высокая',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Чашка',
+    methodProcessing: 'Сухая',
+    degreeFrying: 4,
+    geography: 'Лат. Америк',
+    typeCoffee: 'Смесь арабика/робуста',
+    sale: false,
+    special: ['Популярное', 'Новый урожай'],
+    rating: 4,
+    acid: 'Низкая',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Автомат',
+    methodProcessing: 'Мытая',
+    degreeFrying: 4,
+    geography: 'Африка',
+    typeCoffee: 'Робуста',
+    sale: false,
+    special: ['Ваш выбор'],
+    rating: 4,
+    acid: 'Средняя',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Турка',
+    methodProcessing: 'Прочие',
+    degreeFrying: 4,
+    geography: 'Йемен',
+    typeCoffee: 'Смесь арабик',
+    sale: false,
+    special: ['Сорт недели'],
+    rating: 4,
+    acid: 'Высокая',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Френч-пресс',
+    methodProcessing: 'Сухая',
+    degreeFrying: 4,
+    geography: 'Уганда',
+    typeCoffee: 'Смесь арабика/робуста',
+    sale: false,
+    special: ['Микролот'],
+    rating: 4,
+    acid: 'Низкая',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Мока',
+    methodProcessing: 'Мытая',
+    degreeFrying: 4,
+    geography: 'Эфиопия',
+    typeCoffee: 'Арабика',
+    sale: false,
+    special: ['Новинка'],
+    rating: 4,
+    acid: 'Средняя',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Эспрессо',
+    methodProcessing: 'Прочие',
+    degreeFrying: 4,
+    geography: 'Азия',
+    typeCoffee: 'Робуста',
+    sale: false,
+    special: ['Популярное', 'Новый урожай'],
+    rating: 4,
+    acid: 'Высокая',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  //=====================================================================
+  {
+    product: 'coffee',
+    cookingMethod: 'Эспрессо',
+    methodProcessing: 'Прочие',
+    degreeFrying: 4,
+    geography: 'Азия',
+    typeCoffee: 'Робуста',
+    sale: false,
+    special: ['Популярное', 'Новый урожай'],
+    rating: 4,
+    acid: 'Высокая',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'coffee',
+    cookingMethod: 'Эспрессо',
+    methodProcessing: 'Прочие',
+    degreeFrying: 4,
+    geography: 'Азия',
+    typeCoffee: 'Робуста',
+    sale: false,
+    special: ['Популярное', 'Новый урожай'],
+    rating: 4,
+    acid: 'Высокая',
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  //tea
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+    image: '../images/Discount Goods/01.png',
+    title: 'Colombia Supremo',
+    description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
+    price: '250 ₽',
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: 'tea',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
+  {
+    product: '',
+    cookingMethod: '',
+    methodProcessing: '',
+    degreeFrying: '',
+    geography: '',
+    typeCoffee: '',
+    sale: false,
+    rating: 4,
+  },
 
 ]
 
-export const geography = [
-  'Африка',
-  'Йемен',
-  'Уганда',
-  'Эфиопия',
-  'Азия',
-  'Центр. Америка',
-  'Лат. Америка'
-]
+// export const geography = [
+//   'Африка',
+//   'Йемен',
+//   'Уганда',
+//   'Эфиопия',
+//   'Азия',
+//   'Центр. Америка',
+//   'Лат. Америка'
+// ]
 
-export const acid = [
-  'Низкая',
-  'Средняя',
-  'Высокая'
-]
+// export const acid = [  //кислинка 4
+//   'Низкая',
+//   'Средняя',
+//   'Высокая'
+// ]
 
-export const methodProcessing = [
-  'Сухая',
-  'Мытая',
-  'Прочие',
-]
+// export const methodProcessing = [ //способ обработки 5
+//   'Сухая',
+//   'Мытая',
+//   'Прочие',
+// ]
 
-export const special = [
-  'Популярное',
-  'Новый урожай',
-  'Ваш выбор',
-  'Микролот',
-  'Сорт недели',
-  'Скидки',
-  'Новинка',
-]
+// export const special = [ //особые 6
+//   'Популярное',
+//   'Новый урожай',
+//   'Ваш выбор',
+//   'Микролот',
+//   'Сорт недели',
+//   'Скидки',
+//   'Новинка',
+// ]
 
-export const typeCoffee = [
-  'Арабика',
-  'Робуста',
-  'Смесь арабик',
-  'Смесь арабика/робуста',
-]
+// export const typeCoffee = [ //вид кофе 7
+//   'Арабика',
+//   'Робуста',
+//   'Смесь арабик',
+//   'Смесь арабика/робуста',
+// ]
 
-export const discountItemCoffee = [
-
-  <DiscountItem />,
-  <DiscountItem />,
-  <DiscountItem sale={true} />,
-  <DiscountItem />,
-  <DiscountItem />,
-  <DiscountItem />,
-  <DiscountItem />,
-  <DiscountItem />,
-  <DiscountItem />,
-  <DiscountItem />,
-  <DiscountItem />,
-  <DiscountItem />,
-]
+export const discountItemCoffee = allProducts
+  .filter(item => item.product === 'coffee')
+  .map(item => <DiscountItem sale={item.sale} />);
 
 export const itemsTea = [
   <TeaItem />,
@@ -120,7 +470,6 @@ export const itemsBlogTraining = [
       ' Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу(специалистов) участие в формировании соответствующий условий активизации.С другой стороны реализация намеченных плановых заданий требуют от нас анализа существенных финансовых и административных условий.'
     ]
   },
-
   {
     title: 'Название темы',
     img: '../images/Blog/pic02.png',
@@ -130,7 +479,6 @@ export const itemsBlogTraining = [
       ' Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу(специалистов) участие в формировании соответствующий условий активизации.С другой стороны реализация намеченных плановых заданий требуют от нас анализа существенных финансовых и административных условий.'
     ]
   },
-
   {
     title: 'Название темы',
     img: '../images/Blog/pic03.png',
@@ -170,8 +518,6 @@ export const itemsBlogNews = [
     author: 'Автор статьи: Иван Иванов',
     link: 'Подробнее'
   },
-
-
 ]
 
 export const itemsBlogNewsNav = [
@@ -208,16 +554,11 @@ export const itemQuestion = [
 export const itemShopsContacts = [
   {
     city: 'Наши магазины г. Санкт-Петербург',
-    address: [
-      'Гороховая, 53',
-      'Московский, 53'
-    ]
+    address: ['Гороховая, 53', 'Московский, 53']
   },
   {
     city: 'Наши магазины Калининградская обл.',
-    address: [
-      'Советск, Гончарова 2а', 'Черняховск, Пионерская 1', 'Ульяны - Громовой 15', 'Советский проспект 6а',
-      'Гурьевск, Каштановая 1г', 'Черняховского 15', 'Панина 2а', 'Ленинский 8Б', 'Аксакова 133', 'Липовая Аллея 2',
-    ]
+    address: ['Советск, Гончарова 2а', 'Черняховск, Пионерская 1', 'Ульяны - Громовой 15', 'Советский проспект 6а',
+      'Гурьевск, Каштановая 1г', 'Черняховского 15', 'Панина 2а', 'Ленинский 8Б', 'Аксакова 133', 'Липовая Аллея 2']
   }
 ]

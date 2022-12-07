@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Subscription from './../components/Subscription/Subscription';
 import Production from '../components/Production/Production';
 import ProductRange from './../components/Page_CoffeeCatalog/ProductRange/ProductRange';
 import { discountItemCoffee } from '../components/TextsDB';
-import { Outlet, useLocation } from 'react-router';
+import { Outlet } from 'react-router';
+import { MillorContext } from './../components/Context';
 
 
 export default function CoffeeCatalog() {
-
-  const location = useLocation();
-
+  const { location } = useContext(MillorContext);
+ 
   return (
     <>
       {

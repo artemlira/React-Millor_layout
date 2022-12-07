@@ -1,15 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './ProductRange.module.scss';
 import { productRangeIcons, productRangePic } from '../../ImagesDB';
 import RangeItem from './RangeItem';
 import cupCoffee from '../../../images/Catalog Coffee/Cup_of_coffee.png';
 import RangeIcon from './RangeIcon';
-import { geography, acid, methodProcessing, special, typeCoffee } from '../../TextsDB.js';
 import { Link } from 'react-router-dom';
+import { MillorContext } from './../../Context';
+
 
 
 
 export default function ProductRange() {
+
+  const { coffee, fragmentationUniqueValues } = useContext(MillorContext);
+
+  //получаю данные о географии
+  const geography = fragmentationUniqueValues(coffee, 'geography');
+
+  //получаю данные о кислинке и способе обработки
+  const acid = fragmentationUniqueValues(coffee, 'acid');
+  const methodProcessing = fragmentationUniqueValues(coffee, 'methodProcessing');
+
+  //получаю данные о специальных сортировках
+  const special = fragmentationUniqueValues(coffee, 'special');
+
+  //получаю данные о видах кофе
+  const typeCoffee = fragmentationUniqueValues(coffee, 'typeCoffee');
+
+
   return (
     <section className={styles.productRange}>
       <div className="container">

@@ -12,21 +12,19 @@ export default function TeaItem({ sale }) {
   return (
     <section className={styles.teaItem}>
       <div className={styles.container}>
+        <form action="/" className={styles.form}>
+          <div className={styles.rating}>
+            <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
+            <p className={styles.reviews}>4.0<span>(32 отзыва)</span></p>
+          </div>
+          <select ref={pack} name="target" className={styles.select}>
+            <option>100 г.</option>
+            <option>150 г.</option>
+            <option>165 г.</option>
+            <option>200 г.</option>
+          </select>
+        </form>
         <Link to='tea'>
-          <form action="/" className={styles.form}>
-            <div className={styles.rating}>
-              <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
-              <p className={styles.reviews}>4.0<span>(32 отзыва)</span></p>
-            </div>
-
-            <select ref={pack} name="target" className={styles.select}>
-              <option>100 г.</option>
-              <option>150 г.</option>
-              <option>165 г.</option>
-              <option>200 г.</option>
-            </select>
-
-          </form>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
             <img ref={pic} src={tea} alt="Tea packaging" />
           </div>

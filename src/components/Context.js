@@ -1,4 +1,4 @@
-import React, { createContext, useState, useRef, createRef } from 'react';
+import React, { createContext, useState, useRef, useEffect } from 'react';
 import useScrollToSection from './../hooks/useScrollToSection';
 import { useLocation } from 'react-router-dom';
 
@@ -13,23 +13,23 @@ const Context = (props) => {
   const location = useLocation();
   const [products, setProducts] = useState([]);
   const [productInBasket, setProductInBasket] = useState(false);
-  console.log(products);
+
 
   const pic = useRef();
-  const title = createRef();
+  const title = useRef();
   const text = useRef();
   const price = useRef();
   const pack = useRef();
 
 
-
+  //склонение слов, в зависимости от числа
   const transformationWord = (number, words) => {
     if (words) {
       let cases = [2, 0, 1, 1, 1, 2];
       return `${number} ${words[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]]}`;
     }
   }
-
+  //добавление продукции в корзину
   function addProduct(e) {
     setProducts([...products, {
       id: products.length + 1,
@@ -40,7 +40,7 @@ const Context = (props) => {
       pack: pack.current.value,
     }]);
   }
-
+  //удаление продукции из корзины
   function removeProduct(item) {
     let elem = products.indexOf(item);
     const copy = JSON.parse(JSON.stringify(products));
@@ -50,6 +50,19 @@ const Context = (props) => {
       setProducts(copy);
     }
   }
+
+  //запись и извлечение данных из LocalStorage
+  useEffect(() => {
+    if (products.length) {
+      localStorage.setItem('products', JSON.stringify(products));
+    }
+
+  }, [products]);
+
+  useEffect(() => {
+    const dataLocalStorage = JSON.parse(localStorage.getItem('products'));
+    dataLocalStorage && setProducts(dataLocalStorage);
+  }, []);
 
 
   const value = {

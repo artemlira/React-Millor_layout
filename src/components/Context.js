@@ -2,6 +2,7 @@ import React, { createContext, useState, useRef, useEffect } from 'react';
 import useScrollToSection from './../hooks/useScrollToSection';
 import { useLocation } from 'react-router-dom';
 import { allProducts } from './TextsDB';
+import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
 
 
 
@@ -23,7 +24,8 @@ const Context = (props) => {
   const pack = useRef();
 
   //получение отдельно продуктов из БД
-  const coffee = allProducts.filter(item => item.product === 'coffee');
+  // const coffee = allProducts.filter(item => item.product === 'coffee');
+  const [coffee, setCoffee] = useState(allProducts.filter(item => item.product === 'coffee'));
   // const tea = allProducts.filter(item => item.product === 'tea');
   // const coffee = allProducts.filter(item => item.product === 'coffee');
   // const coffee = allProducts.filter(item => item.product === 'coffee');
@@ -54,7 +56,6 @@ const Context = (props) => {
   function removeProduct(item) {
     let elem = products.indexOf(item);
     const copy = JSON.parse(JSON.stringify(products));
-
     if (elem !== -1) {
       copy.splice(elem, 1);
       setProducts(copy);
@@ -83,6 +84,31 @@ const Context = (props) => {
     return [...new Set(copyArr)];
   }
 
+  //Создаем массив компонентов с карточками товаров на странице CoffeeCatalog, в зависимости от кол-ва товара
+  const discountItemCoffee = coffee.map(item =>
+    <DiscountItem
+      special={item.special}
+      sale={item.sale} />);
+
+
+  //===================
+  const [active, setActive] = useState(false);
+  const [filterText, setFilterText] = useState(null);
+  const element = useRef();
+  
+  function filter(elem) {
+
+    setActive(!active);
+
+    if (active) {
+      setCoffee(allProducts.filter(item => item.product === 'coffee'));
+      setFilterText(null);
+    } else {
+      setCoffee(coffee.filter(item => item.cookingMethod === elem.text));
+      setFilterText(elem.text)
+    }
+  }
+
 
 
 
@@ -96,9 +122,13 @@ const Context = (props) => {
     productInBasket, setProductInBasket,
     pic, title, text, price, pack,
     addProduct, removeProduct,
-    coffee,
+    coffee, setCoffee,
     fragmentationUniqueValues,
+    filter,
+    active, setActive,
+    discountItemCoffee,
     // addUniqueValues,
+    element, filterText,
   };
 
   return (

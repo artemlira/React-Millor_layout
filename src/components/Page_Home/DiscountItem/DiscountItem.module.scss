@@ -9,13 +9,14 @@
   background: #FFFFFF;
   border-radius: f.rem(14);
   border: 0.708508px solid #E4E4E4;
+  transform-origin: center bottom;
   transition-property: transform;
   transition-duration: 0.5s;
 
   &:hover {
     transform: scale(1.03);
-    border: 0.708508px solid #cdcdcd;
-    box-shadow: 0px 0px 20px rgba(201, 201, 201, 0.5);
+    border: 0.708508px solid #aaaaaa;
+    box-shadow: 0px 0px 20px rgba(167, 167, 167, 0.5);
   }
 
 }

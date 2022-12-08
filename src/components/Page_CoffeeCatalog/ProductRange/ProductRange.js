@@ -128,7 +128,7 @@ export default function ProductRange() {
             <ul className={styles.items}>
 
               {productRangeIcons.map(item =>
-                <RangeIcon key={Math.random() * 100} img={item.img} text={item.text} styles={styles} />
+                <RangeIcon key={Math.random() * 100} img={item.img} text={item.text} styles={styles} item={item} />
               )}
 
             </ul>

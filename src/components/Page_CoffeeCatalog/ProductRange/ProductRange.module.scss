@@ -205,19 +205,35 @@
   justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
-  transition-property: background-color transform fill;
+  transition-property: background-color;
   transition-duration: 0.5s;
+  position: relative;
+
 
   &:hover {
-    transform: scale(1.1);
+    // transform: scale(1.1);
+    background: #F9B300;
+    color: #fff;
+
+    svg * {
+      fill: rgb(255, 255, 255);
+    }
+  }
+
+  &.active {
     background: #F9B300;
     color: #fff;
 
     svg * {
       fill: #fff;
     }
-
   }
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
 
 .aboutWrapper {

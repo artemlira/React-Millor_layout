@@ -1,8 +1,9 @@
 
 import HealthyDietItem from './Page_HealthyDiet/HealthyDietItem/HealthyDietItem';
-import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
+// import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
 import TeaItem from './Page_TeaCatalog/TeaItem/TeaItem';
 import WendingProductsItem from './Page_WendingProducts/WendingProductsItem/WendingProductsItem';
+
 
 
 export const allProducts = [
@@ -26,7 +27,7 @@ export const allProducts = [
   },
   {
     product: 'coffee',
-    cookingMethod: 'Френч пресс',
+    cookingMethod: 'Френч-пресс',
     methodProcessing: 'Мытая',
     degreeFrying: 5,
     geography: 'Йемен',
@@ -58,7 +59,7 @@ export const allProducts = [
   },
   {
     product: 'coffee',
-    cookingMethod: 'espresso',
+    cookingMethod: 'Эспрессо',
     methodProcessing: 'Сухая',
     degreeFrying: 5,
     geography: 'Эфиопия',
@@ -410,9 +411,7 @@ export const allProducts = [
 //   'Смесь арабика/робуста',
 // ]
 
-export const discountItemCoffee = allProducts
-  .filter(item => item.product === 'coffee')
-  .map(item => <DiscountItem sale={item.sale} />);
+
 
 export const itemsTea = [
   <TeaItem />,

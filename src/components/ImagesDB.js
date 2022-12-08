@@ -71,22 +71,18 @@ export const productRangeIcons = [
   {
     img: <Icon1 />,
     text: 'Турка',
-    id: 'pushes'
   },
   {
     img: <Icon2 />,
     text: 'Френч-пресс',
-    id: '#french-press'
   },
   {
     img: <Icon3 />,
     text: 'Мока',
-    id: '#mocha'
   },
   {
     img: <Icon4 />,
     text: 'Эспрессо',
-    id: '#espresso'
   },
   {
     img: <Icon5 />,

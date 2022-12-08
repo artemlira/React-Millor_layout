@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 export default function DiscountItem({ sale }) {
   const { pic, title, text, price, pack, addProduct } = useContext(MillorContext);
 
-
   return (
     <section className={styles.discountItem}>
       <div className={styles.container}>

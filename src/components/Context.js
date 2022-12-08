@@ -15,6 +15,7 @@ const Context = (props) => {
   const location = useLocation();
   const [products, setProducts] = useState([]);
   const [productInBasket, setProductInBasket] = useState(false);
+  // const [amountBasketProducts, setAmountBasketProducts] = useState(1);
 
 
   const pic = useRef();
@@ -41,14 +42,15 @@ const Context = (props) => {
   }
 
   //добавление продукции в корзину
-  function addProduct(e) {
+  function addProduct(e, item) {
     setProducts([...products, {
       id: products.length + 1,
-      img: pic.current.attributes.src.nodeValue,
-      title: title.current.innerText,
-      text: text.current.innerText,
-      price: price.current.innerText,
+      img: item.image,
+      title: item.title,
+      text: item.description[0],
+      price: item.price,
       pack: pack.current.value,
+      amount: 1
     }]);
   }
 
@@ -88,6 +90,11 @@ const Context = (props) => {
   const discountItemCoffee = coffee.map(item =>
     <DiscountItem
       special={item.special}
+      productTitle={item.title}
+      description={item.description}
+      image={item.image}
+      productPrice={item.price}
+      item={item}
       sale={item.sale} />);
 
 
@@ -95,7 +102,7 @@ const Context = (props) => {
   const [active, setActive] = useState(false);
   const [filterText, setFilterText] = useState(null);
   const element = useRef();
-  
+
   function filter(elem) {
 
     setActive(!active);
@@ -129,6 +136,7 @@ const Context = (props) => {
     discountItemCoffee,
     // addUniqueValues,
     element, filterText,
+    // amountBasketProducts, setAmountBasketProducts,
   };
 
   return (

@@ -5,6 +5,8 @@
 .productRange {
   min-height: f.rem(850);
   padding-block: f.rem(30);
+  background: url('../../../images/Catalog Coffee/bg1.png')0 0/100% 80% no-repeat,
+    url('../../../images/Catalog Coffee/bg2.png')0 778px/100% no-repeat, #fff;
 }
 
 .container {
@@ -16,12 +18,9 @@
   height: f.rem(600);
   top: f.rem(-60);
   right: f.rem(-84);
-  // z-index: 1;
-
 
   img {
     max-height: 100%;
-
   }
 }
 

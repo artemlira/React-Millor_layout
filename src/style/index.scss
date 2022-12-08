@@ -36,8 +36,8 @@ body {
   font-size: f.rem(18);
   background: url('../images/bg1.png') top right no-repeat,
     url('../images/bg2.png') top f.rem(800) left no-repeat,
-    url('../images/bg3.png') 50% f.rem(2040) no-repeat,
-    url('../images/bg4.png') 50% f.rem(3690)/auto no-repeat;
+    url('../images/bg3.png')50% 2040px/100% 27% no-repeat,
+    url('../images/bg4.png')50% 3820px/100% 28% no-repeat;
 }
 
 #root {
@@ -82,8 +82,7 @@ body {
 
 
 .coffeeCatalog {
-  background: url('../images/Catalog Coffee/bg1.png') 0 0/100% no-repeat,
-    url('../images/Catalog Coffee/bg2.png') 0px 795px/contain no-repeat, #fff;
+  background: #F5F5F5;
 
   overflow: hidden;
 }

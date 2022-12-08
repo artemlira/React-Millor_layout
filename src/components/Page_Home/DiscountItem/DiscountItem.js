@@ -6,8 +6,13 @@ import { MillorContext } from './../../Context';
 import { Link } from 'react-router-dom';
 
 
-export default function DiscountItem({ sale }) {
+export default function DiscountItem({ sale, special, productTitle, description, image, productPrice, item }) {
+
   const { pic, title, text, price, pack, addProduct } = useContext(MillorContext);
+
+  // const btnBasket = (elem) => {
+  //   console.log(elem);
+  // }
 
   return (
     <section className={styles.discountItem}>
@@ -15,16 +20,12 @@ export default function DiscountItem({ sale }) {
         <form action="/" className={sale ? styles.form : styles.formNoSale}>
           {!sale &&
             <div className={styles.noDiscount}>
-              <p>Популярное</p>
-              <p>Новый урожай</p>
+              {special.map(item => <p key={Math.random() * 10}>{item}</p>)}
             </div>}
-
           <select name="target" className={styles.select} ref={pack}>
             <option>250 г.</option>
             <option>1000 г.</option>
           </select>
-
-
         </form>
 
         {sale &&
@@ -38,7 +39,7 @@ export default function DiscountItem({ sale }) {
         <Link className={styles.link} to='coffee'>
           <div className={styles.wrapper} >
             <div className={styles.img}>
-              <img ref={pic} src={discountItemPics[0]} alt="coffee" />
+              <img ref={pic} src={image} alt="coffee" />
             </div>
             <div className={styles.about}>
               <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
@@ -53,16 +54,16 @@ export default function DiscountItem({ sale }) {
             </div>
           </div>
           <div className={styles.wrapperText}>
-            <h4 ref={title} className={styles.title}>Colombia Supremo</h4>
-            <p ref={text} className={styles.text}>Свежеобжаренный кофе - описание товара, вкус, аромат</p>
+            <h4 ref={title} className={styles.title}>{productTitle}</h4>
+            <p ref={text} className={styles.text}>{description}</p>
           </div>
         </Link>
         <div className={styles.price}>
           <div className={sale ? `${styles.priceText} ${styles.sale}` : styles.priceText}>
-            <p ref={price}>250 ₽</p>
+            <p ref={price}>{productPrice} ₽</p>
           </div>
           <div >
-            <button className={styles.btn} onClick={(e) => addProduct(e)}>В корзину</button>
+            <button className={styles.btn} onClick={(e) => addProduct(e, item)}>В корзину</button>
             {/* {!productInBasket && <button className={styles.btn} onClick={(e) => addProduct(e)}>В корзину</button>} */}
             {/* {productInBasket && <button className={styles.activeBasket}>Товар в корзине</button>} */}
           </div>

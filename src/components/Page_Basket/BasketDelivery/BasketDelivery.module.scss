@@ -1,0 +1,86 @@
+@use '../../../style/variables.scss' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+.basketDelivery {
+  margin-top: f.rem(20);
+
+}
+
+.container {
+  min-height: f.rem(543);
+  background: #FFFFFF;
+  border: 0.708508px solid #E4E4E4;
+  box-shadow: 0px 0px 35.4254px rgba(163, 163, 163, 0.25);
+  border-radius: 14px;
+  padding: f.rem(47) f.rem(100)
+}
+
+.wrapperTitle {
+  margin-bottom: f.rem(35);
+}
+
+.title {
+  font-weight: 900;
+  font-size: f.rem(22);
+  color: #222222;
+  line-height: f.pr(22, 27.46);
+}
+
+.wrapperAbout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: f.rem(20);
+}
+
+.client {}
+
+.clientList,
+.addressList {
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(15);
+}
+
+.clientItem,
+.addressItem {
+
+  input {
+    width: 100%;
+    height: 49px;
+    background: #FCFCFC;
+    border: 1px solid #F6F6F6;
+    border-radius: 4px;
+    padding-inline: f.rem(40);
+    color: #C4C4C4;
+    font-size: f.rem(14);
+    line-height: f.pr(14, 16.48);
+  }
+}
+
+.address {}
+
+.addressList {}
+
+.addressItem {}
+
+.btn {
+  width: 100%;
+  min-height: f.rem(49);
+  background-color: #FFF7E1;
+  border: 0.708508px solid #F9B300;
+  border-radius: 4px;
+  margin-top: f.rem(30);
+  color: #F9B300;
+  font-weight: 600;
+  font-size: f.rem(18);
+  line-height: f.pr(18, 21.47);
+  transition-property: background-color border;
+  transition-duration: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffe9ac;
+    border: 0.708508px solid #c99102;
+  }
+}

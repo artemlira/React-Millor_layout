@@ -1,9 +1,9 @@
 import React from 'react';
-import Subscription from './../components/Subscription/Subscription';
 import HealthyRange from './../components/Page_HealthyDiet/HealthyRange/HealthyRange';
 import Production from './../components/Production/Production';
 import { itemsHealthyDiet } from '../components/TextsDB.js';
 import { Outlet, useLocation } from 'react-router';
+import CoffeeCatalogMain from './../components/Page_CoffeeCatalog/CoffeeCatalogMain/CoffeeCatalogMain';
 
 
 export default function HealthyDiet() {
@@ -18,7 +18,7 @@ export default function HealthyDiet() {
           <div className="healthyDiet">
             <HealthyRange />
             <Production arr={itemsHealthyDiet} link='healthy_eating' />
-            <Subscription />
+            <CoffeeCatalogMain />
           </div>
           :
           <Outlet />

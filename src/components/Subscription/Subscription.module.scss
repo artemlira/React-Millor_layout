@@ -3,7 +3,8 @@
 @use '../../style/functions.scss' as f;
 
 .subscription {
-  min-height: f.rem(504);
+  // min-height: f.rem(504);
+  padding-block: f.rem(30);
 }
 
 .container {

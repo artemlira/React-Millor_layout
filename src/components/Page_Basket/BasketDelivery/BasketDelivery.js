@@ -15,8 +15,8 @@ export default function BasketDelivery() {
               <ul className={styles.clientList}>
                 <li className={styles.clientItem}><input type="text" placeholder='Имя' /></li>
                 <li className={styles.clientItem}><input type="text" placeholder='Фамилия' /></li>
-                <li className={styles.clientItem}><input type="text" placeholder='Телефон' /></li>
-                <li className={styles.clientItem}><input type="text" placeholder='Email' /></li>
+                <li className={styles.clientItem}><input type="tel" placeholder='Телефон' /></li>
+                <li className={styles.clientItem}><input type="email" placeholder='Email' /></li>
                 <li className={styles.clientItem}><input type="text" placeholder='Название компании (необязательно)' /></li>
               </ul>
             </div>

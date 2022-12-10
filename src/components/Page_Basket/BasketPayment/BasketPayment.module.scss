@@ -4,6 +4,7 @@
 
 .basketPayment {
   margin-top: f.rem(20);
+  padding-bottom: f.rem(84);
 }
 
 .container {
@@ -68,4 +69,124 @@
   }
 }
 
-.total {}
+.total {
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  box-shadow: 0px 0px 35.4254px rgba(163, 163, 163, 0.25);
+  border-radius: 14px;
+  padding: f.rem(40) f.rem(50) f.rem(14);
+}
+
+.wrapperTitleTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: f.rem(12);
+}
+
+// .imgTotal {}
+
+.titleTotal {
+  color: #222222;
+  font-weight: 900;
+  font-size: f.rem(22);
+  line-height: f.pr(22, 27.46);
+}
+
+.textTotal,
+.discountTotal {
+  color: #747474;
+  font-size: f.rem(14);
+  line-height: f.pr(14, 16.48);
+  margin-bottom: f.rem(9);
+}
+
+// .discountTotal {}
+
+.delivery {
+  display: flex;
+  gap: f.rem(10);
+  color: #222222;
+  font-size: f.rem(14);
+  line-height: f.pr(14, 16.48);
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.deliveryList {
+  display: flex;
+  flex-direction: column;
+  gap: f.rem(7);
+}
+
+.iconItem {
+  position: relative;
+
+
+  label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.customRadio {
+  display: inline-block;
+  width: f.rem(12);
+  height: f.rem(12);
+  background: #E4E4E4;
+  border-radius: 50%;
+  margin-right: f.rem(20);
+  position: relative;
+  vertical-align: text-top;
+
+
+  &::before {
+    content: '';
+    display: none;
+    width: f.rem(12);
+    height: f.rem(12);
+    background: v.$yellow;
+    border-radius: 50%;
+  }
+}
+
+.input:checked+.customRadio::before {
+  display: block;
+}
+
+.totalBtn {
+  width: 100%;
+  height: f.rem(49);
+  background: #F9B300;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: f.rem(18);
+  line-height: f.pr(18, 21.47);
+  cursor: pointer;
+  margin-block: f.rem(20) f.rem(8);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background: #c99105;
+  }
+}
+
+.notification {
+  max-width: f.rem(368);
+  color: #747474;
+  font-size: f.rem(10);
+  line-height: f.pr(10, 11.77);
+}

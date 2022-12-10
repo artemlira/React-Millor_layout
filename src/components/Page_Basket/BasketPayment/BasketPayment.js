@@ -1,5 +1,9 @@
 import React from 'react';
 import styles from './BasketPayment.module.scss';
+import RangeItem from './../../Page_CoffeeCatalog/ProductRange/RangeItem';
+import { deliveryOptions } from './../../TextsDB';
+import visa from '../../../images/Basket/visa.png';
+import masterCard from '../../../images/Basket/MasterCard.png';
 
 
 export default function BasketPayment() {
@@ -14,7 +18,31 @@ export default function BasketPayment() {
             <button className={styles.promocodeBtn}>Ввести промокод</button>
           </div>
           <div className={styles.total}>
-
+            <div className={styles.wrapperTitleTotal}>
+              <h6 className={styles.titleTotal}>Итог: 486 ₽</h6>
+              <div className={styles.imgTotal}>
+                <img src={masterCard} alt="MasterCard" />
+                <img src={visa} alt="VISA" />
+              </div>
+            </div>
+            <p className={styles.textTotal}>Подытог: 540 ₽</p>
+            <p className={styles.discountTotal}>Скидка: 54 ₽ (10%)</p>
+            <div className={styles.delivery}>
+              <p>Доставка: </p>
+              <form name={styles.delivery}>
+                <ul className={styles.deliveryList}>
+                  {deliveryOptions.map(item =>
+                    <RangeItem
+                      key={Math.random() * 10}
+                      styles={styles}
+                      text={item.text}
+                      name='delivery'
+                      span={item.span} />)}
+                </ul>
+              </form>
+            </div>
+            <button className={styles.totalBtn}>Оплатить заказ</button>
+            <p className={styles.notification}>Ваши персональные данные будут использоваться для управления доступом к вашей учетной записи и для других целей, описанных в нашем документе политика конфиденциальности.</p>
           </div>
         </div>
       </div>

@@ -15,6 +15,8 @@ const Context = (props) => {
   const location = useLocation();
   const [products, setProducts] = useState([]);
   const [productInBasket, setProductInBasket] = useState(false);
+  const [totalAmountBasket, setTotalAmountBasket] = useState();
+  const [discount, setDiscount] = useState([]);
   // const [amountBasketProducts, setAmountBasketProducts] = useState(1);
 
 
@@ -137,6 +139,8 @@ const Context = (props) => {
     // addUniqueValues,
     element, filterText,
     // amountBasketProducts, setAmountBasketProducts,
+    totalAmountBasket, setTotalAmountBasket,
+    discount, setDiscount,
   };
 
   return (

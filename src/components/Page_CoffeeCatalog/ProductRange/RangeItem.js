@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 
-export default function RangeItem({ img, styles, text, name }) {
+export default function RangeItem({ img, styles, text, name, span }) {
   const data = useRef();
- 
+
   return (
     <li className={styles.iconItem}>
       <label className={text && styles.aboutWrapper}>
@@ -11,7 +11,7 @@ export default function RangeItem({ img, styles, text, name }) {
         {img ?
           <img className={styles.iconImg} src={img} alt="The degree of frying" />
           :
-          <p>{text}</p>
+          <p>{text} {span && <span>{span}</span>}</p>
         }
       </label>
     </li >

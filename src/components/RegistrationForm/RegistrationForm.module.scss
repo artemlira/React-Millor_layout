@@ -1,0 +1,33 @@
+@use '../../style/variables.scss' as v;
+@use '../../style/mixins.scss' as m;
+@use '../../style/functions.scss' as f;
+
+.registrationForm {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.container {
+  width: f.rem(977);
+  height: f.rem(525);
+  position: relative;
+  background-color: #fff;
+  margin: f.rem(112) auto;
+
+  span {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: f.rem(30);
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

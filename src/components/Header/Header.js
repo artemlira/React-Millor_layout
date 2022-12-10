@@ -4,15 +4,15 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/logo.png';
 import { icons } from '../ImagesDB';
 import { MillorContext } from './../Context';
+import RegistrationForm from './../RegistrationForm/RegistrationForm';
 
 
 
 export default function Header() {
-  const { openSearch, setOpenSearch, location, products } = useContext(MillorContext);
+  const { openSearch, setOpenSearch, location, products, openRegistrationForm, setOpenRegistrationForm } = useContext(MillorContext);
+
   const setActive = ({ isActive }) => isActive ? 'active-header' : '';
   const setActiveNav = ({ isActive }) => isActive ? 'active-nav' : '';
-
-
 
 
   return (
@@ -51,11 +51,16 @@ export default function Header() {
               {products.length > 0 && <span className={styles.iconActive}>{products.length}</span>}
             </div>
             <div className={styles.icon}>
-              <NavLink className={setActiveNav} to="/personal_area">{icons[2]}</NavLink>
+              <Link to='/'
+                // className={setActiveNav} 
+                // to="/personal_area"
+                onClick={() => setOpenRegistrationForm(true)}>{icons[2]}</Link>
+
             </div>
           </div>
         </div>
       </div>
+      {openRegistrationForm && <RegistrationForm />}
     </section >
   );
 }

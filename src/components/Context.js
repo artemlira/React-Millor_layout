@@ -17,6 +17,7 @@ const Context = (props) => {
   const [productInBasket, setProductInBasket] = useState(false);
   const [totalAmountBasket, setTotalAmountBasket] = useState();
   const [discount, setDiscount] = useState([]);
+  const [openRegistrationForm, setOpenRegistrationForm] = useState(null);
   // const [amountBasketProducts, setAmountBasketProducts] = useState(1);
 
 
@@ -141,6 +142,7 @@ const Context = (props) => {
     // amountBasketProducts, setAmountBasketProducts,
     totalAmountBasket, setTotalAmountBasket,
     discount, setDiscount,
+    openRegistrationForm, setOpenRegistrationForm,
   };
 
   return (

@@ -4,13 +4,14 @@
 
 .header {
   height: f.rem(113);
-  background-color: #fff;
+  background-color: v.$white;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
   box-shadow: 0px 3.54254px 14.1702px rgba(157, 157, 157, 0.25);
+  overflow: clip;
 }
 
 .container {
@@ -30,12 +31,12 @@
   a {
     position: relative;
     line-height: 100%;
-    color: #000;
+    color: v.$black;
     text-decoration: none;
   }
 
   a:hover {
-    text-decoration: underline #F9B300 !important;
+    text-decoration: underline v.$yellow !important;
     text-decoration-thickness: 2px !important;
     text-underline-offset: 10px !important;
   }
@@ -63,7 +64,7 @@
   position: absolute;
   top: -10px;
   right: -15px;
-  background: #F9B300;
+  background: v.$yellow;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +77,7 @@
   max-width: f.rem(850);
   width: f.vw(850);
   height: f.rem(42);
-  background: #FFFFFF;
+  background: v.$white;
   box-shadow: 0px 0px 20px rgba(157, 157, 157, 0.25);
   border-radius: 30px;
   color: #C4C4C4;

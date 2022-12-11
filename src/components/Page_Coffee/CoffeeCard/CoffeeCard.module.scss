@@ -1,0 +1,13 @@
+@use '../../../style/variables.scss' as v;
+@use '../../../style/mixins.scss' as m;
+@use '../../../style/functions.scss' as f;
+
+.coffeeCard {}
+
+.container {
+  min-height: f.rem(682);
+  background: v.$white;
+  border: 1px solid #E4E4E4;
+  box-shadow: 0px 0px 35.4254px rgba(163, 163, 163, 0.25);
+  border-radius: 14px;
+}

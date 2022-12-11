@@ -88,7 +88,7 @@ body {
 }
 
 .catalog {
-  background: url('../images/Catalog Coffee/bg1.png') 0 0/100% no-repeat, #fff;
+  background: url('../images/Catalog Coffee/bg1.png') 0 0/100% no-repeat, v.$white;
 }
 
 .teaCatalog,
@@ -96,18 +96,22 @@ body {
 .healthyDiet {
   background: url('../images/TeaCatalog/bg1.png') 0 0/100% no-repeat,
     url('../images/Catalog Coffee/bg2.png') 0px 700px/100% auto no-repeat,
-    #fff;
+    v.$white;
   overflow: hidden;
 }
 
 .blog {
-  background: url('../images/Blog/bg1.png') 0 4160px/100% no-repeat, #fff;
+  background: url('../images/Blog/bg1.png') 0 4160px/100% no-repeat, v.$white;
 }
 
 .contacts {
-  background: url('../images/Contacts/bg1.png')0 500px/100% no-repeat, #fff;
+  background: url('../images/Contacts/bg1.png')0 500px/100% no-repeat, v.$white;
 }
 
 .basket {
-  background: url('../images/Basket/bg1.png')0 0/100% no-repeat, #fff;
+  background: url('../images/Basket/bg1.png')0 0/100% 37% no-repeat, v.$white;
+}
+
+.coffee {
+  background: url('../images/Coffee/bg1.png')50% 0px/100% 57% no-repeat, v.$white;
 }

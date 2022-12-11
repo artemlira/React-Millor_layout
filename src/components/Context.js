@@ -13,7 +13,7 @@ const Context = (props) => {
   const [openSearch, setOpenSearch] = useState(false);
   const [scrollTo, scrollToHandler] = useScrollToSection();
   const location = useLocation();
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);  //продукты, которые попадают в корзину, при клике на кнопку "В корзину"
   const [productInBasket, setProductInBasket] = useState(false);
   const [totalAmountBasket, setTotalAmountBasket] = useState();
   const [discount, setDiscount] = useState([]);
@@ -106,10 +106,10 @@ const Context = (props) => {
   const [filterText, setFilterText] = useState(null);
   const element = useRef();
 
+
+  //функция фильтрация кофе по способу приготовления, на нажатие соответствующей кнопки
   function filter(elem) {
-
     setActive(!active);
-
     if (active) {
       setCoffee(allProducts.filter(item => item.product === 'coffee'));
       setFilterText(null);

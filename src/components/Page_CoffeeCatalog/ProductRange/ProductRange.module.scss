@@ -6,7 +6,7 @@
   min-height: f.rem(850);
   padding-block: f.rem(30);
   background: url('../../../images/Catalog Coffee/bg1.png')0 0/100% 80% no-repeat,
-    url('../../../images/Catalog Coffee/bg2.png')0 778px/100% no-repeat, #fff;
+    url('../../../images/Catalog Coffee/bg2.png')0 778px/100% no-repeat, v.$white;
 }
 
 .container {
@@ -37,14 +37,14 @@
 
 
 .navigationItem {
-  color: #fff;
+  color: v.$white;
   font-size: f.rem(12);
   line-height: f.pr(12, 14.12);
   position: relative;
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: v.$white;
     font-size: f.rem(12);
     line-height: f.pr(12, 14.12);
   }
@@ -56,7 +56,7 @@
     width: 3px;
     height: 3px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: v.$white;
     top: 50%;
     left: -7px;
   }
@@ -85,7 +85,7 @@
 }
 
 .rangeIcons {
-  background: #FFFFFF;
+  background: v.$white;
   box-shadow: 0px 0px 21.2553px rgba(149, 149, 149, 0.25);
   border-radius: 14.1702px;
   padding: f.rem(30) f.rem(30) f.rem(30) f.rem(59);
@@ -158,7 +158,7 @@
 }
 
 .rangeAbout {
-  background: #FFFFFF;
+  background: v.$white;
   box-shadow: 0px 0px 21.2553px rgba(149, 149, 149, 0.25);
   border-radius: 14px;
   position: relative;
@@ -196,7 +196,7 @@
 .item {
   width: f.rem(134);
   height: f.rem(134);
-  background: #FFFFFF;
+  background: v.$white;
   box-shadow: 0px 0px 21.2553px rgba(149, 149, 149, 0.25);
   border-radius: 14px;
   display: flex;
@@ -211,8 +211,8 @@
 
   &:hover {
     // transform: scale(1.1);
-    background: #F9B300;
-    color: #fff;
+    background: v.$yellow;
+    color: v.$white;
 
     svg * {
       fill: rgb(255, 255, 255);
@@ -220,11 +220,11 @@
   }
 
   &.active {
-    background: #F9B300;
-    color: #fff;
+    background: v.$yellow;
+    color: v.$white;
 
     svg * {
-      fill: #fff;
+      fill: v.$white;
     }
   }
 }

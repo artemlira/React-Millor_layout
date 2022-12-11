@@ -7,7 +7,7 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
 
 
   const [amountBasketProducts, setAmountBasketProducts] = useState(1);
-  const [summ, setSumm] = useState(amountBasketProducts * (price - price * 0.1));
+  const [summ, setSumm] = useState(null);
 
   const addCount = () => {
     setAmountBasketProducts(amountBasketProducts + 1);
@@ -20,7 +20,7 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
   }
 
   useEffect(() => {
-    setSumm(amountBasketProducts * (price - price * 0.1));
+    setSumm(amountBasketProducts * (price - (price * 0.1)));
   }, [amountBasketProducts]);
 
   return (

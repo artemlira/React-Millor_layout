@@ -17,10 +17,10 @@
 
 .container {
   width: f.rem(977);
-  height: 70vh;
+  min-height: 70vh;
   position: relative;
   background-color: v.$white;
-  margin: f.rem(112) auto;
+  margin: f.rem(80) auto;
   border-radius: f.rem(21);
   display: grid;
   grid-template-columns: 0.4fr 1fr;
@@ -136,7 +136,7 @@
   background: v.$yellow;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: f.rem(23);
+  margin-block: f.rem(23) f.rem(40);
   font-weight: 700;
   font-size: f.rem(18);
   line-height: f.pr(18, 21.76);

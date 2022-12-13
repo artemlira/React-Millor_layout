@@ -3,6 +3,8 @@ import styles from './ContactsMain.module.scss';
 import { MillorContext } from './../../Context';
 import ContactShopsItem from './ContactShopsItem';
 import { itemShopsContacts } from '../../TextsDB';
+import { motion } from 'framer-motion';
+
 
 
 export default function ContactsMain() {
@@ -26,7 +28,7 @@ export default function ContactsMain() {
                 </div>
                 <div className={styles.warehouse}>
                   <h6 className={styles.titleWarehouse}>Адрес склада:</h6>
-                <p className={styles.warehouseText}>Московская область, Балашиха, Западная промзона, Шоссе энтузиастов 1</p>
+                  <p className={styles.warehouseText}>Московская область, Балашиха, Западная промзона, Шоссе энтузиастов 1</p>
                 </div>
               </>
             }

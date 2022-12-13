@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function ContactShopsItem({ styles, city, address }) {
   return (

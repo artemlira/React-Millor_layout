@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './BasketDelivery.module.scss';
 
-
 export default function BasketDelivery() {
   return (
     <section className={styles.basketDelivery}>

@@ -3,14 +3,29 @@ import styles from './RegistrationForm.module.scss';
 import { MillorContext } from './../Context';
 import img from '../../images/RegistratiomForm/coffee.png';
 import logo from '../../images/RegistratiomForm/logo.png';
-
+import { motion } from 'framer-motion';
 
 export default function RegistrationForm() {
   const { setOpenRegistrationForm } = useContext(MillorContext);
   return (
-    <section className={styles.registrationForm}>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{
+        duration: 0.5
+      }}
+      className={styles.registrationForm}>
       <div className="container">
-        <div className={styles.container}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{
+            duration: 0.2,
+            delay: 0.1
+          }}
+          className={styles.container}>
           <span onClick={() => setOpenRegistrationForm(false)}>x</span>
           <div className={styles.greetings}>
             <div className={styles.greetingsImg}>
@@ -37,9 +52,9 @@ export default function RegistrationForm() {
             </ul>
             <button className={styles.registrationBtn}>Зарегистрироваться</button>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   // const data = useContext(MillorContext);
   return (
-    <section className={styles.footer}>
+    <footer className={styles.footer}>
       <div className='container'>
         <div className={styles.container}>
-          <div className="logo">
+          <div className={styles.logo}>
             <Link to="/"> <img src={logo} alt="logo Millor" /></Link>
           </div>
           <nav className={styles.nav}>
@@ -32,7 +32,7 @@ export default function Footer() {
           </nav>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
 

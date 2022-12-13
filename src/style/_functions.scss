@@ -11,6 +11,11 @@
   @return calc($size / $sizeBox * 100%);
 }
 
+//функция перевода в соотношение для line-height
+@function ratio($sizeBox, $size) {
+  @return calc($size / $sizeBox);
+}
+
 //функция перевода в vw, где числом указывается максимальный размер макета
 @function vw($value, $base: v.$maxWidth) {
   @return calc($value / $base * 100vw);

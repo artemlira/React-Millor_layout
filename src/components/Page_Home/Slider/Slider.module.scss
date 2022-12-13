@@ -6,4 +6,8 @@
   margin-top: f.rem(21);
   min-height: f.rem(549);
   position: relative;
+
+  @include m.phone {
+    margin-top: inherit;
+  }
 }

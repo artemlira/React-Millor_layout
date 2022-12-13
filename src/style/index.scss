@@ -38,6 +38,20 @@ body {
     url('../images/bg2.png') top f.rem(800) left no-repeat,
     url('../images/bg3.png')50% 2040px/100% 27% no-repeat,
     url('../images/bg4.png')50% 3820px/100% 28% no-repeat;
+
+  @include m.tablet {
+    background: url('../images/bg1.png') right 60px no-repeat,
+      url('../images/bg2.png') left 1650px/auto 27% no-repeat,
+      url('../images/bg3.png')50% 2040px/100% 27% no-repeat,
+      url('../images/bg4.png')50% 3820px/100% 28% no-repeat;
+  }
+
+  @include m.phone {
+    background: url('../images/bg1.png') right 60px/auto 52% no-repeat,
+      url('../images/bg2.png') left f.rem(1400) no-repeat,
+      url('../images/bg3.png')50% 2040px/100% 27% no-repeat,
+      url('../images/bg4.png')50% 3820px/100% 28% no-repeat;
+  }
 }
 
 #root {
@@ -55,6 +69,7 @@ body {
   padding: 0 f.rem(15);
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .logo {
@@ -114,4 +129,115 @@ body {
 
 .coffee {
   background: url('../images/Coffee/bg1.png')50% 0px/100% 57% no-repeat, v.$white;
+}
+
+.catalog-slider {
+  .slick-list {
+    padding-block: f.rem(50) !important;
+  }
+
+  .slick-slide {
+    box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+    background: v.$white;
+    border-radius: f.rem(20);
+  }
+
+  .btn {
+    width: 100%;
+    height: f.rem(70);
+    opacity: 0;
+    background: v.$yellow;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: f.rem(25);
+    line-height: f.ratio(25, 30.22);
+    color: v.$white;
+    cursor: pointer;
+    transition-property: transform opacity;
+    transition-duration: 0.5s;
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: f.rem(25);
+      line-height: f.ratio(25, 30.22);
+      color: v.$white;
+
+      @media screen and (max-width:580px) {
+        font-size: f.rem(20);
+        line-height: f.ratio(20, 25.22);
+      }
+    }
+
+    &:hover {
+      background-color: v.$darkYellow;
+    }
+  }
+
+  .slick-active {
+    transform: scale(1.1);
+  }
+
+  .slick-active .btn {
+    opacity: 1;
+  }
+}
+
+.catalog-dots {
+  display: flex !important;
+  gap: f.rem(30);
+  justify-content: center;
+  margin-top: f.rem(35);
+
+  @include m.phone {
+    gap: f.rem(15);
+  }
+
+  & li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  & li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+
+  & li button:before {
+    font-family: 'slick';
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    color: #E9E9E9;
+    font-size: f.rem(25);
+    opacity: 1;
+
+    @include m.phone {
+      font-size: f.rem(13);
+    }
+  }
+
+  & li.slick-active button:before {
+    opacity: 1;
+    color: v.$yellow;
+  }
 }

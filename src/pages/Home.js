@@ -11,8 +11,8 @@ import DiscountGoods from './../components/Page_Home/DiscountGoods/DiscountGoods
 export default function Home() {
   return (
     <>
-      {/* <Slider /> */}
-      {/* <Catalog /> */}
+      <Slider />
+      <Catalog />
       {/* <DiscountGoods /> */}
       {/* <Advantages /> */}
       {/* <AboutWork /> */}

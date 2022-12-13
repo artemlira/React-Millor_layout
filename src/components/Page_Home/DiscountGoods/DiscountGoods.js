@@ -13,6 +13,7 @@ import DiscountItem from '../DiscountItem/DiscountItem';
 export default function DiscountGoods() {
 
   const settings = {
+    className: 'discount-slider',
     dots: false,
     arrows: true,
     infinite: true,

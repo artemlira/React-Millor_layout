@@ -2,10 +2,14 @@ import React from 'react';
 import styles from './Catalog.module.scss';
 import CatalogItem from '../CatalogItem/CatalogItem';
 import { catalog } from '../ImagesDB';
+import CatalogSlider from './CatalogSlider';
+
 
 
 
 export default function Catalog() {
+
+
   return (
     <section className={styles.catalog}>
       <div className="container">
@@ -19,6 +23,7 @@ export default function Catalog() {
               textButton={item.btn}
               link={item.link} />)}
         </div>
+        <CatalogSlider />
       </div>
     </section>
   );

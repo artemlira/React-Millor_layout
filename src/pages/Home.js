@@ -15,7 +15,7 @@ export default function Home() {
       <Catalog />
       <DiscountGoods />
       <Advantages />
-      {/* <AboutWork /> */}
+      <AboutWork />
       {/* <News /> */}
       {/* <SocialNetworks /> */}
       {/* <Subscription /> */}

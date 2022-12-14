@@ -6,12 +6,18 @@
   width: f.rem(280);
   height: f.rem(461);
   box-shadow: 0px 0px 20px rgba(201, 201, 201, 0.25);
-  background: #FFFFFF;
+  background: v.$white;
   border-radius: f.rem(14);
   border: 0.708508px solid #E4E4E4;
   transform-origin: center bottom;
   transition-property: transform;
   transition-duration: 0.5s;
+
+  @include m.phone {
+    width: f.rem(250);
+    height: f.rem(407);
+  }
+
 
   &:hover {
     transform: scale(1.03);
@@ -98,12 +104,23 @@
   margin-bottom: f.rem(25);
   display: flex;
   gap: f.rem(18);
+
+  @include m.phone {
+    height: f.rem(193);
+    margin-bottom: f.rem(20);
+  }
+
   // flex: 1 1 auto;
 }
 
 .img {
   max-width: f.rem(120);
   height: f.rem(218);
+
+  @include m.phone {
+    max-width: f.rem(107);
+    height: f.rem(193);
+  }
 }
 
 .stars {
@@ -144,18 +161,29 @@
 .title {
   font-size: f.rem(18);
   font-weight: 900;
-  line-height: f.pr(18, 22.46);
+  line-height: f.ratio(18, 22.46);
   color: #222222;
   margin-bottom: f.rem(8);
+
+  @include m.phone {
+    font-size: f.rem(15.63);
+    line-height: f.ratio(15.63, 19.5);
+  }
 }
 
 .text {
   width: f.rem(183);
   font-size: f.rem(12);
   font-weight: 500;
-  line-height: f.pr(12, 14.12);
+  line-height: f.ratio(12, 14.12);
   color: #222222;
   margin-bottom: f.rem(20);
+
+  @include m.phone {
+    width: f.rem(156);
+    font-size: f.rem(10);
+    line-height: f.ratio(10, 11.77);
+  }
 }
 
 .price {
@@ -171,9 +199,14 @@
   p {
     font-weight: 900;
     font-size: f.rem(24);
-    line-height: f.pr(24, 30);
+    line-height: f.ratio(24, 30);
     text-align: center;
     color: #222222;
+
+    @include m.phone {
+      font-size: f.rem(20);
+      line-height: f.ratio(20, 24);
+    }
   }
 
   &.sale::after {

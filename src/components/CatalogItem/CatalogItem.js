@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import styles from './CatalogItem.module.scss';
 import { Link } from 'react-router-dom';
 import { MillorContext } from './../Context';
+import '../Catalog/CatalogSlider.scss';
 
 
 export default function CatalogItem({ image, text, textButton, link, className }) {

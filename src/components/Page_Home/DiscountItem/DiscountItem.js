@@ -6,7 +6,7 @@ import { MillorContext } from './../../Context';
 import { Link } from 'react-router-dom';
 
 
-export default function DiscountItem({ sale, special, productTitle, description, image, productPrice, item }) {
+export default function DiscountItem({ sale, special, productTitle, description, image, productPrice, item, noLink }) {
 
   const { pic, title, text, price, pack, addProduct } = useContext(MillorContext);
 
@@ -36,7 +36,7 @@ export default function DiscountItem({ sale, special, productTitle, description,
             </div>
           </div>
         }
-        <Link className={styles.link} to='coffee'>
+        <Link className={styles.link} to={noLink ? '' : "coffee"} >
           <div className={styles.wrapper} >
             <div className={styles.img}>
               <img ref={pic} src={image} alt="coffee" />
@@ -70,7 +70,7 @@ export default function DiscountItem({ sale, special, productTitle, description,
         </div>
 
       </div>
-    </section>
+    </section >
   );
 }
 

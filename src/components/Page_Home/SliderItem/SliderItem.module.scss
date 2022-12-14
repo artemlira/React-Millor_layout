@@ -6,6 +6,11 @@
 
 .item {
   position: relative;
+  // border: 1px solid ;
+}
+
+.about {
+  max-width: 100%;
 }
 
 .title {
@@ -107,8 +112,6 @@
 }
 
 .btn {
-  position: relative;
-  max-width: f.rem(283);
   width: f.rem(283);
   z-index: 10;
   height: f.rem(56);
@@ -120,16 +123,17 @@
   transition-duration: 0.5s;
 
   @include m.tablet {
-    margin: f.rem(376) auto f.rem(20);
+    margin: f.rem(376) f.rem(20) f.rem(30);
+    // margin-inline: auto;
     max-width: f.rem(700);
-    width: 100%;
+    width: 90%;
     height: f.rem(70);
   }
 
   @include m.phone {
     max-width: f.rem(340);
     height: f.rem(50);
-    width: 90%;
+    width: 80%;
     margin: f.rem(220) auto f.rem(20);
   }
 

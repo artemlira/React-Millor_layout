@@ -4,6 +4,14 @@
 
 .advantages {
   min-height: f.rem(611);
+
+  @include m.tablet {
+    padding-bottom: f.rem(187);
+  }
+
+  @include m.phone {
+    padding-bottom: f.rem(126);
+  }
 }
 
 .container {

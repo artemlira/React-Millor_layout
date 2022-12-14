@@ -39,39 +39,39 @@ body {
     url('../images/bg3.png')50% 2040px/100% 1427px no-repeat,
     url('../images/bg4.png')50% 3820px/100% 28% no-repeat;
 
-  @media screen and (max-width:1030px) {
+  @media screen and (max-width:1031px) {
     background: url('../images/bg1.png') top right no-repeat,
       url('../images/bg2.png') top f.rem(800) left no-repeat,
-      url('../images/bg3.png')center 2340px/100% 1427px no-repeat,
+      url('../images/bg3.png')center 2100px/100% 1427px no-repeat,
       url('../images/bg4.png')50% 3820px/100% 28% no-repeat;
   }
 
   @include m.netbook {
     background: url('../images/bg1.png') top right no-repeat,
         url('../images/bg2.png') top f.rem(800) left no-repeat,
-        url('../images/bg3.png')center 2640px/100% 1427px no-repeat,
+        url('../images/bg3.png')center 2500px/100% 1427px no-repeat,
         url('../images/bg4.png')50% 3820px/100% 28% no-repeat;
   }
 
   @include m.tablet {
-    background: url('../images/bg1.png') right 60px/250px 30% no-repeat,
+    background: url('../images/bg1.png') right 60px/250px 20% no-repeat,
       url('../images/bg2.png') -140px 1500px/50% 30% no-repeat,
-      url('../images/bg3.png')50% 2640px/100% 45% no-repeat,
+      url('../images/bg3.png')50% 2500px/100% 45% no-repeat,
       url('../images/bg4.png')50% 3820px/100% 28% no-repeat;
   }
 
    @media screen and (max-width:600px) {
-    background: url('../images/bg1.png') right 60px/250px 30% no-repeat,
+    background: url('../images/bg1.png') right 60px/250px 20% no-repeat,
         url('../images/bg2.png') -140px 1500px/50% 30% no-repeat,
-        url('../images/bg3.png')50% 2640px/100% 55% no-repeat,
+        url('../images/bg3.png')50% 2300px/100% 50% no-repeat,
         url('../images/bg4.png')50% 3820px/100% 28% no-repeat;
    }
 
   @include m.phone {
     background:
-      url('../images/bg1.png') right 60px/100px 20% no-repeat,
-      url('../images/bg2.png') left 1090px/20% 30% no-repeat,
-      url('../images/bg3.png')50% 2000px/100% 40% no-repeat,
+      url('../images/bg1.png') right 60px/100px 15% no-repeat,
+      url('../images/bg2.png') left 1090px/20% 15% no-repeat,
+      url('../images/bg3.png')50% 1900px/100% 45% no-repeat,
       url('../images/bg4.png')50% 3820px/100% 28% no-repeat;
   }
 }

@@ -17,7 +17,7 @@ export default function Home() {
       <Advantages />
       <AboutWork />
       <News />
-      {/* <SocialNetworks /> */}
+      <SocialNetworks />
       {/* <Subscription /> */}
     </>
   )

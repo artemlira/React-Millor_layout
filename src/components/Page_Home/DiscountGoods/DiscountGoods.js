@@ -40,7 +40,6 @@ export default function DiscountGoods() {
       {
         breakpoint: 450,
         settings: {
-          // centerMode: true,
           arrows: false,
           slidesToShow: 1,
         }

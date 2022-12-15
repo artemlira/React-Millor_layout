@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './News.module.scss';
 import { Link } from 'react-router-dom';
 import image from '../../../images/news/01.png';
+import NewsListSlider from './NewsListSlider';
 
 
 export default function News() {
@@ -64,7 +65,12 @@ export default function News() {
                 </div>
               </li>
             </ul>
+            <NewsListSlider />
           </div>
+          <div className={styles.wrapperLinkTablet}>
+            <Link to="/blog" className={styles.linkTablet}>Читать все</Link>
+          </div>
+
         </div>
       </div>
     </section>

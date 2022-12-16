@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Subscription.module.scss';
-import image from '../../images/Subscription/img01.png';
+import image from '../../images/Subscription/coffee.png';
 
 
 export default function Subscription() {
@@ -17,6 +17,7 @@ export default function Subscription() {
     <section id='pushes' className={styles.subscription}>
       <div className="container">
         <div className={styles.container}>
+          <img className={styles.img} src={image} alt="coffee" />
           <h5 className={styles.title}>Подписка на новости и рассылку</h5>
           <p className={styles.text}>Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</p>
           <form action="/">
@@ -35,7 +36,7 @@ export default function Subscription() {
             }
           </form>
           <p id='french-press' className={styles.signature}>Нажимая на кнопку “Подписаться”, вы принимаете правила <a href="/">пользовательского соглашения</a></p>
-          <img className={styles.img} src={image} alt="coffee" />
+         
         </div>
       </div>
     </section>

@@ -10,18 +10,24 @@ import insta from '../../images/header/insta.png';
 
 
 export default function OpenNav() {
-  const { products, setOpenRegistrationForm, openNav, setOpenNav } = useContext(MillorContext);
+  const { products, openNav, setOpenNav } = useContext(MillorContext);
   return (
 
     <AnimatePresence>
       {
         openNav && (
           <motion.div
-            initial={{ right: 100 }}
-            animate={{ right: 0 }}
+            initial={{
+              opacity: 1,
+              right: 100
+            }}
+            animate={{
+              opacity: 1,
+              right: 0
+            }}
             exit={{ right: 100 }}
             transition={{
-              duration: 0.3
+              duration: 0.5
             }}
             className={styles.containerOpenNav}>
             <div className={styles.wrapperLogo}>

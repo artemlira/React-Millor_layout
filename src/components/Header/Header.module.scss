@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 20;
   box-shadow: 0px 3.54254px 14.1702px rgba(157, 157, 157, 0.25);
   overflow: clip;
 
@@ -166,6 +166,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: f.rem(173);
+  padding-top: f.rem(20);
   position: sticky;
   top: 0;
   left: 0;
@@ -285,7 +286,7 @@
 .containerOpenNav {
   width: 100%;
   height: 100vh;
-  padding: f.rem(20) f.rem(18);
+  padding-inline: f.rem(18);
   position: fixed;
   top: 0;
   bottom: 0;

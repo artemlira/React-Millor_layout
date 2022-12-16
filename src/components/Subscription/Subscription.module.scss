@@ -208,8 +208,8 @@ form {
 
 .img {
   position: absolute;
-  right: f.rem(-80);
-  top: f.rem(-25);
+  right: f.rem(-25);
+  top: 0;
 
   @include m.tablet {
     max-width: f.rem(537);

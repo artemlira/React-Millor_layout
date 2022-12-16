@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './SocialNetworks.module.scss';
 import { socialNetwork } from '../../ImagesDB.js';
 import SocialNetworkItem from './../SocialNetworkItem/SocialNetworkItem';
+import SocialNetworksSlider from './SocialNetworksSlider';
 
 
 export default function SocialNetworks() {
@@ -27,6 +28,7 @@ export default function SocialNetworks() {
               <SocialNetworkItem />
               <SocialNetworkItem />
             </div>
+            <SocialNetworksSlider />
           </div>
         </div>
       </div>

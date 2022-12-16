@@ -54,17 +54,17 @@ body {
   }
 
   @include m.tablet {
-    background: url('../images/bg1.png') right 60px/250px 18% no-repeat,
-      url('../images/bg2.png') -140px 1500px/50% 20% no-repeat,
-      url('../images/bg3.png')left 2800px/100% 27% no-repeat,
-      url('../images/bg4.png')50% 4620px/100% 1754px no-repeat;
+    background: url('../images/bg1.png') right 60px/250px 14% no-repeat,
+      url('../images/bg2.png') -140px 1500px/35% 15% no-repeat,
+      url('../images/bg3.png')left 2620px/100% 27% no-repeat,
+      url('../images/bg4.png')50% 5100px/100% 1754px no-repeat;
   }
 
   @media screen and (max-width:600px) {
-    background: url('../images/bg1.png') right 60px/250px 15% no-repeat,
-      url('../images/bg2.png') -140px 1500px/50% 15% no-repeat,
-      url('../images/bg3.png')50% 2600px/100% 32% no-repeat,
-      url('../images/bg4.png')50% 4820px/100% 1754px no-repeat;
+    background: url('../images/bg1.png') right 60px/250px 13% no-repeat,
+      url('../images/bg2.png') -140px 1500px/45% 15% no-repeat,
+      url('../images/bg3.png')50% 2250px/100% 34% no-repeat,
+      url('../images/bg4.png')50% 5500px/100% 30% no-repeat;
   }
 
   @include m.phone {

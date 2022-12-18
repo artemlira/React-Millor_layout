@@ -136,7 +136,15 @@ body {
 }
 
 .blog {
-  background: url('../images/Blog/bg1.png') 0 4160px/100% no-repeat, v.$white;
+  background: url('../images/Blog/bg1.png') 0 90%/100% no-repeat, v.$white;
+
+  @include m.tablet {
+    background: url('../images/Blog/bg1.png') 0 90%/100% 12% no-repeat, v.$white;
+  }
+
+  @include m.phone {
+    background: url('../images/Blog/bg1.png') 0 90%/100% 589px no-repeat, v.$white;
+  }
 }
 
 .contacts {

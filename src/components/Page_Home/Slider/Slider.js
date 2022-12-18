@@ -10,7 +10,7 @@ import './Slider.scss';
 export default function Slider() {
 
   const settings = {
-    // autoplay: true,
+    autoplay: true,
     dots: true,
     arrows: false,
     infinite: true,

@@ -242,14 +242,88 @@
 
 .btn.activeBasket {
   cursor: progress;
-  // width: f.rem(125);
-  // height: f.rem(33);
-  // background-color: v.$yellow;
-  // border-radius: 4px;
-  // transition-property: background-color;
-  // transition-duration: 0.5s;
-  // color: #fff;
-  // font-size: f.rem(12);
-  // line-height: f.pr(12, 14.51);
-  // text-align: center;
+}
+
+.coffeeCatalogDProducts {
+  .discountItem {
+    @include m.tablet {
+      max-width: f.rem(340);
+      width: f.vw(340, 768);
+      height: f.vw(552, 768);
+      min-height: f.rem(465);
+
+    }
+  }
+
+  .container {
+    padding: f.vw(21) f.vw(33) f.vw(40) f.vw(33);
+    border: 5px solid tomato;
+
+    @include m.tablet {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+  }
+
+  .formNoSale {
+    border: 5px solid greenyellow;
+    column-gap: f.vw(64);
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form {
+    margin-left: auto;
+  }
+
+  .noDiscount {
+    @include m.tablet {
+      min-height: 100%;
+      border: 1px solid;
+      margin: inherit;
+    }
+
+
+    p {
+      @include m.tablet {
+        font-size: f.rem(14);
+        line-height: f.ratio(14, 16.93);
+      }
+    }
+  }
+
+  .select {
+    @include m.tablet {
+      width: 110px;
+      height: 28px;
+      margin: inherit;
+    }
+
+  }
+
+  .link {
+    max-height: 100%;
+    border: 5px solid tomato;
+  }
+
+  .img {
+    @include m.tablet {
+      display: grid;
+      place-items: center;
+    }
+  }
+
+  .price {
+    // min-height: 200px;
+    border: 5px solid greenyellow;
+  }
+
+
+
+
+
+
+
+
 }

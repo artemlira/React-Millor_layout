@@ -14,7 +14,7 @@ export default function Subscription() {
   }
 
   return (
-    <section id='pushes' className={styles.subscription}>
+    <div id='pushes' className={styles.subscription}>
       <div className="container">
         <div className={styles.container}>
           <img className={styles.img} src={image} alt="coffee" />
@@ -39,7 +39,7 @@ export default function Subscription() {
          
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

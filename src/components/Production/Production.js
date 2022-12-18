@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
 import styles from './Production.module.scss';
 
 
 export default function Production({ arr }) {
   const [openSorting, setOpenSorting] = useState(false);
   const [showAll, setShowAll] = useState(false);
+
   const show = () => {
     setShowAll(!showAll);
   }

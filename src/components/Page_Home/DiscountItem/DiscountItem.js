@@ -15,7 +15,7 @@ export default function DiscountItem({ sale, special, productTitle, description,
   // }
 
   return (
-    <section className={styles.discountItem}>
+    <div className={styles.discountItem}>
       <div className={styles.container}>
         <form action="/" className={sale ? styles.form : styles.formNoSale}>
           {!sale &&
@@ -70,7 +70,7 @@ export default function DiscountItem({ sale, special, productTitle, description,
         </div>
 
       </div>
-    </section >
+    </ div>
   );
 }
 

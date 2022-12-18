@@ -9,6 +9,15 @@
   gap: f.rem(20);
   row-gap: f.rem(50);
   margin-top: f.rem(58);
+
+  @include m.laptop {
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+
+  @include m.netbook {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .link {

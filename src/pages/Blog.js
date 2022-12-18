@@ -15,14 +15,14 @@ export default function Blog() {
   // console.log(id);
 
   return (
-    <div className="blog">
+    <article className="blog">
       <BlogHeader />
       <BlogRange />
       <BlogTraining />
       <BlogNews />
       <BlogQuestions/>
       <Subscription />
-    </div>
+    </article>
   );
 }
 

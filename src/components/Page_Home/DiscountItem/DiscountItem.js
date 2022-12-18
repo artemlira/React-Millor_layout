@@ -43,7 +43,7 @@ export default function DiscountItem({ sale, special, productTitle, description,
             </div>
             <div className={styles.about}>
               <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
-              <p className={styles.reviews}>4.0<span>(32 отзыва)</span></p>
+              <p className={styles.reviews}>4.0 <span>(32 отзыва)</span></p>
               <img className={styles.coffeeBeans} src={discountItemPics[1]} alt="coffee beans" />
               <p className={styles.description}>Кислинка</p>
               <img className={styles.descriptionImg} src={discountItemPics[2]} alt="" />

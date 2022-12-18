@@ -2,6 +2,50 @@
 @use '../../style/mixins.scss' as m;
 @use '../../style/functions.scss' as f;
 
+.production {
+  @media screen and (min-width:769px) {
+
+    .tablet,
+    .phone {
+      display: none;
+      position: absolute;
+      opacity: 0;
+    }
+  }
+
+  @include m.tablet {
+
+    .laptop,
+    .phone {
+      display: none;
+      position: absolute;
+      opacity: 0;
+    }
+
+    .tablet {
+      display: block;
+      position: relative;
+      opacity: 1;
+    }
+  }
+
+  @include m.phone {
+
+    .laptop,
+    .tablet {
+      display: none;
+      position: absolute;
+      opacity: 0;
+    }
+
+    .phone {
+      display: block;
+      position: relative;
+      opacity: 1;
+    }
+  }
+}
+
 
 .container {
   display: grid;
@@ -11,12 +55,21 @@
   margin-top: f.rem(58);
 
   @include m.laptop {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, 280px);
+    justify-content: center;
     place-items: center;
   }
 
   @include m.netbook {
-    grid-template-columns: repeat(2, 1fr);
+    gap: f.rem(20);
+  }
+
+  @include m.tablet {
+    grid-template-columns: repeat(auto-fill, 340px);
+  }
+
+  @include m.phone {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -26,14 +79,14 @@
       sans-serif;
     font-weight: 500;
     font-size: f.rem(14);
-    line-height: f.pr(14, 16.48);
-    color: #000;
+    line-height: f.ratio(14, 16.48);
+    color: v.$black;
     padding: f.rem(10) f.rem(25);
   }
 
   a:hover {
     background: #F9F9F9;
-    border-radius: 30px;
+    border-radius: f.rem(30);
     color: v.$yellow;
   }
 }
@@ -42,15 +95,15 @@
   margin-top: f.rem(50);
   height: f.rem(49);
   width: 100%;
-  background: #FFFFFF;
+  background: v.$white;
   border: 0.708508px solid #E4E4E4;
-  border-radius: 7px;
+  border-radius: f.rem(7);
   margin-bottom: f.rem(41);
   cursor: pointer;
   font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: f.rem(14);
-  line-height: f.pr(14, 16.48);
+  line-height: f.ratio(14, 16.48);
   transition-property: background-color;
   transition-duration: 0.5s;
 

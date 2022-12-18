@@ -29,15 +29,30 @@ export default function Production({ arr }) {
             <option>По кислотности</option>
           </select>
         </form>}
-        <div className={styles.container} >
-          {!showAll
-            ?
-            arr.map((item, index) => index < 12 && <div key={Math.random() * 100}>{item}</div>)
-            :
-            arr.map(item => <div key={Math.random() * 100}>{item}</div>)
-          }
+        <div className={styles.laptop}>
+          <div className={styles.container} >
+            {!showAll
+              ?
+              arr.map((item, index) => index < 12 && <div key={Math.random() * 100}>{item}</div>)
+              :
+              arr.map(item => <div key={Math.random() * 100}>{item}</div>)
+            }
+          </div>
+          {arr.length > 12 && <button onClick={() => show()} className={styles.btn}>{!showAll ? 'Показать еще' : 'Скрыть'}</button>}
         </div>
-        {arr.length > 12 && <button onClick={() => show()} className={styles.btn}>{!showAll ? 'Показать еще' : 'Скрыть'}</button>}
+        <div className={styles.tablet}>
+          <div className={styles.container} >
+            {arr.map((item, index) => index < 6 && <div key={Math.random() * 100}>{item}</div>)}
+          </div>
+          <button className={styles.btn}>Показать еще</button>
+        </div>
+        <div className={styles.phone}>
+          <div className={styles.container} >
+            {arr.map((item, index) => index < 3 && <div key={Math.random() * 100}>{item}</div>)}
+          </div>
+          <button className={styles.btn}>Показать еще</button>
+
+        </div>
       </div>
 
     </section>

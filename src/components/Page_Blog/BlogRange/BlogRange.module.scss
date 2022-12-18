@@ -3,7 +3,6 @@
 @use '../../../style/functions.scss' as f;
 
 .blogRange {
-  border: 5px solid tomato;
   padding-block: f.rem(30);
 
   @include m.tablet {

@@ -12,7 +12,7 @@ export default function TrainingItem({ img, title, styles, text }) {
             className={styles.text}>{item}</p>
         )
       }
-      <div className="img"><img src={img} alt={title} /></div>
+      <div className={styles.img}><img src={img} alt={title} /></div>
     </div>
   )
 }

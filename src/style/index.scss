@@ -148,7 +148,15 @@ body {
 }
 
 .contacts {
-  background: url('../images/Contacts/bg1.png')0 500px/100% no-repeat, v.$white;
+  background: url('../images/Contacts/bg1.png')0 65%/100% no-repeat, v.$white;
+
+  @include m.tablet {
+    background: url('../images/Contacts/bg_tablet.png')0 55%/100% no-repeat, v.$white;
+  }
+
+  @include m.phone {
+    background: v.$white;
+  }
 }
 
 .basket {

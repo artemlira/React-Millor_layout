@@ -124,6 +124,7 @@ const Context = (props) => {
       productPrice={item.price}
       item={item}
       sale={item.sale}
+      rating={item.rating}
     />);
 
   //Создаем массив компонентов с карточками товаров на странице HealthyDiet, в зависимости от кол-ва товара
@@ -135,6 +136,7 @@ const Context = (props) => {
       productPrice={item.price}
       item={item}
       sale={item.sale}
+      rating={item.rating}
     />)
 
   //===================
@@ -167,6 +169,30 @@ const Context = (props) => {
     }
   }
 
+  //функция фильтрации wending по видам, на нажатие соответствующей кнопки
+  function filterWending(elem) {
+    setActive(!active);
+    if (active) {
+      setWending(allProducts.filter(item => item.product === 'wending product'));
+      setFilterText(null);
+    } else {
+      setWending(wending.filter(item => item.name === elem.text));
+      setFilterText(elem.text)
+    }
+  }
+
+  //функция фильтрации healthyDiet по видам, на нажатие соответствующей кнопки
+  function filterHealthyDiet(elem) {
+    setActive(!active);
+    if (active) {
+      setHealthyDiet(allProducts.filter(item => item.product === 'healthy diet'));
+      setFilterText(null);
+    } else {
+      setHealthyDiet(healthyDiet.filter(item => item.name === elem.text));
+      setFilterText(elem.text)
+    }
+  }
+
 
 
 
@@ -184,7 +210,7 @@ const Context = (props) => {
     wending, setWending,
     healthyDiet, setHealthyDiet,
     fragmentationUniqueValues,
-    filter, filterTea,
+    filter, filterTea, filterHealthyDiet, filterWending,
     active, setActive,
     discountItemCoffee, itemsTea, itemsWendingProducts, itemsHealthyDiet,
     // addUniqueValues,

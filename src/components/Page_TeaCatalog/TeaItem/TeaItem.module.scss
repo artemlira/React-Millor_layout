@@ -9,6 +9,9 @@
   background: v.$white;
   border-radius: f.rem(14);
   border: 0.708508px solid #E4E4E4;
+  transform-origin: center bottom;
+  transition-property: transform;
+  transition-duration: 0.5s;
 
   @include m.tablet {
     width: f.rem(340);
@@ -20,6 +23,12 @@
   @include m.phone {
     height: f.rem(553);
     border-radius: f.rem(17);
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    border: 0.708508px solid #aaaaaa;
+    box-shadow: 0px 0px 20px rgba(167, 167, 167, 0.5);
   }
 }
 
@@ -80,7 +89,7 @@
   span {
     color: #5B5B5B;
     font-size: f.rem(10);
-    line-height: f.pr(10, 12);
+    line-height: f.ratio(10, 12);
 
     @include m.tablet {
       font-size: f.rem(12);

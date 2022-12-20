@@ -549,6 +549,7 @@ export const allProducts = [
   //Wending Product
   {
     product: 'wending product',
+    name: 'Гранулированный кофе',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -557,6 +558,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Гранулированный цикорий',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -565,6 +567,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Зерновой кофе',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -573,6 +576,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Гранулированный какао',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -581,6 +585,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Гранулированные кофейные напитки',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -589,6 +594,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Кофе порошкообразный',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -597,6 +603,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Сухое молоко гранулированное',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -605,6 +612,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Гранулированный кофе',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -613,6 +621,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Гранулированный цикорий',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -621,6 +630,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Зерновой кофе',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -629,6 +639,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Гранулированный какао',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -637,6 +648,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Гранулированные кофейные напитки',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -646,6 +658,7 @@ export const allProducts = [
   //=======================  12
   {
     product: 'wending product',
+    name: 'Кофе порошкообразный',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -654,6 +667,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Сухое молоко гранулированное',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -662,6 +676,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Сухое молоко гранулированное',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -670,6 +685,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Гранулированный кофе',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -678,6 +694,7 @@ export const allProducts = [
   },
   {
     product: 'wending product',
+    name: 'Гранулированный цикорий',
     sale: false,
     rating: 4,
     image: '../images/Wending Products/01.png',
@@ -687,6 +704,7 @@ export const allProducts = [
   //Healthy Diet
   {
     product: 'healthy diet',
+    name: 'Цикорий и корень цикория',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -696,6 +714,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Ячменные напитки',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -705,6 +724,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Напитки для здоровья',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -714,6 +734,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Протеиновые смеси',
     sale: true,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -723,6 +744,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Толокняные каши',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -732,6 +754,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Цикорий и корень цикория',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -741,6 +764,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Ячменные напитки',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -750,6 +774,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Напитки для здоровья',
     sale: true,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -759,6 +784,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Протеиновые смеси',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -768,6 +794,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Толокняные каши',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -777,6 +804,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Цикорий и корень цикория',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -786,6 +814,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Напитки для здоровья',
     sale: true,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -796,6 +825,7 @@ export const allProducts = [
   //=========================== 12
   {
     product: 'healthy diet',
+    name: 'Протеиновые смеси',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -805,6 +835,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Толокняные каши',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -814,6 +845,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Цикорий и корень цикория',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -823,6 +855,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Напитки для здоровья',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',
@@ -832,6 +865,7 @@ export const allProducts = [
   },
   {
     product: 'healthy diet',
+    name: 'Протеиновые смеси',
     sale: false,
     rating: 4,
     image: '../images/HealthyDiet/01.png',

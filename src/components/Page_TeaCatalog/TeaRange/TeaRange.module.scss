@@ -97,11 +97,11 @@
   }
 
   &:not(:first-child)::before {
+    width: f.rem(3);
+    height: f.rem(3);
     position: absolute;
     display: block;
     content: '';
-    width: f.rem(3);
-    height: f.rem(3);
     border-radius: 50%;
     background-color: v.$white;
     top: 50%;
@@ -174,8 +174,8 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
-  transition-property: box-shadow transform;
-  transition-duration: 0.5s;
+  transition-property: box-shadow background-color;
+  transition-duration: 1s;
 
   @include m.tablet {
     width: f.rem(220);
@@ -188,7 +188,6 @@
   @include m.phone {
     width: f.rem(107);
     height: f.rem(110);
-
   }
 
   &:hover {

@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './WendingProductsItem.module.scss';
-import img from '../../../images/Wending Products/Rectangle 61.png';
 import { discountItemPics } from '../../ImagesDB.js';
+import { Link } from 'react-router-dom';
 
 
-export default function WendingProductsItem({ sale }) {
+
+
+export default function WendingProductsItem({ productTitle, description, image, sale, rating }) {
   return (
     <section className={styles.wendingProductsItem}>
       <div className={styles.container}>
@@ -12,7 +14,7 @@ export default function WendingProductsItem({ sale }) {
         <form action="/" className={styles.form}>
           <div className={styles.rating}>
             <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
-            <p className={styles.reviews}>4.0<span>(32 отзыва)</span></p>
+            <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
 
           <select name="target" className={styles.select}>
@@ -24,19 +26,18 @@ export default function WendingProductsItem({ sale }) {
           </select>
 
         </form>
+        <Link to='wending'>
+          <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
+            <img src={image} alt="coffee" />
+          </div>
 
-        <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
-          <img src={img} alt="coffee" />
-        </div>
-
-        <div className={styles.wrapperText}>
-          <h4 className={styles.title}>Наименование товара</h4>
-          <p className={styles.text}>Гранулированный кофе</p>
-        </div>
-
+          <div className={styles.wrapperText}>
+            <h4 className={styles.title}>{productTitle}</h4>
+            <p className={styles.text}>{description}</p>
+          </div>
+        </Link>
 
         <button className={styles.btn}>Оставить заявку</button>
-
 
       </div>
     </section>

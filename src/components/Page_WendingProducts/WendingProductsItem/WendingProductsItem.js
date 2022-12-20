@@ -10,13 +10,11 @@ export default function WendingProductsItem({ productTitle, description, image, 
   return (
     <section className={styles.wendingProductsItem}>
       <div className={styles.container}>
-
         <form action="/" className={styles.form}>
           <div className={styles.rating}>
             <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
             <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
-
           <select name="target" className={styles.select}>
             <option>10 кг.</option>
             <option>18 кг.</option>
@@ -24,7 +22,6 @@ export default function WendingProductsItem({ productTitle, description, image, 
             <option>30 кг.</option>
             <option>33 кг.</option>
           </select>
-
         </form>
         <Link to='wending'>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>

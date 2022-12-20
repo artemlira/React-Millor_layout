@@ -5,10 +5,10 @@ import CoffeeCard from './../components/Page_Coffee/CoffeeCard/CoffeeCard';
 
 export default function Coffee() {
   return (
-    <div className='coffee'>
+    <article className='coffee'>
       <CoffeeNav />
       <CoffeeCard />
       <CoffeeSubscription />
-    </div>
+    </article>
   )
 }

@@ -12,10 +12,10 @@ export default function CatalogPage() {
       {
         location.pathname === "/catalog"
           ?
-          <div className='catalog'>
+          <article className='catalog'>
             <Catalog />
             <Subscription />
-          </div>
+          </article>
           :
           <Outlet />
       }

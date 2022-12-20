@@ -5,11 +5,15 @@
 // .basketProducts {}
 
 .container {
-  padding: f.rem(80) f.rem(100) f.rem(60);
+  padding: f.rem(80) f.vw(100) f.rem(60);
   background: #FFFFFF;
   border: 0.708508px solid #E4E4E4;
   box-shadow: 0px 0px 35.4254px rgba(163, 163, 163, 0.25);
   border-radius: 14px;
+
+  @media screen and (max-width:860px) {
+    padding: f.rem(80) f.rem(20) f.rem(60);
+  }
 }
 
 .header {
@@ -59,15 +63,22 @@
 }
 
 .productsItem {
+  border: 5px solid tomato;
   width: 100%;
+  min-width: f.rem(680);
   min-height: f.rem(122);
   background: #FCFCFC;
-  border: 0.708508px solid #F0F0F0;
+  // border: 0.708508px solid #F0F0F0;
   border-radius: 14px;
   display: grid;
   grid-template-columns: 0.38fr 1fr 0.21fr 0.4fr 0.32fr 0.32fr;
   gap: f.rem(50);
   align-items: center;
+
+   @media screen and (max-width:860px) {
+    grid-template-columns: 0.12fr 0.8fr 0.21fr 0.4fr 0.2fr 0.2fr;
+    gap: f.rem(20);
+   }
 
   &:not(:last-child) {
     margin-bottom: f.rem(20);
@@ -75,11 +86,16 @@
 }
 
 .delete {
+  border: 1px solid ;
   text-align: center;
   cursor: pointer;
+   @media screen and (max-width:860px) {
+    max-width: f.rem(25);
+   }
 }
 
 .itemProduct {
+  min-width: f.rem(200);
   display: grid;
   grid-template-columns: 0.26fr 1fr;
   gap: f.rem(20);
@@ -106,6 +122,7 @@
 
 .itemAmount {
   width: 100%;
+  min-width: f.rem(90);
   height: 35px;
   background: #F6F6F6;
   border: 0.708508px solid #D6D6D6;

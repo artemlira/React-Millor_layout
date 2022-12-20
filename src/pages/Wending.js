@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Wending() {
   return (
-    <div className='container'>Wending</div>
+    <article className='container'>Wending</article>
   )
 }

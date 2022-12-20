@@ -6,11 +6,11 @@ import Subscription from '../components/Subscription/Subscription';
 
 export default function Contacts() {
   return (
-    <div className="contacts">
+    <article className="contacts">
       <ContactsHeader />
       <ContactsMain />
       <Subscription />
-    </div>
+    </article>
   );
 }
 

@@ -8,13 +8,13 @@ import BasketPayment from '../components/Page_Basket/BasketPayment/BasketPayment
 
 export default function Basket() {
   return (
-    <div className="basket">
+    <article className="basket">
       <BasketHeader />
       <BasketProducts />
       <BasketDelivery />
       <BasketPayment />
       <Subscription />
-    </div>
+    </article>
   );
 }
 

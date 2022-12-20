@@ -10,7 +10,7 @@ import DiscountGoods from './../components/Page_Home/DiscountGoods/DiscountGoods
 
 export default function Home() {
   return (
-    <>
+    <article>
       <Slider />
       <Catalog />
       <DiscountGoods />
@@ -19,6 +19,6 @@ export default function Home() {
       <News />
       <SocialNetworks />
       <Subscription />
-    </>
+    </article>
   )
 }

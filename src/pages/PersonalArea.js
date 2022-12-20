@@ -4,9 +4,9 @@ import React from 'react';
 
 export default function PersonalArea() {
   return (
-      <div className="container">
+      <article className="container">
         PersonalArea Component
-      </div>
+      </article>
   );
 }
 

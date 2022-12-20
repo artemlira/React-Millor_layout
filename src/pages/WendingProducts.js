@@ -15,11 +15,11 @@ export default function WendingProducts() {
       {
         location.pathname === "/catalog/wending_products"
           ?
-          <div className="wendingProducts">
+          <article className="wendingProducts">
             <WendingRange />
             <Production arr={itemsWendingProducts} key={Math.random() * 100} link='wending' />
             <CoffeeCatalogMain />
-          </div>
+          </article>
           :
           <Outlet />
       }

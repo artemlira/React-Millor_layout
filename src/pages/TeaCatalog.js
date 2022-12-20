@@ -15,11 +15,11 @@ export default function TeaCatalog() {
       {
         location.pathname === "/catalog/tea_catalog"
           ?
-          <div className="teaCatalog">
+          <article className="teaCatalog">
             <TeaRange />
             <Production arr={itemsTea} key={Math.random() * 100} />
             <CoffeeCatalogMain />
-          </div>
+          </article>
           :
           <Outlet />
       }

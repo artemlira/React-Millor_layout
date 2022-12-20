@@ -15,11 +15,11 @@ export default function HealthyDiet() {
       {
         location.pathname === "/catalog/healthy_diet"
           ?
-          <div className="healthyDiet">
+          <article className="healthyDiet">
             <HealthyRange />
             <Production arr={itemsHealthyDiet} link='healthy_eating' />
             <CoffeeCatalogMain />
-          </div>
+          </article>
           :
           <Outlet />
       }

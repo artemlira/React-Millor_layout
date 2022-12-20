@@ -26,7 +26,6 @@ export default function ProductRange() {
   //получаю данные о видах кофе
   const typeCoffee = fragmentationUniqueValues(coffee, 'typeCoffee');
 
-
   return (
     <section className={styles.productRange}>
       <div className="container">

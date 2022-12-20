@@ -82,6 +82,16 @@
     line-height: f.ratio(14, 16.48);
     color: v.$black;
     padding: f.rem(10) f.rem(25);
+
+    @include m.tablet {
+      font-size: f.rem(20);
+      line-height: f.ratio(20, 26);
+    }
+
+    @include m.phone {
+      font-size: f.rem(18);
+      line-height: f.ratio(18, 21.19);
+    }
   }
 
   a:hover {

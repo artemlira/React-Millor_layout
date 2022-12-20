@@ -10,10 +10,6 @@ export default function DiscountItem({ sale, special, productTitle, description,
 
   const { pic, title, text, price, pack, addProduct } = useContext(MillorContext);
 
-  // const btnBasket = (elem) => {
-  //   console.log(elem);
-  // }
-
   return (
     <div className={styles.discountItem}>
       <div className={styles.container}>
@@ -37,21 +33,22 @@ export default function DiscountItem({ sale, special, productTitle, description,
           </div>
         }
         <Link className={styles.link} to={noLink ? '' : "coffee"} >
-          <div className={styles.wrapper} >
+          <div className={item.product === 'coffee' ? `${styles.wrapper}` : `${styles.wrapperNoCoffee}`} >
             <div className={styles.img}>
               <img ref={pic} src={image} alt="coffee" />
             </div>
-            <div className={styles.about}>
-              <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
-              <p className={styles.reviews}>4.0 <span>(32 отзыва)</span></p>
-              <img className={styles.coffeeBeans} src={discountItemPics[1]} alt="coffee beans" />
-              <p className={styles.description}>Кислинка</p>
-              <img className={styles.descriptionImg} src={discountItemPics[2]} alt="" />
-              <p className={styles.description}>Горчинка</p>
-              <img className={styles.descriptionImg} src={discountItemPics[2]} alt="" />
-              <p className={styles.description}>Насыщенность</p>
-              <img className={styles.descriptionImg} src={discountItemPics[2]} alt="" />
-            </div>
+            {item.product === 'coffee' &&
+              <div className={styles.about}>
+                <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
+                <p className={styles.reviews}>4.0 <span>(32 отзыва)</span></p>
+                <img className={styles.coffeeBeans} src={discountItemPics[1]} alt="coffee beans" />
+                <p className={styles.description}>Кислинка</p>
+                <img className={styles.descriptionImg} src={discountItemPics[2]} alt="" />
+                <p className={styles.description}>Горчинка</p>
+                <img className={styles.descriptionImg} src={discountItemPics[2]} alt="" />
+                <p className={styles.description}>Насыщенность</p>
+                <img className={styles.descriptionImg} src={discountItemPics[2]} alt="" />
+              </div>}
           </div>
           <div className={styles.wrapperText}>
             <h4 ref={title} className={styles.title}>{productTitle}</h4>

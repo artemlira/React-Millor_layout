@@ -1,21 +1,20 @@
 import React, { useContext } from 'react';
 import styles from './TeaItem.module.scss';
 import { discountItemPics } from '../../ImagesDB';
-import tea from '../../../images/TeaCatalog/01.png';
 import { MillorContext } from './../../Context';
 import { Link } from 'react-router-dom';
 
 
-export default function TeaItem({ sale }) {
+export default function TeaItem({ productTitle, description, image, productPrice, item, sale, rating }) {
 
   const { pic, title, text, price, pack, addProduct } = useContext(MillorContext);
   return (
-    <section className={styles.teaItem}>
+    <div className={styles.teaItem}>
       <div className={styles.container}>
         <form action="/" className={styles.form}>
           <div className={styles.rating}>
             <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
-            <p className={styles.reviews}>4.0<span>(32 отзыва)</span></p>
+            <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
           <select ref={pack} name="target" className={styles.select}>
             <option>100 г.</option>
@@ -26,25 +25,25 @@ export default function TeaItem({ sale }) {
         </form>
         <Link to='tea'>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
-            <img ref={pic} src={tea} alt="Tea packaging" />
+            <img ref={pic} src={image} alt="Tea packaging" />
           </div>
 
           <div className={styles.wrapperText}>
-            <h4 ref={title} className={styles.title}>Наименование товара</h4>
-            <p ref={text} className={styles.text}>Черный чай</p>
+            <h4 ref={title} className={styles.title}>{productTitle}</h4>
+            <p ref={text} className={styles.text}>{description}</p>
           </div>
         </Link>
         <div className={styles.price}>
           <div className={sale ? `${styles.priceText} ${styles.sale}` : styles.priceText}>
-            <p ref={price}>250 <span>₽</span></p>
+            <p ref={price}>{productPrice}</p>
           </div>
           <div >
-            <button className={styles.btn} onClick={(e) => addProduct(e)}>В корзину</button>
+            <button className={styles.btn} onClick={(e) => addProduct(e, item)}>В корзину</button>
           </div>
         </div>
 
       </div>
-    </section>
+    </div>
   );
 }
 

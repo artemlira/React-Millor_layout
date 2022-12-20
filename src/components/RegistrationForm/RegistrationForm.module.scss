@@ -16,7 +16,7 @@
 }
 
 .container {
-  width: f.rem(977);
+  width: f.vw(977);
   min-height: 70vh;
   position: relative;
   background-color: v.$white;
@@ -47,8 +47,8 @@
 
   img {
     max-width: none;
-    width: f.rem(350);
-    height: f.rem(240);
+    width: f.vw(350);
+    height: f.vw(240);
     position: absolute;
     top: 0px;
     left: 10px;
@@ -75,7 +75,7 @@
 }
 
 .registration {
-  padding-inline: f.rem(117) f.rem(97);
+  padding-inline: f.vw(117) f.vw(97);
 }
 
 .logo {

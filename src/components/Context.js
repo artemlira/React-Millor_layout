@@ -3,6 +3,9 @@ import useScrollToSection from './../hooks/useScrollToSection';
 import { useLocation } from 'react-router-dom';
 import { allProducts } from './TextsDB';
 import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
+import TeaItem from './Page_TeaCatalog/TeaItem/TeaItem';
+import WendingProductsItem from './Page_WendingProducts/WendingProductsItem/WendingProductsItem';
+import HealthyDietItem from './Page_HealthyDiet/HealthyDietItem/HealthyDietItem';
 
 
 
@@ -10,7 +13,7 @@ import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
 export const MillorContext = createContext();
 
 const Context = (props) => {
-  const [openSearch, setOpenSearch] = useState(false);
+  const [openSearch, setOpenSearch] = useState(false);  //открывает окно поиска в хедере на комп. версии
   const [scrollTo, scrollToHandler] = useScrollToSection();
   const location = useLocation();
   const [products, setProducts] = useState([]);  //продукты, которые попадают в корзину, при клике на кнопку "В корзину"
@@ -29,13 +32,10 @@ const Context = (props) => {
   const pack = useRef();
 
   //получение отдельно продуктов из БД
-  // const coffee = allProducts.filter(item => item.product === 'coffee');
   const [coffee, setCoffee] = useState(allProducts.filter(item => item.product === 'coffee'));
-  // const tea = allProducts.filter(item => item.product === 'tea');
-  // const coffee = allProducts.filter(item => item.product === 'coffee');
-  // const coffee = allProducts.filter(item => item.product === 'coffee');
-
-
+  const [tea, setTea] = useState(allProducts.filter(item => item.product === 'tea'));
+  const [wending, setWending] = useState(allProducts.filter(item => item.product === 'wending product'));
+  const [healthyDiet, setHealthyDiet] = useState(allProducts.filter(item => item.product === 'healthy diet'));
 
   //склонение слов, в зависимости от числа
   const transformationWord = (number, words) => {
@@ -47,6 +47,8 @@ const Context = (props) => {
 
   //добавление продукции в корзину
   function addProduct(e, item) {
+
+    // console.log(item);
     setProducts([...products, {
       id: products.length + 1,
       img: item.image,
@@ -101,6 +103,39 @@ const Context = (props) => {
       item={item}
       sale={item.sale} />);
 
+  //Создаем массив компонентов с карточками товаров на странице TeaCatalog, в зависимости от кол-ва товара
+  const itemsTea = tea.map(item =>
+    <TeaItem
+      productTitle={item.title}
+      description={item.description}
+      image={item.image}
+      productPrice={item.price}
+      item={item}
+      sale={item.sale}
+      rating={item.rating}
+    />)
+
+  //Создаем массив компонентов с карточками товаров на странице WendingProducts, в зависимости от кол-ва товара
+  const itemsWendingProducts = wending.map(item =>
+    <WendingProductsItem
+      productTitle={item.title}
+      description={item.description}
+      image={item.image}
+      productPrice={item.price}
+      item={item}
+      sale={item.sale}
+    />);
+
+  //Создаем массив компонентов с карточками товаров на странице HealthyDiet, в зависимости от кол-ва товара
+  const itemsHealthyDiet = healthyDiet.map(item =>
+    <HealthyDietItem
+      productTitle={item.title}
+      description={item.description}
+      image={item.image}
+      productPrice={item.price}
+      item={item}
+      sale={item.sale}
+    />)
 
   //===================
   const [active, setActive] = useState(false);
@@ -108,7 +143,7 @@ const Context = (props) => {
   const element = useRef();
 
 
-  //функция фильтрация кофе по способу приготовления, на нажатие соответствующей кнопки
+  //функция фильтрации кофе по способу приготовления, на нажатие соответствующей кнопки
   function filter(elem) {
     setActive(!active);
     if (active) {
@@ -120,6 +155,17 @@ const Context = (props) => {
     }
   }
 
+  //функция фильтрации чая по видам, на нажатие соответствующей кнопки
+  function filterTea(elem) {
+    setActive(!active);
+    if (active) {
+      setTea(allProducts.filter(item => item.product === 'tea'));
+      setFilterText(null);
+    } else {
+      setTea(tea.filter(item => item.name === elem.text));
+      setFilterText(elem.text)
+    }
+  }
 
 
 
@@ -134,10 +180,13 @@ const Context = (props) => {
     pic, title, text, price, pack,
     addProduct, removeProduct,
     coffee, setCoffee,
+    tea, setTea,
+    wending, setWending,
+    healthyDiet, setHealthyDiet,
     fragmentationUniqueValues,
-    filter,
+    filter, filterTea,
     active, setActive,
-    discountItemCoffee,
+    discountItemCoffee, itemsTea, itemsWendingProducts, itemsHealthyDiet,
     // addUniqueValues,
     element, filterText,
     // amountBasketProducts, setAmountBasketProducts,

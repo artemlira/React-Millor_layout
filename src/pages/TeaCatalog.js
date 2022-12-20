@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import TeaRange from '../components/Page_TeaCatalog/TeaRange/TeaRange';
 import Production from './../components/Production/Production';
-import { itemsTea } from '../components/TextsDB';
-import { Outlet, useLocation } from 'react-router';
+import { Outlet } from 'react-router';
 import CoffeeCatalogMain from './../components/Page_CoffeeCatalog/CoffeeCatalogMain/CoffeeCatalogMain';
+import { MillorContext } from './../components/Context';
 
 
 export default function TeaCatalog() {
 
-  const location = useLocation();
-
+  const { itemsTea, location } = useContext(MillorContext);
+  
   return (
     <>
       {

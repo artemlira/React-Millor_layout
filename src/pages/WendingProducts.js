@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Production from './../components/Production/Production';
-import { itemsWendingProducts } from '../components/TextsDB.js';
 import WendingRange from '../components/Page_WendingProducts/WendingRange/WendingRange';
-import { Outlet, useLocation } from 'react-router';
+import { Outlet } from 'react-router';
 import CoffeeCatalogMain from './../components/Page_CoffeeCatalog/CoffeeCatalogMain/CoffeeCatalogMain';
+import { MillorContext } from './../components/Context';
 
 
 export default function WendingProducts() {
 
-  const location = useLocation();
+  const { location, itemsWendingProducts } = useContext(MillorContext);
 
   return (
     <>
@@ -18,7 +18,7 @@ export default function WendingProducts() {
           <div className="wendingProducts">
             <WendingRange />
             <Production arr={itemsWendingProducts} key={Math.random() * 100} link='wending' />
-            <CoffeeCatalogMain/>
+            <CoffeeCatalogMain />
           </div>
           :
           <Outlet />

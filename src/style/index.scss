@@ -129,10 +129,22 @@ body {
 .teaCatalog,
 .wendingProducts,
 .healthyDiet {
-  background: url('../images/TeaCatalog/bg1.png') 0 0/100% no-repeat,
-    url('../images/Catalog Coffee/bg2.png') 0px 700px/100% auto no-repeat,
+  background: url('../images/TeaCatalog/bg1.png') center top/100% 514px no-repeat,
+    url('../images/Catalog Coffee/bg2.png') 0px 700px/cover no-repeat,
     v.$white;
   overflow: hidden;
+
+  @include m.tablet {
+    background: url('../images/TeaCatalog/bg_tablet.png') center top/100% 657px no-repeat,
+      url('../images/Catalog Coffee/bg2.png') 0 1140px/cover no-repeat,
+      v.$white;
+  }
+
+  @include m.phone {
+    background: url('../images/TeaCatalog/bg_tablet.png') center top/100% 321px no-repeat,
+      url('../images/Catalog Coffee/bg2.png') 0 600px/cover no-repeat,
+      v.$white;
+  }
 }
 
 .blog {

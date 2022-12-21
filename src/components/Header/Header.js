@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import styles from './Header.module.scss';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/logo.png';
@@ -7,6 +7,7 @@ import { MillorContext } from './../Context';
 import RegistrationForm from './../RegistrationForm/RegistrationForm';
 // import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import OpenNav from './OpenNav';
+import SearchTablet from './SearchTablet';
 
 
 
@@ -52,6 +53,7 @@ export default function Header() {
                 </nav>}
 
               {openSearch && <input className={styles.activeSearch} type="text" placeholder='Поиск по товарам' />}
+              {openSearch && <SearchTablet />}
 
               <div className={styles.icons}>
 

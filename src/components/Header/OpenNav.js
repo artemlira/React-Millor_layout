@@ -10,25 +10,17 @@ import insta from '../../images/header/insta.png';
 
 
 export default function OpenNav() {
-  const { products, openNav, setOpenNav } = useContext(MillorContext);
+  const { products, openNav, setOpenNav, setOpenRegistrationForm } = useContext(MillorContext);
   return (
 
     <AnimatePresence>
       {
         openNav && (
           <motion.div
-            initial={{
-              opacity: 1,
-              right: 100
-            }}
-            animate={{
-              opacity: 1,
-              right: 0
-            }}
-            exit={{ right: 100 }}
-            transition={{
-              duration: 0.5
-            }}
+            initial={{ x: "-100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 1 }}
             className={styles.containerOpenNav}>
             <div className={styles.wrapperLogo}>
               <div className={styles.logo}>
@@ -54,7 +46,7 @@ export default function OpenNav() {
                 <Link to="/basket">{icons[1]}</Link>
                 {products.length > 0 && <span className={styles.iconActive}>{products.length}</span>}
               </div>
-              <div className={styles.icon} onClick={() => setOpenNav(false)}>{icons[2]}</div>
+              <div className={styles.icon} onClick={() => setOpenRegistrationForm(true)}>{icons[2]}</div>
             </div>
             <div className={styles.wrapperContant}>
               <a href="mailto:Import@kldrefine.com">Import@kldrefine.com</a>

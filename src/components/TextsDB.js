@@ -413,7 +413,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/01.png',
     title: 'Наименование товара',
     description: ['Черный чай'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -423,7 +423,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/02.png',
     title: 'Наименование товара',
     description: ['Зеленый чай'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -433,7 +433,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/03.png',
     title: 'Наименование товара',
     description: ['Молочный улунг'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -443,7 +443,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/04.png',
     title: 'Наименование товара',
     description: ['Травяной чай'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -453,7 +453,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/05.png',
     title: 'Наименование товара',
     description: ['Матча'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -463,7 +463,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/06.png',
     title: 'Наименование товара',
     description: ['Пуэр'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -473,7 +473,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/07.png',
     title: 'Наименование товара',
     description: ['Кофейные напитки'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -483,7 +483,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/01.png',
     title: 'Наименование товара',
     description: ['Черный чай'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -493,7 +493,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/02.png',
     title: 'Наименование товара',
     description: ['Зеленый чай'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -503,7 +503,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/03.png',
     title: 'Наименование товара',
     description: ['Молочный улунг'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -513,7 +513,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/04.png',
     title: 'Наименование товара',
     description: ['Травяной чай'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -523,7 +523,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/05.png',
     title: 'Наименование товара',
     description: ['Матча'],
-    price: '250 ₽',
+    price: '250',
   },
   //===================== 12 штук
   {
@@ -534,7 +534,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/06.png',
     title: 'Наименование товара',
     description: ['Пуэр'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'tea',
@@ -544,7 +544,7 @@ export const allProducts = [
     image: '../images/TeaCatalog/07.png',
     title: 'Наименование товара',
     description: ['Кофейные напитки'],
-    price: '250 ₽',
+    price: '250',
   },
   //Wending Product
   {
@@ -710,7 +710,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -720,7 +720,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Ячменные напитки'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -730,7 +730,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -740,7 +740,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -750,7 +750,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Толокняные каши'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -760,7 +760,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -770,7 +770,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Ячменные напитки'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -780,7 +780,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -790,7 +790,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -800,7 +800,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Толокняные каши'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -810,7 +810,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -820,7 +820,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
-    price: '250 ₽',
+    price: '250',
   },
   //=========================== 12
   {
@@ -831,7 +831,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -841,7 +841,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Толокняные каши'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -851,7 +851,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -861,7 +861,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
-    price: '250 ₽',
+    price: '250',
   },
   {
     product: 'healthy diet',
@@ -871,7 +871,7 @@ export const allProducts = [
     image: '../images/HealthyDiet/01.png',
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
-    price: '250 ₽',
+    price: '250',
   },
 ]
 

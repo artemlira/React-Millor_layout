@@ -11,8 +11,8 @@ export default function Basket() {
     <article className="basket">
       <BasketHeader />
       <BasketProducts />
-      <BasketDelivery />
-      <BasketPayment />
+      {/* <BasketDelivery /> */}
+      {/* <BasketPayment /> */}
       <Subscription />
     </article>
   );

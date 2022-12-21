@@ -11,6 +11,7 @@ export default function BasketDelivery() {
           </div>
           <div className={styles.wrapperAbout}>
             <div className={styles.client}>
+              <h6 className={styles.clientTablet}>Контактная информация</h6>
               <ul className={styles.clientList}>
                 <li className={styles.clientItem}><input type="text" placeholder='Имя' /></li>
                 <li className={styles.clientItem}><input type="text" placeholder='Фамилия' /></li>
@@ -20,6 +21,7 @@ export default function BasketDelivery() {
               </ul>
             </div>
             <div className={styles.address}>
+              <h6 className={styles.adressTablet}>Адрес доставки</h6>
               <ul className={styles.addressList}>
                 <li className={styles.addressItem}><input type="text" placeholder='Страна' /></li>
                 <li className={styles.addressItem}><input type="text" placeholder='Город' /></li>

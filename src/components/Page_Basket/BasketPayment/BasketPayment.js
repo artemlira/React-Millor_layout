@@ -2,8 +2,6 @@ import React from 'react';
 import styles from './BasketPayment.module.scss';
 import RangeItem from './../../Page_CoffeeCatalog/ProductRange/RangeItem';
 import { deliveryOptions } from './../../TextsDB';
-import visa from '../../../images/Basket/visa.png';
-import masterCard from '../../../images/Basket/MasterCard.png';
 
 
 export default function BasketPayment() {
@@ -21,8 +19,8 @@ export default function BasketPayment() {
             <div className={styles.wrapperTitleTotal}>
               <h6 className={styles.titleTotal}>Итог: 486 ₽</h6>
               <div className={styles.imgTotal}>
-                <img src={masterCard} alt="MasterCard" />
-                <img src={visa} alt="VISA" />
+                <div className={styles.masterCard}></div>
+                <div className={styles.visa}></div>
               </div>
             </div>
             <p className={styles.textTotal}>Подытог: 540 ₽</p>

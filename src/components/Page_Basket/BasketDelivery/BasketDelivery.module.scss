@@ -4,6 +4,14 @@
 
 .basketDelivery {
   margin-top: f.rem(20);
+
+  @include m.tablet {
+    margin-top: f.rem(30);
+  }
+
+  @include m.phone {
+    margin-top: f.rem(20);
+  }
 }
 
 .container {

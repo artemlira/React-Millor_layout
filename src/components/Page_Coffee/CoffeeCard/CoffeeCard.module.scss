@@ -308,10 +308,10 @@
 
   .container {
     min-height: f.rem(1315);
-    background: #FFFFFF;
+    background: v.$white;
     border: 1px solid #E4E4E4;
     box-shadow: 0px 0px 102.4px rgba(163, 163, 163, 0.25);
-    border-radius: 20px;
+    border-radius: f.rem(20);
     padding: f.rem(50) f.rem(37) f.rem(70);
     display: flex;
     flex-direction: column;
@@ -324,16 +324,22 @@
   }
 
   .wrapperAbout {
-    border: 1px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: f.vw(70, 768);
+
+    @include m.phone {
+      gap: f.rem(20);
+    }
+
+    @media screen and (max-width:350px) {
+      gap: f.rem(5);
+    }
   }
 
   .reviews {
     margin-bottom: f.rem(170);
-    border: 1px solid green;
 
     @include m.phone {
       margin-bottom: f.rem(86);
@@ -349,6 +355,11 @@
       width: f.rem(142);
       height: f.rem(25);
       margin-bottom: f.rem(20);
+    }
+
+    @media screen and (max-width:350px) {
+      width: f.rem(100);
+      height: f.rem(20);
     }
 
     img {
@@ -407,42 +418,48 @@
       height: f.rem(20);
     }
 
+    @media screen and (max-width:350px) {
+      width: f.rem(100);
+      height: f.rem(20);
+    }
+
     img {
       width: 100%;
     }
   }
 
   .image {
-    border: 1px solid red;
     height: f.vw(495, 768);
     flex: 0 1 260px;
     position: relative;
 
+    @include m.phone {
+      height: f.vw(259, 480);
+      min-height: f.rem(150);
+      flex: 0 1 136px;
+      min-width: f.rem(90);
+    }
+
+
     &::after {
-      width: f.rem(120);
-      height: f.rem(120);
+      width: f.vw(120, 768);
+      height: f.vw(120, 768);
       display: block;
       position: absolute;
-      top: 45px;
-      right: -10px;
+      top: f.rem(45);
+      right: f.rem(-10);
       content: '';
       border-radius: 50%;
       background: url('../../../images/Coffee/vs0tzSHVcac.png')center/contain no-repeat;
 
-      @include m.netbook {
-        width: f.rem(125);
-        height: f.rem(125);
+      @include m.phone {
+        width: f.vw(66, 480);
+        height: f.vw(66, 480);
       }
-    }
-
-    @include m.phone {
-      height: f.rem(259);
-      flex: 0 1 136px;
     }
   }
 
   .wrapperTitle {
-    border: 1px solid;
     padding-block: f.rem(20);
   }
 
@@ -498,6 +515,11 @@
     }
 
     @include m.phone {
+      max-width: f.rem(240);
+      height: f.rem(48);
+    }
+
+    @include m.phone {
       line-height: f.ratio(12, 15.16);
     }
   }
@@ -545,7 +567,6 @@
   }
 
   .properties {
-    border: 1px solid;
     padding-block: f.rem(30);
     display: flex;
     flex-wrap: wrap;
@@ -590,24 +611,8 @@
     }
   }
 
-  // .acidImg {}
-
-  .bitterness {}
-
-  .bitternessText {}
-
-  .bitternessImg {}
-
-  .saturation {}
-
-  .saturationText {}
-
-  .saturationImg {}
-
   .buttons {
-    border: 1px solid;
     padding-top: f.rem(25);
-
   }
 
   .selectAmount {
@@ -615,9 +620,41 @@
     grid-template-columns: 1fr 1fr;
     gap: f.rem(20);
     padding-bottom: f.rem(20);
+
+    @include m.phone {
+      gap: f.rem(10);
+    }
+  }
+
+  .wrapperSelect {
+    height: f.rem(70);
+    position: relative;
+    display: inline-block;
+
+    @include m.phone {
+      height: f.rem(40);
+    }
+
+    &::after {
+      width: f.rem(20);
+      height: f.rem(10);
+      content: "";
+      position: absolute;
+      background: url('../../../images/Coffee/select.png')center/cover no-repeat;
+      right: f.rem(18);
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+
+      @include m.phone {
+        width: f.rem(10);
+        height: f.rem(5);
+      }
+    }
   }
 
   .select {
+    appearance: none; // убираем стандартную стрелку
     height: f.rem(70);
     background: #FFF7E1;
     border: 1px solid #F9B300;
@@ -626,6 +663,24 @@
     line-height: f.ratio(25, 29.82);
     padding-left: f.rem(50);
 
+    @include m.phone {
+      height: f.rem(40);
+      font-size: f.rem(14);
+      line-height: f.ratio(14, 16.48);
+      padding-left: f.rem(20);
+    }
+
+    option {
+      width: 50% !important;
+      height: 50% !important;
+      font-size: f.rem(25) !important;
+      line-height: f.ratio(25, 29.82) !important;
+
+      @include m.phone {
+        font-size: f.rem(14);
+        line-height: f.ratio(14, 16.48);
+      }
+    }
   }
 
   .itemAmount {
@@ -642,6 +697,12 @@
     line-height: f.ratio(25, 29.82);
     color: v.$darkGrey;
 
+    @include m.phone {
+      height: f.rem(40);
+      font-size: f.rem(16);
+      line-height: f.ratio(16, 19.09);
+    }
+
     button {
       height: 100%;
       color: v.$black;
@@ -652,6 +713,11 @@
       background: #F6F6F6;
       cursor: pointer;
 
+      @include m.phone {
+        font-size: f.rem(20);
+        line-height: f.ratio(20, 23.54);
+      }
+
       &:hover {
         background: #cccccc;
       }
@@ -660,17 +726,26 @@
 
   .buyBtn {
     width: 100%;
-    height: f.rem(49);
+    height: f.rem(70);
+
+    @include m.phone {
+      height: f.rem(40);
+    }
 
     button {
       width: 100%;
       height: 100%;
       background: v.$yellow;
       color: v.$white;
-      border-radius: 5px;
+      border-radius: f.rem(5);
       font-weight: 600;
       font-size: f.rem(25);
       line-height: f.ratio(25, 29.82);
+
+      @include m.phone {
+        font-size: f.rem(14);
+        line-height: f.ratio(14, 16.7);
+      }
 
       &:hover {
         background: v.$darkYellow;

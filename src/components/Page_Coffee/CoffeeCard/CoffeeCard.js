@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import styles from './CoffeeCard.module.scss';
 import { MillorContext } from './../../Context';
 import { discountItemPics } from '../../ImagesDB.js';
-// import img from '../../../images/Coffee/img1.png';
 import CoffeeCardTablet from './CoffeeCardTablet';
 
 

@@ -31,7 +31,7 @@ export default function CoffeeCardTablet() {
               </div>
             </div>
             <div className={styles.image}
-              style={{ background: `url('../../${openOneProduct.image}') center/contain no-repeat` }}>
+              style={{ background: `url('../../${openOneProduct.image}') center/100% 100% no-repeat` }}>
             </div>
           </div>
           <div className={styles.wrapperTitle}>
@@ -60,10 +60,12 @@ export default function CoffeeCardTablet() {
           </div>
           <div className={styles.buttons}>
             <div className={styles.selectAmount}>
-              <select name="target" className={styles.select}>
-                <option>250 г.</option>
-                <option>1000 г.</option>
-              </select>
+              <div className={styles.wrapperSelect}>
+                <select name="target" className={styles.select}>
+                  <option>250 г.</option>
+                  <option>1000 г.</option>
+                </select>
+              </div>
               <div className={styles.itemAmount}>
                 <button onClick={() => removeCount()}>-</button>{amountBasketProducts}<button onClick={() => addCount()}>+</button>
               </div>

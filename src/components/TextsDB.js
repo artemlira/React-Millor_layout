@@ -1,4 +1,4 @@
-
+// import img from '../images/Discount Goods/01.png'
 
 export const allProducts = [
   //coffee

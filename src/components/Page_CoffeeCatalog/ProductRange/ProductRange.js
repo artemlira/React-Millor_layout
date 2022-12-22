@@ -23,6 +23,8 @@ export default function ProductRange() {
   //получаю данные о специальных сортировках
   const special = fragmentationUniqueValues(coffee, 'special');
 
+  // console.log(special);
+
   //получаю данные о видах кофе
   const typeCoffee = fragmentationUniqueValues(coffee, 'typeCoffee');
 

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 export default function DiscountItem({ sale, special, productTitle, description, image, productPrice, item, noLink }) {
 
-  const { pic, title, text, price, pack, addProduct } = useContext(MillorContext);
+  const { pic, title, text, price, pack, addProduct, setOpenOneProduct } = useContext(MillorContext);
 
   return (
     <div className={styles.discountItem}>
@@ -32,7 +32,7 @@ export default function DiscountItem({ sale, special, productTitle, description,
             </div>
           </div>
         }
-        <Link className={styles.link} to={noLink ? '' : "coffee"} >
+        <Link onClick={() => setOpenOneProduct(item)} className={styles.link} to={noLink ? '' : "coffee"} >
           <div className={item.product === 'coffee' ? `${styles.wrapper}` : `${styles.wrapperNoCoffee}`} >
             <div className={styles.img}>
               <img ref={pic} src={image} alt="coffee" />

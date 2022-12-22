@@ -11,7 +11,7 @@ export default function CoffeeNav() {
           <ul className={styles.navigation}>
             <li className={styles.navigationItem}><Link to='/'>Главная</Link></li>
             <li className={styles.navigationItem}><Link to='/catalog'>Каталог товаров</Link></li>
-            <li className={styles.navigationItem}><Link to='/coffee_catalog'>Свежеобжаренный кофе</Link></li>
+            <li className={styles.navigationItem}><Link to='/catalog/coffee_catalog'>Свежеобжаренный кофе</Link></li>
             <li className={styles.navigationItem}>Карточка товара название</li>
           </ul>
         </div>

@@ -3,21 +3,21 @@ import React, { useContext, useState, useEffect } from 'react';
 import { MillorContext } from './../../Context';
 
 export default function BasketProductsItem({ item, img, title, text, price, pack, styles }) {
-  const { removeProduct } = useContext(MillorContext);
+  const { removeProduct, amountBasketProducts, addCount, removeCount } = useContext(MillorContext);
 
 
-  const [amountBasketProducts, setAmountBasketProducts] = useState(1);
+  // const [amountBasketProducts, setAmountBasketProducts] = useState(1);
   const [summ, setSumm] = useState(null);
 
-  const addCount = () => {
-    setAmountBasketProducts(amountBasketProducts + 1);
-  }
+  // const addCount = () => {
+  //   setAmountBasketProducts(amountBasketProducts + 1);
+  // }
 
-  const removeCount = () => {
-    if (amountBasketProducts > 1) {
-      setAmountBasketProducts(amountBasketProducts - 1);
-    }
-  }
+  // const removeCount = () => {
+  //   if (amountBasketProducts > 1) {
+  //     setAmountBasketProducts(amountBasketProducts - 1);
+  //   }
+  // }
 
   useEffect(() => {
     setSumm(amountBasketProducts * (price - (price * 0.1)));

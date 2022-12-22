@@ -20,9 +20,9 @@ const Context = (props) => {
   const [productInBasket, setProductInBasket] = useState(false);
   const [totalAmountBasket, setTotalAmountBasket] = useState();
   const [discount, setDiscount] = useState([]);
-  const [openRegistrationForm, setOpenRegistrationForm] = useState(null);
+  const [openRegistrationForm, setOpenRegistrationForm] = useState(null); //открытие регастрационной формы
   const [openNav, setOpenNav] = useState(false);
-  // const [amountBasketProducts, setAmountBasketProducts] = useState(1);
+  const [amountBasketProducts, setAmountBasketProducts] = useState(1);
 
 
   const pic = useRef();
@@ -37,6 +37,10 @@ const Context = (props) => {
   const [wending, setWending] = useState(allProducts.filter(item => item.product === 'wending product'));
   const [healthyDiet, setHealthyDiet] = useState(allProducts.filter(item => item.product === 'healthy diet'));
 
+  //при первой загрузке браузера помещаем в карточку товара кофе первый попавшиеся товар из массива
+  const [openOneProduct, setOpenOneProduct] = useState(coffee[0]);
+
+
   //склонение слов, в зависимости от числа
   const transformationWord = (number, words) => {
     if (words) {
@@ -48,7 +52,6 @@ const Context = (props) => {
   //добавление продукции в корзину
   function addProduct(e, item) {
 
-    // console.log(item);
     setProducts([...products, {
       id: products.length + 1,
       img: item.image,
@@ -193,6 +196,17 @@ const Context = (props) => {
     }
   }
 
+  //функции добавления и уменьшения кол-ва товаров
+  const addCount = () => {
+    setAmountBasketProducts(amountBasketProducts + 1);
+  }
+
+  const removeCount = () => {
+    if (amountBasketProducts > 1) {
+      setAmountBasketProducts(amountBasketProducts - 1);
+    }
+  }
+
 
 
 
@@ -215,11 +229,13 @@ const Context = (props) => {
     discountItemCoffee, itemsTea, itemsWendingProducts, itemsHealthyDiet,
     // addUniqueValues,
     element, filterText,
-    // amountBasketProducts, setAmountBasketProducts,
+    amountBasketProducts, setAmountBasketProducts,
+    addCount, removeCount,
     totalAmountBasket, setTotalAmountBasket,
     discount, setDiscount,
     openRegistrationForm, setOpenRegistrationForm,
     openNav, setOpenNav,
+    openOneProduct, setOpenOneProduct,
   };
 
   return (

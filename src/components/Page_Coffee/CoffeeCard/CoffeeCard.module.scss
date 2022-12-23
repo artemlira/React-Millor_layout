@@ -440,6 +440,11 @@
       min-width: f.rem(90);
     }
 
+    img{
+      height: 100%;
+      width: 100%;
+    }
+
 
     &::after {
       width: f.vw(120, 768);

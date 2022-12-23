@@ -1,4 +1,20 @@
 // import img from '../images/Discount Goods/01.png'
+import pic01 from '../images/Blog/pic01.png';
+import pic02 from '../images/Blog/pic02.png';
+import pic03 from '../images/Blog/pic03.png';
+import news01 from '../images/news/01.png';
+import coffee01 from '../images/Discount Goods/01.png';
+import tea01 from '../images/TeaCatalog/01.png';
+import tea02 from '../images/TeaCatalog/02.png';
+import tea03 from '../images/TeaCatalog/03.png';
+import tea04 from '../images/TeaCatalog/04.png';
+import tea05 from '../images/TeaCatalog/05.png';
+import tea06 from '../images/TeaCatalog/06.png';
+import tea07 from '../images/TeaCatalog/07.png';
+import wending01 from '../images/Wending Products/01.png';
+import healthyDiet01 from '../images/HealthyDiet/01.png';
+import ava from '../images/Coffee/ava.png';
+import rating from '../images/Discount Goods/stars.png';
 
 export const allProducts = [
   //coffee
@@ -13,7 +29,7 @@ export const allProducts = [
     special: ['Популярное', 'Новый урожай'], //особые 6
     rating: 4,                               //рейтинг
     acid: 'Низкая',                          //кислинка 4
-    image: '../images/Discount Goods/01.png',//картинка
+    image: coffee01,//картинка
     title: 'Colombia Supremo',               //заголовок
     description: ['Свежеобжаренный кофе',    //описание
       '- описание товара, вкус, аромат'],
@@ -24,8 +40,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -33,8 +49,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -42,8 +58,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -59,7 +75,7 @@ export const allProducts = [
     special: ['Ваш выбор'],
     rating: 5,
     acid: 'Средняя',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -69,8 +85,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -78,8 +94,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -87,8 +103,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -104,7 +120,7 @@ export const allProducts = [
     special: ['Скидки'],
     rating: 3,
     acid: 'Высокая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -114,8 +130,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -123,8 +139,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -132,8 +148,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -149,7 +165,7 @@ export const allProducts = [
     special: ['Сорт недели'],
     rating: 4,
     acid: 'Низкая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -159,8 +175,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -168,8 +184,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -177,8 +193,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -194,7 +210,7 @@ export const allProducts = [
     special: ['Микролот'],
     rating: 4,
     acid: 'Средняя',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -204,8 +220,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -213,8 +229,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -222,8 +238,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -239,7 +255,7 @@ export const allProducts = [
     special: ['Новинка'],
     rating: 4,
     acid: 'Высокая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -249,8 +265,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -258,8 +274,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -267,8 +283,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -284,7 +300,7 @@ export const allProducts = [
     special: ['Популярное', 'Новый урожай'],
     rating: 4,
     acid: 'Низкая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -294,8 +310,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -303,8 +319,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -312,8 +328,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -329,7 +345,7 @@ export const allProducts = [
     special: ['Ваш выбор'],
     rating: 4,
     acid: 'Средняя',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -339,8 +355,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -348,8 +364,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -357,8 +373,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -374,7 +390,7 @@ export const allProducts = [
     special: ['Сорт недели'],
     rating: 4,
     acid: 'Высокая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -384,8 +400,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -393,8 +409,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -402,8 +418,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -419,7 +435,7 @@ export const allProducts = [
     special: ['Микролот'],
     rating: 4,
     acid: 'Низкая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -429,8 +445,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -438,8 +454,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -447,8 +463,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -464,7 +480,7 @@ export const allProducts = [
     special: ['Новинка'],
     rating: 4,
     acid: 'Средняя',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -474,8 +490,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -483,8 +499,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -492,8 +508,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -509,7 +525,7 @@ export const allProducts = [
     special: ['Популярное', 'Новый урожай'],
     rating: 4,
     acid: 'Высокая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -519,8 +535,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -528,8 +544,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -537,8 +553,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -555,7 +571,7 @@ export const allProducts = [
     special: ['Ваш выбор'],
     rating: 4,
     acid: 'Средняя',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -565,8 +581,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -574,8 +590,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -583,8 +599,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -600,7 +616,7 @@ export const allProducts = [
     special: ['Микролот'],
     rating: 4,
     acid: 'Высокая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -610,8 +626,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -619,8 +635,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -628,8 +644,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -645,7 +661,7 @@ export const allProducts = [
     special: ['Скидки'],
     rating: 4,
     acid: 'Высокая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -655,8 +671,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -664,8 +680,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -673,8 +689,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -690,7 +706,7 @@ export const allProducts = [
     special: ['Новинка'],
     rating: 4,
     acid: 'Высокая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -700,8 +716,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -709,8 +725,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -718,8 +734,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -735,7 +751,7 @@ export const allProducts = [
     special: ['Сорт недели'],
     rating: 4,
     acid: 'Высокая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -745,8 +761,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -754,8 +770,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -763,8 +779,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -780,7 +796,7 @@ export const allProducts = [
     special: ['Популярное', 'Новый урожай'],
     rating: 4,
     acid: 'Высокая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -790,8 +806,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -799,8 +815,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -808,8 +824,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -825,7 +841,7 @@ export const allProducts = [
     special: ['Сорт недели'],
     rating: 4,
     acid: 'Низкая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -835,8 +851,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -844,8 +860,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -853,8 +869,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -870,7 +886,7 @@ export const allProducts = [
     special: ['Скидки'],
     rating: 4,
     acid: 'Низкая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -880,8 +896,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -889,8 +905,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -898,8 +914,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -915,7 +931,7 @@ export const allProducts = [
     special: ['Скидки'],
     rating: 4,
     acid: 'Низкая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -925,8 +941,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -934,8 +950,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -943,8 +959,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -960,7 +976,7 @@ export const allProducts = [
     special: ['Скидки'],
     rating: 4,
     acid: 'Низкая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -970,8 +986,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -979,8 +995,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -988,8 +1004,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1005,7 +1021,7 @@ export const allProducts = [
     special: ['Микролот'],
     rating: 4,
     acid: 'Низкая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1015,8 +1031,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1024,8 +1040,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1033,8 +1049,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1050,7 +1066,7 @@ export const allProducts = [
     special: ['Микролот'],
     rating: 4,
     acid: 'Низкая',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1060,8 +1076,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1069,8 +1085,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1078,8 +1094,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1095,7 +1111,7 @@ export const allProducts = [
     special: ['Популярное', 'Новый урожай'],
     rating: 4,
     acid: 'Средняя',
-    image: '../images/Discount Goods/01.png',
+    image: coffee01,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1105,8 +1121,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1114,8 +1130,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1123,8 +1139,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1135,7 +1151,7 @@ export const allProducts = [
     name: 'Черный чай',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/01.png',
+    image: tea01,
     title: 'Наименование товара',
     description: ['Черный чай'],
     price: '250',
@@ -1145,8 +1161,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1154,8 +1170,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1163,8 +1179,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1174,7 +1190,7 @@ export const allProducts = [
     name: 'Зеленый чай',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/02.png',
+    image: tea02,
     title: 'Наименование товара',
     description: ['Зеленый чай'],
     price: '250',
@@ -1184,8 +1200,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1193,8 +1209,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1202,8 +1218,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1213,7 +1229,7 @@ export const allProducts = [
     name: 'Молочный улунг',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/03.png',
+    image: tea03,
     title: 'Наименование товара',
     description: ['Молочный улунг'],
     price: '250',
@@ -1223,8 +1239,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1232,8 +1248,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1241,8 +1257,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1252,7 +1268,7 @@ export const allProducts = [
     name: 'Травяной чай',
     sale: true,
     rating: 4,
-    image: '../images/TeaCatalog/04.png',
+    image: tea04,
     title: 'Наименование товара',
     description: ['Травяной чай'],
     price: '250',
@@ -1262,8 +1278,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1271,8 +1287,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1280,8 +1296,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1291,7 +1307,7 @@ export const allProducts = [
     name: 'Матча',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/05.png',
+    image: tea05,
     title: 'Наименование товара',
     description: ['Матча'],
     price: '250',
@@ -1301,8 +1317,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1310,8 +1326,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1319,8 +1335,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1330,7 +1346,7 @@ export const allProducts = [
     name: 'Пуэр',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/06.png',
+    image: tea06,
     title: 'Наименование товара',
     description: ['Пуэр'],
     price: '250',
@@ -1340,8 +1356,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1349,8 +1365,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1358,8 +1374,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1369,7 +1385,7 @@ export const allProducts = [
     name: 'Кофейные напитки',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/07.png',
+    image: tea07,
     title: 'Наименование товара',
     description: ['Кофейные напитки'],
     price: '250',
@@ -1379,8 +1395,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1388,8 +1404,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1397,8 +1413,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1408,7 +1424,7 @@ export const allProducts = [
     name: 'Черный чай',
     sale: true,
     rating: 4,
-    image: '../images/TeaCatalog/01.png',
+    image: tea01,
     title: 'Наименование товара',
     description: ['Черный чай'],
     price: '250',
@@ -1418,8 +1434,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1427,8 +1443,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1436,8 +1452,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1447,7 +1463,7 @@ export const allProducts = [
     name: 'Зеленый чай',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/02.png',
+    image: tea02,
     title: 'Наименование товара',
     description: ['Зеленый чай'],
     price: '250',
@@ -1457,8 +1473,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1466,8 +1482,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1475,8 +1491,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1486,7 +1502,7 @@ export const allProducts = [
     name: 'Молочный улунг',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/03.png',
+    image: tea03,
     title: 'Наименование товара',
     description: ['Молочный улунг'],
     price: '250',
@@ -1496,8 +1512,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1505,8 +1521,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1514,8 +1530,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1525,7 +1541,7 @@ export const allProducts = [
     name: 'Травяной чай',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/04.png',
+    image: tea04,
     title: 'Наименование товара',
     description: ['Травяной чай'],
     price: '250',
@@ -1535,8 +1551,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1544,8 +1560,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1553,8 +1569,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1564,7 +1580,7 @@ export const allProducts = [
     name: 'Матча',
     sale: true,
     rating: 4,
-    image: '../images/TeaCatalog/05.png',
+    image: tea05,
     title: 'Наименование товара',
     description: ['Матча'],
     price: '250',
@@ -1574,8 +1590,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1583,8 +1599,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1592,8 +1608,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1604,7 +1620,7 @@ export const allProducts = [
     name: 'Пуэр',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/06.png',
+    image: tea06,
     title: 'Наименование товара',
     description: ['Пуэр'],
     price: '250',
@@ -1614,8 +1630,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1623,8 +1639,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1632,8 +1648,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1643,7 +1659,7 @@ export const allProducts = [
     name: 'Кофейные напитки',
     sale: false,
     rating: 4,
-    image: '../images/TeaCatalog/07.png',
+    image: tea07,
     title: 'Наименование товара',
     description: ['Кофейные напитки'],
     price: '250',
@@ -1653,8 +1669,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1662,8 +1678,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1671,8 +1687,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1683,7 +1699,7 @@ export const allProducts = [
     name: 'Гранулированный кофе',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
     review: [
@@ -1692,8 +1708,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1701,8 +1717,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1710,8 +1726,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1721,7 +1737,7 @@ export const allProducts = [
     name: 'Гранулированный цикорий',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
     review: [
@@ -1730,8 +1746,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1739,8 +1755,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1748,8 +1764,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1759,7 +1775,7 @@ export const allProducts = [
     name: 'Зерновой кофе',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Зерновой кофе'],
     review: [
@@ -1768,8 +1784,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1777,8 +1793,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1786,8 +1802,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1797,7 +1813,7 @@ export const allProducts = [
     name: 'Гранулированный какао',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный какао'],
     review: [
@@ -1806,8 +1822,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1815,8 +1831,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1824,8 +1840,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1835,7 +1851,7 @@ export const allProducts = [
     name: 'Гранулированные кофейные напитки',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированные кофейные напитки'],
     review: [
@@ -1844,8 +1860,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1853,8 +1869,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1862,8 +1878,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1873,7 +1889,7 @@ export const allProducts = [
     name: 'Кофе порошкообразный',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Кофе порошкообразный'],
     review: [
@@ -1882,8 +1898,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1891,8 +1907,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1900,8 +1916,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1911,7 +1927,7 @@ export const allProducts = [
     name: 'Сухое молоко гранулированное',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
     review: [
@@ -1920,8 +1936,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1929,8 +1945,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1938,8 +1954,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1949,7 +1965,7 @@ export const allProducts = [
     name: 'Гранулированный кофе',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
     review: [
@@ -1958,8 +1974,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1967,8 +1983,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -1976,8 +1992,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -1987,7 +2003,7 @@ export const allProducts = [
     name: 'Гранулированный цикорий',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
     review: [
@@ -1996,8 +2012,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2005,8 +2021,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2014,8 +2030,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2025,7 +2041,7 @@ export const allProducts = [
     name: 'Зерновой кофе',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Зерновой кофе'],
     review: [
@@ -2034,8 +2050,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2043,8 +2059,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2052,8 +2068,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2063,7 +2079,7 @@ export const allProducts = [
     name: 'Гранулированный какао',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный какао'],
     review: [
@@ -2072,8 +2088,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2081,8 +2097,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2090,8 +2106,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2101,7 +2117,7 @@ export const allProducts = [
     name: 'Гранулированные кофейные напитки',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированные кофейные напитки'],
     review: [
@@ -2110,8 +2126,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2119,8 +2135,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2128,8 +2144,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2140,7 +2156,7 @@ export const allProducts = [
     name: 'Кофе порошкообразный',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Кофе порошкообразный'],
     review: [
@@ -2149,8 +2165,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2158,8 +2174,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2167,8 +2183,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2178,7 +2194,7 @@ export const allProducts = [
     name: 'Сухое молоко гранулированное',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
     review: [
@@ -2187,8 +2203,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2196,8 +2212,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2205,8 +2221,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2216,7 +2232,7 @@ export const allProducts = [
     name: 'Сухое молоко гранулированное',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
     review: [
@@ -2225,8 +2241,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2234,8 +2250,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2243,8 +2259,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2254,7 +2270,7 @@ export const allProducts = [
     name: 'Гранулированный кофе',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
     review: [
@@ -2263,8 +2279,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2272,8 +2288,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2281,8 +2297,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2292,7 +2308,7 @@ export const allProducts = [
     name: 'Гранулированный цикорий',
     sale: false,
     rating: 4,
-    image: '../images/Wending Products/01.png',
+    image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
     review: [
@@ -2301,8 +2317,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2310,8 +2326,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2319,8 +2335,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2331,7 +2347,7 @@ export const allProducts = [
     name: 'Цикорий и корень цикория',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
     price: '250',
@@ -2341,8 +2357,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2350,8 +2366,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2359,8 +2375,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2370,7 +2386,7 @@ export const allProducts = [
     name: 'Ячменные напитки',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Ячменные напитки'],
     price: '250',
@@ -2380,8 +2396,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2389,8 +2405,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2398,8 +2414,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2409,7 +2425,7 @@ export const allProducts = [
     name: 'Напитки для здоровья',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
     price: '250',
@@ -2419,8 +2435,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2428,8 +2444,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2437,8 +2453,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2448,7 +2464,7 @@ export const allProducts = [
     name: 'Протеиновые смеси',
     sale: true,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
     price: '250',
@@ -2458,8 +2474,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2467,8 +2483,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2476,8 +2492,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2487,7 +2503,7 @@ export const allProducts = [
     name: 'Толокняные каши',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Толокняные каши'],
     price: '250',
@@ -2497,8 +2513,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2506,8 +2522,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2515,8 +2531,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2526,7 +2542,7 @@ export const allProducts = [
     name: 'Цикорий и корень цикория',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
     price: '250',
@@ -2536,8 +2552,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2545,8 +2561,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2554,8 +2570,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2565,7 +2581,7 @@ export const allProducts = [
     name: 'Ячменные напитки',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Ячменные напитки'],
     price: '250',
@@ -2575,8 +2591,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2584,8 +2600,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2593,8 +2609,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2604,7 +2620,7 @@ export const allProducts = [
     name: 'Напитки для здоровья',
     sale: true,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
     price: '250',
@@ -2614,8 +2630,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2623,8 +2639,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2632,8 +2648,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2643,7 +2659,7 @@ export const allProducts = [
     name: 'Протеиновые смеси',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
     price: '250',
@@ -2653,8 +2669,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2662,8 +2678,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2671,8 +2687,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2682,7 +2698,7 @@ export const allProducts = [
     name: 'Толокняные каши',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Толокняные каши'],
     price: '250',
@@ -2692,8 +2708,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2701,8 +2717,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2710,8 +2726,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2721,7 +2737,7 @@ export const allProducts = [
     name: 'Цикорий и корень цикория',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
     price: '250',
@@ -2731,8 +2747,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2740,8 +2756,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2749,8 +2765,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2760,7 +2776,7 @@ export const allProducts = [
     name: 'Напитки для здоровья',
     sale: true,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
     price: '250',
@@ -2770,8 +2786,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2779,8 +2795,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2788,8 +2804,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2800,7 +2816,7 @@ export const allProducts = [
     name: 'Протеиновые смеси',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
     price: '250',
@@ -2810,8 +2826,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2819,8 +2835,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2828,8 +2844,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2839,7 +2855,7 @@ export const allProducts = [
     name: 'Толокняные каши',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Толокняные каши'],
     price: '250',
@@ -2849,8 +2865,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2858,8 +2874,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2867,8 +2883,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2878,7 +2894,7 @@ export const allProducts = [
     name: 'Цикорий и корень цикория',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
     price: '250',
@@ -2888,8 +2904,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2897,8 +2913,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2906,8 +2922,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2917,7 +2933,7 @@ export const allProducts = [
     name: 'Напитки для здоровья',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
     price: '250',
@@ -2927,8 +2943,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2936,8 +2952,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2945,8 +2961,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2956,7 +2972,7 @@ export const allProducts = [
     name: 'Протеиновые смеси',
     sale: false,
     rating: 4,
-    image: '../images/HealthyDiet/01.png',
+    image: healthyDiet01,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
     price: '250',
@@ -2966,8 +2982,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2975,8 +2991,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       },
       {
@@ -2984,8 +3000,8 @@ export const allProducts = [
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
-        rating: '../images/Discount Goods/stars.png',
-        photo: '../images/Coffee/ava.png',
+        rating: rating,
+        photo: ava,
         city: 'г. Москва'
       }
     ]
@@ -2994,7 +3010,7 @@ export const allProducts = [
 
 export const itemsBlogTraining = [
   {
-    img: '../images/Blog/pic01.png',
+    img: pic01,
     text: [
       'Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.',
 
@@ -3005,7 +3021,7 @@ export const itemsBlogTraining = [
   },
   {
     title: 'Название темы',
-    img: '../images/Blog/pic02.png',
+    img: pic02,
     text: [
       'Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.',
       'Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия.Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития.',
@@ -3014,7 +3030,7 @@ export const itemsBlogTraining = [
   },
   {
     title: 'Название темы',
-    img: '../images/Blog/pic03.png',
+    img: pic03,
     text: [
       'Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.',
       'Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия.Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития.',
@@ -3025,7 +3041,7 @@ export const itemsBlogTraining = [
 
 export const itemsBlogNews = [
   {
-    img: '../images/news/01.png',
+    img: news01,
     title: 'Танзанийский кофе. Откуда он взялся и почему мы его так любим?',
     text: ['Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.',
 
@@ -3034,7 +3050,7 @@ export const itemsBlogNews = [
     link: 'Подробнее'
   },
   {
-    img: '../images/news/01.png',
+    img: news01,
     title: 'Танзанийский кофе. Откуда он взялся и почему мы его так любим?',
     text: ['Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.',
 
@@ -3043,7 +3059,7 @@ export const itemsBlogNews = [
     link: 'Подробнее'
   },
   {
-    img: '../images/news/01.png',
+    img: news01,
     title: 'Танзанийский кофе. Откуда он взялся и почему мы его так любим?',
     text: ['Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.',
 

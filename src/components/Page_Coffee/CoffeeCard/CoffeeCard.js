@@ -14,12 +14,12 @@ export default function CoffeeCard() {
       <section className={styles.coffeeCard}>
         <div className="container">
           <div className={styles.container}>
-            <div className={styles.image}
-              style={{ background: `url('../../${openOneProduct.image}') center/contain no-repeat` }}>
+            <div className={styles.image}>
+              <img src={openOneProduct.image} alt={openOneProduct.title} />
             </div>
             <div className={styles.contant}>
               <div className={styles.coffeeBeans} >
-                <img src={`../../${discountItemPics[1]}`} alt="coffee beans" />
+                <img src={`${discountItemPics[1]}`} alt="coffee beans" />
               </div>
               <div className={styles.wrapperTitle}>
                 <div>
@@ -31,7 +31,7 @@ export default function CoffeeCard() {
                 </div>
               </div>
               <div className={styles.reviews}>
-                <div className={styles.reviewsStars}><img src={`../../${discountItemPics[3]}`} alt="stars" /></div>
+                <div className={styles.reviewsStars}><img src={`${discountItemPics[3]}`} alt="stars" /></div>
                 <p className={styles.reviewsText}>{openOneProduct.rating}.0 <span>(32 отзыва)</span></p>
               </div>
               <div className={styles.contantAbout}>
@@ -40,15 +40,15 @@ export default function CoffeeCard() {
               <div className={styles.properties}>
                 <div className={styles.acid}>
                   <p className={styles.acidText}>Кислинка</p>
-                  <img className={styles.acidImg} src={`../../${discountItemPics[2]}`} alt="" />
+                  <img className={styles.acidImg} src={`${discountItemPics[2]}`} alt="" />
                 </div>
                 <div className={styles.bitterness}>
                   <p className={styles.bitternessText}>Горчинка</p>
-                  <img className={styles.bitternessImg} src={`../../${discountItemPics[2]}`} alt="" />
+                  <img className={styles.bitternessImg} src={`${discountItemPics[2]}`} alt="" />
                 </div>
                 <div className={styles.saturation}>
                   <p className={styles.saturationText}>Насыщенность</p>
-                  <img className={styles.saturationImg} src={`../../${discountItemPics[2]}`} alt="" />
+                  <img className={styles.saturationImg} src={`${discountItemPics[2]}`} alt="" />
                 </div>
               </div>
               <div>

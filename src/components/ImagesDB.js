@@ -9,6 +9,36 @@ import { ReactComponent as Icon8 } from '../images/Catalog Coffee/icon08.svg';
 import { ReactComponent as HeaderIcon1 } from '../images/header/01.svg';
 import { ReactComponent as HeaderIcon2 } from '../images/header/02.svg';
 import { ReactComponent as HeaderIcon3 } from '../images/header/03.svg';
+import catalog01 from '../images/catalog/01.png';
+import catalog02 from '../images/catalog/02.png';
+import catalog03 from '../images/catalog/03.png';
+import catalog04 from '../images/catalog/04.png';
+import discImg01 from '../images/Discount Goods/01.png';
+import coffee from '../images/Discount Goods/coffee.png';
+import dots from '../images/Discount Goods/dots.png';
+import stars from '../images/Discount Goods/stars.png';
+import procent from '../images/Discount Goods/procent.svg';
+import advantages01 from '../images/advantages/01.png';
+import advantagesicon1 from '../images/advantages/icon1.svg';
+import advantagesicon2 from '../images/advantages/icon2.svg';
+import advantagesicon3 from '../images/advantages/icon3.svg';
+import socialNetworksIcon01 from '../images/socialNetworks/icon01.png';
+import socialNetworksIphones from '../images/socialNetworks/iphones.png';
+import socialNetworksNext from '../images/socialNetworks/next.png';
+import CatalogCoffee5 from '../images/Catalog Coffee/coffee5.png';
+import CatalogCoffee4 from '../images/Catalog Coffee/coffee4.png';
+import CatalogCoffee3 from '../images/Catalog Coffee/coffee3.png';
+import CatalogCoffee2 from '../images/Catalog Coffee/coffee2.png';
+import CatalogCoffee1 from '../images/Catalog Coffee/coffee1.png';
+import tea01 from '../images/TeaCatalog/01.png';
+import tea02 from '../images/TeaCatalog/02.png';
+import tea03 from '../images/TeaCatalog/03.png';
+import tea04 from '../images/TeaCatalog/04.png';
+import tea05 from '../images/TeaCatalog/05.png';
+import tea06 from '../images/TeaCatalog/06.png';
+import tea07 from '../images/TeaCatalog/07.png';
+import wending01 from '../images/Wending Products/01.png';
+import healthyDiet01 from '../images/HealthyDiet/01.png';
 
 
 
@@ -20,25 +50,25 @@ export const icons = [
 
 export const catalog = [
   {
-    img: '../images/catalog/01.png',
+    img: catalog01,
     text: 'Свежеобжаренный кофе',
     btn: 'Купить',
     link: 'coffee_catalog',
   },
   {
-    img: '../images/catalog/02.png',
+    img: catalog02,
     text: 'Чай и кофейные напитки',
     btn: 'Купить',
     link: 'tea_catalog',
   },
   {
-    img: '../images/catalog/03.png',
+    img: catalog03,
     text: 'Продукция для вендинга',
     btn: 'Купить',
     link: 'wending_products',
   },
   {
-    img: '../images/catalog/04.png',
+    img: catalog04,
     text: 'Здоровое питание',
     btn: 'Купить',
     link: 'healthy_diet',
@@ -46,25 +76,24 @@ export const catalog = [
 ]
 
 export const discountItemPics = [
-  '../images/Discount Goods/01.png',
-  '../images/Discount Goods/coffee.png',
-  '../images/Discount Goods/dots.png',
-  '../images/Discount Goods/stars.png',
-  '../images/Discount Goods/procent.svg',
-
+  discImg01,
+  coffee,
+  dots,
+  stars,
+  procent,
 ]
 
 export const advantagesPics = [
-  '../images/advantages/01.png',
-  '../images/advantages/icon1.svg',
-  '../images/advantages/icon2.svg',
-  '../images/advantages/icon3.svg',
+  advantages01,
+  advantagesicon1,
+  advantagesicon2,
+  advantagesicon3,
 ]
 
 export const socialNetwork = [
-  '../images/socialNetworks/icon01.png',
-  '../images/socialNetworks/iphones.png',
-  '../images/socialNetworks/next.png',
+  socialNetworksIcon01,
+  socialNetworksIphones,
+  socialNetworksNext,
 ]
 
 export const productRangeIcons = [
@@ -103,24 +132,24 @@ export const productRangeIcons = [
 ]
 
 export const productRangePic = [
-  '../images/Catalog Coffee/coffee5.png',
-  '../images/Catalog Coffee/coffee4.png',
-  '../images/Catalog Coffee/coffee3.png',
-  '../images/Catalog Coffee/coffee2.png',
-  '../images/Catalog Coffee/coffee1.png',
+  CatalogCoffee5,
+  CatalogCoffee4,
+  CatalogCoffee3,
+  CatalogCoffee2,
+  CatalogCoffee1,
 ]
 
 export const teaRange = [
   {
-    img: '../images/TeaCatalog/01.png',
+    img: tea01,
     text: 'Черный чай'
   },
   {
-    img: '../images/TeaCatalog/02.png',
+    img: tea02,
     text: 'Зеленый чай'
   },
   {
-    img: '../images/TeaCatalog/03.png',
+    img: tea03,
     text: 'Молочный улунг'
   },
   {
@@ -128,34 +157,34 @@ export const teaRange = [
     text: false
   },
   {
-    img: '../images/TeaCatalog/04.png',
+    img: tea04,
     text: 'Травяной чай'
   },
   {
-    img: '../images/TeaCatalog/05.png',
+    img: tea05,
     text: 'Матча'
   },
   {
-    img: '../images/TeaCatalog/06.png',
+    img: tea06,
     text: 'Пуэр'
   },
   {
-    img: '../images/TeaCatalog/07.png',
+    img: tea07,
     text: 'Кофейные напитки'
   },
 ]
 
 export const wendingRange = [
   {
-    img: '../images/Wending Products/01.png',
+    img: wending01,
     text: 'Гранулированный кофе'
   },
   {
-    img: '../images/Wending Products/01.png',
+    img: wending01,
     text: 'Гранулированный цикорий'
   },
   {
-    img: '../images/Wending Products/01.png',
+    img: wending01,
     text: 'Зерновой кофе'
   },
   {
@@ -163,30 +192,30 @@ export const wendingRange = [
     text: false
   },
   {
-    img: '../images/Wending Products/01.png',
+    img: wending01,
     text: 'Гранулированный какао'
   },
   {
-    img: '../images/Wending Products/01.png',
+    img: wending01,
     text: 'Гранулированные кофейные напитки'
   },
   {
-    img: '../images/Wending Products/01.png',
+    img: wending01,
     text: 'Кофе порошкообразный'
   },
   {
-    img: '../images/Wending Products/01.png',
+    img: wending01,
     text: 'Сухое молоко гранулированное'
   },
 ]
 
 export const foodRange = [
   {
-    img: '../images/HealthyDiet/01.png',
+    img: healthyDiet01,
     text: 'Цикорий и корень цикория'
   },
   {
-    img: '../images/HealthyDiet/01.png',
+    img: healthyDiet01,
     text: 'Ячменные напитки'
   },
   {
@@ -194,15 +223,15 @@ export const foodRange = [
     text: false
   },
   {
-    img: '../images/HealthyDiet/01.png',
+    img: healthyDiet01,
     text: 'Напитки для здоровья'
   },
   {
-    img: '../images/HealthyDiet/01.png',
+    img: healthyDiet01,
     text: 'Протеиновые смеси'
   },
   {
-    img: '../images/HealthyDiet/01.png',
+    img: healthyDiet01,
     text: 'Толокняные каши'
   },
 ]

@@ -20,18 +20,18 @@ export default function CoffeeCardTablet() {
           <div className={styles.wrapperAbout}>
             <div>
               <div className={styles.reviews}>
-                <div className={styles.reviewsStars}><img src={`../../${discountItemPics[3]}`} alt="stars" /></div>
+                <div className={styles.reviewsStars}><img src={discountItemPics[3]} alt="stars" /></div>
                 <p className={styles.reviewsText}>{openOneProduct.rating}.0 <span>(32 отзыва)</span></p>
               </div>
               <div className={styles.special}>
                 {openOneProduct.special.map(i => <p key={Math.random() * 10}>{i}</p>)}
               </div>
               <div className={styles.coffeeBeans} >
-                <img src={`../../${discountItemPics[1]}`} alt="coffee beans" />
+                <img src={discountItemPics[1]} alt="coffee beans" />
               </div>
             </div>
-            <div className={styles.image}
-              style={{ background: `url('../../${openOneProduct.image}') center/100% 100% no-repeat` }}>
+            <div className={styles.image}>
+              <img src={openOneProduct.image} alt={openOneProduct.title} />
             </div>
           </div>
           <div className={styles.wrapperTitle}>

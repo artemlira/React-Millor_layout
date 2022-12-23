@@ -24,7 +24,7 @@ const Context = (props) => {
   const [openNav, setOpenNav] = useState(false);
   const [amountBasketProducts, setAmountBasketProducts] = useState(1);
 
-
+  console.log(products);
   const pic = useRef();
   const title = useRef();
   const text = useRef();
@@ -197,14 +197,24 @@ const Context = (props) => {
   }
 
   //функции добавления и уменьшения кол-ва товаров
-  const addCount = () => {
-    setAmountBasketProducts(amountBasketProducts + 1);
+  const addCount = (item) => {
+    setProducts(products.map(i => {
+      if (item.id === i.id) {
+        return { id: i.id, img: i.img, pack: i.pack, title: i.title, text: i.text, price: i.price, amount: +i.amount + 1 }
+      } else {
+        return i;
+      }
+    }));
   }
 
-  const removeCount = () => {
-    if (amountBasketProducts > 1) {
-      setAmountBasketProducts(amountBasketProducts - 1);
-    }
+  const removeCount = (item) => {
+    setProducts(products.map(i => {
+      if (item.id === i.id && i.amount > 1) {
+        return { id: i.id, img: i.img, pack: i.pack, title: i.title, text: i.text, price: i.price, amount: +i.amount - 1 }
+      } else {
+        return i;
+      }
+    }));
   }
 
 

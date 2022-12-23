@@ -36,6 +36,7 @@ export default function BasketProducts() {
                 text={item.text}
                 price={item.price}
                 pack={item.pack}
+                amount={item.amount}
               />
             )}
           </div>

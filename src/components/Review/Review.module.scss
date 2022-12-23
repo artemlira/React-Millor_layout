@@ -1,0 +1,48 @@
+@use '../../style/variables.scss' as v;
+@use '../../style/mixins.scss' as m;
+@use '../../style/functions.scss' as f;
+
+.review {}
+
+.container {
+  min-height: f.rem(332);
+  background: v.$white;
+  box-shadow: 0px 0px 21.2552px rgba(149, 149, 149, 0.25);
+  border-radius: f.rem(14);
+  margin-bottom: f.rem(50);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(247px, auto) minmax(85px, auto);
+}
+
+.contant {
+  padding: f.rem(33) f.rem(100) f.rem(0) f.rem(58);
+}
+
+.icon {}
+
+.wrapperTitle {}
+
+.title {}
+
+.data {}
+
+.raiting {}
+
+.wrapperText {}
+
+.text {}
+
+.client {
+  background: #FFF7E1;
+  border-radius: 0px 0px 14px 14px;
+  padding: f.rem(17) f.rem(0) f.rem(18) f.rem(58);
+}
+
+.photo {}
+
+.about {}
+
+.name {}
+
+.city {}

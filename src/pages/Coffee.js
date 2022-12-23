@@ -6,6 +6,7 @@ import CoffeeNav from '../components/Page_Coffee/CoffeeNav/CoffeeNav';
 import CoffeeCharacteristics from '../components/Page_Coffee/CoffeeCharacteristics/CoffeeCharacteristics';
 import CoffeeRange from '../components/Page_Coffee/CoffeeRange/CoffeeRange';
 import CoffeeAdditionally from '../components/Page_Coffee/CoffeeAdditionally/CoffeeAdditionally';
+import CoffeeReviews from '../components/Page_Coffee/CoffeeReviews/CoffeeReviews';
 
 export default function Coffee() {
   return (
@@ -16,6 +17,7 @@ export default function Coffee() {
       <CoffeeCharacteristics />
       <CoffeeRange />
       <CoffeeAdditionally />
+      <CoffeeReviews />
       <CoffeeSubscription />
     </article>
   )

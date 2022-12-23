@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 // import icon from '../../../images/Basket/icon_delete.svg';
 import { MillorContext } from './../../Context';
 
-export default function BasketProductsItem({ item, img, title, text, price, pack, styles }) {
+export default function BasketProductsItem({ item, img, title, text, price, pack, styles, amount }) {
   const { removeProduct, amountBasketProducts, addCount, removeCount } = useContext(MillorContext);
 
 
@@ -37,7 +37,7 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
         </li>
         <li className={styles.itemPrice}>{price} ₽</li>
         <li className={styles.itemAmount}>
-          <button onClick={() => removeCount()}>-</button>{amountBasketProducts}<button onClick={() => addCount()}>+</button>
+          <button onClick={() => removeCount(item)}>-</button>{amount}<button onClick={() => addCount(item)}>+</button>
         </li>
         <li className={styles.itemDiscount}>{price * 0.1} ₽</li>
         <li className={styles.itemTotal}>{summ} ₽</li>
@@ -62,7 +62,7 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
         <li className={styles.buttons}>
           <div className={styles.delete} onClick={() => removeProduct(item)}></div>
           <div className={styles.itemAmount}>
-            <button onClick={() => removeCount()}>-</button>{amountBasketProducts}<button onClick={() => addCount()}>+</button>
+            <button onClick={() => removeCount(item)}>-</button>{amount}<button onClick={() => addCount(item)}>+</button>
           </div>
         </li>
       </ul>

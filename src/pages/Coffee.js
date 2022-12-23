@@ -3,6 +3,7 @@ import CoffeeSubscription from './../components/Page_Coffee/CoffeeSubscription/C
 import CoffeeCard from './../components/Page_Coffee/CoffeeCard/CoffeeCard';
 import CoffeePath from './../components/Page_Coffee/CoffeePath/CoffeePath';
 import CoffeeNav from '../components/Page_Coffee/CoffeeNav/CoffeeNav';
+import CoffeeCharacteristics from '../components/Page_Coffee/CoffeeCharacteristics/CoffeeCharacteristics';
 
 export default function Coffee() {
   return (
@@ -10,6 +11,7 @@ export default function Coffee() {
       <CoffeePath />
       <CoffeeCard />
       <CoffeeNav />
+      <CoffeeCharacteristics />
       <CoffeeSubscription />
     </article>
   )

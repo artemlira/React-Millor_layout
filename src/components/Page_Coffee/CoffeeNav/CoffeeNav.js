@@ -1,24 +1,17 @@
 import React from 'react';
 import styles from './CoffeeNav.module.scss';
-import { Link } from 'react-router-dom';
-
 
 export default function CoffeeNav() {
   return (
     <section className={styles.coffeeNav}>
       <div className="container">
         <div className={styles.container}>
-          <ul className={styles.navigation}>
-            <li className={styles.navigationItem}><Link to='/'>Главная</Link></li>
-            <li className={styles.navigationItem}><Link to='/catalog'>Каталог товаров</Link></li>
-            <li className={styles.navigationItem}><Link to='/catalog/coffee_catalog'>Свежеобжаренный кофе</Link></li>
-            <li className={styles.navigationItem}>Карточка товара название</li>
-          </ul>
+          <div className={styles.description}><a href="#description">Описание</a></div>
+          <div className={styles.prepare}><a href="#prepare">Как готовить?</a></div>
+          <div className={styles.additionally}><a href="#additionally">Дополнительно</a></div>
+          <div className={styles.reviews}><a href="#reviews">Отзывы</a></div>
         </div>
       </div>
     </section>
-  );
+  )
 }
-
-
-

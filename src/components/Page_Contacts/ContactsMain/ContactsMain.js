@@ -3,7 +3,6 @@ import styles from './ContactsMain.module.scss';
 import { MillorContext } from './../../Context';
 import ContactShopsItem from './ContactShopsItem';
 import { itemShopsContacts } from '../../TextsDB';
-import { motion } from 'framer-motion';
 
 
 

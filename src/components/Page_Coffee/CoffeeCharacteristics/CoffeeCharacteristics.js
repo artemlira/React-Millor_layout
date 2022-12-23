@@ -6,7 +6,7 @@ export default function CoffeeCharacteristics() {
   return (
     <section className={styles.coffeeCharacteristics}>
       <div className="container">
-        <div className={styles.container}>
+        <div id='description' className={styles.container}>
           <div className={styles.taste}>
             <h6 className={styles.tasteTitle}>Вкус</h6>
             <ul className={styles.tasteList}>

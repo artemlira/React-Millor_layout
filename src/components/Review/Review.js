@@ -22,7 +22,7 @@ export default function Review({ title, data, avtor, city, rating, text, ava }) 
             </div>
           </div>
           <div className={styles.client}>
-            <div className={styles.photo}><img src={ava} alt="photo" /> </div>
+            <div className={styles.photo}><img src={ava} alt="users ava" /> </div>
             <div className={styles.about}>
               <h6 className={styles.name}>{avtor}</h6>
               <p className={styles.city}>{city}</p>

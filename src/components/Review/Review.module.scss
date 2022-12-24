@@ -2,8 +2,6 @@
 @use '../../style/mixins.scss' as m;
 @use '../../style/functions.scss' as f;
 
-.review {}
-
 .container {
   min-height: f.rem(332);
   background: v.$white;

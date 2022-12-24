@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { MillorContext } from './../../Context';
 
 export default function BasketProductsItem({ item, img, title, text, price, pack, styles, amount, summ, discount }) {

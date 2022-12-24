@@ -933,7 +933,6 @@ export const allProducts = [
     price: '250',
     discount: 0.1,
     amount: 1,
-    amount: 1,
     review: [
       {
         avtor: 'Ирина',

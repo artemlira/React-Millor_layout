@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 export default function HealthyDietItem({ productTitle, description, image, productPrice, item, sale, rating }) {
-  const { pic, title, text, price, pack, addProduct } = useContext(MillorContext);
+  const { pack, addProduct } = useContext(MillorContext);
   return (
     <section className={styles.healthyDietItem}>
       <div className={styles.container}>
@@ -29,17 +29,17 @@ export default function HealthyDietItem({ productTitle, description, image, prod
         </form>
         <Link to='healthy_eating'>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
-            <img ref={pic} src={image} alt="Packaging of barley powder" />
+            <img src={image} alt="Packaging of barley powder" />
           </div>
 
           <div className={styles.wrapperText}>
-            <h4 ref={title} className={styles.title}>{productTitle}</h4>
-            <p ref={text} className={styles.text}>{description}</p>
+            <h4 className={styles.title}>{productTitle}</h4>
+            <p className={styles.text}>{description}</p>
           </div>
         </Link>
         <div className={styles.price}>
           <div className={sale ? `${styles.priceText} ${styles.sale}` : styles.priceText}>
-            <p ref={price}>{productPrice}</p>
+            <p>{productPrice} ₽</p>
           </div>
           <div >
             <button className={styles.btn} onClick={(e) => addProduct(e, item)}>В корзину</button>

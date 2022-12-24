@@ -37,7 +37,7 @@ export default function TeaItem({ productTitle, description, image, productPrice
         </Link>
         <div className={styles.price}>
           <div className={sale ? `${styles.priceText} ${styles.sale}` : styles.priceText}>
-            <p>{productPrice}</p>
+            <p>{productPrice} ₽</p>
           </div>
           <div >
             <button className={styles.btn} onClick={(e) => addProduct(e, item)}>В корзину</button>

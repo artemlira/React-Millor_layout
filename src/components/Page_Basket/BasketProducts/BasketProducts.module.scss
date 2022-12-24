@@ -234,6 +234,7 @@
 
   .itemTotal {
     margin-bottom: f.rem(7);
+    text-align: right;
   }
 
   .itemTotal,
@@ -248,10 +249,18 @@
     }
   }
 
-  .itemPrice,
-  .itemDiscount {
+  .itemPriceWrapper {
+    display: flex;
+    gap: f.rem(5);
+  }
+
+  .itemPrice {
     color: #D6D6D6;
     text-decoration-line: line-through;
+  }
+
+  .itemDiscount {
+    color: #D6D6D6;
   }
 
   .buttons {
@@ -283,6 +292,7 @@
 
     button {
       background: #FFF7E1;
+      border-radius: f.rem(5);
 
       @include m.phone {
         font-size: f.rem(18);

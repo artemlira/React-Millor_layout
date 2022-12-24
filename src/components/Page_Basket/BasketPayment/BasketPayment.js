@@ -7,12 +7,12 @@ import { MillorContext } from './../../Context';
 
 export default function BasketPayment() {
   const { products } = useContext(MillorContext);
-  let result = 0;
+
   let summer = 0;
-  let discount = 0;
-  products.forEach(i => result = result + i.amount * i.summ)                   //считаем общую сумму с скидкой
+  let discount = 0;          
   products.forEach(i => summer = summer + i.amount * i.price)                  //считаем общую сумму без скидки
   products.forEach(i => discount = discount + i.amount * i.price * i.discount) //считаем общую сумму скидки
+  let result = summer - discount;                                              //считаем общую сумму с скидкой
 
   return (
     <section className={styles.basketPayment}>

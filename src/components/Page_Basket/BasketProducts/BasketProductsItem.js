@@ -20,8 +20,9 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
           <button onClick={() => removeCount(item)}>-</button>{amount}<button onClick={() => addCount(item)}>+</button>
         </li>
         <li className={styles.itemDiscount}>{(+price * amount) * discount} ₽</li>
-        <li className={styles.itemTotal}>{amount * summ} ₽</li>
+        <li className={styles.itemTotal}>{(amount * price) - (price * discount * amount)} ₽</li>
       </ul>
+
       <ul className={styles.productsItemTablet}>
         <li className={styles.contant}>
           <div className={styles.itemProduct}>
@@ -35,8 +36,11 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
             </div>
           </div>
           <div className={styles.price}>
-            <p className={styles.itemTotal}>{amount * summ} ₽</p>
-            <p className={styles.itemPrice}>{price} ₽ <span className={styles.itemDiscount}>(-10%)</span></p>
+            <p className={styles.itemTotal}>{(amount * price) - (price * discount * amount)} ₽</p>
+            <div className={styles.itemPriceWrapper}>
+              <p className={styles.itemPrice}>{amount * price} ₽</p>
+              <p className={styles.itemDiscount}>(-10%)</p>
+            </div>
           </div>
         </li>
         <li className={styles.buttons}>

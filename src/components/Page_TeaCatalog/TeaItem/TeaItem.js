@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export default function TeaItem({ productTitle, description, image, productPrice, item, sale, rating }) {
 
-  const { pic, title, text, price, pack, addProduct } = useContext(MillorContext);
+  const { pack, addProduct } = useContext(MillorContext);
   return (
     <div className={styles.teaItem}>
       <div className={styles.container}>
@@ -16,26 +16,28 @@ export default function TeaItem({ productTitle, description, image, productPrice
             <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
             <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
-          <select ref={pack} name="target" className={styles.select}>
-            <option>100 г.</option>
-            <option>150 г.</option>
-            <option>165 г.</option>
-            <option>200 г.</option>
-          </select>
+          <div className={styles.wrapperSelect}>
+            <select ref={pack} name="target" className={styles.select}>
+              <option>100 г.</option>
+              <option>150 г.</option>
+              <option>165 г.</option>
+              <option>200 г.</option>
+            </select>
+          </div>
         </form>
         <Link to='tea'>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
-            <img ref={pic} src={image} alt="Tea packaging" />
+            <img src={image} alt="Tea packaging" />
           </div>
 
           <div className={styles.wrapperText}>
-            <h4 ref={title} className={styles.title}>{productTitle}</h4>
-            <p ref={text} className={styles.text}>{description}</p>
+            <h4 className={styles.title}>{productTitle}</h4>
+            <p className={styles.text}>{description}</p>
           </div>
         </Link>
         <div className={styles.price}>
           <div className={sale ? `${styles.priceText} ${styles.sale}` : styles.priceText}>
-            <p ref={price}>{productPrice}</p>
+            <p>{productPrice}</p>
           </div>
           <div >
             <button className={styles.btn} onClick={(e) => addProduct(e, item)}>В корзину</button>

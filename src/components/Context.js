@@ -43,14 +43,14 @@ const Context = (props) => {
 
   //добавление продукции в корзину
   function addProduct(e, item) {
-
+    console.log(item);
     setProducts([...products, {
       id: products.length + 1,
       img: item.image,
       title: item.title,
       text: item.description[0],
       price: item.price,
-      // pack: pack.current.value,
+      pack: pack.current.value,
       amount: item.amount,
       discount: item.discount,
       summ: ((+item.price * item.amount) - (+item.price * item.discount))

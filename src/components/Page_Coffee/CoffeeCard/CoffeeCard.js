@@ -7,7 +7,7 @@ import CoffeeCardTablet from './CoffeeCardTablet';
 
 export default function CoffeeCard() {
 
-  const { openOneProduct, addOneCard, removeOneCard, addProduct } = useContext(MillorContext);
+  const { pack, openOneProduct, addOneCard, removeOneCard, addProduct } = useContext(MillorContext);
   
   return (
     <>
@@ -40,19 +40,19 @@ export default function CoffeeCard() {
               <div className={styles.properties}>
                 <div className={styles.acid}>
                   <p className={styles.acidText}>Кислинка</p>
-                  <img className={styles.acidImg} src={`${discountItemPics[2]}`} alt="" />
+                  <img className={styles.acidImg} src={`${discountItemPics[2]}`} alt="acid" />
                 </div>
                 <div className={styles.bitterness}>
                   <p className={styles.bitternessText}>Горчинка</p>
-                  <img className={styles.bitternessImg} src={`${discountItemPics[2]}`} alt="" />
+                  <img className={styles.bitternessImg} src={`${discountItemPics[2]}`} alt="bitterness" />
                 </div>
                 <div className={styles.saturation}>
                   <p className={styles.saturationText}>Насыщенность</p>
-                  <img className={styles.saturationImg} src={`${discountItemPics[2]}`} alt="" />
+                  <img className={styles.saturationImg} src={`${discountItemPics[2]}`} alt="saturation" />
                 </div>
               </div>
               <div>
-                <form className={styles.formPackage}>
+                <form ref={pack} className={styles.formPackage}>
                   <label htmlFor='250' className={styles.packageLabel}>
                     <input id='250' className={styles.packageInput} type="radio" name='package'></input>
                     <span className={styles.customRadio}></span>

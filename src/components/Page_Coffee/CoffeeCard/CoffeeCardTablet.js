@@ -5,11 +5,8 @@ import { discountItemPics } from '../../ImagesDB.js';
 
 export default function CoffeeCardTablet() {
 
-  const { amountBasketProducts, addCount, removeCount, openOneProduct } = useContext(MillorContext);
+  const { pack, addOneCard, removeOneCard, addProduct, openOneProduct } = useContext(MillorContext);
 
-  // const showText = (e) => {
-  //   console.dir(e.target);
-  // }s
 
   const [showText, setShowText] = useState(false);
 
@@ -47,31 +44,31 @@ export default function CoffeeCardTablet() {
           <div className={styles.properties}>
             <div className={styles.acid}>
               <p className={styles.acidText}>Кислинка</p>
-              <img className={styles.acidImg} src={`../../${discountItemPics[2]}`} alt="" />
+              <img className={styles.acidImg} src={discountItemPics[2]} alt="acid" />
             </div>
             <div className={styles.bitterness}>
               <p className={styles.bitternessText}>Горчинка</p>
-              <img className={styles.bitternessImg} src={`../../${discountItemPics[2]}`} alt="" />
+              <img className={styles.bitternessImg} src={discountItemPics[2]} alt="bitterness" />
             </div>
             <div className={styles.saturation}>
               <p className={styles.saturationText}>Насыщенность</p>
-              <img className={styles.saturationImg} src={`../../${discountItemPics[2]}`} alt="" />
+              <img className={styles.saturationImg} src={discountItemPics[2]} alt="saturation" />
             </div>
           </div>
           <div className={styles.buttons}>
             <div className={styles.selectAmount}>
               <div className={styles.wrapperSelect}>
-                <select name="target" className={styles.select}>
+                <select ref={pack} name="target" className={styles.select}>
                   <option>250 г.</option>
                   <option>1000 г.</option>
                 </select>
               </div>
               <div className={styles.itemAmount}>
-                <button onClick={() => removeCount()}>-</button>{amountBasketProducts}<button onClick={() => addCount()}>+</button>
+                <button onClick={() => removeOneCard(openOneProduct)}>-</button>{openOneProduct.amount}<button onClick={() => addOneCard(openOneProduct)}>+</button>
               </div>
             </div>
             <div className={styles.buyBtn}>
-              <button>Купить за {openOneProduct.price * amountBasketProducts} ₽</button>
+              <button onClick={(e) => addProduct(e, openOneProduct)}>Купить за {openOneProduct.price * openOneProduct.amount} ₽</button>
             </div>
           </div>
         </div>

@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './BasketPayment.module.scss';
 import RangeItem from './../../Page_CoffeeCatalog/ProductRange/RangeItem';
 import { deliveryOptions } from './../../TextsDB';
+import { MillorContext } from './../../Context';
 
 
 export default function BasketPayment() {
+  const { products } = useContext(MillorContext);
+  let result = 0;
+  let summer = 0;
+  let discount = 0;
+  products.forEach(i => result = result + i.amount * i.summ)                   //считаем общую сумму с скидкой
+  products.forEach(i => summer = summer + i.amount * i.price)                  //считаем общую сумму без скидки
+  products.forEach(i => discount = discount + i.amount * i.price * i.discount) //считаем общую сумму скидки
+
   return (
     <section className={styles.basketPayment}>
       <div className="container">
@@ -17,14 +26,14 @@ export default function BasketPayment() {
           </div>
           <div className={styles.total}>
             <div className={styles.wrapperTitleTotal}>
-              <h6 className={styles.titleTotal}>Итог: 486 ₽</h6>
+              <h6 className={styles.titleTotal}>Итог: {result} ₽</h6>
               <div className={styles.imgTotal}>
                 <div className={styles.masterCard}></div>
                 <div className={styles.visa}></div>
               </div>
             </div>
-            <p className={styles.textTotal}>Подытог: 540 ₽</p>
-            <p className={styles.discountTotal}>Скидка: 54 ₽ (10%)</p>
+            <p className={styles.textTotal}>Подытог: {summer} ₽</p>
+            <p className={styles.discountTotal}>Скидка: {discount} ₽ (10%)</p>
             <div className={styles.delivery}>
               <p>Доставка: </p>
               <form name={styles.delivery}>

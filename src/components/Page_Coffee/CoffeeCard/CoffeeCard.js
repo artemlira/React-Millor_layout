@@ -7,8 +7,8 @@ import CoffeeCardTablet from './CoffeeCardTablet';
 
 export default function CoffeeCard() {
 
-  const { amountBasketProducts, addCount, removeCount, openOneProduct } = useContext(MillorContext);
-
+  const { openOneProduct, addOneCard, removeOneCard, addProduct } = useContext(MillorContext);
+  
   return (
     <>
       <section className={styles.coffeeCard}>
@@ -67,10 +67,10 @@ export default function CoffeeCard() {
               </div>
               <div className={styles.buttons}>
                 <div className={styles.itemAmount}>
-                  <button onClick={() => removeCount()}>-</button>{amountBasketProducts}<button onClick={() => addCount()}>+</button>
+                  <button onClick={() => removeOneCard()}>-</button>{openOneProduct.amount}<button onClick={() => addOneCard()}>+</button>
                 </div>
                 <div className={styles.buyBtn}>
-                  <button>Купить за {openOneProduct.price * amountBasketProducts} ₽</button>
+                  <button onClick={(e) => addProduct(e, openOneProduct)}>Купить за {openOneProduct.price * openOneProduct.amount} ₽</button>
                 </div>
               </div>
             </div>

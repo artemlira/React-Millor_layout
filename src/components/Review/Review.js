@@ -5,11 +5,13 @@ import quotes from '../../images/Coffee/“”.png';
 
 export default function Review({ title, data, avtor, city, rating, text, ava }) {
   return (
-    <section className={styles.review}>
+    <section id='reviews' className={styles.review}>
       <div className="container">
         <div className={styles.container}>
           <div className={styles.contant}>
-            <h5 className={styles.icon}><img src={quotes} alt="quotes" /></h5>
+            <h5 className={styles.icon}>
+              <img src={quotes} alt="quotes" />
+            </h5>
             <div className={styles.wrapperTitle}>
               <h6 className={styles.title}>{title}</h6>
               <p className={styles.data}>{data}</p>

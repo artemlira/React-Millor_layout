@@ -5,7 +5,6 @@ import logo from '../../images/logo.png';
 import { icons } from '../ImagesDB';
 import { MillorContext } from './../Context';
 import RegistrationForm from './../RegistrationForm/RegistrationForm';
-// import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import OpenNav from './OpenNav';
 import SearchTablet from './SearchTablet';
 
@@ -13,14 +12,13 @@ import SearchTablet from './SearchTablet';
 
 
 export default function Header() {
-  const { openSearch, setOpenSearch, location, products, openRegistrationForm, setOpenRegistrationForm, openNav, setOpenNav } = useContext(MillorContext);
+  const { openSearch, setOpenSearch, location, products, openRegistrationForm, setOpenRegistrationForm, openNav, setOpenNav, totalProducts } = useContext(MillorContext);
 
   const setActive = ({ isActive }) => isActive ? 'active-header' : '';
   const setActiveNav = ({ isActive }) => isActive ? 'active-nav' : '';
-  // const [openNav, setOpenNav] = useState(false);
-
-
-
+  
+  // let totalProducts = 0;
+  // products.forEach(item => totalProducts = totalProducts + item.amount)
 
   return (
     <header className={styles.header}>
@@ -61,7 +59,7 @@ export default function Header() {
 
                 <div className={styles.icon}>
                   <NavLink className={setActiveNav} to="/basket">{icons[1]}</NavLink>
-                  {products.length > 0 && <span className={styles.iconActive}>{products.length}</span>}
+                  {products.length > 0 && <span className={styles.iconActive}>{totalProducts}</span>}
                 </div>
                 <div className={styles.icon} onClick={() => setOpenRegistrationForm(true)}>{icons[2]}
                   {/* <Link to='/' onClick={() => setOpenRegistrationForm(true)}>{icons[2]}</Link> */}

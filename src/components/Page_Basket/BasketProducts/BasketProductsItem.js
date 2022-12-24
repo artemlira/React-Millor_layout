@@ -1,28 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
-// import icon from '../../../images/Basket/icon_delete.svg';
 import { MillorContext } from './../../Context';
 
-export default function BasketProductsItem({ item, img, title, text, price, pack, styles, amount }) {
-  const { removeProduct, amountBasketProducts, addCount, removeCount } = useContext(MillorContext);
-
-
-  // const [amountBasketProducts, setAmountBasketProducts] = useState(1);
-  const [summ, setSumm] = useState(null);
-
-  // const addCount = () => {
-  //   setAmountBasketProducts(amountBasketProducts + 1);
-  // }
-
-  // const removeCount = () => {
-  //   if (amountBasketProducts > 1) {
-  //     setAmountBasketProducts(amountBasketProducts - 1);
-  //   }
-  // }
-
-  useEffect(() => {
-    setSumm(amountBasketProducts * (price - (price * 0.1)));
-  }, [amountBasketProducts]);
-
+export default function BasketProductsItem({ item, img, title, text, price, pack, styles, amount, summ, discount }) {
+  const { removeProduct, addCount, removeCount } = useContext(MillorContext);
   return (
     <>
       <ul className={styles.productsItem}>
@@ -39,8 +19,8 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
         <li className={styles.itemAmount}>
           <button onClick={() => removeCount(item)}>-</button>{amount}<button onClick={() => addCount(item)}>+</button>
         </li>
-        <li className={styles.itemDiscount}>{price * 0.1} ₽</li>
-        <li className={styles.itemTotal}>{summ} ₽</li>
+        <li className={styles.itemDiscount}>{(+price * amount) * discount} ₽</li>
+        <li className={styles.itemTotal}>{amount * summ} ₽</li>
       </ul>
       <ul className={styles.productsItemTablet}>
         <li className={styles.contant}>
@@ -55,7 +35,7 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
             </div>
           </div>
           <div className={styles.price}>
-            <p className={styles.itemTotal}>{summ} ₽</p>
+            <p className={styles.itemTotal}>{amount * summ} ₽</p>
             <p className={styles.itemPrice}>{price} ₽ <span className={styles.itemDiscount}>(-10%)</span></p>
           </div>
         </li>

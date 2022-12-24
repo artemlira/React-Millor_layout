@@ -1,5 +1,4 @@
 import React, { createContext, useState, useRef, useEffect } from 'react';
-import useScrollToSection from './../hooks/useScrollToSection';
 import { useLocation } from 'react-router-dom';
 import { allProducts } from './TextsDB';
 import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
@@ -14,22 +13,15 @@ export const MillorContext = createContext();
 
 const Context = (props) => {
   const [openSearch, setOpenSearch] = useState(false);  //открывает окно поиска в хедере на комп. версии
-  const [scrollTo, scrollToHandler] = useScrollToSection();
   const location = useLocation();
   const [products, setProducts] = useState([]);  //продукты, которые попадают в корзину, при клике на кнопку "В корзину"
-  const [productInBasket, setProductInBasket] = useState(false);
-  const [totalAmountBasket, setTotalAmountBasket] = useState();
-  const [discount, setDiscount] = useState([]);
   const [openRegistrationForm, setOpenRegistrationForm] = useState(null); //открытие регастрационной формы
-  const [openNav, setOpenNav] = useState(false);
-  const [amountBasketProducts, setAmountBasketProducts] = useState(1);
+  const [openNav, setOpenNav] = useState(false);//открытие меню в планшетном режиме
 
-  console.log(products);
-  const pic = useRef();
-  const title = useRef();
-  const text = useRef();
-  const price = useRef();
   const pack = useRef();
+  let totalProducts = 0;
+  products.forEach(item => totalProducts = totalProducts + item.amount);
+
 
   //получение отдельно продуктов из БД
   const [coffee, setCoffee] = useState(allProducts.filter(item => item.product === 'coffee'));
@@ -58,10 +50,13 @@ const Context = (props) => {
       title: item.title,
       text: item.description[0],
       price: item.price,
-      pack: pack.current.value,
-      amount: 1
+      // pack: pack.current.value,
+      amount: item.amount,
+      discount: item.discount,
+      summ: ((+item.price * item.amount) - (+item.price * item.discount))
     }]);
   }
+
 
   //удаление продукции из корзины
   function removeProduct(item) {
@@ -196,38 +191,46 @@ const Context = (props) => {
     }
   }
 
-  //функции добавления и уменьшения кол-ва товаров
-  const addCount = (item) => {
+  //функции добавления и уменьшения кол-ва товаров в корзине
+  function addCount(item) {
     setProducts(products.map(i => {
       if (item.id === i.id) {
-        return { id: i.id, img: i.img, pack: i.pack, title: i.title, text: i.text, price: i.price, amount: +i.amount + 1 }
+        return { id: i.id, img: i.img, pack: i.pack, title: i.title, text: i.text, discount: i.discount, price: i.price, summ: i.summ, amount: +i.amount + 1 }
       } else {
         return i;
       }
     }));
   }
 
-  const removeCount = (item) => {
+  // увеличение кол-ва продуктов, когда карзина еще пуста, можно делать на карточке одного товара
+  function addOneCard() {
+    setOpenOneProduct({ ...openOneProduct, amount: openOneProduct.amount + 1 });
+  }
+
+  function removeCount(item) {
     setProducts(products.map(i => {
       if (item.id === i.id && i.amount > 1) {
-        return { id: i.id, img: i.img, pack: i.pack, title: i.title, text: i.text, price: i.price, amount: +i.amount - 1 }
+        return { id: i.id, img: i.img, pack: i.pack, title: i.title, text: i.text, discount: i.discount, price: i.price, summ: i.summ, amount: +i.amount - 1 }
       } else {
         return i;
       }
     }));
   }
 
-
-
+  // уменьшение кол-ва продуктов, когда карзина еще пуста, можно делать на карточке одного товара
+  function removeOneCard() {
+    if (openOneProduct.amount > 1) {
+      setOpenOneProduct({ ...openOneProduct, amount: openOneProduct.amount - 1 });
+    }
+  }
 
   const value = {
     openSearch, setOpenSearch,
-    scrollTo, scrollToHandler,
     location,
     transformationWord,
     products, setProducts,
-    productInBasket, setProductInBasket,
-    pic, title, text, price, pack,
+    totalProducts,
+    pack,
     addProduct, removeProduct,
     coffee, setCoffee,
     tea, setTea,
@@ -237,12 +240,8 @@ const Context = (props) => {
     filter, filterTea, filterHealthyDiet, filterWending,
     active, setActive,
     discountItemCoffee, itemsTea, itemsWendingProducts, itemsHealthyDiet,
-    // addUniqueValues,
     element, filterText,
-    amountBasketProducts, setAmountBasketProducts,
-    addCount, removeCount,
-    totalAmountBasket, setTotalAmountBasket,
-    discount, setDiscount,
+    addCount, removeCount, addOneCard, removeOneCard,
     openRegistrationForm, setOpenRegistrationForm,
     openNav, setOpenNav,
     openOneProduct, setOpenOneProduct,

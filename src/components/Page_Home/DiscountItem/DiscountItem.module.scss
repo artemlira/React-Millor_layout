@@ -38,6 +38,7 @@
 .form {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .formNoSale {
@@ -104,6 +105,7 @@
   margin-bottom: f.rem(25);
   display: flex;
   gap: f.rem(18);
+  align-items: center;
 
   @include m.phone {
     height: f.rem(193);
@@ -342,9 +344,9 @@
   .wrapper {
     .img {
       @include m.tablet {
-        min-height: 100%;
+        min-height: 75%;
         display: grid;
-        place-items: center;
+        place-content: center;
         position: relative;
         flex: 1 1 50%;
       }
@@ -352,10 +354,10 @@
       img {
 
         @include m.tablet {
-          position: absolute;
+          // position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%);
+          // transform: translate(-50%, -50%);
           max-width: inherit;
           height: 100%;
         }

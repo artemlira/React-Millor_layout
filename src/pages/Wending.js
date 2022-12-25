@@ -1,14 +1,20 @@
 import React from 'react'
-import CoffeeNav from '../components/Page_Coffee/CoffeeNav/CoffeeNav'
 import CoffeeReviews from '../components/Page_Coffee/CoffeeReviews/CoffeeReviews'
 import TeaSubscription from '../components/Page_Tea/TeaSubscription/TeaSubscription'
+import WendingCard from '../components/Page_Wending/WendingCard/WendingCard';
+import TeaNav from './../components/Page_Tea/TeaNav/TeaNav';
+import WendingPath from './../components/Page_Wending/WendingPath/WendingPath';
+import TeaPrepare from './../components/Page_Tea/TeaPrepare/TeaPrepare';
 
 export default function Wending() {
   return (
     <article className='wending'>
-      <CoffeeNav />
-      <CoffeeReviews/>
-      <TeaSubscription/>
+      <WendingPath />
+      <WendingCard />
+      <TeaNav />
+      <TeaPrepare/>
+      <CoffeeReviews />
+      <TeaSubscription />
     </article>
   )
 }

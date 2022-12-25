@@ -2050,6 +2050,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2106,6 +2109,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2144,6 +2150,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Зерновой кофе'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2200,6 +2209,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный какао'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2238,6 +2250,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированные кофейные напитки'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2294,6 +2309,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Кофе порошкообразный'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2332,6 +2350,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2388,6 +2409,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2426,6 +2450,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2482,6 +2509,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Зерновой кофе'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2520,6 +2550,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный какао'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2576,6 +2609,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированные кофейные напитки'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2615,6 +2651,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Кофе порошкообразный'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2653,6 +2692,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2691,6 +2733,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2729,6 +2774,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',
@@ -2767,6 +2815,9 @@ export const allProducts = [
     image: wending01,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
+    price: '250',
+    discount: 0.1,
+    amount: 1,
     review: [
       {
         avtor: 'Ирина',

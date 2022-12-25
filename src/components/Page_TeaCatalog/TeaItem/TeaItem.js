@@ -11,17 +11,17 @@ export default function TeaItem({ productTitle, description, image, productPrice
   return (
     <div className={styles.teaItem}>
       <div className={styles.container}>
-        <form action="/" className={styles.form}>
+        <form  action="/" className={styles.form}>
           <div className={styles.rating}>
             <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
             <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
           <div className={styles.wrapperSelect}>
             <select ref={pack} name="target" className={styles.select}>
-              <option>100 г.</option>
-              <option>150 г.</option>
-              <option>165 г.</option>
-              <option>200 г.</option>
+              <option value="100">100 г.</option>
+              <option value="150">150 г.</option>
+              <option value="165">165 г.</option>
+              <option value="200">200 г.</option>
             </select>
           </div>
         </form>

@@ -43,6 +43,8 @@ const Context = (props) => {
 
   //добавление продукции в корзину
   function addProduct(e, item) {
+
+    console.dir(pack.current.value);
     setProducts([...products, {
       id: products.length + 1,
       img: item.image,

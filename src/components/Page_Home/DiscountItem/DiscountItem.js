@@ -18,9 +18,9 @@ export default function DiscountItem({ sale, special, productTitle, description,
             <div className={styles.noDiscount}>
               {special.map(item => <p key={Math.random() * 10}>{item}</p>)}
             </div>}
-          <select name="target" className={styles.select} ref={pack}>
-            <option>250 г.</option>
-            <option>1000 г.</option>
+          <select ref={pack} name="target" className={styles.select}>
+            <option value='250'>250 г.</option>
+            <option value='1000'>1000 г.</option>
           </select>
         </form>
 

@@ -17,13 +17,13 @@ export default function HealthyDietItem({ productTitle, description, image, prod
             <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
 
-          <select name="target" className={styles.select} ref={pack}>
-            <option>100 г.</option>
-            <option>150 г.</option>
-            <option>165 г.</option>
-            <option>200 г.</option>
-            <option>500 г.</option>
-            <option>1000 г.</option>
+          <select ref={pack} name="target" className={styles.select}>
+            <option value="100">100 г.</option>
+            <option value="150">150 г.</option>
+            <option value="165">165 г.</option>
+            <option value="200">200 г.</option>
+            <option value="500">500 г.</option>
+            <option value="1000">1000 г.</option>
           </select>
 
         </form>

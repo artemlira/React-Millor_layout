@@ -38,22 +38,22 @@ export default function TeaCard() {
             <div className={styles.wrapperForm}>
               <form ref={pack} className={styles.formPackage}>
                 <label htmlFor='100' className={styles.packageLabel}>
-                  <input id='100' className={styles.packageInput} type="radio" name='package'></input>
+                  <input value="100" id='100' className={styles.packageInput} type="radio" name='package'></input>
                   <span className={styles.customRadio}></span>
                   <p>100 г.</p>
                 </label>
                 <label htmlFor='150' className={styles.packageLabel}>
-                  <input id='150' className={styles.packageInput} type="radio" name='package'></input>
+                  <input value="150" id='150' className={styles.packageInput} type="radio" name='package'></input>
                   <span className={styles.customRadio}></span>
                   <p>150 г.</p>
                 </label>
                 <label htmlFor='165' className={styles.packageLabel}>
-                  <input id='165' className={styles.packageInput} type="radio" name='package'></input>
+                  <input value="165" id='165' className={styles.packageInput} type="radio" name='package'></input>
                   <span className={styles.customRadio}></span>
                   <p>165 г.</p>
                 </label>
                 <label htmlFor='200' className={styles.packageLabel}>
-                  <input id='200' className={styles.packageInput} type="radio" name='package'></input>
+                  <input value="200" id='200' className={styles.packageInput} type="radio" name='package'></input>
                   <span className={styles.customRadio}></span>
                   <p>200 г.</p>
                 </label>
@@ -62,10 +62,10 @@ export default function TeaCard() {
             <div className={styles.buttons}>
               <div className={styles.wrapperSelect}>
                 <select ref={pack} name="target" className={styles.select}>
-                  <option>100 г.</option>
-                  <option>150 г.</option>
-                  <option>165 г.</option>
-                  <option>200 г.</option>
+                  <option value="100">100 г.</option>
+                  <option value="150">150 г.</option>
+                  <option value="165">165 г.</option>
+                  <option value="200">200 г.</option>
                 </select>
               </div>
               <div className={styles.itemAmount}>

@@ -59,8 +59,8 @@ export default function CoffeeCardTablet() {
             <div className={styles.selectAmount}>
               <div className={styles.wrapperSelect}>
                 <select ref={pack} name="target" className={styles.select}>
-                  <option>250 г.</option>
-                  <option>1000 г.</option>
+                  <option value="250">250 г.</option>
+                  <option value="1000">1000 г.</option>
                 </select>
               </div>
               <div className={styles.itemAmount}>

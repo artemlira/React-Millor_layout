@@ -54,12 +54,12 @@ export default function CoffeeCard() {
               <div>
                 <form ref={pack} className={styles.formPackage}>
                   <label htmlFor='250' className={styles.packageLabel}>
-                    <input id='250' className={styles.packageInput} type="radio" name='package'></input>
+                    <input value="250" id='250' className={styles.packageInput} type="radio" name='package'></input>
                     <span className={styles.customRadio}></span>
                     <p>250 г.</p>
                   </label>
                   <label htmlFor='1000' className={styles.packageLabel}>
-                    <input id='1000' className={styles.packageInput} type="radio" name='package'></input>
+                    <input value="1000" id='1000' className={styles.packageInput} type="radio" name='package'></input>
                     <span className={styles.customRadio}></span>
                     <p>1000 г.</p>
                   </label>

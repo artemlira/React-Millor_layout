@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export default function TeaItem({ productTitle, description, image, productPrice, item, sale, rating }) {
 
-  const { pack, addProduct } = useContext(MillorContext);
+  const { pack, addProduct, setOpenOneProduct,  } = useContext(MillorContext);
   return (
     <div className={styles.teaItem}>
       <div className={styles.container}>
@@ -25,7 +25,7 @@ export default function TeaItem({ productTitle, description, image, productPrice
             </select>
           </div>
         </form>
-        <Link to='tea'>
+        <Link onClick={() => setOpenOneProduct(item)} to='tea'>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
             <img src={image} alt="Tea packaging" />
           </div>

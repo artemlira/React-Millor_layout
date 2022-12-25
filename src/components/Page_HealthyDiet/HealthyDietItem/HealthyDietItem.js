@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 export default function HealthyDietItem({ productTitle, description, image, productPrice, item, sale, rating }) {
-  const { pack, addProduct } = useContext(MillorContext);
+  const { pack, addProduct, setOpenOneProduct } = useContext(MillorContext);
   return (
     <section className={styles.healthyDietItem}>
       <div className={styles.container}>
@@ -27,7 +27,7 @@ export default function HealthyDietItem({ productTitle, description, image, prod
           </select>
 
         </form>
-        <Link to='healthy_eating'>
+        <Link onClick={() => setOpenOneProduct(item)} to='healthy_eating'>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
             <img src={image} alt="Packaging of barley powder" />
           </div>

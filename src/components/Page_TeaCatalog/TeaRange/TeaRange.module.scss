@@ -202,6 +202,8 @@
 
 .itemImg {
   height: 65%;
+  max-height: f.rem(141);
+  max-width: f.rem(101);
 
   img {
     @include m.phone {

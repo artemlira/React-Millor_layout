@@ -31,7 +31,7 @@ export default function CoffeeCard() {
                 </div>
               </div>
               <div className={styles.reviews}>
-                <div className={styles.reviewsStars}><img src={`${discountItemPics[3]}`} alt="stars" /></div>
+                <div className={styles.reviewsStars}><img src={discountItemPics[3]} alt="stars" /></div>
                 <p className={styles.reviewsText}>{openOneProduct.rating}.0 <span>(32 отзыва)</span></p>
               </div>
               <div className={styles.contantAbout}>

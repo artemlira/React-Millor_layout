@@ -440,7 +440,7 @@
       min-width: f.rem(90);
     }
 
-    img{
+    img {
       height: 100%;
       width: 100%;
     }
@@ -511,6 +511,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    transition: all 0.8;
 
     &.show {
       height: initial;
@@ -522,9 +523,6 @@
     @include m.phone {
       max-width: f.rem(240);
       height: f.rem(48);
-    }
-
-    @include m.phone {
       line-height: f.ratio(12, 15.16);
     }
   }

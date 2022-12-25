@@ -22,6 +22,10 @@ a {
   // text-decoration: none;
 }
 
+button{
+  font-family: inherit;
+}
+
 img,
 svg {
   vertical-align: top;
@@ -175,9 +179,14 @@ body {
   background: url('../images/Basket/bg1.png')0 0/100% 779px no-repeat, v.$white;
 }
 
-.coffee {
+.coffee,
+.tea,
+.wending,
+.healthyEating {
   background: url('../images/Coffee/bg1.png')50% 0px/100% 57% no-repeat, v.$white;
 }
+
+
 
 // .catalog-slider {
 //   .slick-list {

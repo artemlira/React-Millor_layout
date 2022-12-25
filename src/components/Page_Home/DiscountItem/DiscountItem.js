@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 export default function DiscountItem({ sale, special, productTitle, description, image, productPrice, item, noLink }) {
 
-  const { pic, title, text, price, pack, addProduct, setOpenOneProduct } = useContext(MillorContext);
+  const { pack, addProduct, setOpenOneProduct } = useContext(MillorContext);
 
   return (
     <div className={styles.discountItem}>
@@ -35,7 +35,7 @@ export default function DiscountItem({ sale, special, productTitle, description,
         <Link onClick={() => setOpenOneProduct(item)} className={styles.link} to={noLink ? '' : "coffee"} >
           <div className={item.product === 'coffee' ? `${styles.wrapper}` : `${styles.wrapperNoCoffee}`} >
             <div className={styles.img}>
-              <img ref={pic} src={image} alt="coffee" />
+              <img src={image} alt="coffee" />
             </div>
             {item.product === 'coffee' &&
               <div className={styles.about}>
@@ -51,13 +51,13 @@ export default function DiscountItem({ sale, special, productTitle, description,
               </div>}
           </div>
           <div className={styles.wrapperText}>
-            <h4 ref={title} className={styles.title}>{productTitle}</h4>
-            <p ref={text} className={styles.text}>{description}</p>
+            <h4 className={styles.title}>{productTitle}</h4>
+            <p className={styles.text}>{description}</p>
           </div>
         </Link>
         <div className={styles.price}>
           <div className={sale ? `${styles.priceText} ${styles.sale}` : styles.priceText}>
-            <p ref={price}>{productPrice} ₽</p>
+            <p>{productPrice} ₽</p>
           </div>
           <div >
             <button className={styles.btn} onClick={(e) => addProduct(e, item)}>В корзину</button>

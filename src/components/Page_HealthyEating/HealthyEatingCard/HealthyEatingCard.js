@@ -70,6 +70,8 @@ export default function HealthyEatingCard() {
               </form>
             </div>
             <div className={styles.buttons}>
+
+
               <div className={styles.wrapperSelect}>
                 <select ref={pack} name="target" className={styles.select}>
                   <option value='100'>100 г.</option>
@@ -80,6 +82,8 @@ export default function HealthyEatingCard() {
                   <option value='1000'>1000 г.</option>
                 </select>
               </div>
+
+              
               <div className={styles.itemAmount}>
                 <button onClick={() => removeOneCard()}>-</button>{openOneProduct.amount}<button onClick={() => addOneCard()}>+</button>
               </div>

@@ -32,9 +32,14 @@
   }
 
   & li button:before {
+    width: 7px;
+    height: 7px;
     font-size: f.rem(14);
     color: v.$white;
     opacity: 1;
+    box-shadow: 3px 0px 13px 5px v.$yellow;
+    border-radius: 50%;
+    line-height: 7px;
 
     @include m.tablet {
       font-size: f.rem(25);

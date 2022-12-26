@@ -104,9 +104,9 @@ body {
 }
 
 .active-header {
-  text-decoration: underline v.$yellow !important;
-  text-decoration-thickness: 2px !important;
-  text-underline-offset: 10px !important;
+  &::after {
+    width: 100% !important;
+  }
 }
 
 .active-contacts {

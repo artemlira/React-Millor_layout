@@ -17,15 +17,18 @@ export default function HealthyDietItem({ productTitle, description, image, prod
             <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
 
-          <select ref={pack} name="target" className={styles.select}>
-            <option value="100">100 г.</option>
-            <option value="150">150 г.</option>
-            <option value="165">165 г.</option>
-            <option value="200">200 г.</option>
-            <option value="500">500 г.</option>
-            <option value="1000">1000 г.</option>
-          </select>
+          <div>
+            <select ref={pack} name="target" className={styles.select}>
+              <option value="100">100 г.</option>
+              <option value="150">150 г.</option>
+              <option value="165">165 г.</option>
+              <option value="200">200 г.</option>
+              <option value="500">500 г.</option>
+              <option value="1000">1000 г.</option>
+            </select>
+          </div>
 
+          
         </form>
         <Link onClick={() => setOpenOneProduct(item)} to='healthy_eating'>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>

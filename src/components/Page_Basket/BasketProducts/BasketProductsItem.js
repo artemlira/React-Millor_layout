@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { MillorContext } from './../../Context';
 
-export default function BasketProductsItem({ item, img, title, text, price, pack, styles, amount, summ, discount }) {
+export default function BasketProductsItem({ item, img, title, text, price, pack, styles, amount, discount }) {
   const { removeProduct, addCount, removeCount } = useContext(MillorContext);
   return (
     <>
@@ -12,7 +12,7 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
           <div>
             <h6 className={styles.itemTitle}>{title}</h6>
             <p className={styles.itemText}>{text}</p>
-            <p className={styles.itemText}>{pack}</p>
+            <p className={styles.itemText}>{pack} г.</p>
           </div>
         </li>
         <li className={styles.itemPrice}>{price} ₽</li>
@@ -32,7 +32,7 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
             <div className={styles.wrapperText}>
               <h6 className={styles.itemTitle}>{title}</h6>
               <p className={styles.itemText}>{text}</p>
-              <p className={styles.itemText}>{pack}</p>
+              <p className={styles.itemText}>{pack} г.</p>
             </div>
           </div>
           <div className={styles.price}>

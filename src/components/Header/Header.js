@@ -37,8 +37,7 @@ export default function Header() {
                 <nav className={styles.nav}>
                   <ul className={styles.navList}>
                     <li className={styles.navItem}>
-                      <NavLink
-                        to="/catalog" className={setActive} >Каталог товаров</NavLink>
+                      <NavLink to="/catalog" className={setActive} >Каталог товаров</NavLink>
                     </li>
                     <li className={styles.navItem}>
                       <NavLink to="/blog" className={setActive}>Блог</NavLink>

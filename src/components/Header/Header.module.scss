@@ -65,6 +65,8 @@
     line-height: 100%;
     color: v.$black;
     text-decoration: none;
+    display: inline-block;
+    padding-bottom: f.rem(10);
 
     @include m.tablet {
       color: #181818;
@@ -76,14 +78,22 @@
       font-size: f.rem(16);
       line-height: f.ratio(16, 18.83);
     }
-  }
 
-  a:hover {
-    text-decoration: underline v.$yellow !important;
-    text-decoration-thickness: 2px !important;
-    text-underline-offset: 10px !important;
-  }
+    &::after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      background-color: v.$yellow;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      transition: all 0.3s;
+    }
 
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
 
 .icons {

@@ -73,6 +73,10 @@ const Context = (props) => {
   useEffect(() => {
     if (products.length) {
       localStorage.setItem('products', JSON.stringify(products));
+    } else {
+      setTimeout(() => {
+        localStorage.removeItem('products');
+      }, 0);
     }
 
   }, [products]);
@@ -192,6 +196,14 @@ const Context = (props) => {
     }
   }
 
+  //функция оповещания, что товар уже в корзине
+  const [basketBtn, setBasketBtn] = useState(false);
+  const inBasket = (item) => {
+
+    console.log(item);
+
+  }
+
   //функции добавления и уменьшения кол-ва товаров в корзине
   function addCount(item) {
     setProducts(products.map(i => {
@@ -246,6 +258,7 @@ const Context = (props) => {
     openRegistrationForm, setOpenRegistrationForm,
     openNav, setOpenNav,
     openOneProduct, setOpenOneProduct,
+    basketBtn, setBasketBtn, inBasket,
   };
 
   return (

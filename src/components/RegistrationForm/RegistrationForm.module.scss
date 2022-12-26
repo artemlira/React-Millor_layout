@@ -22,7 +22,7 @@
 
 .container {
   width: f.vw(977);
-  min-height: 70vh;
+  max-width: f.rem(977);
   position: relative;
   background-color: v.$white;
   margin: f.rem(80) auto;
@@ -51,8 +51,9 @@
   position: relative;
 
   img {
-    max-width: none;
+    max-width: f.rem(350);
     width: f.vw(350);
+    max-height: f.rem(240);
     height: f.vw(240);
     position: absolute;
     top: 0px;

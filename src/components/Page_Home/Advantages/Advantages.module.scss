@@ -10,7 +10,8 @@
   }
 
   @include m.phone {
-    padding-bottom: f.rem(126);
+    min-height: initial;
+    padding-bottom: initial;
   }
 }
 
@@ -49,6 +50,10 @@
 
   @include m.tablet {
     display: none;
+  }
+
+  img{
+    object-fit: contain;
   }
 }
 

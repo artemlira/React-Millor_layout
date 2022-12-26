@@ -131,9 +131,10 @@
   }
 
   @include m.phone {
-    max-width: f.rem(340);
+    // max-width: f.rem(340);
     height: f.rem(50);
-    width: 80%;
+    max-width: calc(100% - 34px);
+    width: 100%;
     margin: f.rem(220) auto f.rem(20);
   }
 
@@ -172,6 +173,7 @@
   right: 60px;
   max-width: f.rem(637);
   max-height: f.rem(549);
+  transform: translateX(10px);
 
 
   @media screen and (max-width:1100px) {

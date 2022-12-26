@@ -221,6 +221,10 @@
     box-shadow: 0px 0px 61.44px rgba(146, 146, 146, 0.2);
     border-radius: 40px 40px 20px 20px;
     overflow: hidden;
+
+    @include m.phone {
+      min-height: initial;
+    }
   }
 
   .img {

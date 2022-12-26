@@ -44,6 +44,7 @@
     @include m.tablet {
       font-size: f.rem(25);
       color: #E9E9E9;
+      box-shadow: initial;
     }
 
     @media screen and (max-width:650px) {
@@ -60,4 +61,10 @@
   @include m.tablet {
     color: v.$yellow;
   }
+}
+
+
+.HomeSlider.slick-slider {
+
+  margin-right: -15px;
 }

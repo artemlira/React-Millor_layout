@@ -10,6 +10,7 @@ import './Slider.scss';
 export default function Slider() {
 
   const settings = {
+    className: 'HomeSlider',
     autoplay: true,
     dots: true,
     arrows: false,

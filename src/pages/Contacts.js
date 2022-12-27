@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactsHeader from '../components/Page_Contacts/ContactsHeader/ContactsHeader';
 import ContactsMain from '../components/Page_Contacts/ContactsMain/ContactsMain';
-import Subscription from '../components/Subscription/Subscription';
+import ContactsSubscription from '../components/Page_Contacts/ContactsSubscription/ContactsSubscription';
 
 
 export default function Contacts() {
@@ -9,7 +9,7 @@ export default function Contacts() {
     <article className="contacts">
       <ContactsHeader />
       <ContactsMain />
-      <Subscription />
+      <ContactsSubscription />
     </article>
   );
 }

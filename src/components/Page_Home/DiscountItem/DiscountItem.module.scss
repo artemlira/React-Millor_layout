@@ -128,12 +128,23 @@
 }
 
 .img {
-  max-width: f.rem(120);
+  width: f.rem(120);
   height: f.rem(218);
+
+  @include m.tablet {
+    width: f.rem(144);
+      height: f.rem(260);
+  }
 
   @include m.phone {
     max-width: f.rem(107);
     height: f.rem(193);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 

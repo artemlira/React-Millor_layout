@@ -122,14 +122,32 @@
 }
 
 .img {
+  width: f.rem(230);
+  height: f.rem(177);
+  border-radius: f.rem(14);
+  overflow: hidden;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 
+  @include m.tablet {
+    width: f.rem(274);
+    height: f.rem(211);
+    border-radius: f.rem(10);
+  }
+
+  @include m.phone {
+    width: initial;
+    max-width: f.rem(279);
+    height: f.rem(215);
+    border-radius: f.rem(17);
+  }
+
   img {
     height: 100%;
+    object-fit: cover;
   }
 
   &.sale::before {

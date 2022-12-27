@@ -25,6 +25,11 @@
     border-radius: f.rem(17);
   }
 
+   @media screen and (max-width:390px) {
+    width: initial;
+    max-width: f.rem(340);
+   }
+
   &:hover {
     transform: scale(1.03);
     border: 0.708508px solid #aaaaaa;
@@ -47,6 +52,10 @@
   @include m.phone {
     padding: f.rem(34) f.rem(37) f.rem(42);
   }
+
+   @media screen and (max-width:390px) {
+    padding: f.rem(34) f.rem(20) f.rem(42);
+   }
 
   a {
     text-decoration: none;
@@ -119,15 +128,30 @@
 }
 
 .img {
+  width: f.rem(128);
+  height: f.rem(196);
   flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-inline: auto;
+
+  @include m.tablet {
+    width: f.rem(184);
+    height: f.rem(281);
+  }
+
+  @include m.phone {
+    width: f.rem(182);
+    height: f.rem(279);
+  }
 
 
   img {
-    width: 60%;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
   }
 
   &.sale::before {

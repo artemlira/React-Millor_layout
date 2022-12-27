@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import styles from './Production.module.scss';
+import { motion } from 'framer-motion';
+
 
 
 export default function Production({ arr }) {
   const [openSorting, setOpenSorting] = useState(false);
   const [showAll, setShowAll] = useState(false);
+
 
   const show = () => {
     setShowAll(!showAll);
@@ -29,27 +32,55 @@ export default function Production({ arr }) {
             <option>По кислотности</option>
           </select>
         </form>}
+
         <div className={styles.laptop}>
-          <div className={styles.container} >
+          <motion.div
+            initial={{ opacity: 0, y: "100" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "100" }}
+            transition={{ duration: 1 }}
+            className={styles.container} >
             {!showAll
               ?
-              arr.map((item, index) => index < 12 && <div key={Math.random() * 100}>{item}</div>)
+              arr.map((item, index) => index < 12 && <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                key={Math.random() * 100}>{item}</motion.div>)
               :
-              arr.map(item => <div key={Math.random() * 100}>{item}</div>)
+              arr.map(item => <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                key={Math.random() * 100}>{item}</motion.div>)
             }
-          </div>
+          </motion.div>
           {arr.length > 12 && <button onClick={() => show()} className={styles.btn}>{!showAll ? 'Показать еще' : 'Скрыть'}</button>}
         </div>
+
         <div className={styles.tablet}>
-          <div className={styles.container} >
+          <motion.div
+
+            initial={{ opacity: 0, y: "100" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "100" }}
+            transition={{ duration: 1 }}
+            className={styles.container} >
             {arr.map((item, index) => index < 6 && <div key={Math.random() * 100}>{item}</div>)}
-          </div>
+          </motion.div>
           <button className={styles.btn}>Показать еще</button>
         </div>
         <div className={styles.phone}>
-          <div className={styles.container} >
+          <motion.div
+            initial={{ opacity: 0, y: "100" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "100" }}
+            transition={{ duration: 1 }}
+            className={styles.container} >
             {arr.map((item, index) => index < 3 && <div key={Math.random() * 100}>{item}</div>)}
-          </div>
+          </motion.div>
           <button className={styles.btn}>Показать еще</button>
 
         </div>

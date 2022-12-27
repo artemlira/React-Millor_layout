@@ -119,23 +119,28 @@
 }
 
 .img {
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: f.rem(160);
+  height: f.rem(221);
+  margin: 0px auto;
   position: relative;
+
+  @include m.tablet {
+    width: f.rem(187);
+    height: f.rem(262);
+  }
 
 
   img {
-    width: 60%;
-    max-height: f.rem(190);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   &.sale::before {
     position: absolute;
     content: url('../../../images/Discount Goods/procent.png');
-    right: f.rem(12);
-    top: f.rem(35);
+    right: f.rem(-30);
+    top: f.rem(30);
   }
 }
 

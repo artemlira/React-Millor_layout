@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import styles from './CoffeeCard.module.scss';
 import { MillorContext } from './../../Context';
 import { discountItemPics } from '../../ImagesDB.js';
@@ -7,8 +7,13 @@ import CoffeeCardTablet from './CoffeeCardTablet';
 
 export default function CoffeeCard() {
 
-  const { pack, openOneProduct, addOneCard, removeOneCard, addProduct } = useContext(MillorContext);
-  
+  const { openOneProduct, addOneCard, removeOneCard, addProduct } = useContext(MillorContext);
+
+  const [pack, setPack] = useState(null);
+  const handleChange = (e) => {
+    setPack(e.target.value)
+  }
+
   return (
     <>
       <section className={styles.coffeeCard}>
@@ -52,7 +57,7 @@ export default function CoffeeCard() {
                 </div>
               </div>
               <div>
-                <form ref={pack} className={styles.formPackage}>
+                <form onChange={(e) => handleChange(e)} className={styles.formPackage}>
                   <label htmlFor='250' className={styles.packageLabel}>
                     <input value="250" id='250' className={styles.packageInput} type="radio" name='package'></input>
                     <span className={styles.customRadio}></span>
@@ -70,7 +75,7 @@ export default function CoffeeCard() {
                   <button onClick={() => removeOneCard()}>-</button>{openOneProduct.amount}<button onClick={() => addOneCard()}>+</button>
                 </div>
                 <div className={styles.buyBtn}>
-                  <button onClick={(e) => addProduct(e, openOneProduct)}>Купить за {openOneProduct.price * openOneProduct.amount} ₽</button>
+                  <button onClick={(e) => addProduct(e, openOneProduct, pack)}>Купить за {openOneProduct.price * openOneProduct.amount} ₽</button>
                 </div>
               </div>
             </div>

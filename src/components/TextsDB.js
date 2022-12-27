@@ -3,6 +3,8 @@ import pic01 from '../images/Blog/pic01.png';
 import pic02 from '../images/Blog/pic02.png';
 import pic03 from '../images/Blog/pic03.png';
 import news01 from '../images/news/01.png';
+import news01Webp from '../images/news/01.webp'
+
 import coffee01 from '../images/Discount Goods/01.png';
 import tea01 from '../images/TeaCatalog/01.png';
 import tea02 from '../images/TeaCatalog/02.png';
@@ -3691,6 +3693,7 @@ export const itemsBlogTraining = [
 export const itemsBlogNews = [
   {
     img: news01,
+    imgWebp: news01Webp,
     title: 'Танзанийский кофе. Откуда он взялся и почему мы его так любим?',
     text: ['Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.',
 
@@ -3700,6 +3703,7 @@ export const itemsBlogNews = [
   },
   {
     img: news01,
+    imgWebp: news01Webp,
     title: 'Танзанийский кофе. Откуда он взялся и почему мы его так любим?',
     text: ['Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.',
 
@@ -3709,6 +3713,7 @@ export const itemsBlogNews = [
   },
   {
     img: news01,
+    imgWebp: news01Webp,
     title: 'Танзанийский кофе. Откуда он взялся и почему мы его так любим?',
     text: ['Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.',
 

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import styles from './HealthyDietItem.module.scss';
 import { discountItemPics } from '../../ImagesDB';
 import { MillorContext } from './../../Context';
@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom';
 
 
 export default function HealthyDietItem({ productTitle, description, image, productPrice, item, sale, rating }) {
-  const { pack, addProduct, setOpenOneProduct } = useContext(MillorContext);
+  const { addProduct, setOpenOneProduct } = useContext(MillorContext);
+  const pack = useRef();
+
   return (
     <section className={styles.healthyDietItem}>
       <div className={styles.container}>
@@ -45,7 +47,7 @@ export default function HealthyDietItem({ productTitle, description, image, prod
             <p>{productPrice} ₽</p>
           </div>
           <div >
-            <button className={styles.btn} onClick={(e) => addProduct(e, item)}>В корзину</button>
+            <button className={styles.btn} onClick={(e) => addProduct(e, item, pack)}>В корзину</button>
           </div>
         </div>
 

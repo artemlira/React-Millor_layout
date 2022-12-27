@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import styles from './DiscountItem.module.scss';
 import './discountItem.scss';
 import { discountItemPics } from '../../ImagesDB';
@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
 
 export default function DiscountItem({ sale, special, productTitle, description, image, productPrice, item, noLink }) {
 
-  const { pack, addProduct, setOpenOneProduct } = useContext(MillorContext);
+  const { addProduct, setOpenOneProduct } = useContext(MillorContext);
+  const pack = useRef();
 
   return (
     <div className={styles.discountItem}>
@@ -60,7 +61,7 @@ export default function DiscountItem({ sale, special, productTitle, description,
             <p>{productPrice} ₽</p>
           </div>
           <div >
-            <button className={styles.btn} onClick={(e) => addProduct(e, item)}>В корзину</button>
+            <button className={styles.btn} onClick={(e) => addProduct(e, item, pack)}>В корзину</button>
             {/* {!productInBasket && <button className={styles.btn} onClick={(e) => addProduct(e)}>В корзину</button>} */}
             {/* {productInBasket && <button className={styles.activeBasket}>Товар в корзине</button>} */}
           </div>

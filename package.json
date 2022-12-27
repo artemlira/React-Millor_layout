@@ -11,6 +11,7 @@
     "netlify-cli": "^12.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-image-webp": "^0.8.0",
     "react-router": "^6.4.3",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",

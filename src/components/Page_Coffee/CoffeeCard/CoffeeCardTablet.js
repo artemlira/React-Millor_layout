@@ -1,13 +1,13 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useRef } from 'react';
 import styles from './CoffeeCard.module.scss';
 import { MillorContext } from './../../Context';
 import { discountItemPics } from '../../ImagesDB.js';
 
 export default function CoffeeCardTablet() {
 
-  const { pack, addOneCard, removeOneCard, addProduct, openOneProduct } = useContext(MillorContext);
+  const { addOneCard, removeOneCard, addProduct, openOneProduct } = useContext(MillorContext);
 
-
+  const pack = useRef();
   const [showText, setShowText] = useState(false);
 
   return (
@@ -68,7 +68,7 @@ export default function CoffeeCardTablet() {
               </div>
             </div>
             <div className={styles.buyBtn}>
-              <button onClick={(e) => addProduct(e, openOneProduct)}>Купить за {openOneProduct.price * openOneProduct.amount} ₽</button>
+              <button onClick={(e) => addProduct(e, openOneProduct, pack)}>Купить за {openOneProduct.price * openOneProduct.amount} ₽</button>
             </div>
           </div>
         </div>

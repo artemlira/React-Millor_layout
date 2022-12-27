@@ -1,17 +1,21 @@
-import React from 'react'
+import React from 'react';
+// import Image from 'react-image-webp';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
-export default function NewsItem({ img, title, text, author, link, styles }) {
+
+export default function NewsItem({ img, imgWebp, title, text, author, link, styles }) {
 
   function handleSubmit(e) {
     e.preventDefault();
   }
 
 
-
   return (
     <div className={styles.item}>
       <div className={styles.itemImg}>
-        <img src={img} alt="News" />
+        {isWebpSupported()
+          ? <img src={imgWebp} alt="News" />
+          : <img src={img} alt="News" />}
       </div>
       <div className={styles.about}>
         <header>

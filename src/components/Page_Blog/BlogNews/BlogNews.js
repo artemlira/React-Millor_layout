@@ -35,6 +35,7 @@ export default function BlogNews() {
                 key={Math.random() * 10}
                 styles={styles}
                 img={item.img}
+                imgWebp={item.imgWebp}
                 title={item.title}
                 text={item.text}
                 author={item.author}

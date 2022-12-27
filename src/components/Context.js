@@ -1,4 +1,4 @@
-import React, { createContext, useState, useRef, useEffect } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { allProducts } from './TextsDB';
 import DiscountItem from './Page_Home/DiscountItem/DiscountItem';
@@ -18,7 +18,8 @@ const Context = (props) => {
   const [openRegistrationForm, setOpenRegistrationForm] = useState(null); //открытие регастрационной формы
   const [openNav, setOpenNav] = useState(false);//открытие меню в планшетном режиме
 
-  const pack = useRef();
+
+  // const pack = useRef();
   let totalProducts = 0;
   products.forEach(item => totalProducts = totalProducts + item.amount);
 
@@ -42,16 +43,18 @@ const Context = (props) => {
   }
 
   //добавление продукции в корзину
-  function addProduct(e, item) {
+  function addProduct(e, item, pack) {
 
-    // console.dir(pack.current.value);
+    if (pack === null) {
+      return null;
+    }
     setProducts([...products, {
       id: products.length + 1,
       img: item.image,
       title: item.title,
       text: item.description[0],
       price: item.price,
-      pack: pack.current.value,
+      pack: pack.current ? pack.current.value : pack,
       amount: item.amount,
       discount: item.discount,
       summ: ((+item.price * item.amount) - (+item.price * item.discount))
@@ -145,7 +148,7 @@ const Context = (props) => {
   //===================
   const [active, setActive] = useState(false);
   const [filterText, setFilterText] = useState(null);
-  const element = useRef();
+  // const element = useRef();
 
 
   //функция фильтрации кофе по способу приготовления, на нажатие соответствующей кнопки
@@ -244,7 +247,7 @@ const Context = (props) => {
     transformationWord,
     products, setProducts,
     totalProducts,
-    pack,
+    // pack,
     addProduct, removeProduct,
     coffee, setCoffee,
     tea, setTea,
@@ -254,7 +257,7 @@ const Context = (props) => {
     filter, filterTea, filterHealthyDiet, filterWending,
     active, setActive,
     discountItemCoffee, itemsTea, itemsWendingProducts, itemsHealthyDiet,
-    element, filterText,
+    filterText,
     addCount, removeCount, addOneCard, removeOneCard,
     openRegistrationForm, setOpenRegistrationForm,
     openNav, setOpenNav,

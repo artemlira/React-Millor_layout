@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import styles from './TeaItem.module.scss';
 import { discountItemPics } from '../../ImagesDB';
 import { MillorContext } from './../../Context';
@@ -7,11 +7,14 @@ import { Link } from 'react-router-dom';
 
 export default function TeaItem({ productTitle, description, image, productPrice, item, sale, rating }) {
 
-  const { pack, addProduct, setOpenOneProduct,  } = useContext(MillorContext);
+  const { addProduct, setOpenOneProduct, } = useContext(MillorContext);
+  const pack = useRef();
+
+
   return (
     <div className={styles.teaItem}>
       <div className={styles.container}>
-        <form  action="/" className={styles.form}>
+        <form action="/" className={styles.form}>
           <div className={styles.rating}>
             <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
             <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
@@ -40,7 +43,7 @@ export default function TeaItem({ productTitle, description, image, productPrice
             <p>{productPrice} ₽</p>
           </div>
           <div >
-            <button className={styles.btn} onClick={(e) => addProduct(e, item)}>В корзину</button>
+            <button className={styles.btn} onClick={(e) => addProduct(e, item, pack)}>В корзину</button>
           </div>
         </div>
 

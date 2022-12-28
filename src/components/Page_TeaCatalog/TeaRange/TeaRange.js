@@ -21,7 +21,7 @@ export default function TeaRange() {
           <div className={styles.range}>
             {
               teaRange.map((item) =>
-                <TeaRangeItem key={Math.random() * 100} img={item.img} text={item.text} styles={styles} item={item} />
+                <TeaRangeItem key={Math.random() * 100} img={item.img} imgWebp={item.imgWebp} text={item.text} styles={styles} item={item} />
               )
             }
           </div>

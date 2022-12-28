@@ -29,6 +29,7 @@ export default function BasketProducts() {
                 item={item}
                 styles={styles}
                 img={item.img}
+                imgWebp={item.imgWebp}
                 title={item.title}
                 text={item.text}
                 price={item.price}

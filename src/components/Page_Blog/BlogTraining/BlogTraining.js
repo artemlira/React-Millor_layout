@@ -16,6 +16,7 @@ export default function BlogTraining() {
               <TrainingItem
                 key={Math.random() * 100}
                 img={item.img}
+                imgWebp={item.imgWebp}
                 title={item.title}
                 styles={styles}
                 text={item.text}

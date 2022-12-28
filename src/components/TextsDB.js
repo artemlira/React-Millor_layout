@@ -1,22 +1,36 @@
-// import img from '../images/Discount Goods/01.png'
-import pic01 from '../images/Blog/pic01.png';
-import pic02 from '../images/Blog/pic02.png';
-import pic03 from '../images/Blog/pic03.png';
-import news01 from '../images/news/01.png';
-import news01Webp from '../images/news/01.webp'
 
+import pic01 from '../images/Blog/pic01.png';
+import pic01Webp from '../images/Blog/pic01.webp';
+import pic02 from '../images/Blog/pic02.png';
+import pic02Webp from '../images/Blog/pic02.webp';
+import pic03 from '../images/Blog/pic03.png';
+import pic03Webp from '../images/Blog/pic03.webp';
+import news01 from '../images/news/01.png';
+import news01Webp from '../images/news/01.webp';
 import coffee01 from '../images/Discount Goods/01.png';
+import coffee01Webp from '../images/Discount Goods/01.webp';
 import tea01 from '../images/TeaCatalog/01.png';
+import tea01Webp from '../images/TeaCatalog/01.webp';
 import tea02 from '../images/TeaCatalog/02.png';
+import tea02Webp from '../images/TeaCatalog/02.webp';
 import tea03 from '../images/TeaCatalog/03.png';
+import tea03Webp from '../images/TeaCatalog/03.webp';
 import tea04 from '../images/TeaCatalog/04.png';
+import tea04Webp from '../images/TeaCatalog/04.webp';
 import tea05 from '../images/TeaCatalog/05.png';
+import tea05Webp from '../images/TeaCatalog/05.webp';
 import tea06 from '../images/TeaCatalog/06.png';
+import tea06Webp from '../images/TeaCatalog/06.webp';
 import tea07 from '../images/TeaCatalog/07.png';
+import tea07Webp from '../images/TeaCatalog/07.webp';
 import wending01 from '../images/Wending Products/01.png';
+import wending01Webp from '../images/Wending Products/01.webp';
 import healthyDiet01 from '../images/HealthyDiet/01.png';
+import healthyDiet01Webp from '../images/HealthyDiet/01.webp';
 import ava from '../images/Coffee/ava.png';
+import avaWebp from '../images/Coffee/ava.webp';
 import rating from '../images/Discount Goods/stars.png';
+import ratingWebp from '../images/Discount Goods/stars.webp';
 
 export const allProducts = [
   //coffee
@@ -31,21 +45,24 @@ export const allProducts = [
     special: ['Популярное', 'Новый урожай'], //особые 6
     rating: 4,                               //рейтинг
     acid: 'Низкая',                          //кислинка 4
-    image: coffee01,//картинка
+    image: coffee01,                         //картинка png
+    imageWebp: coffee01Webp,                 //картинка webp
     title: 'Colombia Supremo',               //заголовок
     description: ['Свежеобжаренный кофе',    //описание
       '- описание товара, вкус, аромат'],
     price: '250',                            //цена
     discount: 0.1,                           //скидка
     amount: 1,                               //кол-во товара, по умолчанию 1
-    review: [
+    review: [                                //отзывы    
       {
         avtor: 'Ирина',
         title: 'Отличный вкус!',
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -54,7 +71,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -63,7 +82,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -72,7 +93,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -81,7 +104,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -98,6 +123,7 @@ export const allProducts = [
     rating: 5,
     acid: 'Средняя',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -110,7 +136,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -119,7 +147,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -128,7 +158,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -145,6 +177,7 @@ export const allProducts = [
     rating: 3,
     acid: 'Высокая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -157,7 +190,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -166,7 +201,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -175,7 +212,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -184,7 +223,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -193,7 +234,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -210,6 +253,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Низкая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -222,7 +266,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -231,7 +277,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -240,7 +288,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -257,6 +307,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Средняя',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -269,7 +320,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -278,7 +331,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -287,7 +342,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -296,7 +353,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -305,7 +364,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -322,6 +383,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Высокая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -334,7 +396,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -343,7 +407,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -352,7 +418,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -369,6 +437,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Низкая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -381,7 +450,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -390,7 +461,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -399,7 +472,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -408,7 +483,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -417,7 +494,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -434,6 +513,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Средняя',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -446,7 +526,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -455,7 +537,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -464,7 +548,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -481,6 +567,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Высокая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -493,7 +580,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -502,7 +591,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -511,7 +602,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -520,7 +613,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -529,7 +624,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -546,6 +643,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Низкая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -558,7 +656,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -567,7 +667,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -576,7 +678,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -593,6 +697,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Средняя',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -605,7 +710,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -614,7 +721,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -623,7 +732,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -632,7 +743,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -641,7 +754,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -658,6 +773,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Высокая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -670,7 +786,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -679,7 +797,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -688,7 +808,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -706,6 +828,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Средняя',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -718,7 +841,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -727,7 +852,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -736,7 +863,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -745,7 +874,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -754,7 +885,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -771,6 +904,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Высокая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -783,7 +917,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -792,7 +928,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -801,7 +939,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -818,6 +958,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Высокая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -830,7 +971,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -839,7 +982,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -848,7 +993,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -857,7 +1004,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -866,7 +1015,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -883,6 +1034,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Высокая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -895,7 +1047,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -904,7 +1058,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -913,7 +1069,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -930,6 +1088,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Высокая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -942,7 +1101,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -951,7 +1112,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -960,7 +1123,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -969,7 +1134,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -978,7 +1145,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -995,6 +1164,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Высокая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1007,7 +1177,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1016,7 +1188,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1025,7 +1199,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1042,6 +1218,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Низкая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1054,7 +1231,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1063,7 +1242,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1072,7 +1253,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1089,6 +1272,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Низкая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1101,7 +1285,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1110,7 +1296,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1119,7 +1307,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1136,6 +1326,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Низкая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1148,7 +1339,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1157,7 +1350,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1166,7 +1361,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1183,6 +1380,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Низкая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1195,7 +1393,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1204,7 +1404,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1213,7 +1415,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1230,6 +1434,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Низкая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1242,7 +1447,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1251,7 +1458,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1260,7 +1469,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1277,6 +1488,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Низкая',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1289,7 +1501,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1298,7 +1512,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1307,7 +1523,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1324,6 +1542,7 @@ export const allProducts = [
     rating: 4,
     acid: 'Средняя',
     image: coffee01,
+    imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
     price: '250',
@@ -1336,7 +1555,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1345,7 +1566,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1354,7 +1577,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1366,6 +1591,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea01,
+    imageWebp: tea01Webp,
     title: 'Наименование товара',
     description: ['Черный чай'],
     price: '250',
@@ -1378,7 +1604,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1387,7 +1615,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1396,7 +1626,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1405,7 +1637,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1414,7 +1648,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1425,6 +1661,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea02,
+    imageWebp: tea02Webp,
     title: 'Наименование товара',
     description: ['Зеленый чай'],
     price: '250',
@@ -1437,7 +1674,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1446,7 +1685,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1455,7 +1696,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1466,6 +1709,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea03,
+    imageWebp: tea03Webp,
     title: 'Наименование товара',
     description: ['Молочный улунг'],
     price: '250',
@@ -1478,7 +1722,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1487,7 +1733,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1496,7 +1744,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1505,7 +1755,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1514,7 +1766,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1525,6 +1779,7 @@ export const allProducts = [
     sale: true,
     rating: 4,
     image: tea04,
+    imageWebp: tea04Webp,
     title: 'Наименование товара',
     description: ['Травяной чай'],
     price: '250',
@@ -1537,7 +1792,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1546,7 +1803,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1555,7 +1814,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1566,6 +1827,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea05,
+    imageWebp: tea05Webp,
     title: 'Наименование товара',
     description: ['Матча'],
     price: '250',
@@ -1578,7 +1840,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1587,7 +1851,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1596,7 +1862,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1605,7 +1873,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1614,7 +1884,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1625,6 +1897,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea06,
+    imageWebp: tea06Webp,
     title: 'Наименование товара',
     description: ['Пуэр'],
     price: '250',
@@ -1637,7 +1910,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1646,7 +1921,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1655,7 +1932,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1666,6 +1945,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea07,
+    imageWebp: tea07Webp,
     title: 'Наименование товара',
     description: ['Кофейные напитки'],
     price: '250',
@@ -1678,7 +1958,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1687,7 +1969,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1696,7 +1980,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1705,7 +1991,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1714,7 +2002,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1725,6 +2015,7 @@ export const allProducts = [
     sale: true,
     rating: 4,
     image: tea01,
+    imageWebp: tea01Webp,
     title: 'Наименование товара',
     description: ['Черный чай'],
     price: '250',
@@ -1737,7 +2028,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1746,7 +2039,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1755,7 +2050,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1766,6 +2063,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea02,
+    imageWebp: tea02Webp,
     title: 'Наименование товара',
     description: ['Зеленый чай'],
     price: '250',
@@ -1778,7 +2076,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1787,7 +2087,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1796,7 +2098,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1805,7 +2109,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1814,7 +2120,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1825,6 +2133,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea03,
+    imageWebp: tea03Webp,
     title: 'Наименование товара',
     description: ['Молочный улунг'],
     price: '250',
@@ -1837,7 +2146,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1846,7 +2157,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1855,7 +2168,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1866,6 +2181,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea04,
+    imageWebp: tea04Webp,
     title: 'Наименование товара',
     description: ['Травяной чай'],
     price: '250',
@@ -1878,7 +2194,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1887,7 +2205,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1896,7 +2216,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1905,7 +2227,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1914,7 +2238,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1925,6 +2251,7 @@ export const allProducts = [
     sale: true,
     rating: 4,
     image: tea05,
+    imageWebp: tea05Webp,
     title: 'Наименование товара',
     description: ['Матча'],
     price: '250',
@@ -1937,7 +2264,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1946,7 +2275,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1955,7 +2286,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -1967,6 +2300,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea06,
+    imageWebp: tea06Webp,
     title: 'Наименование товара',
     description: ['Пуэр'],
     price: '250',
@@ -1979,7 +2313,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1988,7 +2324,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -1997,7 +2335,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2008,6 +2348,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: tea07,
+    imageWebp: tea07Webp,
     title: 'Наименование товара',
     description: ['Кофейные напитки'],
     price: '250',
@@ -2020,7 +2361,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2029,7 +2372,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2038,7 +2383,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2050,6 +2397,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
     price: '250',
@@ -2062,7 +2410,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2071,7 +2421,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2080,7 +2432,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2089,7 +2443,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2098,7 +2454,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2109,6 +2467,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
     price: '250',
@@ -2121,7 +2480,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2130,7 +2491,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2139,7 +2502,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2150,6 +2515,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Зерновой кофе'],
     price: '250',
@@ -2162,7 +2528,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2171,7 +2539,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2180,7 +2550,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2189,7 +2561,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2198,7 +2572,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2209,6 +2585,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный какао'],
     price: '250',
@@ -2221,7 +2598,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2230,7 +2609,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2239,7 +2620,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2250,6 +2633,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированные кофейные напитки'],
     price: '250',
@@ -2262,7 +2646,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2271,7 +2657,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2280,7 +2668,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2289,7 +2679,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2298,7 +2690,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2309,6 +2703,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Кофе порошкообразный'],
     price: '250',
@@ -2321,7 +2716,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2330,7 +2727,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2339,7 +2738,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2350,6 +2751,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
     price: '250',
@@ -2362,7 +2764,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2371,7 +2775,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2380,7 +2786,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2389,7 +2797,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2398,7 +2808,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2409,6 +2821,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
     price: '250',
@@ -2421,7 +2834,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2430,7 +2845,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2439,7 +2856,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2450,6 +2869,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
     price: '250',
@@ -2462,7 +2882,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2471,7 +2893,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2480,7 +2904,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2489,7 +2915,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2498,7 +2926,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2509,6 +2939,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Зерновой кофе'],
     price: '250',
@@ -2521,7 +2952,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2530,7 +2963,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2539,7 +2974,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2550,6 +2987,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный какао'],
     price: '250',
@@ -2562,7 +3000,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2571,7 +3011,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2580,7 +3022,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2589,7 +3033,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2598,7 +3044,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2609,6 +3057,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированные кофейные напитки'],
     price: '250',
@@ -2621,7 +3070,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2630,7 +3081,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2639,7 +3092,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2651,6 +3106,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Кофе порошкообразный'],
     price: '250',
@@ -2663,7 +3119,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2672,7 +3130,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2681,7 +3141,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2692,6 +3154,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
     price: '250',
@@ -2704,7 +3167,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2713,7 +3178,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2722,7 +3189,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2733,6 +3202,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
     price: '250',
@@ -2745,7 +3215,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2754,7 +3226,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2763,7 +3237,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2774,6 +3250,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
     price: '250',
@@ -2786,7 +3263,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2795,7 +3274,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2804,7 +3285,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2815,6 +3298,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: wending01,
+    imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
     price: '250',
@@ -2827,7 +3311,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2836,7 +3322,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2845,7 +3333,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2857,6 +3347,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
     price: '250',
@@ -2869,7 +3360,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2878,7 +3371,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2887,7 +3382,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2896,7 +3393,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2905,7 +3404,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2916,6 +3417,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Ячменные напитки'],
     price: '250',
@@ -2928,7 +3430,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2937,7 +3441,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2946,7 +3452,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -2957,6 +3465,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
     price: '250',
@@ -2969,7 +3478,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2978,7 +3489,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2987,7 +3500,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -2996,7 +3511,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3005,7 +3522,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3016,6 +3535,7 @@ export const allProducts = [
     sale: true,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
     price: '250',
@@ -3028,7 +3548,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3037,7 +3559,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3046,7 +3570,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3057,6 +3583,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Толокняные каши'],
     price: '250',
@@ -3069,7 +3596,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3078,7 +3607,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3087,7 +3618,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3096,7 +3629,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3105,7 +3640,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3116,6 +3653,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
     price: '250',
@@ -3128,7 +3666,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3137,7 +3677,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3146,7 +3688,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3157,6 +3701,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Ячменные напитки'],
     price: '250',
@@ -3169,7 +3714,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3178,7 +3725,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3187,7 +3736,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3196,7 +3747,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3205,7 +3758,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3216,6 +3771,7 @@ export const allProducts = [
     sale: true,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
     price: '250',
@@ -3228,7 +3784,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3237,7 +3795,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3246,7 +3806,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3257,6 +3819,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
     price: '250',
@@ -3269,7 +3832,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3278,7 +3843,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3287,7 +3854,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3296,7 +3865,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3305,7 +3876,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3316,6 +3889,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Толокняные каши'],
     price: '250',
@@ -3328,7 +3902,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3337,7 +3913,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3346,7 +3924,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3357,6 +3937,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
     price: '250',
@@ -3369,7 +3950,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3378,7 +3961,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3387,7 +3972,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3396,7 +3983,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3405,7 +3994,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3416,6 +4007,7 @@ export const allProducts = [
     sale: true,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
     price: '250',
@@ -3428,7 +4020,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3437,7 +4031,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3446,7 +4042,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3458,6 +4056,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
     price: '250',
@@ -3470,7 +4069,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3479,7 +4080,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3488,7 +4091,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3499,6 +4104,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Толокняные каши'],
     price: '250',
@@ -3511,7 +4117,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3520,7 +4128,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3529,7 +4139,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3540,6 +4152,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
     price: '250',
@@ -3552,7 +4165,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3561,7 +4176,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3570,7 +4187,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3581,6 +4200,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
     price: '250',
@@ -3593,7 +4213,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3602,7 +4224,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3611,7 +4235,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3622,6 +4248,7 @@ export const allProducts = [
     sale: false,
     rating: 4,
     image: healthyDiet01,
+    imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
     price: '250',
@@ -3634,7 +4261,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3643,7 +4272,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       },
       {
@@ -3652,7 +4283,9 @@ export const allProducts = [
         text: 'Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.',
         data: '21.12.2020',
         rating: rating,
+        ratingWebp: ratingWebp,
         photo: ava,
+        photoWebp: avaWebp,
         city: 'г. Москва'
       }
     ]
@@ -3662,6 +4295,7 @@ export const allProducts = [
 export const itemsBlogTraining = [
   {
     img: pic01,
+    imgWebp: pic01Webp,
     text: [
       'Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.',
 
@@ -3673,6 +4307,7 @@ export const itemsBlogTraining = [
   {
     title: 'Название темы',
     img: pic02,
+    imgWebp: pic02Webp,
     text: [
       'Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.',
       'Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия.Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития.',
@@ -3682,6 +4317,7 @@ export const itemsBlogTraining = [
   {
     title: 'Название темы',
     img: pic03,
+    imgWebp: pic03Webp,
     text: [
       'Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития.',
       'Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия.Таким образом укрепление и развитие структуры способствует подготовки и реализации направлений прогрессивного развития.',

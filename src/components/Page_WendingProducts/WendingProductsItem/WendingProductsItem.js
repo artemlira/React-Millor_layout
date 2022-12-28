@@ -3,11 +3,12 @@ import styles from './WendingProductsItem.module.scss';
 import { discountItemPics } from '../../ImagesDB.js';
 import { Link } from 'react-router-dom';
 import { MillorContext } from './../../Context';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
 
 
 
-export default function WendingProductsItem({ productTitle, description, image, sale, rating, item }) {
+export default function WendingProductsItem({ productTitle, description, image, imageWebp, sale, rating, item }) {
 
   const { pack, setOpenOneProduct } = useContext(MillorContext);
   return (
@@ -15,7 +16,9 @@ export default function WendingProductsItem({ productTitle, description, image, 
       <div className={styles.container}>
         <form action="/" className={styles.form}>
           <div className={styles.rating}>
-            <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
+            {isWebpSupported()
+              ? <img src={discountItemPics[6]} alt="stars" />
+              : <img src={discountItemPics[5]} alt="stars" />}
             <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
           <select ref={pack} name="target" className={styles.select}>
@@ -28,7 +31,9 @@ export default function WendingProductsItem({ productTitle, description, image, 
         </form>
         <Link onClick={() => setOpenOneProduct(item)} to='wending'>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
-            <img src={image} alt="coffee" />
+            {isWebpSupported()
+              ? <img src={ imageWebp} alt="coffee"/>
+              : <img src={ image} alt="coffee"/>}
           </div>
 
           <div className={styles.wrapperText}>

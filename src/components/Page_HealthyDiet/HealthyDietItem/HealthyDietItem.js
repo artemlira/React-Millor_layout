@@ -3,9 +3,10 @@ import styles from './HealthyDietItem.module.scss';
 import { discountItemPics } from '../../ImagesDB';
 import { MillorContext } from './../../Context';
 import { Link } from 'react-router-dom';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
 
-export default function HealthyDietItem({ productTitle, description, image, productPrice, item, sale, rating }) {
+export default function HealthyDietItem({ productTitle, description, image, imageWebp, productPrice, item, sale, rating }) {
   const { addProduct, setOpenOneProduct } = useContext(MillorContext);
   const pack = useRef();
 
@@ -15,7 +16,9 @@ export default function HealthyDietItem({ productTitle, description, image, prod
         <form action="/" className={styles.form}>
 
           <div className={styles.rating}>
-            <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
+            {isWebpSupported()
+              ? <img className={styles.stars} src={discountItemPics[6]} alt="stars" />
+              : <img className={styles.stars} src={discountItemPics[5]} alt="stars" />}
             <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
 
@@ -30,11 +33,13 @@ export default function HealthyDietItem({ productTitle, description, image, prod
             </select>
           </div>
 
-          
+
         </form>
         <Link onClick={() => setOpenOneProduct(item)} to='healthy_eating'>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
-            <img src={image} alt="Packaging of barley powder" />
+            {isWebpSupported()
+              ? <img src={imageWebp} alt="Packaging of barley powder" />
+              : <img src={image} alt="Packaging of barley powder" />}
           </div>
 
           <div className={styles.wrapperText}>

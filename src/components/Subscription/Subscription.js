@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Subscription.module.scss';
-import image from '../../images/Subscription/coffee.png';
+import Image from 'react-image-webp';
 
 
 export default function Subscription() {
@@ -17,7 +17,8 @@ export default function Subscription() {
     <div id='pushes' className={styles.subscription}>
       <div className="container">
         <div className={styles.container}>
-          <img className={styles.img} src={image} alt="coffee" />
+          <Image className={styles.img} src={require('../../images/Subscription/coffee.png')}
+            webp={require('../../images/Subscription/coffee.webp')} />
           <h5 className={styles.title}>Подписка на новости и рассылку</h5>
           <p className={styles.text}>Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</p>
           <form action="/">

@@ -5,12 +5,10 @@ import bg from '../../../images/Discount Goods/bg.png';
 import SlickSlider from 'react-slick';
 import './Slider.scss';
 import DiscountItem from '../DiscountItem/DiscountItem';
-// import { MillorContext } from './../../Context';
 import { allProducts } from './../../TextsDB';
 
 
 export default function DiscountGoods() {
-  // const { coffee } = useContext(MillorContext);
   const productsDiscount = allProducts.filter(i => i.sale === true);
 
 
@@ -69,6 +67,7 @@ export default function DiscountGoods() {
                     productTitle={i.title}
                     description={i.description}
                     image={i.image}
+                    imageWebp={i.imageWebp}
                     productPrice={i.price}
                     item={i}
                     noLink={true}

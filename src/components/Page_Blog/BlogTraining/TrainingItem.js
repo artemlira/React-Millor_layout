@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
-export default function TrainingItem({ img, title, styles, text }) {
+export default function TrainingItem({ img, imgWebp, title, styles, text }) {
 
   return (
     <div className={styles.item}>
@@ -15,7 +16,9 @@ export default function TrainingItem({ img, title, styles, text }) {
       </div>
 
       <div className={styles.img}>
-        <img src={img} alt={title} />
+        {isWebpSupported()
+          ? <img src={imgWebp} alt={title} />
+          : <img src={img} alt={title} />}
       </div>
 
     </div>

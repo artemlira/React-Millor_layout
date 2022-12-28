@@ -32,7 +32,7 @@ const Context = (props) => {
 
   //при первой загрузке браузера помещаем в карточку товара кофе первый попавшиеся товар из массива
   const [openOneProduct, setOpenOneProduct] = useState(coffee[0]);
-
+  
 
   //склонение слов, в зависимости от числа
   const transformationWord = (number, words) => {
@@ -48,9 +48,11 @@ const Context = (props) => {
     if (pack === null) {
       return null;
     }
+
     setProducts([...products, {
       id: products.length + 1,
       img: item.image,
+      imgWebp: item.imageWebp,
       title: item.title,
       text: item.description[0],
       price: item.price,
@@ -105,6 +107,7 @@ const Context = (props) => {
       productTitle={item.title}
       description={item.description}
       image={item.image}
+      imageWebp={item.imageWebp}
       productPrice={item.price}
       item={item}
       sale={item.sale} />);
@@ -115,6 +118,7 @@ const Context = (props) => {
       productTitle={item.title}
       description={item.description}
       image={item.image}
+      imageWebp={item.imageWebp}
       productPrice={item.price}
       item={item}
       sale={item.sale}
@@ -127,6 +131,7 @@ const Context = (props) => {
       productTitle={item.title}
       description={item.description}
       image={item.image}
+      imageWebp={item.imageWebp}
       productPrice={item.price}
       item={item}
       sale={item.sale}
@@ -139,6 +144,7 @@ const Context = (props) => {
       productTitle={item.title}
       description={item.description}
       image={item.image}
+      imageWebp={item.imageWebp}
       productPrice={item.price}
       item={item}
       sale={item.sale}
@@ -212,7 +218,7 @@ const Context = (props) => {
   function addCount(item) {
     setProducts(products.map(i => {
       if (item.id === i.id) {
-        return { id: i.id, img: i.img, pack: i.pack, title: i.title, text: i.text, discount: i.discount, price: i.price, summ: i.summ, amount: +i.amount + 1 }
+        return { id: i.id, img: i.img, imgWebp: i.imgWebp, pack: i.pack, title: i.title, text: i.text, discount: i.discount, price: i.price, summ: i.summ, amount: +i.amount + 1 }
       } else {
         return i;
       }
@@ -227,7 +233,7 @@ const Context = (props) => {
   function removeCount(item) {
     setProducts(products.map(i => {
       if (item.id === i.id && i.amount > 1) {
-        return { id: i.id, img: i.img, pack: i.pack, title: i.title, text: i.text, discount: i.discount, price: i.price, summ: i.summ, amount: +i.amount - 1 }
+        return { id: i.id, img: i.img, imgWebp: i.imgWebp, pack: i.pack, title: i.title, text: i.text, discount: i.discount, price: i.price, summ: i.summ, amount: +i.amount - 1 }
       } else {
         return i;
       }
@@ -247,7 +253,6 @@ const Context = (props) => {
     transformationWord,
     products, setProducts,
     totalProducts,
-    // pack,
     addProduct, removeProduct,
     coffee, setCoffee,
     tea, setTea,

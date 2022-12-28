@@ -1,10 +1,9 @@
 import React, { useContext } from 'react';
 import styles from './RegistrationForm.module.scss';
 import { MillorContext } from './../Context';
-import img from '../../images/RegistratiomForm/coffee.png';
-import logo from '../../images/RegistratiomForm/logo.png';
 import { motion, AnimatePresence } from 'framer-motion';
 import RegistrationFormTablet from './RegistrationFormTablet';
+import Image from 'react-image-webp';
 
 export default function RegistrationForm() {
   const { openRegistrationForm, setOpenRegistrationForm } = useContext(MillorContext);
@@ -32,7 +31,7 @@ export default function RegistrationForm() {
               <span onClick={() => setOpenRegistrationForm(false)}>x</span>
               <div className={styles.greetings}>
                 <div className={styles.greetingsImg}>
-                  <img src={img} alt="coffee" />
+                  <Image src={require('../../images/RegistratiomForm/coffee.png')} webp={require('../../images/RegistratiomForm/coffee.webp')} />
                 </div>
                 <div className={styles.greetingsTextWrapper}>
                   <h6 className={styles.greetingsTitle}>Добро пожаловать!</h6>
@@ -42,7 +41,7 @@ export default function RegistrationForm() {
 
               <div className={styles.registration}>
                 <div className={styles.logo}>
-                  <img src={logo} alt="logo" />
+                  <Image src={require('../../images/RegistratiomForm/logo.png')} webp={require('../../images/RegistratiomForm/logo.webp')} />
                 </div>
                 <h6 className={styles.registrationTitle}>Регистрация</h6>
                 <p className={styles.registrationText}>Зарегистрируйтесь на сайте, чтобы первым получать скидки и узнавать акционные предложения!</p>

@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { MillorContext } from './../../Context';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
-export default function TeaRangeItem({ img, text, styles, item }) {
+export default function TeaRangeItem({ img, imgWebp, text, styles, item }) {
   const { filterTea, filterText, location, filterHealthyDiet, filterWending } = useContext(MillorContext);
 
   const filter = (item) => {
@@ -21,7 +22,9 @@ export default function TeaRangeItem({ img, text, styles, item }) {
       className={text ? filterText === text ? `${styles.item} ${styles.active}` : styles.item : styles.disable}
       onClick={() => filter(item)}>
       <div className={styles.itemImg}>
-        <img src={img} alt="tea" />
+        {isWebpSupported()
+          ? <img src={imgWebp} alt="products" />
+          : <img src={img} alt="products" />}
       </div>
       <p className={styles.rangeText}>{text}</p>
     </div>

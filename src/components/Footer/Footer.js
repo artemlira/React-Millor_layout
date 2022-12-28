@@ -1,26 +1,24 @@
 import React from 'react';
 import styles from './Footer.module.scss';
-import logo from '../../images/logo.png';
 import { Link } from 'react-router-dom';
-// import { MillorContext } from './../Context';
+import Image from 'react-image-webp';
 
 
 export default function Footer() {
-  // const data = useContext(MillorContext);
+ 
   return (
     <footer className={styles.footer}>
       <div className='container'>
         <div className={styles.container}>
           <div className={styles.logo}>
-            <Link to="/"> <img src={logo} alt="logo Millor" /></Link>
+            <Link to="/">
+              <Image src={require('../../images/logo.png')} webp={require('../../images/logo.webp')} />
+            </Link>
           </div>
           <nav className={styles.nav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <Link
-                  // onClick={data.scrollToHandler()}
-                  to="/catalog"
-                >Каталог товаров</Link>
+                <Link to="/catalog">Каталог товаров</Link>
               </li>
               <li className={styles.navItem}>
                 <Link to="/blog">Блог</Link>

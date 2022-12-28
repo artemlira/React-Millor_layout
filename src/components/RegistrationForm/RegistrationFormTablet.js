@@ -30,8 +30,6 @@ export default function RegistrationFormTablet() {
               <li className={styles.registrationItem}><input type="tel" placeholder='Телефон' /></li>
               <li className={styles.registrationItem}><input className={styles.password} type="password" placeholder='Придумайте пароль' /></li>
             </ul>
-            {/* <input className={styles.email} type="email" placeholder='Email' />
-            <input className={styles.password} type="password" placeholder='Придумайте пароль' /> */}
             <button className={styles.btn}>Зарегистрироваться</button>
           </div>
           <div className={styles.registration}>

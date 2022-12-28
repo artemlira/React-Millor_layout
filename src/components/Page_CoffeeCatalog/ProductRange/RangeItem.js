@@ -1,6 +1,7 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
 
-export default function RangeItem({ img, styles, text, name, span }) {
+
+export default function RangeItem({ img, imgWebp, styles, text, name, span }) {
   const data = useRef();
 
   return (
@@ -9,9 +10,9 @@ export default function RangeItem({ img, styles, text, name, span }) {
         <input ref={data} className={styles.input} type="radio" name={name}></input>
         <span className={styles.customRadio}></span>
         {img ?
-          <img className={styles.iconImg} src={img} alt="The degree of frying" />
-          :
-          <p>{text} {span && <span>{span}</span>}</p>
+        <img className={styles.iconImg} src={img} alt="The degree of frying" />
+        :
+        <p>{text} {span && <span>{span}</span>}</p>
         }
       </label>
     </li >

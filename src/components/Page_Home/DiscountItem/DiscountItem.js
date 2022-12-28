@@ -4,9 +4,10 @@ import './discountItem.scss';
 import { discountItemPics } from '../../ImagesDB';
 import { MillorContext } from './../../Context';
 import { Link } from 'react-router-dom';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
 
-export default function DiscountItem({ sale, special, productTitle, description, image, productPrice, item, noLink }) {
+export default function DiscountItem({ sale, special, productTitle, description, image, imageWebp, productPrice, item, noLink }) {
 
   const { addProduct, setOpenOneProduct } = useContext(MillorContext);
   const pack = useRef();
@@ -29,26 +30,34 @@ export default function DiscountItem({ sale, special, productTitle, description,
           <div className={styles.discount}>
             <p>Скидки</p>
             <div className={styles.wrapperDiscountImg}>
-              <img className={styles.discountImg} src={discountItemPics[4]} alt="icon percent" />
+              {isWebpSupported()
+                ? <img className={styles.discountImg} src={discountItemPics[8]} alt='icon percent' />
+                : <img className={styles.discountImg} src={discountItemPics[7]} alt='icon percent' />}
             </div>
           </div>
         }
         <Link onClick={() => setOpenOneProduct(item)} className={styles.link} to={noLink ? '' : "coffee"} >
           <div className={item.product === 'coffee' ? `${styles.wrapper}` : `${styles.wrapperNoCoffee}`} >
             <div className={styles.img}>
-              <img src={image} alt="coffee" />
+              {isWebpSupported()
+                ? <img src={imageWebp} alt="coffee" />
+                : <img src={image} alt="coffee" />}
             </div>
             {item.product === 'coffee' &&
               <div className={styles.about}>
-                <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
+                {isWebpSupported()
+                  ? <img className={styles.stars} src={discountItemPics[6]} alt="stars" />
+                  : <img className={styles.stars} src={discountItemPics[5]} alt="stars" />}
                 <p className={styles.reviews}>4.0 <span>(32 отзыва)</span></p>
-                <img className={styles.coffeeBeans} src={discountItemPics[1]} alt="coffee beans" />
+                {isWebpSupported()
+                  ? <img className={styles.coffeeBeans} src={ discountItemPics[3]} alt="coffee beans"/>
+                  : <img className={styles.coffeeBeans} src={ discountItemPics[2]} alt="coffee beans"/>}
                 <p className={styles.description}>Кислинка</p>
-                <img className={styles.descriptionImg} src={discountItemPics[2]} alt="" />
+                <img className={styles.descriptionImg} src={discountItemPics[4]} alt="" />
                 <p className={styles.description}>Горчинка</p>
-                <img className={styles.descriptionImg} src={discountItemPics[2]} alt="" />
+                <img className={styles.descriptionImg} src={discountItemPics[4]} alt="" />
                 <p className={styles.description}>Насыщенность</p>
-                <img className={styles.descriptionImg} src={discountItemPics[2]} alt="" />
+                <img className={styles.descriptionImg} src={discountItemPics[4]} alt="" />
               </div>}
           </div>
           <div className={styles.wrapperText}>

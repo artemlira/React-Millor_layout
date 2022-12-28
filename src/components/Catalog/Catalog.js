@@ -19,6 +19,7 @@ export default function Catalog() {
             <CatalogItem
               key={Math.random() * 100}
               image={item.img}
+              imageWebp={item.imgWebp}
               text={item.text}
               textButton={item.btn}
               link={item.link} />)}

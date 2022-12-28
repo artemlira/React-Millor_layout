@@ -2,6 +2,7 @@ import React, { useContext, useState, useRef } from 'react';
 import styles from './HealthyEatingCard.module.scss';
 import { MillorContext } from './../../Context';
 import { discountItemPics } from '../../ImagesDB.js';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
 export default function HealthyEatingCard() {
 
@@ -20,11 +21,17 @@ export default function HealthyEatingCard() {
       <div className="container">
         <div className={styles.container}>
           <div className={styles.reviewsTablet}>
-            <div className={styles.reviewsStars}><img src={discountItemPics[3]} alt="stars" /></div>
+            <div className={styles.reviewsStars}>
+              {isWebpSupported()
+                ? <img src={discountItemPics[6]} alt="stars" />
+                : <img src={discountItemPics[5]} alt="stars" />}
+            </div>
             <p className={styles.reviewsText}>{openOneProduct.rating}.0 <span>(32 отзыва)</span></p>
           </div>
           <div className={styles.image}>
-            <img src={openOneProduct.image} alt={openOneProduct.title} />
+            {isWebpSupported()
+              ? <img src={openOneProduct.imageWebp} alt={openOneProduct.title} />
+              : <img src={openOneProduct.image} alt={openOneProduct.title} />}
           </div>
           <div className={styles.contant}>
             <div className={styles.wrapperTitle}>
@@ -32,7 +39,11 @@ export default function HealthyEatingCard() {
               {openOneProduct.description.map(i => <p key={Math.random() * 10} className={styles.text}>{i}</p>)}
             </div>
             <div className={styles.reviews}>
-              <div className={styles.reviewsStars}><img src={discountItemPics[3]} alt="stars" /></div>
+              <div className={styles.reviewsStars}>
+                {isWebpSupported()
+                  ? <img src={discountItemPics[6]} alt="stars" />
+                  : <img src={discountItemPics[5]} alt="stars" />}
+              </div>
               <p className={styles.reviewsText}>{openOneProduct.rating}.0 <span>(32 отзыва)</span></p>
             </div>
             <div className={styles.contantAbout}>

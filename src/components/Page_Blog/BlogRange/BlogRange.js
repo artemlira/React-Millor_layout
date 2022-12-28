@@ -7,9 +7,6 @@ import { NavLink } from 'react-router-dom';
 
 export default function BlogRange() {
 
-  // const { id } = useParams();
-
-
   return (
     <section className={styles.blogRange}>
       <div className="container">

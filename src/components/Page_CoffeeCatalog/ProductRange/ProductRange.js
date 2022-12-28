@@ -48,7 +48,8 @@ export default function ProductRange() {
                   {productRangePic.map(item =>
                     <RangeItem
                       key={Math.random() * 100}
-                      img={item}
+                      img={item.img}
+                      imgWebp={item.imgWebp}
                       styles={styles}
                       name='range' />
                   )}

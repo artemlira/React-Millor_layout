@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './SliderItem.module.scss';
-import coffee from '../../../images/slider/coffee.png';
 import { Link } from 'react-router-dom';
+import Image from 'react-image-webp';
 
 
 export default function SliderItem() {
@@ -16,7 +16,7 @@ export default function SliderItem() {
         </button>
       </div>
       <div className={styles.img}>
-        <img src={coffee} alt="espresso" />
+        <Image src={require('../../../images/slider/coffee.png')} webp={require('../../../images/slider/coffee.webp')} />
       </div>
     </div>
   );

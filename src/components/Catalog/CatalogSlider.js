@@ -53,10 +53,10 @@ export default function CatalogSlider() {
   return (
     <div className={styles.itemsSlider}>
       <SlickSlider {...settings} >
-        <CatalogItem image={catalog[0].img} text={catalog[0].text} textButton={catalog[0].btn} link={catalog[0].link} className={styles} />
-        <CatalogItem image={catalog[1].img} text={catalog[1].text} textButton={catalog[1].btn} link={catalog[1].link} className={styles} />
-        <CatalogItem image={catalog[2].img} text={catalog[2].text} textButton={catalog[2].btn} link={catalog[2].link} className={styles} />
-        <CatalogItem image={catalog[3].img} text={catalog[3].text} textButton={catalog[3].btn} link={catalog[3].link} className={styles} />
+        <CatalogItem image={catalog[0].img} imageWebp={catalog[0].imgWebp} text={catalog[0].text} textButton={catalog[0].btn} link={catalog[0].link} className={styles} />
+        <CatalogItem image={catalog[1].img} imageWebp={catalog[1].imgWebp} text={catalog[1].text} textButton={catalog[1].btn} link={catalog[1].link} className={styles} />
+        <CatalogItem image={catalog[2].img} imageWebp={catalog[2].imgWebp} text={catalog[2].text} textButton={catalog[2].btn} link={catalog[2].link} className={styles} />
+        <CatalogItem image={catalog[3].img} imageWebp={catalog[3].imgWebp} text={catalog[3].text} textButton={catalog[3].btn} link={catalog[3].link} className={styles} />
       </SlickSlider>
     </div>
 

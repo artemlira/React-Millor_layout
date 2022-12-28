@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './News.module.scss';
-import image from '../../../images/news/01.png';
 import SlickSlider from 'react-slick';
 import './NewsListSlider.scss';
+import Image from 'react-image-webp';
 
 export default function NewsListSlider() {
   const settings = {
@@ -19,7 +19,7 @@ export default function NewsListSlider() {
         <li className={styles.box1}>
           <div className={styles.wrapperItem}>
             <div className={styles.img}>
-              <img src={image} alt="A pack of coffee" />
+              <Image src={require('../../../images/news/01.png')} webp={require('../../../images/news/01.webp')} />
             </div>
             <div className={styles.about}>
               <h5 className={styles.aboutTitle}>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h5>
@@ -54,7 +54,7 @@ export default function NewsListSlider() {
         <li className={styles.box4}>
           <div className={styles.wrapperItem}>
             <div className={styles.img}>
-              <img src={image} alt="A pack of coffee" />
+              <Image src={require('../../../images/news/01.png')} webp={require('../../../images/news/01.webp')} />
             </div>
             <div className={styles.about}>
               <h5 className={styles.aboutTitle}>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h5>

@@ -3,6 +3,7 @@ import styles from './CoffeeCard.module.scss';
 import { MillorContext } from './../../Context';
 import { discountItemPics } from '../../ImagesDB.js';
 import CoffeeCardTablet from './CoffeeCardTablet';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
 
 export default function CoffeeCard() {
@@ -20,11 +21,15 @@ export default function CoffeeCard() {
         <div className="container">
           <div className={styles.container}>
             <div className={styles.image}>
-              <img src={openOneProduct.image} alt={openOneProduct.title} />
+              {isWebpSupported()
+                ? <img src={openOneProduct.imageWebp} alt={openOneProduct.title} />
+                : <img src={openOneProduct.image} alt={openOneProduct.title} />}
             </div>
             <div className={styles.contant}>
               <div className={styles.coffeeBeans} >
-                <img src={`${discountItemPics[1]}`} alt="coffee beans" />
+                {isWebpSupported()
+                  ? <img src={discountItemPics[3]} alt="coffee beans" />
+                  : <img src={discountItemPics[2]} alt="coffee beans" />}
               </div>
               <div className={styles.wrapperTitle}>
                 <div>
@@ -36,7 +41,11 @@ export default function CoffeeCard() {
                 </div>
               </div>
               <div className={styles.reviews}>
-                <div className={styles.reviewsStars}><img src={discountItemPics[3]} alt="stars" /></div>
+                <div className={styles.reviewsStars}>
+                  {isWebpSupported()
+                    ? <img src={discountItemPics[6]} alt="stars" />
+                    : <img src={discountItemPics[5]} alt="stars" />}
+                </div>
                 <p className={styles.reviewsText}>{openOneProduct.rating}.0 <span>(32 отзыва)</span></p>
               </div>
               <div className={styles.contantAbout}>
@@ -45,15 +54,15 @@ export default function CoffeeCard() {
               <div className={styles.properties}>
                 <div className={styles.acid}>
                   <p className={styles.acidText}>Кислинка</p>
-                  <img className={styles.acidImg} src={`${discountItemPics[2]}`} alt="acid" />
+                  <img className={styles.acidImg} src={`${discountItemPics[4]}`} alt="acid" />
                 </div>
                 <div className={styles.bitterness}>
                   <p className={styles.bitternessText}>Горчинка</p>
-                  <img className={styles.bitternessImg} src={`${discountItemPics[2]}`} alt="bitterness" />
+                  <img className={styles.bitternessImg} src={`${discountItemPics[4]}`} alt="bitterness" />
                 </div>
                 <div className={styles.saturation}>
                   <p className={styles.saturationText}>Насыщенность</p>
-                  <img className={styles.saturationImg} src={`${discountItemPics[2]}`} alt="saturation" />
+                  <img className={styles.saturationImg} src={`${discountItemPics[4]}`} alt="saturation" />
                 </div>
               </div>
               <div>

@@ -3,9 +3,10 @@ import styles from './TeaItem.module.scss';
 import { discountItemPics } from '../../ImagesDB';
 import { MillorContext } from './../../Context';
 import { Link } from 'react-router-dom';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
 
-export default function TeaItem({ productTitle, description, image, productPrice, item, sale, rating }) {
+export default function TeaItem({ productTitle, description, image, imageWebp, productPrice, item, sale, rating }) {
 
   const { addProduct, setOpenOneProduct, } = useContext(MillorContext);
   const pack = useRef();
@@ -16,7 +17,9 @@ export default function TeaItem({ productTitle, description, image, productPrice
       <div className={styles.container}>
         <form action="/" className={styles.form}>
           <div className={styles.rating}>
-            <img className={styles.stars} src={discountItemPics[3]} alt="stars" />
+            {isWebpSupported()
+              ? <img src={discountItemPics[6]} alt="stars" />
+              : <img src={discountItemPics[5]} alt="stars" />}
             <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
           <div className={styles.wrapperSelect}>
@@ -30,7 +33,10 @@ export default function TeaItem({ productTitle, description, image, productPrice
         </form>
         <Link onClick={() => setOpenOneProduct(item)} to='tea'>
           <div className={sale ? `${styles.img} ${styles.sale}` : styles.img}>
-            <img src={image} alt="Tea packaging" />
+            {isWebpSupported()
+              ? <img src={imageWebp} alt="tea packaging" />
+              : <img src={image} alt="tea packaging" />}
+
           </div>
 
           <div className={styles.wrapperText}>

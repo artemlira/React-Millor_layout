@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Advantages.module.scss';
 import { advantagesPics } from '../../ImagesDB.js';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
 
 export default function Advantages() {
@@ -12,13 +13,15 @@ export default function Advantages() {
         </div>
         <div className={styles.container}>
           <div className={styles.img}>
-            <img src={advantagesPics[0]} alt="" />
+            {isWebpSupported()
+              ? <img src={advantagesPics[1]}  alt="coffee"/>
+              : <img src={ advantagesPics[0]}  alt="coffee"/>}
           </div>
           <div className={styles.about}>
 
             <div className={styles.advantage}>
               <div className={styles.advantageImg}>
-                <img src={advantagesPics[1]} alt="" />
+                <img src={advantagesPics[2]} alt="" />
               </div>
               <div className={styles.wrapper}>
                 <h5 className={styles.advantageTitle}>Всегда свежая обжарка</h5>
@@ -28,7 +31,7 @@ export default function Advantages() {
 
             <div className={styles.advantage}>
               <div className={styles.advantageImg}>
-                <img src={advantagesPics[2]} alt="" />
+                <img src={advantagesPics[3]} alt="" />
               </div>
               <div className={styles.wrapper}>
                 <h5 className={styles.advantageTitle}>Лучшие цены на продукцию</h5>
@@ -38,7 +41,7 @@ export default function Advantages() {
 
             <div className={styles.advantage}>
               <div className={styles.advantageImg}>
-                <img src={advantagesPics[3]} alt="" />
+                <img src={advantagesPics[4]} alt="" />
               </div>
               <div className={styles.wrapper}>
                 <h5 className={styles.advantageTitle}>Консультации 24/7</h5>

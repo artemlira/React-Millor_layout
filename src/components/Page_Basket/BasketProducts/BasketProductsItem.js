@@ -1,14 +1,17 @@
 import React, { useContext } from 'react';
 import { MillorContext } from './../../Context';
+import { isWebpSupported } from 'react-image-webp/dist/utils';
 
-export default function BasketProductsItem({ item, img, title, text, price, pack, styles, amount, discount }) {
+export default function BasketProductsItem({ item, img, imgWebp, title, text, price, pack, styles, amount, discount }) {
   const { removeProduct, addCount, removeCount } = useContext(MillorContext);
   return (
     <>
       <ul className={styles.productsItem}>
         <li className={styles.delete} onClick={() => removeProduct(item)}></li>
         <li className={styles.itemProduct}>
-          <img src={img} alt="product" />
+          {isWebpSupported()
+            ? <img src={imgWebp} alt="product" />
+            : <img src={img} alt="product" />}
           <div>
             <h6 className={styles.itemTitle}>{title}</h6>
             <p className={styles.itemText}>{text}</p>
@@ -27,7 +30,9 @@ export default function BasketProductsItem({ item, img, title, text, price, pack
         <li className={styles.contant}>
           <div className={styles.itemProduct}>
             <div className={styles.img}>
-              <img src={img} alt="product" />
+              {isWebpSupported()
+                ? <img src={imgWebp} alt="product" />
+                : <img src={img} alt="product" />}
             </div>
             <div className={styles.wrapperText}>
               <h6 className={styles.itemTitle}>{title}</h6>

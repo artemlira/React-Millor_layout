@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './HealthyRange.module.scss';
-// import img from '../../../images/HealthyDiet/image.png';
 import { foodRange } from '../../ImagesDB.js';
 import TeaRangeItem from './../../Page_TeaCatalog/TeaRange/TeaRangeItem';
 import { Link } from 'react-router-dom';
@@ -22,7 +21,7 @@ export default function HealthyRange() {
           <div className={styles.range}>
             {
               foodRange.map((item) =>
-                <TeaRangeItem key={Math.random() * 100} img={item.img} text={item.text} styles={styles} item={item} />
+                <TeaRangeItem key={Math.random() * 100} img={item.img} imgWebp={ item.imgWebp} text={item.text} styles={styles} item={item} />
               )
             }
           </div>

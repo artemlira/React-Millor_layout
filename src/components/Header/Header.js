@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import styles from './Header.module.scss';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../images/logo.png';
 import { icons } from '../ImagesDB';
 import { MillorContext } from './../Context';
 import RegistrationForm from './../RegistrationForm/RegistrationForm';
 import OpenNav from './OpenNav';
 import SearchTablet from './SearchTablet';
+import Image from 'react-image-webp';
 
 
 
@@ -17,9 +17,6 @@ export default function Header() {
   const setActive = ({ isActive }) => isActive ? 'active-header' : '';
   const setActiveNav = ({ isActive }) => isActive ? 'active-nav' : '';
   
-  // let totalProducts = 0;
-  // products.forEach(item => totalProducts = totalProducts + item.amount)
-
   return (
     <header className={styles.header}>
       <div className="container">
@@ -30,7 +27,9 @@ export default function Header() {
               <span onClick={() => setOpenNav(true)} className={styles.mobileBtn}></span>
 
               <div className={styles.logo}>
-                <Link to="/"> <img src={logo} alt="logo Millor" /></Link>
+                <Link to="/">
+                  <Image src={require('../../images/logo.png')} webp={require('../../images/logo.webp')} />
+                </Link>
               </div>
 
               {!openSearch &&

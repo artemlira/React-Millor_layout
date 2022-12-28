@@ -18,7 +18,7 @@ export default function Subscription() {
       <div className="container">
         <div className={styles.container}>
           <Image className={styles.img} src={require('../../images/Subscription/coffee.png')}
-            webp={require('../../images/Subscription/coffee.webp')} />
+            webp={require('../../images/Subscription/coffee.webp')}  alt="coffee"/>
           <h5 className={styles.title}>Подписка на новости и рассылку</h5>
           <p className={styles.text}>Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</p>
           <form action="/">

@@ -28,7 +28,7 @@ export default function Header() {
 
               <div className={styles.logo}>
                 <Link to="/">
-                  <Image src={require('../../images/logo.png')} webp={require('../../images/logo.webp')} />
+                  <Image src={require('../../images/logo.png')} webp={require('../../images/logo.webp')} alt="logo"/>
                 </Link>
               </div>
 

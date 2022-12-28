@@ -19,7 +19,7 @@ export default function News() {
               <li className={styles.box1}>
                 <div className={styles.wrapperItem}>
                   <div className={styles.img}>
-                    <Image src={require('../../../images/news/01.png')} webp={require('../../../images/news/01.webp')} />
+                    <Image src={require('../../../images/news/01.png')} webp={require('../../../images/news/01.webp')} alt="news" />
                   </div>
                   <div className={styles.about}>
                     <h5 className={styles.aboutTitle}>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h5>
@@ -52,7 +52,7 @@ export default function News() {
               <li className={styles.box4}>
                 <div className={styles.wrapperItem}>
                   <div className={styles.img}>
-                    <Image src={require('../../../images/news/01.png')} webp={require('../../../images/news/01.webp')} />
+                    <Image src={require('../../../images/news/01.png')} webp={require('../../../images/news/01.webp')} alt="news" />
                   </div>
                   <div className={styles.about}>
                     <h5 className={styles.aboutTitle}>Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h5>

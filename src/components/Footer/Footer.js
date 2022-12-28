@@ -12,7 +12,7 @@ export default function Footer() {
         <div className={styles.container}>
           <div className={styles.logo}>
             <Link to="/">
-              <Image src={require('../../images/logo.png')} webp={require('../../images/logo.webp')} />
+              <Image src={require('../../images/logo.png')} webp={require('../../images/logo.webp')} alt="logo" />
             </Link>
           </div>
           <nav className={styles.nav}>

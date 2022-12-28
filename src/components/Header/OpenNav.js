@@ -26,7 +26,7 @@ export default function OpenNav() {
             <div className={styles.wrapperLogo}>
               <div className={styles.logo}>
                 <Link to="/">
-                  <Image src={require('../../images/logo.png')} webp={require('../../images/logo.webp')} />
+                  <Image src={require('../../images/logo.png')} webp={require('../../images/logo.webp')} alt="logo"/>
                 </Link>
               </div>
               <span onClick={() => setOpenNav(false)} className={styles.mobileBtnClose}></span>

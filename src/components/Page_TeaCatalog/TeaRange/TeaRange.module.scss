@@ -206,6 +206,10 @@
   max-width: f.rem(101);
 
   img {
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+
     @include m.phone {
       max-width: initial;
       max-height: 100%;

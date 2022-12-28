@@ -45,7 +45,8 @@ export default function CoffeeCardTablet() {
               <h6 className={styles.title}>{openOneProduct.title}</h6>
               <p className={styles.methodProcessing}>{openOneProduct.methodProcessing}, натуральная, смесь</p>
             </div>
-            <div className={styles.contantAbout}>
+            <div
+              className={styles.contantAbout}>
               <p className={!showText ? `${styles.aboutText}` : `${styles.aboutText} ${styles.show}`}>Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.</p>
             </div>
             <span className={!showText ? `${styles.aboutLink}` : `${styles.aboutLink} ${styles.show}`} onClick={() => setShowText(!showText)}>{!showText ? 'Читать полностью' : 'Скрыть'}</span>

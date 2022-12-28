@@ -33,7 +33,7 @@ const Context = (props) => {
   //при первой загрузке браузера помещаем в карточку товара кофе первый попавшиеся товар из массива
   const [openOneProduct, setOpenOneProduct] = useState(coffee[0]);
   
-
+  console.log(openOneProduct);
   //склонение слов, в зависимости от числа
   const transformationWord = (number, words) => {
     if (words) {

@@ -21,25 +21,16 @@
       display: none;
       position: absolute;
     }
-
-    // @include m.phone {
-    //   min-height: f.rem(678);
-    //   box-shadow: 0px 0px 50px rgba(163, 163, 163, 0.25);
-    // }
   }
 
   .image {
-    width: f.rem(300);
-    min-width: f.rem(300);
-    height: f.rem(550);
-    min-height: f.rem(550);
+    width: f.rem(294);
+    height: f.rem(542);
     position: relative;
 
     @include m.netbook {
       width: f.rem(250);
-      min-width: f.rem(250);
       height: f.rem(500);
-      min-height: f.rem(500);
     }
 
     &::after {
@@ -61,6 +52,8 @@
 
     img {
       height: 100%;
+      width: 100%;
+      object-fit: contain;
     }
   }
 
@@ -443,6 +436,7 @@
     img {
       height: 100%;
       width: 100%;
+      object-fit: contain;
     }
 
 
@@ -511,7 +505,6 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    transition: all 0.8;
 
     &.show {
       height: initial;

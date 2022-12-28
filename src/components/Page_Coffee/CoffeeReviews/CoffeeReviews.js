@@ -32,7 +32,7 @@ export default function CoffeeReviews() {
                 ratingWebp={i.ratingWebp}
                 text={i.text}
                 ava={i.photo}
-                avaWebp={i.avaWebp} />)
+                avaWebp={i.photoWebp} />)
             :
             openOneProduct.review.map(i =>
               <Review
@@ -45,7 +45,7 @@ export default function CoffeeReviews() {
                 ratingWebp={i.ratingWebp}
                 text={i.text}
                 ava={i.photo}
-                avaWebp={i.avaWebp} />)
+                avaWebp={i.photoWebp} />)
           }
 
           {openOneProduct.review.length > 3 && <button onClick={() => show()} className={styles.btn}>{!showAll ? 'Показать еще' : 'Скрыть'}</button>}

@@ -13,15 +13,14 @@ export const MillorContext = createContext();
 
 const Context = (props) => {
   const [openSearch, setOpenSearch] = useState(false);  //открывает окно поиска в хедере на комп. версии
-  const location = useLocation();
+  const location = useLocation();                       //хранит в себе данные о локации
   const [products, setProducts] = useState([]);  //продукты, которые попадают в корзину, при клике на кнопку "В корзину"
   const [openRegistrationForm, setOpenRegistrationForm] = useState(null); //открытие регастрационной формы
   const [openNav, setOpenNav] = useState(false);//открытие меню в планшетном режиме
 
 
-  // const pack = useRef();
   let totalProducts = 0;
-  products.forEach(item => totalProducts = totalProducts + item.amount);
+  products.forEach(item => totalProducts = totalProducts + item.amount); //определяет общее кол-во продуктов в корзине
 
 
   //получение отдельно продуктов из БД
@@ -32,8 +31,7 @@ const Context = (props) => {
 
   //при первой загрузке браузера помещаем в карточку товара кофе первый попавшиеся товар из массива
   const [openOneProduct, setOpenOneProduct] = useState(coffee[0]);
-  
-  console.log(openOneProduct);
+
   //склонение слов, в зависимости от числа
   const transformationWord = (number, words) => {
     if (words) {
@@ -43,12 +41,10 @@ const Context = (props) => {
   }
 
   //добавление продукции в корзину
-  function addProduct(e, item, pack) {
-
+  function addProduct(summ, item, pack) {
     if (pack === null) {
       return null;
     }
-
     setProducts([...products, {
       id: products.length + 1,
       img: item.image,
@@ -59,7 +55,7 @@ const Context = (props) => {
       pack: pack.current ? pack.current.value : pack,
       amount: item.amount,
       discount: item.discount,
-      summ: ((+item.price * item.amount) - (+item.price * item.discount))
+      summ: summ
     }]);
   }
 

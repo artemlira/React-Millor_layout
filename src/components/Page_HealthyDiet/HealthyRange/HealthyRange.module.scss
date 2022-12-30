@@ -165,6 +165,7 @@
 .item {
   width: f.rem(380);
   height: f.rem(225);
+  padding: f.rem(16);
   background: v.$white;
   box-shadow: 0px 0px 21.2553px rgba(149, 149, 149, 0.25);
   border-radius: 14.1702px;
@@ -220,7 +221,7 @@
 
 .rangeText {
   max-width: f.rem(235);
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: f.rem(18);
   line-height: f.ratio(18, 21.76);

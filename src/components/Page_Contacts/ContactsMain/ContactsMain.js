@@ -43,7 +43,9 @@ export default function ContactsMain() {
             }
 
           </div>
-          <div className={styles.img}></div>
+          <div className={styles.img}>
+            <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.28292220678!2d20.578661915344473!3d54.73982707712346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e315b38eec664d%3A0x8585846aae8995ce!2z0YPQuy4g0KjQsNGC0YPRgNGB0LrQsNGPLCA00JAsINCS0LDRgdC40LvRjNC60L7QstC-LCDQmtCw0LvQuNC90LjQvdCz0YDQsNC00YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0ZbRjywgMjM4MzI0!5e0!3m2!1suk!2sua!4v1672313895895!5m2!1suk!2sua">map</iframe>
+          </div>
         </div>
       </div>
     </section>

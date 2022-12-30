@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { MillorContext } from './../../Context';
 import { isWebpSupported } from 'react-image-webp/dist/utils';
 
-export default function BasketProductsItem({ item, img, imgWebp, title, text, price, pack, styles, amount, discount }) {
+export default function BasketProductsItem({ item, img, imgWebp, title, text, pack, styles, amount, summ, discount }) {
   const { removeProduct, addCount, removeCount } = useContext(MillorContext);
   return (
     <>
@@ -18,12 +18,12 @@ export default function BasketProductsItem({ item, img, imgWebp, title, text, pr
             <p className={styles.itemText}>{pack} г.</p>
           </div>
         </li>
-        <li className={styles.itemPrice}>{price} ₽</li>
+        <li className={styles.itemPrice}>{summ} ₽</li>
         <li className={styles.itemAmount}>
           <button onClick={() => removeCount(item)}>-</button>{amount}<button onClick={() => addCount(item)}>+</button>
         </li>
-        <li className={styles.itemDiscount}>{(+price * amount) * discount} ₽</li>
-        <li className={styles.itemTotal}>{(amount * price) - (price * discount * amount)} ₽</li>
+        <li className={styles.itemDiscount}>{Math.round((summ * amount) * discount)} ₽</li>
+        <li className={styles.itemTotal}>{Math.round((amount * summ) - (summ * discount * amount))} ₽</li>
       </ul>
 
       <ul className={styles.productsItemTablet}>
@@ -41,9 +41,9 @@ export default function BasketProductsItem({ item, img, imgWebp, title, text, pr
             </div>
           </div>
           <div className={styles.price}>
-            <p className={styles.itemTotal}>{(amount * price) - (price * discount * amount)} ₽</p>
+            <p className={styles.itemTotal}>{Math.round((amount * summ) - (summ * discount * amount))} ₽</p>
             <div className={styles.itemPriceWrapper}>
-              <p className={styles.itemPrice}>{amount * price} ₽</p>
+              <p className={styles.itemPrice}>{summ} ₽</p>
               <p className={styles.itemDiscount}>(-10%)</p>
             </div>
           </div>

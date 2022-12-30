@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext, useRef, useState, useEffect } from 'react';
 import styles from './DiscountItem.module.scss';
 import './discountItem.scss';
 import { discountItemPics } from '../../ImagesDB';
@@ -11,6 +11,15 @@ export default function DiscountItem({ sale, special, productTitle, description,
 
   const { addProduct, setOpenOneProduct } = useContext(MillorContext);
   const pack = useRef();
+  const [summ, setSumm] = useState(null);
+
+  const changePack = () => {
+    setSumm(Math.round(pack.current.value * productPrice));
+  }
+
+  useEffect(() => {
+    setSumm(Math.round(pack.current.value * productPrice));
+  }, []);
 
   return (
     <div className={styles.discountItem}>
@@ -20,7 +29,7 @@ export default function DiscountItem({ sale, special, productTitle, description,
             <div className={styles.noDiscount}>
               {special.map(item => <p key={Math.random() * 10}>{item}</p>)}
             </div>}
-          <select ref={pack} name="target" className={styles.select}>
+          <select onChange={() => changePack()} ref={pack} name="target" className={styles.select}>
             <option value='250'>250 г.</option>
             <option value='1000'>1000 г.</option>
           </select>
@@ -50,8 +59,8 @@ export default function DiscountItem({ sale, special, productTitle, description,
                   : <img className={styles.stars} src={discountItemPics[5]} alt="stars" />}
                 <p className={styles.reviews}>4.0 <span>(32 отзыва)</span></p>
                 {isWebpSupported()
-                  ? <img className={styles.coffeeBeans} src={ discountItemPics[3]} alt="coffee beans"/>
-                  : <img className={styles.coffeeBeans} src={ discountItemPics[2]} alt="coffee beans"/>}
+                  ? <img className={styles.coffeeBeans} src={discountItemPics[3]} alt="coffee beans" />
+                  : <img className={styles.coffeeBeans} src={discountItemPics[2]} alt="coffee beans" />}
                 <p className={styles.description}>Кислинка</p>
                 <img className={styles.descriptionImg} src={discountItemPics[4]} alt="" />
                 <p className={styles.description}>Горчинка</p>
@@ -67,12 +76,10 @@ export default function DiscountItem({ sale, special, productTitle, description,
         </Link>
         <div className={styles.price}>
           <div className={sale ? `${styles.priceText} ${styles.sale}` : styles.priceText}>
-            <p>{productPrice} ₽</p>
+            <p>{summ} ₽</p>
           </div>
           <div >
-            <button className={styles.btn} onClick={(e) => addProduct(e, item, pack)}>В корзину</button>
-            {/* {!productInBasket && <button className={styles.btn} onClick={(e) => addProduct(e)}>В корзину</button>} */}
-            {/* {productInBasket && <button className={styles.activeBasket}>Товар в корзине</button>} */}
+            <button className={styles.btn} onClick={() => addProduct(summ, item, pack)}>В корзину</button>
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from 'react';
+import React, { useContext, useState, useRef, useEffect } from 'react';
 import styles from './TeaCard.module.scss';
 import { MillorContext } from './../../Context';
 import { discountItemPics } from '../../ImagesDB.js';
@@ -7,13 +7,24 @@ import { isWebpSupported } from 'react-image-webp/dist/utils';
 
 export default function TeaCard() {
   const { openOneProduct, addOneCard, removeOneCard, addProduct } = useContext(MillorContext);
+
   let pack = useRef();
 
   const [showText, setShowText] = useState(false);
+  const [summ, setSumm] = useState(null);
+  const [box, setBox] = useState(null);
 
-  const handleChange = (e) => {
+  const changePack = (e) => {
     pack = e.target.value;
+    setBox(pack);
+    setSumm(Math.round(pack * openOneProduct.price));
   }
+
+  useEffect(() => {
+    setSumm(Math.round(pack.current.value * openOneProduct.price));
+    setBox(pack);
+  }, []);
+
   return (
     <section className={styles.teaCard}>
       <div className="container">
@@ -28,8 +39,8 @@ export default function TeaCard() {
           </div>
           <div className={styles.image}>
             {isWebpSupported()
-              ? <img src={ openOneProduct.imageWebp} alt={openOneProduct.title}/>
-              : <img src={ openOneProduct.image} alt={openOneProduct.title}/>}
+              ? <img src={openOneProduct.imageWebp} alt={openOneProduct.title} />
+              : <img src={openOneProduct.image} alt={openOneProduct.title} />}
           </div>
           <div className={styles.contant}>
             <div className={styles.wrapperTitle}>
@@ -51,7 +62,7 @@ export default function TeaCard() {
             <span className={!showText ? `${styles.aboutLink}` : `${styles.aboutLink} ${styles.show}`} onClick={() => setShowText(!showText)}>{!showText ? 'Читать полностью' : 'Скрыть'}</span>
 
             <div className={styles.wrapperForm}>
-              <form onChange={(e) => handleChange(e)} className={styles.formPackage}>
+              <form onChange={(e) => changePack(e)} className={styles.formPackage}>
                 <label htmlFor='100' className={styles.packageLabel}>
                   <input value="100" id='100' className={styles.packageInput} type="radio" name='package'></input>
                   <span className={styles.customRadio}></span>
@@ -76,7 +87,7 @@ export default function TeaCard() {
             </div>
             <div className={styles.buttons}>
               <div className={styles.wrapperSelect}>
-                <select ref={pack} name="target" className={styles.select}>
+                <select onChange={(e) => changePack(e)} ref={pack} name="target" className={styles.select}>
                   <option value="100">100 г.</option>
                   <option value="150">150 г.</option>
                   <option value="165">165 г.</option>
@@ -87,13 +98,13 @@ export default function TeaCard() {
                 <button onClick={() => removeOneCard()}>-</button>{openOneProduct.amount}<button onClick={() => addOneCard()}>+</button>
               </div>
               <div className={styles.buyBtn}>
-                <button onClick={(e) => addProduct(e, openOneProduct, pack)}>Купить за {openOneProduct.price * openOneProduct.amount} ₽</button>
+                <button onClick={() => addProduct(summ, openOneProduct, box)}>Купить за {summ} ₽</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
 

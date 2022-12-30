@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext, useRef, useState, useEffect } from 'react';
 import styles from './TeaItem.module.scss';
 import { discountItemPics } from '../../ImagesDB';
 import { MillorContext } from './../../Context';
@@ -10,6 +10,15 @@ export default function TeaItem({ productTitle, description, image, imageWebp, p
 
   const { addProduct, setOpenOneProduct, } = useContext(MillorContext);
   const pack = useRef();
+  const [summ, setSumm] = useState(null);
+
+  const changePack = () => {
+    setSumm(Math.round(pack.current.value * productPrice));
+  }
+
+  useEffect(() => {
+    setSumm(Math.round(pack.current.value * productPrice));
+  }, []);
 
 
   return (
@@ -23,7 +32,7 @@ export default function TeaItem({ productTitle, description, image, imageWebp, p
             <p className={styles.reviews}>{rating}.0 <span>(32 отзыва)</span></p>
           </div>
           <div className={styles.wrapperSelect}>
-            <select ref={pack} name="target" className={styles.select}>
+            <select onChange={() => changePack()} ref={pack} name="target" className={styles.select}>
               <option value="100">100 г.</option>
               <option value="150">150 г.</option>
               <option value="165">165 г.</option>
@@ -46,10 +55,10 @@ export default function TeaItem({ productTitle, description, image, imageWebp, p
         </Link>
         <div className={styles.price}>
           <div className={sale ? `${styles.priceText} ${styles.sale}` : styles.priceText}>
-            <p>{productPrice} ₽</p>
+            <p>{summ} ₽</p>
           </div>
           <div >
-            <button className={styles.btn} onClick={(e) => addProduct(e, item, pack)}>В корзину</button>
+            <button className={styles.btn} onClick={() => addProduct(summ, item, pack)}>В корзину</button>
           </div>
         </div>
 

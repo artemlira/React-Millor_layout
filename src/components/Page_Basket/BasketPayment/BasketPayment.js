@@ -9,9 +9,9 @@ export default function BasketPayment() {
   const { products } = useContext(MillorContext);
 
   let summer = 0;
-  let discount = 0;          
-  products.forEach(i => summer = summer + i.amount * i.price)                  //считаем общую сумму без скидки
-  products.forEach(i => discount = discount + i.amount * i.price * i.discount) //считаем общую сумму скидки
+  let discount = 0;
+  products.forEach(i => summer = Math.round(summer + i.amount * i.summ))                  //считаем общую сумму без скидки
+  products.forEach(i => discount = Math.round(discount + i.amount * i.summ * i.discount)) //считаем общую сумму скидки
   let result = summer - discount;                                              //считаем общую сумму с скидкой
 
   return (

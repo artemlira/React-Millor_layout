@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from 'react';
+import React, { useContext, useState, useRef, useEffect } from 'react';
 import styles from './CoffeeCard.module.scss';
 import { MillorContext } from './../../Context';
 import { discountItemPics } from '../../ImagesDB.js';
@@ -10,6 +10,15 @@ export default function CoffeeCardTablet() {
 
   const pack = useRef();
   const [showText, setShowText] = useState(false);
+  const [summ, setSumm] = useState(null);
+
+  const changePack = () => {
+    setSumm(Math.round(pack.current.value * openOneProduct.price));
+  }
+
+  useEffect(() => {
+    setSumm(Math.round(pack.current.value * openOneProduct.price));
+  }, []);
 
   return (
     <section className={styles.coffeeCardTablet}>
@@ -68,7 +77,7 @@ export default function CoffeeCardTablet() {
           <div className={styles.buttons}>
             <div className={styles.selectAmount}>
               <div className={styles.wrapperSelect}>
-                <select ref={pack} name="target" className={styles.select}>
+                <select onChange={changePack} ref={pack} name="target" className={styles.select}>
                   <option value="250">250 г.</option>
                   <option value="1000">1000 г.</option>
                 </select>
@@ -78,7 +87,7 @@ export default function CoffeeCardTablet() {
               </div>
             </div>
             <div className={styles.buyBtn}>
-              <button onClick={(e) => addProduct(e, openOneProduct, pack)}>Купить за {openOneProduct.price * openOneProduct.amount} ₽</button>
+              <button onClick={() => addProduct(summ, openOneProduct, pack)}>Купить за {summ} ₽</button>
             </div>
           </div>
         </div>

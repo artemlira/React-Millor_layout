@@ -50,7 +50,7 @@ export const allProducts = [
     title: 'Colombia Supremo',               //заголовок
     description: ['Свежеобжаренный кофе',    //описание
       '- описание товара, вкус, аромат'],
-    price: '250',                            //цена
+    price: 1,                                //цена за один грамм продукта
     discount: 0.1,                           //скидка
     amount: 1,                               //кол-во товара, по умолчанию 1
     review: [                                //отзывы    
@@ -126,7 +126,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -180,7 +180,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -256,7 +256,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -310,7 +310,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -386,7 +386,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -440,7 +440,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -516,7 +516,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -570,7 +570,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -646,7 +646,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -700,7 +700,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -776,7 +776,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -831,7 +831,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -907,7 +907,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -961,7 +961,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1037,7 +1037,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1091,7 +1091,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1167,7 +1167,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1221,7 +1221,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1275,7 +1275,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1329,7 +1329,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1383,7 +1383,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1437,7 +1437,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1491,7 +1491,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1545,7 +1545,7 @@ export const allProducts = [
     imageWebp: coffee01Webp,
     title: 'Colombia Supremo',
     description: ['Свежеобжаренный кофе', '- описание товара, вкус, аромат'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1594,7 +1594,7 @@ export const allProducts = [
     imageWebp: tea01Webp,
     title: 'Наименование товара',
     description: ['Черный чай'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1664,7 +1664,7 @@ export const allProducts = [
     imageWebp: tea02Webp,
     title: 'Наименование товара',
     description: ['Зеленый чай'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1712,7 +1712,7 @@ export const allProducts = [
     imageWebp: tea03Webp,
     title: 'Наименование товара',
     description: ['Молочный улунг'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1782,7 +1782,7 @@ export const allProducts = [
     imageWebp: tea04Webp,
     title: 'Наименование товара',
     description: ['Травяной чай'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1830,7 +1830,7 @@ export const allProducts = [
     imageWebp: tea05Webp,
     title: 'Наименование товара',
     description: ['Матча'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1900,7 +1900,7 @@ export const allProducts = [
     imageWebp: tea06Webp,
     title: 'Наименование товара',
     description: ['Пуэр'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -1948,7 +1948,7 @@ export const allProducts = [
     imageWebp: tea07Webp,
     title: 'Наименование товара',
     description: ['Кофейные напитки'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2018,7 +2018,7 @@ export const allProducts = [
     imageWebp: tea01Webp,
     title: 'Наименование товара',
     description: ['Черный чай'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2066,7 +2066,7 @@ export const allProducts = [
     imageWebp: tea02Webp,
     title: 'Наименование товара',
     description: ['Зеленый чай'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2136,7 +2136,7 @@ export const allProducts = [
     imageWebp: tea03Webp,
     title: 'Наименование товара',
     description: ['Молочный улунг'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2184,7 +2184,7 @@ export const allProducts = [
     imageWebp: tea04Webp,
     title: 'Наименование товара',
     description: ['Травяной чай'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2254,7 +2254,7 @@ export const allProducts = [
     imageWebp: tea05Webp,
     title: 'Наименование товара',
     description: ['Матча'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2303,7 +2303,7 @@ export const allProducts = [
     imageWebp: tea06Webp,
     title: 'Наименование товара',
     description: ['Пуэр'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2351,7 +2351,7 @@ export const allProducts = [
     imageWebp: tea07Webp,
     title: 'Наименование товара',
     description: ['Кофейные напитки'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2400,7 +2400,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2470,7 +2470,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2518,7 +2518,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Зерновой кофе'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2588,7 +2588,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный какао'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2636,7 +2636,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированные кофейные напитки'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2706,7 +2706,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Кофе порошкообразный'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2754,7 +2754,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2824,7 +2824,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2872,7 +2872,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2942,7 +2942,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Зерновой кофе'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -2990,7 +2990,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный какао'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3060,7 +3060,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированные кофейные напитки'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3109,7 +3109,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Кофе порошкообразный'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3157,7 +3157,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3205,7 +3205,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Сухое молоко гранулированное'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3253,7 +3253,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный кофе'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3301,7 +3301,7 @@ export const allProducts = [
     imageWebp: wending01Webp,
     title: 'Наименование товара',
     description: ['Гранулированный цикорий'],
-    price: '250',
+    price: 1,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3350,7 +3350,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3420,7 +3420,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Ячменные напитки'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3468,7 +3468,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3538,7 +3538,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3586,7 +3586,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Толокняные каши'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3656,7 +3656,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3704,7 +3704,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Ячменные напитки'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3774,7 +3774,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3822,7 +3822,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3892,7 +3892,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Толокняные каши'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -3940,7 +3940,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -4010,7 +4010,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -4059,7 +4059,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -4107,7 +4107,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Толокняные каши'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -4155,7 +4155,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Цикорий и корень цикория'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -4203,7 +4203,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Напитки для здоровья'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [
@@ -4251,7 +4251,7 @@ export const allProducts = [
     imageWebp: healthyDiet01Webp,
     title: 'Наименование товара',
     description: ['Протеиновые смеси'],
-    price: '250',
+    price: 2.5,
     discount: 0.1,
     amount: 1,
     review: [

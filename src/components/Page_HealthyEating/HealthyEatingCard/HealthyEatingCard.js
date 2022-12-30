@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from 'react';
+import React, { useContext, useState, useRef, useEffect } from 'react';
 import styles from './HealthyEatingCard.module.scss';
 import { MillorContext } from './../../Context';
 import { discountItemPics } from '../../ImagesDB.js';
@@ -11,10 +11,19 @@ export default function HealthyEatingCard() {
   let pack = useRef();
 
   const [showText, setShowText] = useState(false);
+  const [summ, setSumm] = useState(null);
+  const [box, setBox] = useState(null);
 
-  const handleChange = (e) => {
+  const changePack = (e) => {
     pack = e.target.value;
+    setBox(pack);
+    setSumm(Math.round(pack * openOneProduct.price));
   }
+
+  useEffect(() => {
+    setSumm(Math.round(pack.current.value * openOneProduct.price));
+    setBox(pack);
+  }, []);
 
   return (
     <section className={styles.healthyEatingCard}>
@@ -53,7 +62,7 @@ export default function HealthyEatingCard() {
             <span className={!showText ? `${styles.aboutLink}` : `${styles.aboutLink} ${styles.show}`} onClick={() => setShowText(!showText)}>{!showText ? 'Читать полностью' : 'Скрыть'}</span>
 
             <div className={styles.wrapperForm}>
-              <form onChange={(e) => handleChange(e)} className={styles.formPackage}>
+              <form onChange={(e) => changePack(e)} className={styles.formPackage}>
                 <label htmlFor='100' className={styles.packageLabel}>
                   <input value='100' id='100' className={styles.packageInput} type="radio" name='package'></input>
                   <span className={styles.customRadio}></span>
@@ -90,7 +99,7 @@ export default function HealthyEatingCard() {
 
 
               <div className={styles.wrapperSelect}>
-                <select ref={pack} name="target" className={styles.select}>
+                <select onChange={(e) => changePack(e)} ref={pack} name="target" className={styles.select}>
                   <option value='100'>100 г.</option>
                   <option value='150'>150 г.</option>
                   <option value='165'>165 г.</option>
@@ -105,7 +114,7 @@ export default function HealthyEatingCard() {
                 <button onClick={() => removeOneCard()}>-</button>{openOneProduct.amount}<button onClick={() => addOneCard()}>+</button>
               </div>
               <div className={styles.buyBtn}>
-                <button onClick={(e) => addProduct(e, openOneProduct, pack)}>Купить за {openOneProduct.price * openOneProduct.amount} ₽</button>
+                <button onClick={() => addProduct(summ, openOneProduct, box)}>Купить за {summ} ₽</button>
               </div>
             </div>
           </div>

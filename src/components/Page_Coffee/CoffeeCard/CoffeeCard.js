@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useRef, useEffect } from 'react';
 import styles from './CoffeeCard.module.scss';
 import { MillorContext } from './../../Context';
 import { discountItemPics } from '../../ImagesDB.js';
@@ -9,11 +9,19 @@ import { isWebpSupported } from 'react-image-webp/dist/utils';
 export default function CoffeeCard() {
 
   const { openOneProduct, addOneCard, removeOneCard, addProduct } = useContext(MillorContext);
+  let pack = useRef();
+  const [summ, setSumm] = useState(null);
+  const [box, setBox] = useState(null);
 
-  const [pack, setPack] = useState(null);
   const handleChange = (e) => {
-    setPack(e.target.value)
+    pack = e.target.value;
+    setBox(pack);
+    setSumm(Math.round(pack * openOneProduct.price));
   }
+
+  useEffect(() => {
+    setSumm(Math.round(pack.current.value * openOneProduct.price));
+  }, []);
 
   return (
     <>
@@ -66,14 +74,14 @@ export default function CoffeeCard() {
                 </div>
               </div>
               <div>
-                <form onChange={(e) => handleChange(e)} className={styles.formPackage}>
+                <form className={styles.formPackage}>
                   <label htmlFor='250' className={styles.packageLabel}>
-                    <input value="250" id='250' className={styles.packageInput} type="radio" name='package'></input>
+                    <input ref={pack} onClick={(e) => handleChange(e)} value="250" id='250' className={styles.packageInput} type="radio" name='package'></input>
                     <span className={styles.customRadio}></span>
                     <p>250 г.</p>
                   </label>
                   <label htmlFor='1000' className={styles.packageLabel}>
-                    <input value="1000" id='1000' className={styles.packageInput} type="radio" name='package'></input>
+                    <input onClick={(e) => handleChange(e)} value="1000" id='1000' className={styles.packageInput} type="radio" name='package'></input>
                     <span className={styles.customRadio}></span>
                     <p>1000 г.</p>
                   </label>
@@ -84,7 +92,7 @@ export default function CoffeeCard() {
                   <button onClick={() => removeOneCard()}>-</button>{openOneProduct.amount}<button onClick={() => addOneCard()}>+</button>
                 </div>
                 <div className={styles.buyBtn}>
-                  <button onClick={(e) => addProduct(e, openOneProduct, pack)}>Купить за {openOneProduct.price * openOneProduct.amount} ₽</button>
+                  <button onClick={(e) => addProduct(summ, openOneProduct, box)}>Купить за {summ} ₽</button>
                 </div>
               </div>
             </div>

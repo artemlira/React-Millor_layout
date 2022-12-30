@@ -21,6 +21,7 @@ export default function CoffeeCard() {
 
   useEffect(() => {
     setSumm(Math.round(pack.current.value * openOneProduct.price));
+    setBox(pack);
   }, []);
 
   return (
@@ -92,7 +93,7 @@ export default function CoffeeCard() {
                   <button onClick={() => removeOneCard()}>-</button>{openOneProduct.amount}<button onClick={() => addOneCard()}>+</button>
                 </div>
                 <div className={styles.buyBtn}>
-                  <button onClick={(e) => addProduct(summ, openOneProduct, box)}>Купить за {summ} ₽</button>
+                  <button onClick={() => addProduct(summ, openOneProduct, box)}>Купить за {summ * openOneProduct.amount} ₽</button>
                 </div>
               </div>
             </div>

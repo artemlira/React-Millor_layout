@@ -98,7 +98,7 @@ export default function TeaCard() {
                 <button onClick={() => removeOneCard()}>-</button>{openOneProduct.amount}<button onClick={() => addOneCard()}>+</button>
               </div>
               <div className={styles.buyBtn}>
-                <button onClick={() => addProduct(summ, openOneProduct, box)}>Купить за {summ} ₽</button>
+                <button onClick={() => addProduct(summ, openOneProduct, box)}>Купить за {summ * openOneProduct.amount} ₽</button>
               </div>
             </div>
           </div>

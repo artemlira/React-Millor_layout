@@ -87,7 +87,7 @@ export default function CoffeeCardTablet() {
               </div>
             </div>
             <div className={styles.buyBtn}>
-              <button onClick={() => addProduct(summ, openOneProduct, pack)}>Купить за {summ} ₽</button>
+              <button onClick={() => addProduct(summ, openOneProduct, pack)}>Купить за {summ * openOneProduct.amount} ₽</button>
             </div>
           </div>
         </div>

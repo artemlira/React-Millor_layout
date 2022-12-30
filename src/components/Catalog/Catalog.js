@@ -5,11 +5,7 @@ import { catalog } from '../ImagesDB';
 import CatalogSlider from './CatalogSlider';
 
 
-
-
 export default function Catalog() {
-
-
   return (
     <section className={styles.catalog}>
       <div className="container">

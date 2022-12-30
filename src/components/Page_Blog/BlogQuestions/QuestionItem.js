@@ -1,6 +1,8 @@
 import React from 'react';
 
+
 export default function QuestionItem({ styles, title, text }) {
+
   return (
     <li className={styles.questionsItem}>
       <details>

@@ -12,6 +12,19 @@ export default function Production({ arr }) {
   const show = () => {
     setShowAll(!showAll);
   }
+
+  const animation = {
+    hidden: {
+      y: 100,
+      opacity: 0,
+    },
+    visible: custom => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.1 }
+    })
+
+  }
   return (
 
     <section className={styles.production}>
@@ -35,57 +48,45 @@ export default function Production({ arr }) {
 
         <div className={styles.laptop}>
           <motion.div
-            initial={{ opacity: 0, y: "100" }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: "100" }}
-            transition={{ duration: 1 }}
+            initial='hidden'
+            animate='visible'
+
             className={styles.container} >
             {!showAll
               ?
               arr.map((item, index) => index < 12 && <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
+                custom={index + 1}
+                variants={animation}
                 key={Math.random() * 100}>{item}</motion.div>)
               :
-              arr.map(item => <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
+              arr.map((item, index) => <motion.div
+                custom={index + 1}
+                variants={animation}
                 key={Math.random() * 100}>{item}</motion.div>)
             }
           </motion.div>
           {arr.length > 12 && <button onClick={() => show()} className={styles.btn}>{!showAll ? 'Показать еще' : 'Скрыть'}</button>}
         </div>
-
         <div className={styles.tablet}>
           <motion.div
-
-            initial={{ opacity: 0, y: "100" }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: "100" }}
-            transition={{ duration: 1 }}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ amount: 0.1, once: true }}
             className={styles.container} >
-            {arr.map((item, index) => index < 6 && <div key={Math.random() * 100}>{item}</div>)}
+            {arr.map((item, index) => index < 6 && <motion.div
+              custom={index + 1}
+              variants={animation}
+              key={Math.random() * 100}>{item}</motion.div>)}
           </motion.div>
           <button className={styles.btn}>Показать еще</button>
         </div>
         <div className={styles.phone}>
-          <motion.div
-            initial={{ opacity: 0, y: "100" }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: "100" }}
-            transition={{ duration: 1 }}
-            className={styles.container} >
+          <div className={styles.container} >
             {arr.map((item, index) => index < 3 && <div key={Math.random() * 100}>{item}</div>)}
-          </motion.div>
+          </div>
           <button className={styles.btn}>Показать еще</button>
-
         </div>
       </div>
-
     </section>
 
   );

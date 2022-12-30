@@ -17,7 +17,7 @@ export default function HealthyDiet() {
           ?
           <article className="healthyDiet">
             <HealthyRange />
-            <Production arr={itemsHealthyDiet} link='healthy_eating' />
+            <Production arr={itemsHealthyDiet} key={Math.random() * 100} link='healthy_eating' />
             <CoffeeCatalogMain />
           </article>
           :

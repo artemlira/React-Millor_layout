@@ -5,9 +5,7 @@ import { discountItemPics } from '../../ImagesDB.js';
 import CoffeeCardTablet from './CoffeeCardTablet';
 import { isWebpSupported } from 'react-image-webp/dist/utils';
 
-
-export default function CoffeeCard() {
-
+export default function CoffeeCard () {
   const { openOneProduct, addOneCard, removeOneCard, addProduct } = useContext(MillorContext);
   let pack = useRef();
   const [summ, setSumm] = useState(null);
@@ -104,6 +102,3 @@ export default function CoffeeCard() {
     </>
   );
 }
-
-
-

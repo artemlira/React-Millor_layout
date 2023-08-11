@@ -1,3 +1,17 @@
+# Millor
+An online coffee shop. 
+While writing this paper, I used the #react.js framework and its useState, useEffect, useRef, and useContext hooks. To switch pages, I used the React Router Dom 6 library. To implement sliders, I used the #slickslider library, and to implement animation, I used the Framer Motion library.
+## Link: https://react-millor-layout.netlify.app
+### Skills: 
+- React
+- JavaScript
+- SCSS
+- HTML
+- CSS
+- Framer-Motion
+- Slick-Slider
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
